@@ -2,6 +2,7 @@ body {
     background-color: white;
     font-family: 'Dosis', sans-serif;
     margin: 0;
+    z-index: 2;
 }
 
 /* Welcome Screen */
@@ -81,7 +82,7 @@ header {
     color: white;
     padding: 20px;
     font-size: 1.25rem;
-    height: 7vh;
+    height: auto;
 }
 
 header p {
@@ -92,13 +93,25 @@ header ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
     width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
 }
 
 header ul li {
     margin: 0 10px;
+    cursor: pointer;
+    line-height: 23px;
+    cursor: pointer;
+    transition: font-size 0.1s ease-in;
+}
+
+header ul li:hover {
+    margin: 0 10px;
+    transition: font-size 0.1s ease-in;
+    font-size: 22px;
+
 }
 
 .underline {
@@ -115,12 +128,15 @@ header ul li {
     background-color: rgb(255, 98, 0);
     border-radius: 6px;
 }
+
+
+
   
 /* Page Hero */
 
 .page-hero {
     background-color: black;
-    height: 93vh;
+    height: 825px;
     color: white;
     display: flex;
     align-items: center;
@@ -128,21 +144,36 @@ header ul li {
     flex-wrap: wrap;
     width: 100%;
     z-index: 2;
+    position: relative;
 }
 
 #writing-container {
-    margin-left: 175px;
+    margin-left: 140px;
     margin-bottom: 160px;
+    background-color: black;
+    position: relative;
+    z-index: 99;
+    width: 54%;
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    border-radius: 55px;
 }
+
 
 #ph-p-container {
     width: 60%;
+    position: relative;
+    margin-bottom: 7px;
 }
 
 #ph-h1-container {
     width: 80%;
     position: relative;
     overflow: visible;
+    margin-top: -25px;
 }
 
 #ph-h1-container h1 {
@@ -161,7 +192,9 @@ header ul li {
     display: flex;
     align-items: center;
     margin-left: 20px;
-    margin-bottom: 33px;
+    margin-bottom: 15px;
+    position: relative;
+
 }
 
 .svg-icon {
@@ -170,169 +203,247 @@ header ul li {
     margin-right: 20px;
     transition: ease-in;
     fill: rgb(255, 98, 0);
+    cursor: pointer;
+    transition: ease-in 0.3s;
 }
 
 
 .svg-icon:hover {
     fill: white;
-    cursor: pointer;
+    
     transition: ease-in 0.3s;
 }
 
 /* Clouds */
 
-body {
-    background: black;
-    color: #333;
-    font: 100% Arial, Sans Serif;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+
+
+#background-wrap {
+    width: 100%;
+
+  position: absolute;
+
+
+}
+
+/* KEYFRAMES */
+
+@-webkit-keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-moz-keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+  -webkit-animation: animateCloud 35s linear infinite;
+  -moz-animation: animateCloud 35s linear infinite;
+  animation: animateCloud 35s linear infinite;
+  
+  -webkit-transform: scale(0.65);
+  -moz-transform: scale(0.65);
+  transform: scale(0.65);
+}
+
+.x2 {
+  -webkit-animation: animateCloud 20s linear infinite;
+  -moz-animation: animateCloud 20s linear infinite;
+  animation: animateCloud 20s linear infinite;
+  
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+.x3 {
+  -webkit-animation: animateCloud 30s linear infinite;
+  -moz-animation: animateCloud 30s linear infinite;
+  animation: animateCloud 30s linear infinite;
+  
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.x4 {
+  -webkit-animation: animateCloud 18s linear infinite;
+  -moz-animation: animateCloud 18s linear infinite;
+  animation: animateCloud 18s linear infinite;
+  
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  transform: scale(0.4);
+}
+
+.x5 {
+  -webkit-animation: animateCloud 25s linear infinite;
+  -moz-animation: animateCloud 25s linear infinite;
+  animation: animateCloud 25s linear infinite;
+  
+  -webkit-transform: scale(0.55);
+  -moz-transform: scale(0.55);
+  transform: scale(0.55);
+}
+
+/* OBJECTS */
+
+.cloud {
+
+  background: white;
+  background: -moz-linear-gradient(top,  rgb(222, 217, 217), grey 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,grey), color-stop(100%,grey));
+  background: -webkit-linear-gradient(top,  rgb(222, 217, 217),grey 100%);
+  background: -o-linear-gradient(top,  rgb(222, 217, 217),grey 100%);
+  background: -ms-linear-gradient(top,  rgb(222, 217, 217),grey 100%);
+  background: linear-gradient(top,  rgb(222, 217, 217),grey 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='grey', endColorstr='grey',GradientType=0 );
+  
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  
+  -webkit-box-shadow: 0 8px 5px rgb(255, 98, 0);
+  -moz-box-shadow: 0 8px 5px rgb(255, 98, 0);
+  box-shadow: 0 8px 5px rgb(255, 98, 0);
+
+  height: 120px;
+  position: relative;
+  width: 350px;
+  
+}
+
+.cloud:after, .cloud:before {
+    background: rgb(222, 217, 217);
+  content: '';
+  position: absolute;
+  z-indeX: -1;
+}
+
+.cloud:after {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+
+  height: 100px;
+  left: 50px;
+  top: -50px;
+  width: 100px;
+
+}
+
+.cloud:before {
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+
+  width: 180px;
+  height: 180px;
+  right: 50px;
+  top: -90px;
+}
+
+/* My Skills */
+
+.content-container{
+    margin: 5% 17.5%;
+    z-index: 2;
+}
+
+.h2-highlight {
+    box-shadow: inset 0px -20px 0 rgb(255 98 0 / 85%)
+}
+
+#skills-h2 {
+    font-size: 50px;
+    margin-left: 6rem;
+    margin-bottom: 5%;
+}
+
+#skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns, equal width */
+    grid-template-rows: auto; /* Auto height for rows */
+    grid-gap: 1rem; /* Gap between grid items */
   }
   
-  #background-wrap {
-      bottom: 0;
-    left: 0;
-    padding-top: 50px;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: -1;
+  #coding-picture-column {
+    grid-column: 1 / 2; /* Left column spans from first to second column */
+    grid-row: 1 / span 3; /* Left column spans three rows */
   }
   
-  /* KEYFRAMES */
-  
-  @-webkit-keyframes animateCloud {
-      0% {
-          margin-left: -1000px;
-      }
-      100% {
-          margin-left: 100%;
-      }
+  #skills-column {
+    grid-column: 2 / 3; /* Right column spans from second to third column */
+    grid-row: 1 / span 3; /* Right column spans three rows */
+    display: grid;
+    grid-template-rows: 1fr 2fr;
   }
   
-  @-moz-keyframes animateCloud {
-      0% {
-          margin-left: -1000px;
-      }
-      100% {
-          margin-left: 100%;
-      }
+  .row {
+    padding: 10px;
   }
-  
-  @keyframes animateCloud {
-      0% {
-          margin-left: -1000px;
-      }
-      100% {
-          margin-left: 100%;
-      }
+
+  #coding-img {
+    height: 100%;
+    width: 100%;
   }
-  
-  /* ANIMATIONS */
-  
-  .x1 {
-    -webkit-animation: animateCloud 35s linear infinite;
-    -moz-animation: animateCloud 35s linear infinite;
-    animation: animateCloud 35s linear infinite;
-    
-    -webkit-transform: scale(0.65);
-    -moz-transform: scale(0.65);
-    transform: scale(0.65);
+
+  #skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: center;
+}
+
+  #skills-list {
+    padding: 10px;
   }
-  
-  .x2 {
-    -webkit-animation: animateCloud 20s linear infinite;
-    -moz-animation: animateCloud 20s linear infinite;
-    animation: animateCloud 20s linear infinite;
-    
-    -webkit-transform: scale(0.3);
-    -moz-transform: scale(0.3);
-    transform: scale(0.3);
-  }
-  
-  .x3 {
-    -webkit-animation: animateCloud 30s linear infinite;
-    -moz-animation: animateCloud 30s linear infinite;
-    animation: animateCloud 30s linear infinite;
-    
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    transform: scale(0.5);
-  }
-  
-  .x4 {
-    -webkit-animation: animateCloud 18s linear infinite;
-    -moz-animation: animateCloud 18s linear infinite;
-    animation: animateCloud 18s linear infinite;
-    
-    -webkit-transform: scale(0.4);
-    -moz-transform: scale(0.4);
-    transform: scale(0.4);
-  }
-  
-  .x5 {
-    -webkit-animation: animateCloud 25s linear infinite;
-    -moz-animation: animateCloud 25s linear infinite;
-    animation: animateCloud 25s linear infinite;
-    
-    -webkit-transform: scale(0.55);
-    -moz-transform: scale(0.55);
-    transform: scale(0.55);
-  }
-  
-  /* OBJECTS */
-  
-  .cloud {
-    background: grey;
-    background: -moz-linear-gradient(top,  rgb(222, 217, 217), grey 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,grey), color-stop(100%,grey));
-    background: -webkit-linear-gradient(top,  rgb(222, 217, 217),grey 100%);
-    background: -o-linear-gradient(top,  rgb(222, 217, 217),grey 100%);
-    background: -ms-linear-gradient(top,  rgb(222, 217, 217),grey 100%);
-    background: linear-gradient(top,  rgb(222, 217, 217),grey 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='grey', endColorstr='grey',GradientType=0 );
-    
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-    
-    -webkit-box-shadow: 0 8px 5px orange;
-    -moz-box-shadow: 0 8px 5px orange;
-    box-shadow: 0 8px 5px orange;
-  
-    height: 120px;
-    position: relative;
-    width: 350px;
-    
-  }
-  
-  .cloud:after, .cloud:before {
-      background: rgb(222, 217, 217);
-    content: '';
-    position: absolute;
-    z-indeX: -1;
-  }
-  
-  .cloud:after {
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-  
-    height: 100px;
-    left: 50px;
-    top: -50px;
-    width: 100px;
-  }
-  
-  .cloud:before {
-    -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-    border-radius: 200px;
-  
-    width: 180px;
-    height: 180px;
-    right: 50px;
-    top: -90px;
-  }
+
+  .skill-container {
+    margin: 0.16rem;
+    padding: 0.16rem 1rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    border-radius: 3px;
+}
+
+#small-about {
+    display: flex;
+    flex-direction: column;
+}
+
+#small-about h4 {
+    font-weight:bold;
+}
+
+#read-bio {
+    color: rgb(255, 98, 0);
+}
+
+ 

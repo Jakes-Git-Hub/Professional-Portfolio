@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", function() {
                     welcomeText.style.opacity = "1"; // Set opacity back to 1
                     welcomeText.style.color = "rgb(57, 55, 55)"; // Change color back to the original color
                     welcomeScreen.style.zIndex = "-2"; // Hide the welcome screen
-                    welcomeScreen.style.backgroundColor = "none"; // Hide the welcome screen
+                    welcomeScreen.style.backgroundColor = "white"; // Hide the welcome screen
                     portfolio.style.display = "block"; // Show the hidden content
                 }, 600); // Delay for 0.3 seconds to complete the fading effect
             }, 500); // Delay the fading animation for 1 second
