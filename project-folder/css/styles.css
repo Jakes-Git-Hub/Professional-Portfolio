@@ -28,7 +28,7 @@ body {
 }
 
 #welcome-text {
-    font-size: 86px;
+    font-size: 4.479vw;
     color: rgb(57, 55, 55);
     position: relative;
     opacity: 1;
@@ -375,7 +375,7 @@ header ul li:hover {
     box-shadow: inset 0px -20px 0 rgb(255 98 0 / 85%)
 }
 
-#skills-h2 {
+.section-title {
     font-size: 50px;
     margin-left: 6rem;
     margin-bottom: 5%;
@@ -440,10 +440,22 @@ header ul li:hover {
 
 #small-about h4 {
     font-weight:bold;
+    margin-top: 0;
 }
 
 #read-bio {
     color: rgb(255, 98, 0);
 }
 
+/* Arrow Line */
+
+
+
+/* Projects */
+
+.opposite-section-title {
+    font-size: 50px;
+    margin-left: 50rem;
+    margin-bottom: 5%;
+}
  
