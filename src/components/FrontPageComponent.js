@@ -15,7 +15,7 @@ export const FrontPageComponent = () => {
 
             <div class="header">
                 <header>
-                    <p>Jake Matthews</p>
+                    <p id='name'>Jake Matthews</p>
                     <ul>
                         <li class="underline">About</li>
                         <li class="underline">Projects</li>
@@ -72,7 +72,7 @@ export const FrontPageComponent = () => {
                     </div>
                     
                     <div id="ph-p-container">
-                        <p>I am passionate about creating beautiful, immersive and interactive websites – whilst implementing the latest, most powerful libraries and frameworks.
+                        <p id='p-page-hero'>I am passionate about creating beautiful, immersive and interactive websites - whilst implementing the latest, most powerful libraries and frameworks.
                             <br />
                             <br />
                             I have a thirst for pushing my capabilities.
