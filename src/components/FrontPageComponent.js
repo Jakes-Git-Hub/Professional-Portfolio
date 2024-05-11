@@ -17,7 +17,7 @@ export const FrontPageComponent = () => {
                 <header>
                     <p id='name'>Jake Matthews</p>
                     <ul>
-                        <li class="underline">About</li>
+                        <li class="underline">Skills</li>
                         <li class="underline">Projects</li>
                         <li class="underline">Future Plans</li>
                         <li class="underline">Contact</li>
@@ -72,13 +72,13 @@ export const FrontPageComponent = () => {
                     </div>
                     
                     <div id="ph-p-container">
-                        <p id='p-page-hero'>I am passionate about creating beautiful, immersive and interactive websites - whilst implementing the latest, most powerful libraries and frameworks.
+                        <p id='p-page-hero'>I am passionate about creating beautiful, immersive and interactive websites - whilst implementing the latest, most powerful libraries.
                             <br />
                             <br />
                             I have a thirst for pushing my capabilities.
+                            {/* <br />
                             <br />
-                            <br />
-                            I am also an experienced Forex trader.
+                            I am also an experienced Forex trader. */}
                         </p>
                     </div>
                 </div>
@@ -96,6 +96,9 @@ export const FrontPageComponent = () => {
                 <div id="skills-column">
                     <div class="row" id="skills-box">
                         <div class="skill-container">
+                            <p>React</p>
+                        </div>
+                        <div class="skill-container">
                             <p>HTML</p>
                         </div>
                         <div class="skill-container">
@@ -103,9 +106,6 @@ export const FrontPageComponent = () => {
                         </div>
                         <div class="skill-container">
                             <p>JavaScript</p>
-                        </div>
-                        <div class="skill-container">
-                            <p>React</p>
                         </div>
                         <div class="skill-container">
                             <p>Node.js</p>
@@ -120,16 +120,28 @@ export const FrontPageComponent = () => {
                             <p>Netlify</p>
                         </div>
                         <div class="skill-container">
-                            <p>API's</p>
+                            <p>Express.js</p>
                         </div>
                         <div class="skill-container">
-                            <p>Authenticate & Authorise (AUth0)</p>
+                            <p>MUI</p>
                         </div>
+                        <div class="skill-container">
+                            <p>Axios</p>
+                        </div>
+                        <div class="skill-container">
+                            <p>Jest/ React Testing Library</p>
+                        </div>
+                        {/* <div class="skill-container">
+                            <p>RESTful API's</p>
+                        </div>
+                        <div class="skill-container">
+                            <p>SMS/ Email Authentication</p>
+                        </div> */}
                     </div>
                     <div class="row" id="small-about">
-                        <h4>I love learning about and implementing meta Web Development solutions.</h4>
-                        <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, determination and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, or competitive gaming where I achieved rank 256 online in Overwatch - which displays high IQ and on the fly problem solving abilities in a landscape where a vast quantity of variables are changing every second, whilst also keeping track of the state of the game in the back of my mind & now Front End Development - which I plan to make one of my babies and go on to Full Stack.</p>        
-                        <p>It seems like all the intricate well oiled parts of WebDev and the challenge of the learning curve garnered my attention and I became an avid learner. Seeing my progression and skills increase quickly and then realising what I am capable of and what is possible with code (front-end and back-end) then made me want to pursue this as a long term goal and be the best I can possibly be at it.</p>          
+                        <h4>I love learning about and implementing powerful and sophisticated Web Development solutions.</h4>
+                        <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, dedication and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Overwatch, or playing the drums - all of which displays grit, resiliance, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing every second (characterisitic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
+                        <p>It seems like all the intricate, yet simple well oiled parts of WebDev and the challenge of the learning curve garnered my attention and I became hooked. Seeing my progression and skills increase quickly and then realising what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
                     </div>
                 </div>
             </div>
