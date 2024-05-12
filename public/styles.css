@@ -362,10 +362,13 @@ header ul li:hover {
     font-size: 50px;
     margin-left: 5vw;
     margin-bottom: 5%;
-    animation: slide-in-from-left 2s ease-out;
 }
 
-@keyframes slide-in-from-left {
+.slide-in-left {
+    animation: slide-in-left 2s ease-out;
+}
+
+@keyframes slide-in-left {
     0% {
         transform: translateX(-100%);
     }
@@ -374,31 +377,36 @@ header ul li:hover {
     }
 }
 
+.show-skills {
+    visibility: visible !important;
+}
+
 #skills-container {
+    visibility: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto; 
     grid-gap: 1rem 7rem; 
-  }
+}
   
-  #coding-picture-column {
+#coding-picture-column {
     grid-column: 1 / 2; 
     grid-row: 1 / span 3; 
-  }
+}
   
-  #skills-column {
+#skills-column {
     grid-column: 2 / 3;
     grid-row: 1 / span 3; 
     display: grid;
     grid-template-rows: 1fr 2fr;
-  }
+}
 
-  #coding-img {
+#coding-img {
     height: 100%;
     width: 100%;
-  }
+}
 
-  #skills-box {
+#skills-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -406,11 +414,11 @@ header ul li:hover {
     align-content: center;
 }
 
-  #skills-list {
+#skills-list {
     padding: 10px;
-  }
+}
 
-  .skill-container {
+.skill-container {
     margin: 0.16rem;
     padding: 0.16rem 1rem;
     background-color: black;
@@ -435,10 +443,6 @@ header ul li:hover {
 #read-bio {
     color: rgb(255, 98, 0);
 }
-
-/* Arrow Line */
-
-
 
 /* Projects */
 

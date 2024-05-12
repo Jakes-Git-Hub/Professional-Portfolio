@@ -1,8 +1,12 @@
 import React from 'react';
 import Coder from '../images/Coder.webp';
 import WelcomeAnimation from '../assets/WelcomeAnimation';
+import { animated } from 'react-spring';
 
-export const FrontPageComponent = () => {
+export const FrontPageComponent = ({
+    animation={animation},
+    scale={scale},
+}) => {
     return (
 
         <>
@@ -88,63 +92,68 @@ export const FrontPageComponent = () => {
 
         <div class="content-container">
             
-            <h2 class="section-title">My <span class="h2-highlight">Skills</span></h2>
-            <div id="skills-container">
-                <div id="coding-picture-column">
-                    <img src={Coder} alt="" id="coding-img"/>
-                </div>
-                <div id="skills-column">
-                    <div class="row" id="skills-box">
-                        <div class="skill-container">
-                            <p>React</p>
-                        </div>
-                        <div class="skill-container">
-                            <p>HTML</p>
-                        </div>
-                        <div class="skill-container">
-                            <p>CSS</p>
-                        </div>
-                        <div class="skill-container">
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="skill-container">
-                            <p>Node.js</p>
-                        </div>
-                        <div class="skill-container">
-                            <p>Git</p>
-                        </div>
-                        <div class="skill-container">
-                            <p>GitHub</p>
-                        </div>
-                        <div class="skill-container">
-                            <p>Netlify</p>
-                        </div>
-                        <div class="skill-container">
-                            <p>Express.js</p>
-                        </div>
-                        <div class="skill-container">
-                            <p>MUI</p>
-                        </div>
-                        <div class="skill-container">
-                            <p>Axios</p>
-                        </div>
-                        <div class="skill-container">
-                            <p>Jest/ React Testing Library</p>
-                        </div>
-                        {/* <div class="skill-container">
-                            <p>RESTful API's</p>
-                        </div>
-                        <div class="skill-container">
-                            <p>SMS/ Email Authentication</p>
-                        </div> */}
+            <h2 class="section-title slide-in-left-placeholder">
+                My 
+                    <span class="h2-highlight">Skills</span>
+            </h2>
+            <animated.div style={{...animation, transform: scale.to(s => `scale(${s})`) }}>
+                <div id="skills-container">
+                    <div id="coding-picture-column">
+                        <img src={Coder} alt="" id="coding-img"/>
                     </div>
-                    <div class="row" id="small-about">
-                        <h4>I love learning about and implementing powerful and sophisticated Web Development solutions.</h4>
-                        <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, dedication and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Overwatch, or playing the drums - all of which displays grit, resiliance, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing every second (characterisitic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
-                        <p>It seems like all the intricate, yet simple well oiled parts of WebDev and the challenge of the learning curve garnered my attention and I became hooked. Seeing my progression and skills increase quickly and then realising what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
+                    <div id="skills-column">
+                        <div class="row" id="skills-box">
+                            <div class="skill-container">
+                                <p>React</p>
+                            </div>
+                            <div class="skill-container">
+                                <p>HTML</p>
+                            </div>
+                            <div class="skill-container">
+                                <p>CSS</p>
+                            </div>
+                            <div class="skill-container">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="skill-container">
+                                <p>Node.js</p>
+                            </div>
+                            <div class="skill-container">
+                                <p>Git</p>
+                            </div>
+                            <div class="skill-container">
+                                <p>GitHub</p>
+                            </div>
+                            <div class="skill-container">
+                                <p>Netlify</p>
+                            </div>
+                            <div class="skill-container">
+                                <p>Express.js</p>
+                            </div>
+                            <div class="skill-container">
+                                <p>MUI</p>
+                            </div>
+                            <div class="skill-container">
+                                <p>Axios</p>
+                            </div>
+                            <div class="skill-container">
+                                <p>Jest/ React Testing Library</p>
+                            </div>
+                            {/* <div class="skill-container">
+                                <p>RESTful API's</p>
+                            </div>
+                            <div class="skill-container">
+                                <p>SMS/ Email Authentication</p>
+                            </div> */}
+                        </div>
+                        <div class="row" id="small-about">
+                            <h4>I love learning about and implementing powerful and sophisticated Web Development solutions.</h4>
+                            <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, dedication and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Overwatch, or playing the drums - all of which displays grit, resiliance, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing every second (characterisitic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
+                            <p>It seems like all the intricate, yet simple well oiled parts of WebDev and the challenge of the learning curve garnered my attention and I became hooked. Seeing my progression and skills increase quickly and then realising what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
+                        </div>
                     </div>
                 </div>
-            </div>
+            </animated.div>
         </div>
 
         {/* Arrow Line */}
