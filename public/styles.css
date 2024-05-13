@@ -351,7 +351,7 @@ header ul li:hover {
 
 .content-container{
     margin: 10.24vh 10.42vw;
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 .h2-highlight {
@@ -382,11 +382,10 @@ header ul li:hover {
 }
 
 #skills-container {
-    visibility: hidden;
+    /* visibility: hidden; */
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto; 
-    grid-gap: 1rem 7rem; 
+    grid-gap: 0rem 7rem; 
 }
   
 #coding-picture-column {
@@ -451,4 +450,59 @@ header ul li:hover {
     margin-left: 80%;
     margin-bottom: 5%;
 }
- 
+
+#projects-picture-column {
+    grid-column: 1 / 2;
+    grid-row: 1 / span 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gmail-img {
+    height: 100%;
+    width: 75%;
+}
+
+#projects-container {
+    /* visibility: hidden; */
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 0rem 1rem; 
+}
+
+#projects-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.underline-regular {
+    text-decoration: underline;
+}
+
+.projects-p {
+    align-self: flex-start;
+    font-size: 17px;
+}
+
+#projects-h3{
+    margin-bottom: 35px;
+    font-size: 27.5px;
+}
+
+#gmail-list {
+    align-self:flex-start;
+}
+
+.gmail-list-half{
+    display: inline-flex;
+    width: 50%;
+}
+
+#gmail-list-container{
+    margin-top: 20px;
+}
+

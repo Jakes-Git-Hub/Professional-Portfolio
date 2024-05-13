@@ -7,6 +7,8 @@ export const FrontPageContainer = () => {
 
     const [show, setShow] = useState(false);
 
+// Skills
+
 // Skills Slide Animation
 
     useEffect(() => {
@@ -49,23 +51,24 @@ export const FrontPageContainer = () => {
         observer.observe(container);
     }, []);
 
-    const animation = useSpring({
+    const zoomOut = useSpring({
         from: { scale: 0.4 },
         to: { scale: show ? 1 : 0.4 },
-        config: scale => ({
-            duration: 1250,
-            tension: scale < 0.8 ? 300 : 170,
-            friction: scale < 0.8 ? 40 : 20,
-        }),
+        config: {
+            duration: 1000,
+            tension: 170,
+            friction: 20,
+        },
     });
     
-    const scale = animation.scale.to(s => s < 0.8 ? s : 0.8 + (s - 0.8) * 0.2 / 0.2);
+// Projects
+
+    
     
     return (
         <>
             <FrontPageComponent 
-                animation={animation}
-                scale={scale}
+                zoomOut={zoomOut}
             />
         </>
     );

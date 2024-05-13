@@ -1,14 +1,13 @@
 import React from 'react';
 import Coder from '../images/Coder.webp';
+import Gmail from '../images/Gmail Preview.png';
 import WelcomeAnimation from '../assets/WelcomeAnimation';
 import { animated } from 'react-spring';
 
 export const FrontPageComponent = ({
-    animation={animation},
-    scale={scale},
+    zoomOut={zoomOut},
 }) => {
     return (
-
         <>
 
 {/* Welcome Screen */}
@@ -93,13 +92,12 @@ export const FrontPageComponent = ({
         <div class="content-container">
             
             <h2 class="section-title slide-in-left-placeholder">
-                My 
-                    <span class="h2-highlight">Skills</span>
+                My <span class="h2-highlight">Skills</span>
             </h2>
-            <animated.div style={{...animation, transform: scale.to(s => `scale(${s})`) }}>
+            <animated.div style={zoomOut}>
                 <div id="skills-container">
                     <div id="coding-picture-column">
-                        <img src={Coder} alt="" id="coding-img"/>
+                        <img src={Coder} alt="person-coding" id="coding-img"/>
                     </div>
                     <div id="skills-column">
                         <div class="row" id="skills-box">
@@ -139,16 +137,10 @@ export const FrontPageComponent = ({
                             <div class="skill-container">
                                 <p>Jest/ React Testing Library</p>
                             </div>
-                            {/* <div class="skill-container">
-                                <p>RESTful API's</p>
-                            </div>
-                            <div class="skill-container">
-                                <p>SMS/ Email Authentication</p>
-                            </div> */}
                         </div>
                         <div class="row" id="small-about">
                             <h4>I love learning about and implementing powerful and sophisticated Web Development solutions.</h4>
-                            <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, dedication and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Overwatch, or playing the drums - all of which displays grit, resiliance, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing every second (characterisitic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
+                            <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, dedication and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Overwatch, or playing the drums - all of which displays grit, resiliance, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing (characterisitic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
                             <p>It seems like all the intricate, yet simple well oiled parts of WebDev and the challenge of the learning curve garnered my attention and I became hooked. Seeing my progression and skills increase quickly and then realising what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
                         </div>
                     </div>
@@ -156,15 +148,99 @@ export const FrontPageComponent = ({
             </animated.div>
         </div>
 
-        {/* Arrow Line */}
-        
-
         {/* Projects */}
 
         <div class="content-container" id="projects">
+            
             <h2 class="opposite-section-title"><span class="h2-highlight">Projects</span></h2>
+            
+                <animated.div style={zoomOut}>
+                    <div id="projects-container">
+                    <div id="projects-picture-column">
+                        <img src={Gmail} alt="" id="gmail-img"/>
+                    </div>
+                        <div id="projects-column">
+                            <h3 class='underline-regular' id='projects-h3'>Gmail Clone</h3>
+                            <p class='projects-p'>The idea for this project was to create a comprehensive fully functional real world React App, that encompasses the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with.</p>
+                            <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>
+                            <div id='gmail-list-container'> 
+                                <div class='gmail-list-half'>
+                                    <ul id='gmail-list' class='projects-p'> 
+                                        <li>React Router DOM</li>
+                                        <li>React Hooks</li>
+                                        <li>Asynchronous RESTful API's</li>
+                                        <li>.env Variables</li>
+                                        <li>DOM Manipulation</li>
+                                        <li>JSX injection</li>
+                                        <li>Ternary Operators</li>
+                                        <li>JS Short Circuits</li>
+                                        <li>Dyanmic Rendering from nested object based on global state</li>
+                                        <li>Folder/ file directory best practices</li>
+                                    </ul>
+                                </div>
+                                <div class='gmail-list-half'>
+                                    <ul id='gmail-list' class='projects-p'>
+                                        <li>Array methods and manipulation</li>
+                                        <li>Utilising and manipulting JSON</li>
+                                        <li>React Select UI Component</li>
+                                        <li>ARIA</li>
+                                        <li>Responsivity</li>
+                                        <li>Working with SVGS</li>
+                                        <li>Regex</li>
+                                        <li>Writing clean modular code (important to work with and test)</li>
+                                        <li>For loops</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </animated.div>
         </div>
 
         </>
     );
 }
+
+{/* <div class="row" id="skills-box">
+                                <div class="skill-container">
+                                    <p>React</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>HTML</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>Node.js</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>Git</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>GitHub</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>Netlify</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>Express.js</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>MUI</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>Axios</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>Jest/ React Testing Library</p>
+                                </div>
+                            </div>
+                            <div class="row" id="small-about">
+                                <h4>I love learning about and implementing powerful and sophisticated Web Development solutions.</h4>
+                                <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, dedication and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Overwatch, or playing the drums - all of which displays grit, resiliance, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing (characterisitic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
+                                <p>It seems like all the intricate, yet simple well oiled parts of WebDev and the challenge of the learning curve garnered my attention and I became hooked. Seeing my progression and skills increase quickly and then realising what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
+                            </div> */}
