@@ -1,11 +1,13 @@
 import React from 'react';
 import Coder from '../images/Coder.webp';
-import Gmail from '../images/Gmail Preview.png';
+import Gmail from '../images/Gmail-Preview.png';
 import WelcomeAnimation from '../assets/WelcomeAnimation';
 import { animated } from 'react-spring';
 
 export const FrontPageComponent = ({
     zoomOut={zoomOut},
+    hoveredGmail={hoveredGmail},
+    handleGmailMouseEnter={handleGmailMouseEnter},
 }) => {
     return (
         <>
@@ -140,7 +142,7 @@ export const FrontPageComponent = ({
                         </div>
                         <div class="row" id="small-about">
                             <h4>I love learning about and implementing powerful and sophisticated Web Development solutions.</h4>
-                            <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, dedication and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Overwatch, or playing the drums - all of which displays grit, resiliance, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing (characterisitic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
+                            <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, determination and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Overwatch, or playing the drums - all of which displays grit, resiliance, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing (characterisitic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing pieces of software.</p>        
                             <p>It seems like all the intricate, yet simple well oiled parts of WebDev and the challenge of the learning curve garnered my attention and I became hooked. Seeing my progression and skills increase quickly and then realising what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
                         </div>
                     </div>
@@ -156,12 +158,9 @@ export const FrontPageComponent = ({
             
                 <animated.div style={zoomOut}>
                     <div id="projects-container">
-                    <div id="projects-picture-column">
-                        <img src={Gmail} alt="" id="gmail-img"/>
-                    </div>
                         <div id="projects-column">
                             <h3 class='underline-regular' id='projects-h3'>Gmail Clone</h3>
-                            <p class='projects-p'>The idea for this project was to create a comprehensive fully functional real world React App, that encompasses the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with.</p>
+                            <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App, that encompasses the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with.</p>
                             <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>
                             <div id='gmail-list-container'> 
                                 <div class='gmail-list-half'>
@@ -191,6 +190,13 @@ export const FrontPageComponent = ({
                                         <li>For loops</li>
                                     </ul>
                                 </div>
+                            </div>
+                        </div>
+                        <div id="projects-picture-column">
+                            <div id='gmail-glass'
+                                onMouseEnter={handleGmailMouseEnter}
+                            >
+                                <img src={Gmail} alt="" id={ hoveredGmail ? 'gmail-img-hovered' : "gmail-img"}/>
                             </div>
                         </div>
                     </div>

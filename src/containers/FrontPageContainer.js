@@ -6,10 +6,11 @@ import { useSpring } from 'react-spring';
 export const FrontPageContainer = () => {
 
     const [show, setShow] = useState(false);
+    const [hoveredGmail, setHoveredGmail] = useState(false);
 
-// Skills
+// Animations
 
-// Skills Slide Animation
+// Skills Tittle Slide In Animation
 
     useEffect(() => {
         const divs = document.querySelectorAll('.slide-in-left-placeholder');
@@ -60,15 +61,42 @@ export const FrontPageContainer = () => {
             friction: 20,
         },
     });
-    
+
 // Projects
 
+// Projects Container Zoom Animation
+
+useEffect(() => {
+    const container = document.querySelector('#projects-container');
+
+    // Create an intersection observer
+    const observer = new IntersectionObserver(entries => {
+        // Loop over the entries
+        entries.forEach(entry => {  
+            // If the element is visible
+            if (entry.isIntersecting) {
+                setShow(true);
+                entry.target.classList.add('show-projects');
+            } 
+        });
+    }, { threshold: 1 });
+
+    // Observe the container
+    observer.observe(container);
+}, []);
     
-    
+// Gmail Hover 
+
+    const handleGmailMouseEnter = () => {
+        setHoveredGmail(true);
+    };
+
     return (
         <>
             <FrontPageComponent 
                 zoomOut={zoomOut}
+                hoveredGmail={hoveredGmail}
+                handleGmailMouseEnter={handleGmailMouseEnter}
             />
         </>
     );
