@@ -5,9 +5,9 @@ import WelcomeAnimation from '../assets/WelcomeAnimation';
 import { animated } from 'react-spring';
 
 export const FrontPageComponent = ({
-    zoomOut={zoomOut},
-    hoveredGmail={hoveredGmail},
-    handleGmailMouseEnter={handleGmailMouseEnter},
+    zoomOutSkills={zoomOutSkills},
+    zoomOutProjects={zoomOutProjects},
+    unBlurGmail={unBlurGmail},
 }) => {
     return (
         <>
@@ -93,10 +93,10 @@ export const FrontPageComponent = ({
 
         <div class="content-container">
             
-            <h2 class="section-title slide-in-left-placeholder">
+            <h2 class="section-title skills-placeholder">
                 My <span class="h2-highlight">Skills</span>
             </h2>
-            <animated.div style={zoomOut}>
+            <animated.div style={zoomOutSkills}>
                 <div id="skills-container">
                     <div id="coding-picture-column">
                         <img src={Coder} alt="person-coding" id="coding-img"/>
@@ -154,13 +154,13 @@ export const FrontPageComponent = ({
 
         <div class="content-container" id="projects">
             
-            <h2 class="opposite-section-title"><span class="h2-highlight">Projects</span></h2>
+            <h2 class="opposite-section-title projects-placeholder"><span class="h2-highlight">Projects</span></h2>
             
-                <animated.div style={zoomOut}>
+                <animated.div style={zoomOutProjects}>
                     <div id="projects-container">
                         <div id="projects-column">
                             <h3 class='underline-regular' id='projects-h3'>Gmail Clone</h3>
-                            <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App, that encompasses the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with.</p>
+                            <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompasses the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with.</p>
                             <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>
                             <div id='gmail-list-container'> 
                                 <div class='gmail-list-half'>
@@ -193,10 +193,8 @@ export const FrontPageComponent = ({
                             </div>
                         </div>
                         <div id="projects-picture-column">
-                            <div id='gmail-glass'
-                                onMouseEnter={handleGmailMouseEnter}
-                            >
-                                <img src={Gmail} alt="" id={ hoveredGmail ? 'gmail-img-hovered' : "gmail-img"}/>
+                            <div id='gmail-glass'>
+                                <img src={Gmail} alt="" id={ unBlurGmail ? 'gmail-img-hovered' : "gmail-img"}/>
                             </div>
                         </div>
                     </div>

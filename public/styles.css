@@ -366,6 +366,11 @@ header ul li:hover {
 
 .slide-in-left {
     animation: slide-in-left 2s ease-out;
+    visibility: visible !important;    
+}
+
+.skills-placeholder {
+    visibility: hidden;
 }
 
 @keyframes slide-in-left {
@@ -445,6 +450,24 @@ header ul li:hover {
 
 /* Projects */
 
+.projects-placeholder {
+    visibility: hidden;
+}
+
+.slide-in-right {
+    animation: slide-in-right 1s ease-out;
+    visibility: visible !important;    
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .opposite-section-title {
     font-size: 50px;
     margin-left: 80%;
@@ -492,10 +515,14 @@ header ul li:hover {
 }
 
 #projects-container {
-    /* visibility: hidden; */
+    visibility: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-gap: 0rem 5rem; 
+}
+
+.show-projects {
+    visibility: visible !important;
 }
 
 #projects-column {

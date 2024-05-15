@@ -5,15 +5,16 @@ import { useSpring } from 'react-spring';
 
 export const FrontPageContainer = () => {
 
-    const [show, setShow] = useState(false);
-    const [hoveredGmail, setHoveredGmail] = useState(false);
+    const [showSkills, setShowSkills] = useState(false);
+    const [showProjects, setShowProjects] = useState(false);
+    const [unBlurGmail, setUnBlurGmail] = useState(false);
 
 // Animations
 
 // Skills Tittle Slide In Animation
 
     useEffect(() => {
-        const divs = document.querySelectorAll('.slide-in-left-placeholder');
+        const divs = document.querySelectorAll('.skills-placeholder');
 
         // Create an intersection observer
         const observer = new IntersectionObserver(entries => {
@@ -42,7 +43,7 @@ export const FrontPageContainer = () => {
             entries.forEach(entry => {  
                 // If the element is visible
                 if (entry.isIntersecting) {
-                    setShow(true);
+                    setShowSkills(true);
                     entry.target.classList.add('show-skills');
                 } 
             });
@@ -52,9 +53,9 @@ export const FrontPageContainer = () => {
         observer.observe(container);
     }, []);
 
-    const zoomOut = useSpring({
+    const zoomOutSkills = useSpring({
         from: { scale: 0.4 },
-        to: { scale: show ? 1 : 0.4 },
+        to: { scale: showSkills ? 1 : 0.4 },
         config: {
             duration: 1000,
             tension: 170,
@@ -64,39 +65,67 @@ export const FrontPageContainer = () => {
 
 // Projects
 
+// Projects Tittle Slide In Animation
+
+    useEffect(() => {
+        const divs = document.querySelectorAll('.projects-placeholder');
+
+        // Create an intersection observer
+        const observer = new IntersectionObserver(entries => {
+            // Loop over the entries
+            entries.forEach(entry => {  
+                // If the element is visible
+                if (entry.isIntersecting) {
+                    // Add the animation class
+                    entry.target.classList.add('slide-in-right');
+                } 
+            });
+        });
+
+        // Observe each div
+        divs.forEach(div => observer.observe(div));
+    }, []);
+
 // Projects Container Zoom Animation
 
-useEffect(() => {
-    const container = document.querySelector('#projects-container');
+    useEffect(() => {
+        const container = document.querySelector('#projects-container');
 
-    // Create an intersection observer
-    const observer = new IntersectionObserver(entries => {
-        // Loop over the entries
-        entries.forEach(entry => {  
-            // If the element is visible
-            if (entry.isIntersecting) {
-                setShow(true);
-                entry.target.classList.add('show-projects');
-            } 
-        });
-    }, { threshold: 1 });
+        // Create an intersection observer
+        const observer = new IntersectionObserver(entries => {
+            // Loop over the entries
+            entries.forEach(entry => {  
+                // If the element is visible
+                if (entry.isIntersecting) {
+                    setShowProjects(true);
+                    entry.target.classList.add('show-projects');
+                    setTimeout(() => {
+                        setUnBlurGmail(true);
+                    }, 1000);
+                } 
+            });
+        }, { threshold: 1 });
 
-    // Observe the container
-    observer.observe(container);
-}, []);
-    
-// Gmail Hover 
+        // Observe the container
+        observer.observe(container);
+    }, []);
 
-    const handleGmailMouseEnter = () => {
-        setHoveredGmail(true);
-    };
+    const zoomOutProjects = useSpring({
+        from: { scale: 0.4 },
+        to: { scale: showProjects ? 1 : 0.4 },
+        config: {
+            duration: 1000,
+            tension: 170,
+            friction: 20,
+        },
+    });
 
     return (
         <>
             <FrontPageComponent 
-                zoomOut={zoomOut}
-                hoveredGmail={hoveredGmail}
-                handleGmailMouseEnter={handleGmailMouseEnter}
+                zoomOutSkills={zoomOutSkills}
+                zoomOutProjects={zoomOutProjects}
+                unBlurGmail={unBlurGmail}
             />
         </>
     );
