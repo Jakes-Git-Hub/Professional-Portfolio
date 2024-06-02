@@ -14,7 +14,7 @@ export const FrontPageComponent = ({
 
 {/* Welcome Screen */}
 
-            <WelcomeAnimation />
+            {/* <WelcomeAnimation /> */}
 
 {/* Header */}
 
@@ -81,9 +81,9 @@ export const FrontPageComponent = ({
                             <br />
                             <br />
                             I have a thirst for pushing my capabilities.
-                            {/* <br />
                             <br />
-                            I am also an experienced Forex trader. */}
+                            <br />
+                            I am also an experienced Forex trader.
                         </p>
                     </div>
                 </div>
@@ -141,9 +141,9 @@ export const FrontPageComponent = ({
                             </div>
                         </div>
                         <div class="row" id="small-about">
-                            <h4>I love learning about and implementing powerful and sophisticated Web Development solutions.</h4>
-                            <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, determination and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Overwatch, or playing the drums - all of which displays grit, resiliance, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing (characterisitic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing pieces of software.</p>        
-                            <p>It seems like all the intricate, yet simple well oiled parts of WebDev and the challenge of the learning curve garnered my attention and I became hooked. Seeing my progression and skills increase quickly and then realising what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
+                            <h4>I love learning about and implementing powerful, sophisticated Web Development solutions.</h4>
+                            <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, determination and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Overwatch, or playing the drums (play at grade 7/8) - all of which displays grit, resiliance, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing (characterisitic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
+                            <p>It seems like all intricate, yet simple well oiled parts of Web Dev and the challenge of the learning curve garnered my attention and I became hooked. Seeing my progression and skills increase quickly and then realising what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
                         </div>
                     </div>
                 </div>
@@ -158,9 +158,9 @@ export const FrontPageComponent = ({
             
                 <animated.div style={zoomOutProjects}>
                     <div id="projects-container">
-                        <div id="projects-column">
-                            <h3 class='underline-regular' id='projects-h3'>Gmail Clone</h3>
-                            <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompasses the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with.</p>
+                        <div id="projects-column-writting">
+                            <h3 id='projects-h3'>Gmail Clone</h3>
+                            <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with.</p>
                             <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>
                             <div id='gmail-list-container'> 
                                 <div class='gmail-list-half'>
@@ -187,64 +187,41 @@ export const FrontPageComponent = ({
                                         <li>Working with SVGS</li>
                                         <li>Regex</li>
                                         <li>Writing clean modular code (important to work with and test)</li>
-                                        <li>For loops</li>
+                                        <li>Loops</li>
                                     </ul>
                                 </div>
                             </div>
+                            <div class='find-out-and-live-buttons'>
+                                <button class='standard-button'>
+                                    Find out more
+                                </button>  
+                                <button class='standard-button'>
+                                    Live Site
+                                </button>               
+                            </div>
+
                         </div>
                         <div id="projects-picture-column">
-                            <div id='gmail-glass'>
-                                <img src={Gmail} alt="" id={ unBlurGmail ? 'gmail-img-hovered' : "gmail-img"}/>
-                            </div>
+                            <img src={Gmail} alt="" id={ unBlurGmail ? 'gmail-img-unblur' : "gmail-img"}/>
                         </div>
                     </div>
                 </animated.div>
+
+                <div id='projects-grid'>
+                    <div class='project-case'>
+                        <div class='project-image-container'>
+
+                        </div>
+                        <div class='project-image-container'>
+
+                        </div>
+                    </div>
+                </div>
         </div>
+
+        
+        
 
         </>
     );
 }
-
-{/* <div class="row" id="skills-box">
-                                <div class="skill-container">
-                                    <p>React</p>
-                                </div>
-                                <div class="skill-container">
-                                    <p>HTML</p>
-                                </div>
-                                <div class="skill-container">
-                                    <p>CSS</p>
-                                </div>
-                                <div class="skill-container">
-                                    <p>JavaScript</p>
-                                </div>
-                                <div class="skill-container">
-                                    <p>Node.js</p>
-                                </div>
-                                <div class="skill-container">
-                                    <p>Git</p>
-                                </div>
-                                <div class="skill-container">
-                                    <p>GitHub</p>
-                                </div>
-                                <div class="skill-container">
-                                    <p>Netlify</p>
-                                </div>
-                                <div class="skill-container">
-                                    <p>Express.js</p>
-                                </div>
-                                <div class="skill-container">
-                                    <p>MUI</p>
-                                </div>
-                                <div class="skill-container">
-                                    <p>Axios</p>
-                                </div>
-                                <div class="skill-container">
-                                    <p>Jest/ React Testing Library</p>
-                                </div>
-                            </div>
-                            <div class="row" id="small-about">
-                                <h4>I love learning about and implementing powerful and sophisticated Web Development solutions.</h4>
-                                <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, dedication and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Overwatch, or playing the drums - all of which displays grit, resiliance, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing (characterisitic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
-                                <p>It seems like all the intricate, yet simple well oiled parts of WebDev and the challenge of the learning curve garnered my attention and I became hooked. Seeing my progression and skills increase quickly and then realising what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
-                            </div> */}
