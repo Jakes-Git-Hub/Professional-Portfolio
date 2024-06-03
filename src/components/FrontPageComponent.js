@@ -3,6 +3,11 @@ import Coder from '../images/Coder.webp';
 import Gmail from '../images/Gmail-Preview.png';
 import WelcomeAnimation from '../assets/WelcomeAnimation';
 import { animated } from 'react-spring';
+import Adopt from '../images/Adopt-a-Pet.png';
+import Appointment from '../images/Appointment-Planner.png';
+import NumberGuesser from '../images/Number-Guesser.png';
+import TechNews from '../images/Tech-News.png';
+import Jammming from '../images/Jammming.png';
 
 export const FrontPageComponent = ({
     zoomOutSkills={zoomOutSkills},
@@ -91,134 +96,166 @@ export const FrontPageComponent = ({
 
 {/* My Skills */}
 
-        <div class="content-container">
-            
-            <h2 class="section-title skills-placeholder">
-                My <span class="h2-highlight">Skills</span>
-            </h2>
-            <animated.div style={zoomOutSkills}>
-                <div id="skills-container">
-                    <div id="coding-picture-column">
-                        <img src={Coder} alt="person-coding" id="coding-img"/>
-                    </div>
-                    <div id="skills-column">
-                        <div class="row" id="skills-box">
-                            <div class="skill-container">
-                                <p>React</p>
-                            </div>
-                            <div class="skill-container">
-                                <p>HTML</p>
-                            </div>
-                            <div class="skill-container">
-                                <p>CSS</p>
-                            </div>
-                            <div class="skill-container">
-                                <p>JavaScript</p>
-                            </div>
-                            <div class="skill-container">
-                                <p>Node.js</p>
-                            </div>
-                            <div class="skill-container">
-                                <p>Git</p>
-                            </div>
-                            <div class="skill-container">
-                                <p>GitHub</p>
-                            </div>
-                            <div class="skill-container">
-                                <p>Netlify</p>
-                            </div>
-                            <div class="skill-container">
-                                <p>Express.js</p>
-                            </div>
-                            <div class="skill-container">
-                                <p>MUI</p>
-                            </div>
-                            <div class="skill-container">
-                                <p>Axios</p>
-                            </div>
-                            <div class="skill-container">
-                                <p>Jest/ React Testing Library</p>
-                            </div>
+            <div class="content-container">
+                
+                <h2 class="section-title skills-placeholder">
+                    My <span class="h2-highlight">Skills</span>
+                </h2>
+                <animated.div style={zoomOutSkills}>
+                    <div id="skills-container">
+                        <div id="coding-picture-column">
+                            <img src={Coder} alt="person-coding" id="coding-img"/>
                         </div>
-                        <div class="row" id="small-about">
-                            <h4>I love learning about and implementing powerful, sophisticated Web Development solutions.</h4>
-                            <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, determination and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Overwatch, or playing the drums (play at grade 7/8) - all of which displays grit, resiliance, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing (characterisitic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
-                            <p>It seems like all intricate, yet simple well oiled parts of Web Dev and the challenge of the learning curve garnered my attention and I became hooked. Seeing my progression and skills increase quickly and then realising what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
-                        </div>
-                    </div>
-                </div>
-            </animated.div>
-        </div>
-
-        {/* Projects */}
-
-        <div class="content-container" id="projects">
-            
-            <h2 class="opposite-section-title projects-placeholder"><span class="h2-highlight">Projects</span></h2>
-            
-                <animated.div style={zoomOutProjects}>
-                    <div id="projects-container">
-                        <div id="projects-column-writting">
-                            <h3 id='projects-h3'>Gmail Clone</h3>
-                            <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with.</p>
-                            <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>
-                            <div id='gmail-list-container'> 
-                                <div class='gmail-list-half'>
-                                    <ul id='gmail-list' class='projects-p'> 
-                                        <li>React Router DOM</li>
-                                        <li>React Hooks</li>
-                                        <li>Asynchronous RESTful API's</li>
-                                        <li>.env Variables</li>
-                                        <li>DOM Manipulation</li>
-                                        <li>JSX injection</li>
-                                        <li>Ternary Operators</li>
-                                        <li>JS Short Circuits</li>
-                                        <li>Dyanmic Rendering from nested object based on global state</li>
-                                        <li>Folder/ file directory best practices</li>
-                                    </ul>
+                        <div id="skills-column">
+                            <div class="row" id="skills-box">
+                                <div class="skill-container">
+                                    <p>React</p>
                                 </div>
-                                <div class='gmail-list-half'>
-                                    <ul id='gmail-list' class='projects-p'>
-                                        <li>Array methods and manipulation</li>
-                                        <li>Utilising and manipulting JSON</li>
-                                        <li>React Select UI Component</li>
-                                        <li>ARIA</li>
-                                        <li>Responsivity</li>
-                                        <li>Working with SVGS</li>
-                                        <li>Regex</li>
-                                        <li>Writing clean modular code (important to work with and test)</li>
-                                        <li>Loops</li>
-                                    </ul>
+                                <div class="skill-container">
+                                    <p>HTML</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>Node.js</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>Git</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>GitHub</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>Netlify</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>Express.js</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>MUI</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>Axios</p>
+                                </div>
+                                <div class="skill-container">
+                                    <p>Jest/ React Testing Library</p>
                                 </div>
                             </div>
-                            <div class='find-out-and-live-buttons'>
-                                <button class='standard-button'>
-                                    Find out more
-                                </button>  
-                                <button class='standard-button'>
-                                    Live Site
-                                </button>               
+                            <div class="row" id="small-about">
+                                <h4>I love learning about and implementing powerful, sophisticated Web Development solutions.</h4>
+                                <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, determination and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Overwatch, or playing the drums (play at grade 7/8) - all of which displays grit, resiliance, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing (characterisitic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
+                                <p>It seems like all intricate, yet simple well oiled parts of Web Dev and the challenge of the learning curve garnered my attention and I became hooked. Seeing my progression and skills increase quickly and then realising what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
                             </div>
-
-                        </div>
-                        <div id="projects-picture-column">
-                            <img src={Gmail} alt="" id={ unBlurGmail ? 'gmail-img-unblur' : "gmail-img"}/>
                         </div>
                     </div>
                 </animated.div>
+            </div>
 
-                <div id='projects-grid'>
-                    <div class='project-case'>
-                        <div class='project-image-container'>
+{/* Projects */}
 
+            <div class="content-container" id="projects">
+                
+                <h2 class="opposite-section-title projects-placeholder"><span class="h2-highlight">Projects</span></h2>
+                
+                    <animated.div style={zoomOutProjects}>
+                        <div id="projects-container">
+                            <div id="projects-column-writting">
+                                <h3 id='projects-h3'>Gmail Clone</h3>
+                                <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with.</p>
+                                <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>
+                                <div id='gmail-list-container'> 
+                                    <div class='gmail-list-half'>
+                                        <ul id='gmail-list' class='projects-p'> 
+                                            <li>React Router DOM</li>
+                                            <li>React Hooks</li>
+                                            <li>Asynchronous RESTful API's</li>
+                                            <li>.env Variables</li>
+                                            <li>DOM Manipulation</li>
+                                            <li>JSX injection</li>
+                                            <li>Ternary Operators</li>
+                                            <li>JS Short Circuits</li>
+                                            <li>Dyanmic Rendering from nested object based on global state</li>
+                                            <li>Folder/ file directory best practices</li>
+                                        </ul>
+                                    </div>
+                                    <div class='gmail-list-half'>
+                                        <ul id='gmail-list' class='projects-p'>
+                                            <li>Array methods and manipulation</li>
+                                            <li>Utilising and manipulting JSON</li>
+                                            <li>React Select UI Component</li>
+                                            <li>ARIA</li>
+                                            <li>Responsivity</li>
+                                            <li>Working with SVGS</li>
+                                            <li>Regex</li>
+                                            <li>Writing clean modular code (important to work with and test)</li>
+                                            <li>Loops</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class='find-out-and-live-buttons'>
+                                    <button class='standard-button'>
+                                        Find out more
+                                    </button>  
+                                    <button class='standard-button'>
+                                        Live Site
+                                    </button>               
+                                </div>
+
+                            </div>
+                            <div id="projects-picture-column">
+                                <img src={Gmail} alt="" id={ unBlurGmail ? 'gmail-img-unblur' : "gmail-img"}/>
+                            </div>
                         </div>
-                        <div class='project-image-container'>
+                    </animated.div>
+            </div>
 
-                        </div>
+            <div id='projects-grid'>
+                <div class='project-case'>
+                    <div class='project-image-container'>
+                        <img src={Jammming} alt='Jammming' id='jammming'/>
+                    </div>
+                    <div class='project-description-container'>
+                        <h3>Jammming</h3>
                     </div>
                 </div>
-        </div>
-
+                <div class='project-case'>
+                    <div class='project-image-container'>
+                        <img src={Adopt} alt='Adopt a Pet' id='adopt'/>
+                    </div>
+                    <div class='project-description-container'>
+                        <h3>Adopt a Pet</h3>
+                    </div>
+                </div>
+                <div class='project-case'>
+                    <div class='project-image-container'>
+                        <img src={TechNews} alt='Tech News' id='tech-news'/>
+                    </div>
+                    <div class='project-description-container'>
+                        <h3>Tech News</h3>
+                    </div>
+                </div>
+                <div class='project-case'>
+                    <div class='project-image-container'>
+                        <img src={NumberGuesser} alt='Number Guesser' id='number-guesser'/>
+                    </div>
+                    <div class='project-description-container'>
+                        <h3>Number Guesser</h3>
+                    </div>
+                </div>
+                <div class='project-case'>
+                    <div class='project-image-container-appointment'>
+                        <img src={Appointment} alt='Appointment Planner' id='appointment'/>
+                    </div>
+                    <div class='project-description-container'>
+                        <h3>Appointment Planner</h3>
+                    </div>
+                </div>
+                <div id='grid-buffer'></div>
+            </div>
         
         
 

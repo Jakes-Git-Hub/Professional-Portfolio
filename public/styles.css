@@ -504,15 +504,14 @@ header ul li:hover {
     background: rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(15px); 
     box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.37);
+    transition: bottom 1s ease;
 }
 
 #gmail-img-unblur:hover {
-    height: 90%;
-    width: 80%;
     cursor: pointer;
     bottom: 5px;
     box-shadow: 0 13px 30px 0 rgba(31, 38, 135, 0.37);
-
+    transition: bottom 1s ease;
 }
 
 @keyframes unBlur {
@@ -540,6 +539,7 @@ header ul li:hover {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-gap: 0rem 5rem; 
+    margin-bottom: 40px;
 }
 
 .show-projects {
@@ -616,6 +616,95 @@ header ul li:hover {
     background-color: rgb(255, 98, 0);
     font-size: 16px;
     text-decoration: underline;
+}
+
+#projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 120px 200px 60px ;
+    border: black 2px solid;
+    border-radius: 8px;
+}
+
+.project-case {
+    height: 500px;
+    width: 400px;
+    margin-top: 70px;
+    border: black 2px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.project-image-container{
+    height: 60%;
+    width: calc(100% - 20px);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: black 2px solid;
+    box-sizing: border-box; 
+    margin: 10px 10px 0 10px;
+}
+
+.project-image-container-appointment{
+    height: 60%;
+    width: calc(100% - 20px);
+    overflow: hidden;
+    border-radius: 4px;
+    border: black 2px solid;
+    box-sizing: border-box; 
+    margin: 10px 10px 0 10px;
+}
+
+.project-description-container {
+    height: 30%;
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 10px;
+}
+
+#adopt {
+    height: 100%;
+    width: 100%;
+}
+
+#number-guesser {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+#appointment {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+#jammming {
+    height: 100%;
+    width: 100%;
+}
+
+#tech-news {
+    height: 100%;
+    width: auto;
+}
+
+#preview-image {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+#grid-buffer {
+    height: 70px;
+    width: 100%;
 }
 
 
