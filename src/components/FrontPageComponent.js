@@ -9,6 +9,9 @@ import NumberGuesser from '../images/Number-Guesser.png';
 import TechNews from '../images/Tech-News.png';
 import Jammming from '../images/Jammming.png';
 
+{/* <div id='upside-down-squiggle'>
+            </div> */}
+
 export const FrontPageComponent = ({
     zoomOutSkills={zoomOutSkills},
     zoomOutProjects={zoomOutProjects},
@@ -214,51 +217,54 @@ export const FrontPageComponent = ({
                     </animated.div>
             </div>
 
-            <div id='projects-grid'>
-                <div class='project-case'>
-                    <div class='project-image-container'>
-                        <img src={Jammming} alt='Jammming' id='jammming'/>
+            <div id='black-buffer'></div>
+            
+            <div id='black-background-project'>
+                <div id='projects-grid'>
+                    <div class='project-case'>
+                        <div class='project-image-container'>
+                            <img src={Jammming} alt='Jammming' class='preview-image' id='preview-image'/>
+                        </div>
+                        <div class='project-description-container'>
+                            <h3>Jammming</h3>
+                        </div>
                     </div>
-                    <div class='project-description-container'>
-                        <h3>Jammming</h3>
+                    <div class='project-case'>
+                        <div class='project-image-container'>
+                            <img src={Adopt} alt='Adopt a Pet' class='preview-image' id='adopt'/>
+                        </div>
+                        <div class='project-description-container'>
+                            <h3>Adopt a Pet</h3>
+                        </div>
                     </div>
+                    <div class='project-case'>
+                        <div class='project-image-container'>
+                            <img src={TechNews} alt='Tech News' class='preview-image' id='tech-news'/>
+                        </div>
+                        <div class='project-description-container'>
+                            <h3>Tech News</h3>
+                        </div>
+                    </div>
+                    <div class='project-case'>
+                        <div class='project-image-container-appointment'>
+                            <img src={Appointment} alt='Appointment Planner' class='preview-image' id='appointment'/>
+                        </div>
+                        <div class='project-description-container'>
+                            <h3>Appointment Planner</h3>
+                        </div>
+                    </div>
+                    <div class='project-case'>
+                        <div class='project-image-container'>
+                            <img src={NumberGuesser} alt='Number Guesser' class='preview-image' id='number-guesser'/>
+                        </div>
+                        <div class='project-description-container'>
+                            <h3>Number Guesser</h3>
+                        </div>
+                    </div>
+                    <div id='grid-buffer'></div>
                 </div>
-                <div class='project-case'>
-                    <div class='project-image-container'>
-                        <img src={Adopt} alt='Adopt a Pet' id='adopt'/>
-                    </div>
-                    <div class='project-description-container'>
-                        <h3>Adopt a Pet</h3>
-                    </div>
-                </div>
-                <div class='project-case'>
-                    <div class='project-image-container'>
-                        <img src={TechNews} alt='Tech News' id='tech-news'/>
-                    </div>
-                    <div class='project-description-container'>
-                        <h3>Tech News</h3>
-                    </div>
-                </div>
-                <div class='project-case'>
-                    <div class='project-image-container'>
-                        <img src={NumberGuesser} alt='Number Guesser' id='number-guesser'/>
-                    </div>
-                    <div class='project-description-container'>
-                        <h3>Number Guesser</h3>
-                    </div>
-                </div>
-                <div class='project-case'>
-                    <div class='project-image-container-appointment'>
-                        <img src={Appointment} alt='Appointment Planner' id='appointment'/>
-                    </div>
-                    <div class='project-description-container'>
-                        <h3>Appointment Planner</h3>
-                    </div>
-                </div>
-                <div id='grid-buffer'></div>
             </div>
 
-             
         </>
     );
 }
