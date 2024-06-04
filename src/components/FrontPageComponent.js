@@ -157,7 +157,8 @@ export const FrontPageComponent = ({
 
 {/* Projects */}
 
-            <div class="content-container" id="projects">
+
+            <div class="content-container-projects" id='squiggle-divide-project'>
                 
                 <h2 class="opposite-section-title projects-placeholder"><span class="h2-highlight">Projects</span></h2>
                 
@@ -256,9 +257,8 @@ export const FrontPageComponent = ({
                 </div>
                 <div id='grid-buffer'></div>
             </div>
-        
-        
 
+             
         </>
     );
 }

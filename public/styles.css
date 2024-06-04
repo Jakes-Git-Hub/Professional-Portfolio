@@ -351,7 +351,6 @@ header ul li:hover {
 
 .content-container{
     margin: 10.24vh 10.42vw;
-    /* z-index: 2; */
 }
 
 .h2-highlight {
@@ -444,11 +443,29 @@ header ul li:hover {
     margin-top: 0;
 }
 
-#read-bio {
-    color: rgb(255, 98, 0);
+/* Projects */
+
+#squiggle-divide-project {
+    background-image: url('./layered-divider.svg');
+    background-size: cover;
+    background-position: center top;
 }
 
-/* Projects */
+.content-container-projects {
+    padding: 10.24vh 10.42vw;
+}
+
+.portfolio-section {
+    position: relative; /* Required for SVG positioning */
+}
+  
+.section-divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Adjust height as needed */
+}
 
 .projects-placeholder {
     visibility: hidden;
@@ -510,9 +527,11 @@ header ul li:hover {
 #gmail-img-unblur:hover {
     cursor: pointer;
     bottom: 5px;
-    box-shadow: 0 13px 30px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 13px 30px 0 rgb(255 98 0 / 85%);
     transition: bottom 1s ease;
 }
+
+
 
 @keyframes unBlur {
     0% {
@@ -553,6 +572,8 @@ header ul li:hover {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    background: white;
+    border-radius: 8px;
 }
 
 .underline-regular {
@@ -562,10 +583,11 @@ header ul li:hover {
 .projects-p {
     align-self: flex-start;
     font-size: 17px;
+    margin: 17px 50px;
 }
 
 #projects-h3{
-    margin-bottom: 30px;
+    margin: 60px 0 30px 0;
     font-size: 27.5px;
 }
 
@@ -623,7 +645,7 @@ header ul li:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin: 120px 200px 60px ;
+    margin: 160px 200px 60px ;
     border: black 2px solid;
     border-radius: 8px;
 }
