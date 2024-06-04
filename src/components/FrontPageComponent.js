@@ -3,11 +3,23 @@ import Coder from '../images/Coder.webp';
 import Gmail from '../images/Gmail-Preview.png';
 import WelcomeAnimation from '../assets/WelcomeAnimation';
 import { animated } from 'react-spring';
-import Adopt from '../images/Adopt-a-Pet.png';
-import Appointment from '../images/Appointment-Planner.png';
-import NumberGuesser from '../images/Number-Guesser.png';
-import TechNews from '../images/Tech-News.png';
-import Jammming from '../images/Jammming.png';
+import adopt from '../images/Adopt-a-Pet.png';
+import appointment from '../images/Appointment-Planner.png';
+import numberGuesser from '../images/Number-Guesser.png';
+import techNews from '../images/Tech-News.png';
+import jammming from '../images/Jammming.png';
+import reactIcon from '../images/React-icon.png';
+import reduxIcon from '../images/Redux-icon.svg';
+import htmlIcon from '../images/Html-icon.webp';
+import cssIcon from '../images/Css-icon.webp';
+import jsIcon from '../images/Js-icon.png';
+import nodeIcon from '../images/Node.js-icon.png';
+import gitIcon from '../images/git-icon.png';
+import netlifyIcon from '../images/netlify-icon.png';
+import axiosIcon from '../images/axios-logo.png';
+import jestIcon from '../images/Jest-icon.png';
+import reactTLIcon from '../images/react-testing-library-logo.png';
+import restApiIcon from '../images/rest-api-icon.png';
 
 {/* <div id='upside-down-squiggle'>
             </div> */}
@@ -200,6 +212,18 @@ export const FrontPageComponent = ({
                                         </ul>
                                     </div>
                                 </div>
+                                <div id='gmail-tech-svgs'>
+                                    <img class='tech-icon' src={reactIcon}></img>
+                                    <img class='tech-icon' src={htmlIcon}></img>
+                                    <img class='tech-icon' src={cssIcon}></img>
+                                    <img class='tech-icon' src={jsIcon}></img>
+                                    <img class='tech-icon' src={nodeIcon}></img>
+                                    <img class='tech-icon' src={gitIcon}></img>
+                                    <img class='tech-icon' src={netlifyIcon}></img>
+                                    <img class='tech-icon' src={axiosIcon}></img>
+                                    <img class='tech-icon' src={jestIcon}></img>
+                                    <img class='tech-icon' src={reactTLIcon}></img>
+                                </div>
                                 <div class='find-out-and-live-buttons'>
                                     <button class='standard-button'>
                                         Find out more
@@ -223,42 +247,47 @@ export const FrontPageComponent = ({
                 <div id='projects-grid'>
                     <div class='project-case'>
                         <div class='project-image-container'>
-                            <img src={Jammming} alt='Jammming' class='preview-image' id='preview-image'/>
+                            <img src={jammming} alt='Jammming' class='preview-image' id='preview-image'/>
                         </div>
                         <div class='project-description-container'>
-                            <h3>Jammming</h3>
+                            <h3 class='project-desc-h3'>Jammming</h3>
+                            <p class='project-desc-p'>An app that allows you to search for music on Spotify and create a playlist.</p>
+                            <div class='project-desc-svg-container'>
+                                <img class='desc-svg-icon' src={reactIcon}></img> 
+                                <img class='desc-svg-icon' src={restApiIcon}></img> 
+                            </div>
                         </div>
                     </div>
                     <div class='project-case'>
                         <div class='project-image-container'>
-                            <img src={Adopt} alt='Adopt a Pet' class='preview-image' id='adopt'/>
+                            <img src={adopt} alt='Adopt a Pet' class='preview-image' id='adopt'/>
                         </div>
                         <div class='project-description-container'>
-                            <h3>Adopt a Pet</h3>
+                            <h3 class='project-desc-h3'>Adopt a Pet</h3>
                         </div>
                     </div>
                     <div class='project-case'>
                         <div class='project-image-container'>
-                            <img src={TechNews} alt='Tech News' class='preview-image' id='tech-news'/>
+                            <img src={techNews} alt='Tech News' class='preview-image' id='tech-news'/>
                         </div>
                         <div class='project-description-container'>
-                            <h3>Tech News</h3>
+                            <h3 class='project-desc-h3'>Tech News</h3>
                         </div>
                     </div>
                     <div class='project-case'>
                         <div class='project-image-container-appointment'>
-                            <img src={Appointment} alt='Appointment Planner' class='preview-image' id='appointment'/>
+                            <img src={appointment} alt='Appointment Planner' class='preview-image' id='appointment'/>
                         </div>
                         <div class='project-description-container'>
-                            <h3>Appointment Planner</h3>
+                            <h3 class='project-desc-h3'>Appointment Planner</h3>
                         </div>
                     </div>
                     <div class='project-case'>
                         <div class='project-image-container'>
-                            <img src={NumberGuesser} alt='Number Guesser' class='preview-image' id='number-guesser'/>
+                            <img src={numberGuesser} alt='Number Guesser' class='preview-image' id='number-guesser'/>
                         </div>
                         <div class='project-description-container'>
-                            <h3>Number Guesser</h3>
+                            <h3 class='project-desc-h3'>Number Guesser</h3>
                         </div>
                     </div>
                     <div id='grid-buffer'></div>
