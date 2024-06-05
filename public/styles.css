@@ -582,8 +582,8 @@ header ul li:hover {
     margin: 17px 50px;
 }
 
-#projects-h3{
-    margin: 60px 0 30px 0;
+#projects-h3 {
+    margin: 55px 0 30px 0;
     font-size: 27.5px;
 }
 
@@ -603,16 +603,30 @@ header ul li:hover {
 #gmail-tech-svgs {
     height: 60px;
     width: 90%;
-    margin-bottom: 40px;
+    margin: 20px 0 40px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .tech-icon {
-    height: 80%;
-    width: 50px;
+    height: 75%;
+    width: 45px;
 }
+
+.tech-icon-js {
+    height: 60%;
+    width: 40px;
+    top: 3px;
+    position: relative;
+}
+
+.tech-icon-html {
+    height: 75%;
+    width: 60px;
+    margin: 0 -10px 0;
+}
+
 
 .find-out-and-live-buttons{
     display: flex;
@@ -715,7 +729,7 @@ header ul li:hover {
     height: 32.5%;
     width: calc(100% - 20px);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: white;
     border-radius: 4px;
     margin: 10px;
@@ -726,22 +740,26 @@ header ul li:hover {
 }
 
 .project-desc-h3 {
-
+    margin: 7.5px 0 0 0;
 }
 
 .project-desc-p {
-
+    text-align: center;
+    margin: 0 15px 0
 }
 
 .project-desc-svg-container {
     display: flex;
     height: 30px;
     width: 90%;
+    margin: 0 0 5px 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .desc-svg-icon {
     height: 80%;
-    /* width: 50px; */
+    margin-right: 20px;
 }
 
 #adopt {

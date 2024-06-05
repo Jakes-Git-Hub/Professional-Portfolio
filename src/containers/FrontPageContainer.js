@@ -9,6 +9,12 @@ export const FrontPageContainer = () => {
     const [showProjects, setShowProjects] = useState(false);
     const [unBlurGmail, setUnBlurGmail] = useState(false);
 
+// Page Hero SVG's
+
+    const handleGitHubClick = () => {
+        window.open('https://github.com/Jakes-Git-Hub?tab=repositories', '_blank');
+    }
+
 // Animations
 
 // Skills Tittle Slide In Animation
@@ -123,6 +129,7 @@ export const FrontPageContainer = () => {
     return (
         <>
             <FrontPageComponent 
+                handleGitHubClick={handleGitHubClick}
                 zoomOutSkills={zoomOutSkills}
                 zoomOutProjects={zoomOutProjects}
                 unBlurGmail={unBlurGmail}
