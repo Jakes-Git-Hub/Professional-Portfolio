@@ -685,7 +685,16 @@ header ul li:hover {
     margin: 0 200px 60px ;
     border: grey 2px solid;
     border-radius: 8px;
+    background-image: url(3-waves-bg.svg);
+    background-size: 2000px 100%;
+    animation: gradient 10s infinite alternate linear;
 }
+
+@keyframes gradient {
+    100% {
+      background-size: 4000px 100%;
+    }
+  }
 
 .project-case {
     height: 500px;
@@ -694,13 +703,14 @@ header ul li:hover {
     border: grey 2px solid;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: black;
 }
 
-/* .project-case:hover {
+.project-case:hover {
     cursor: pointer;
     transform: translateY(-2.5px);
     box-shadow: 0 13px 30px 0 rgb(255 98 0 / 85%);
-} */
+}
 
 .project-image-container{
     height: 60%;

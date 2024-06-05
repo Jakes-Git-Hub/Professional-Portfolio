@@ -8,6 +8,7 @@ export const FrontPageContainer = () => {
     const [showSkills, setShowSkills] = useState(false);
     const [showProjects, setShowProjects] = useState(false);
     const [unBlurGmail, setUnBlurGmail] = useState(false);
+    const [isMouseOverProjectCase, setIsMouseOverProjectCase] = useState(false);
 
 // Page Hero SVG's
 
@@ -126,6 +127,14 @@ export const FrontPageContainer = () => {
         },
     });
 
+    const handleProjectCaseMouseEnter = () => {
+        setIsMouseOverProjectCase(true);
+    };
+    
+    const handleProjectCaseMouseLeave = () => {
+        setIsMouseOverProjectCase(false);
+    };
+
     return (
         <>
             <FrontPageComponent 
@@ -133,6 +142,9 @@ export const FrontPageContainer = () => {
                 zoomOutSkills={zoomOutSkills}
                 zoomOutProjects={zoomOutProjects}
                 unBlurGmail={unBlurGmail}
+                handleProjectCaseMouseEnter={handleProjectCaseMouseEnter}
+                handleProjectCaseMouseLeave={handleProjectCaseMouseLeave}
+                isMouseOverProjectCase={isMouseOverProjectCase}
             />
         </>
     );

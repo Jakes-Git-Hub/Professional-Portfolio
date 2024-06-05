@@ -30,6 +30,9 @@ export const FrontPageComponent = ({
     zoomOutSkills,
     zoomOutProjects,
     unBlurGmail,
+    handleProjectCaseMouseEnter,
+    handleProjectCaseMouseLeave,
+    isMouseOverProjectCase,
 }) => {
 
     return (
