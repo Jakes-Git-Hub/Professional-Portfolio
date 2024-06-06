@@ -30,9 +30,7 @@ export const FrontPageComponent = ({
     zoomOutSkills,
     zoomOutProjects,
     unBlurGmail,
-    handleProjectCaseMouseEnter,
-    handleProjectCaseMouseLeave,
-    isMouseOverProjectCase,
+    handleGMailFindOutMoreClick,
 }) => {
 
     return (
@@ -194,7 +192,8 @@ export const FrontPageComponent = ({
                         <div id="projects-container">
                             <div id="projects-column-writting">
                                 <h3 id='projects-h3'>Gmail Clone</h3>
-                                <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with.</p>
+                                <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with. </p>
+                                <p class='projects-p'>I also added back-end implementation in the form of an Express.js server for custom API end points.</p>
                                 <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>
                                 <div id='gmail-list-container'> 
                                     <div class='gmail-list-half'>
@@ -209,11 +208,13 @@ export const FrontPageComponent = ({
                                             <li>JS Short Circuits</li>
                                             <li>Dyanmic Rendering from nested object based on global state</li>
                                             <li>Folder/ file directory best practices</li>
+                                            <li>Array methods and manipulation</li>
+                                            
                                         </ul>
                                     </div>
                                     <div class='gmail-list-half'>
                                         <ul id='gmail-list' class='projects-p'>
-                                            <li>Array methods and manipulation</li>
+                                            
                                             <li>Utilising and manipulting JSON</li>
                                             <li>React Select UI Component</li>
                                             <li>ARIA</li>
@@ -222,6 +223,11 @@ export const FrontPageComponent = ({
                                             <li>Regex</li>
                                             <li>Writing clean modular code (important to work with and test)</li>
                                             <li>Loops</li>
+                                            <li>Express Server</li>
+                                            <li>Custom API Endpoints</li>
+                                            <li>Git</li>
+                                            <li>GitHub</li>
+                                            <li>Jest/ React Testing Library</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -242,14 +248,13 @@ export const FrontPageComponent = ({
                                     <img class='tech-icon' src={netlifyIcon}></img>
                                 </div>
                                 <div class='find-out-and-live-buttons'>
-                                    <button class='standard-button'>
+                                    <button class='standard-button' onClick={handleGMailFindOutMoreClick}>
                                         Find out more
                                     </button>  
                                     <button class='standard-button'>
                                         Live Site
                                     </button>               
                                 </div>
-
                             </div>
                             <div id="projects-picture-column">
                                 <img src={Gmail} alt="" id={ unBlurGmail ? 'gmail-img-unblur' : "gmail-img"}/>
@@ -343,6 +348,8 @@ export const FrontPageComponent = ({
                     <div id='grid-buffer'></div>
                 </div>
             </div>
+
+            <div id='black-buffer'></div>
 
         </>
     );

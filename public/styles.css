@@ -391,6 +391,12 @@ header ul li:hover {
     grid-template-columns: 1fr 1fr; 
     grid-gap: 0rem 7rem; 
 }
+
+#skills-container-visible {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 0rem 7rem; 
+}
   
 #coding-picture-column {
     grid-column: 1 / 2; 
@@ -499,11 +505,11 @@ header ul li:hover {
 }
 
 #gmail-img {
-    height: 90%;
-    width: 79.5%;
+    height: 80%;
+    width: 80%;
     filter: blur(5px);
     position: relative;
-    border-radius: 20px; 
+    border-radius: 16px;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.1); 
     box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.37); 
@@ -511,11 +517,11 @@ header ul li:hover {
 }
 
 #gmail-img-unblur {
-    height: 90%;
-    width: 79.5%;
+    height: 80%;
+    width: 80%;    
     animation: unBlur 1s;
     position: relative;
-    border-radius: 20px; 
+    border-radius: 16px;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(15px); 
@@ -557,6 +563,14 @@ header ul li:hover {
     margin-bottom: 40px;
 }
 
+#projects-container-visible {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 0rem 5rem; 
+    margin-bottom: 40px;
+}
+
+
 .show-projects {
     visibility: visible !important;
 }
@@ -579,7 +593,7 @@ header ul li:hover {
 .projects-p {
     align-self: flex-start;
     font-size: 17px;
-    margin: 17px 50px;
+    margin: 15px 50px;
 }
 
 #projects-h3 {
@@ -682,19 +696,20 @@ header ul li:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin: 0 200px 60px ;
+    margin: 0 200px;
     border: grey 2px solid;
     border-radius: 8px;
     background-image: url(3-waves-bg.svg);
     background-size: 2000px 100%;
     animation: gradient 10s infinite alternate linear;
+    box-shadow: 0 13px 30px 0 rgb(255 98 0 / 85%);
 }
 
 @keyframes gradient {
     100% {
-      background-size: 4000px 100%;
+        background-size: 4000px 100%;
     }
-  }
+}
 
 .project-case {
     height: 500px;
@@ -810,4 +825,25 @@ header ul li:hover {
     width: 100%;
 }
 
+/* GMail Find Out More */
 
+#squiggle-divide-breakdown {
+    background-image: url('./layered-divider.svg');
+    background-size: cover;
+}
+
+#gmail-code {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+
+#breakdown-p-container {
+    display: flex;
+}
+
+#black-background-highlights{
+    background-color: black;
+}

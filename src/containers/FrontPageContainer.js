@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FrontPageComponent } from "../components/FrontPageComponent";
 import 'intersection-observer';
 import { useSpring } from 'react-spring';
+import { useNavigate } from "react-router-dom";
 
 export const FrontPageContainer = () => {
 
@@ -9,6 +10,8 @@ export const FrontPageContainer = () => {
     const [showProjects, setShowProjects] = useState(false);
     const [unBlurGmail, setUnBlurGmail] = useState(false);
     const [isMouseOverProjectCase, setIsMouseOverProjectCase] = useState(false);
+
+    const navigate = useNavigate();
 
 // Page Hero SVG's
 
@@ -127,13 +130,9 @@ export const FrontPageContainer = () => {
         },
     });
 
-    const handleProjectCaseMouseEnter = () => {
-        setIsMouseOverProjectCase(true);
-    };
-    
-    const handleProjectCaseMouseLeave = () => {
-        setIsMouseOverProjectCase(false);
-    };
+    const handleGMailFindOutMoreClick = () => {
+        navigate('/gmail-more');
+    }
 
     return (
         <>
@@ -142,9 +141,7 @@ export const FrontPageContainer = () => {
                 zoomOutSkills={zoomOutSkills}
                 zoomOutProjects={zoomOutProjects}
                 unBlurGmail={unBlurGmail}
-                handleProjectCaseMouseEnter={handleProjectCaseMouseEnter}
-                handleProjectCaseMouseLeave={handleProjectCaseMouseLeave}
-                isMouseOverProjectCase={isMouseOverProjectCase}
+                handleGMailFindOutMoreClick={handleGMailFindOutMoreClick}
             />
         </>
     );

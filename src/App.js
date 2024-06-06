@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FrontPageContainer } from './containers/FrontPageContainer';
+import { GMailMoreContainer } from './containers/GMailMoreContainer';
 
 function App() {
   return (
@@ -8,6 +9,10 @@ function App() {
       <Routes>
         <Route path="/" element={
             <FrontPageContainer />
+          } 
+        />
+        <Route path="/gmail-more" element={
+            <GMailMoreContainer />
           } 
         />
       </Routes>
