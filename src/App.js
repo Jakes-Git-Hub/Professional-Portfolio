@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FrontPageContainer } from './containers/FrontPageContainer';
 import { GMailMoreContainer } from './containers/GMailMoreContainer';

@@ -122,7 +122,7 @@ export const FrontPageComponent = ({
 
 {/* My Skills */}
 
-            <div class="content-container">
+            <div class="content-container-margin">
                 
                 <h2 class="section-title skills-placeholder">
                     My <span class="h2-highlight">Skills</span>
@@ -184,7 +184,7 @@ export const FrontPageComponent = ({
 {/* Projects */}
 
 
-            <div class="content-container-projects" id='squiggle-divide-project'>
+            <div class="content-container-padding" id='squiggle-divide-project'>
                 
                 <h2 class="opposite-section-title projects-placeholder"><span class="h2-highlight">Projects</span></h2>
                 
@@ -201,6 +201,7 @@ export const FrontPageComponent = ({
                                             <li>React Router DOM</li>
                                             <li>React Hooks</li>
                                             <li>Asynchronous RESTful API's</li>
+                                            <li>Promises</li>
                                             <li>.env Variables</li>
                                             <li>DOM Manipulation</li>
                                             <li>JSX injection</li>
@@ -208,13 +209,12 @@ export const FrontPageComponent = ({
                                             <li>JS Short Circuits</li>
                                             <li>Dyanmic Rendering from nested object based on global state</li>
                                             <li>Folder/ file directory best practices</li>
-                                            <li>Array methods and manipulation</li>
-                                            
+                                            <li>Array methods and manipulation</li>                                            
                                         </ul>
                                     </div>
                                     <div class='gmail-list-half'>
                                         <ul id='gmail-list' class='projects-p'>
-                                            
+                                            <li>MUI</li>
                                             <li>Utilising and manipulting JSON</li>
                                             <li>React Select UI Component</li>
                                             <li>ARIA</li>
@@ -232,10 +232,10 @@ export const FrontPageComponent = ({
                                     </div>
                                 </div>
                                 <div id='gmail-tech-svgs'>
-                                    <img class='tech-icon' src={reactIcon}></img>
                                     <img class='tech-icon-html' src={htmlIcon}></img>
                                     <img class='tech-icon' src={cssIcon}></img>
                                     <img class='tech-icon-js' src={jsIcon}></img>
+                                    <img class='tech-icon' src={reactIcon}></img>
                                     <img class='tech-icon' src={nodeIcon}></img>
                                     <img class='tech-icon' src={expressIcon}></img>
                                     <img class='tech-icon' src={axiosIcon}></img>
@@ -275,11 +275,11 @@ export const FrontPageComponent = ({
                             <h3 class='project-desc-h3'>Jammming</h3>
                             <p class='project-desc-p'>An app that allows you to search for music on Spotify, preview tracks, create a playlist and then save that playlist to Spotify through the Spotify API.</p>
                             <div class='project-desc-svg-container'>
-                                <img class='desc-svg-icon' src={reactIcon}></img> 
-                                <img class='desc-svg-icon' src={restApiIcon}></img> 
                                 <img class='desc-svg-icon' src={htmlIcon}></img> 
                                 <img class='desc-svg-icon' src={cssIcon}></img> 
                                 <img class='desc-svg-icon' src={jsIcon}></img> 
+                                <img class='desc-svg-icon' src={reactIcon}></img> 
+                                <img class='desc-svg-icon' src={restApiIcon}></img> 
                             </div>
                         </div>
                     </div>
@@ -291,11 +291,11 @@ export const FrontPageComponent = ({
                             <h3 class='project-desc-h3'>Adopt a Pet</h3>
                             <p class='project-desc-p'>A pet adoption website built with React that searches a database of pets and displays their information accordingly.</p>
                             <div class='project-desc-svg-container'>
-                                <img class='desc-svg-icon' src={reactIcon}></img> 
-                                <img class='desc-svg-icon' src={restApiIcon}></img> 
                                 <img class='desc-svg-icon' src={htmlIcon}></img> 
                                 <img class='desc-svg-icon' src={cssIcon}></img> 
                                 <img class='desc-svg-icon' src={jsIcon}></img> 
+                                <img class='desc-svg-icon' src={reactIcon}></img> 
+                                <img class='desc-svg-icon' src={restApiIcon}></img> 
                             </div>
                         </div>
                     </div>
@@ -307,12 +307,12 @@ export const FrontPageComponent = ({
                             <h3 class='project-desc-h3'>Tech News</h3>
                             <p class='project-desc-p'>A Tech News App built with React that allows for navigation of tech articles. Also uses Redux that dispatches payloads to create, edit and log out of your user profile.</p>
                             <div class='project-desc-svg-container'>
-                                <img class='desc-svg-icon' src={reactIcon}></img> 
-                                <img class='desc-svg-icon' src={reduxIcon}></img> 
-                                <img class='desc-svg-icon' src={reactTLIcon}></img> 
                                 <img class='desc-svg-icon' src={htmlIcon}></img> 
                                 <img class='desc-svg-icon' src={cssIcon}></img> 
                                 <img class='desc-svg-icon' src={jsIcon}></img> 
+                                <img class='desc-svg-icon' src={reactIcon}></img> 
+                                <img class='desc-svg-icon' src={reduxIcon}></img> 
+                                <img class='desc-svg-icon' src={reactTLIcon}></img> 
                             </div>
                         </div>
                     </div>
@@ -324,10 +324,10 @@ export const FrontPageComponent = ({
                             <h3 class='project-desc-h3'>Appointment Planner</h3>
                             <p class='project-desc-p'>An appointment planner app built with React, that can generate new contact client profiles, which can then be assigned to specific appointments.</p>
                             <div class='project-desc-svg-container'>
-                                <img class='desc-svg-icon' src={reactIcon}></img> 
                                 <img class='desc-svg-icon' src={htmlIcon}></img> 
                                 <img class='desc-svg-icon' src={cssIcon}></img> 
                                 <img class='desc-svg-icon' src={jsIcon}></img> 
+                                <img class='desc-svg-icon' src={reactIcon}></img> 
                             </div>
                         </div>
                     </div>

@@ -349,7 +349,7 @@ header ul li:hover {
 
 /* My Skills */
 
-.content-container{
+.content-container-margin{
     margin: 10.24vh 10.42vw;
 }
 
@@ -452,11 +452,11 @@ header ul li:hover {
 /* Projects */
 
 #squiggle-divide-project {
-    background-image: url('./layered-divider.svg');
+    background-image: url('./dividers/layered-divider.svg');
     background-size: cover;
 }
 
-.content-container-projects {
+.content-container-padding {
     padding: 10.24vh 10.42vw;
 }
 
@@ -505,7 +505,7 @@ header ul li:hover {
 }
 
 #gmail-img {
-    height: 80%;
+    height: 70%;
     width: 80%;
     filter: blur(5px);
     position: relative;
@@ -517,7 +517,7 @@ header ul li:hover {
 }
 
 #gmail-img-unblur {
-    height: 80%;
+    height: 70%;
     width: 80%;    
     animation: unBlur 1s;
     position: relative;
@@ -676,7 +676,7 @@ header ul li:hover {
 }
 
 #upside-down-squiggle{
-    background-image: url('./simple-wave.svg');
+    background-image: url('./dividers/simple-wave.svg');
     background-size: cover;
     height: 600px;
 }
@@ -699,7 +699,7 @@ header ul li:hover {
     margin: 0 200px;
     border: grey 2px solid;
     border-radius: 8px;
-    background-image: url(3-waves-bg.svg);
+    background-image: url(dividers/3-waves-bg.svg);
     background-size: 2000px 100%;
     animation: gradient 10s infinite alternate linear;
     box-shadow: 0 13px 30px 0 rgb(255 98 0 / 85%);
@@ -828,22 +828,84 @@ header ul li:hover {
 /* GMail Find Out More */
 
 #squiggle-divide-breakdown {
-    background-image: url('./layered-divider.svg');
+    background-image: url('./dividers/layered-divider.svg');
     background-size: cover;
 }
 
+#gmail-code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #gmail-code {
-    height: 100%;
-    width: 100%;
+    height: 900%;
+    width: 90%;
     border-radius: 8px;
     margin-top: 40px;
 }
 
-
-#breakdown-p-container {
-    display: flex;
-}
-
-#black-background-highlights{
+.black-background-highlights{
     background-color: black;
 }
+
+.white-background {
+    background-color: white;
+}
+
+.highlight-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.highlight-half-1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight-half-2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-case-video {
+    width: 100%;
+    height: auto;
+}
+
+.highlight-desc-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    flex-direction: column;
+}
+
+#hightlight-desc-p{
+    margin: 3rem 0 1.5rem 0;
+}
+
+#hightlight-desc-svg {
+    margin: 1.5rem 0 3rem 0;
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    height: 4.5%;
+    width: 4.5%;
+    border-radius: 50%;
+}
+
+#hightlight-desc-svg:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 0 13px 2px rgb(255 98 0 / 85%);
+}
+
+
+
