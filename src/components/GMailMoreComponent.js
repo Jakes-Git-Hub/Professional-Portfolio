@@ -4,6 +4,7 @@ import gmailCode from '../images/gmail-code.png';
 
 export const GMailMoreComponent = ({
     handleGHSVGClick,
+    videoRef,
 }) => {
 
     return (
@@ -55,7 +56,13 @@ export const GMailMoreComponent = ({
                         <p>google translation api</p>
                     </div>
                     <div class='highlight-half-2'>
-                        <video class='show-case-video' controls>
+                        <video 
+                            ref={videoRef}
+                            class='show-case-video' 
+                            controls 
+                            loop
+                            muted
+                        >
                             <source src='./videos/translation-showcase.mp4' type="video/mp4">
                             </source>
                         </video>
