@@ -131,6 +131,7 @@ export const FrontPageContainer = () => {
     });
 
     const handleGMailFindOutMoreClick = () => {
+        window.scrollTo(0, 0);
         navigate('/gmail-more');
     }
 
