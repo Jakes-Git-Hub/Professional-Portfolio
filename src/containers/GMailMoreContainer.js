@@ -5,7 +5,7 @@ import { GMailMoreComponent } from "../components/GMailMoreComponent";
 export const GMailMoreContainer = () => {
 
     const navigate = useNavigate();
-    const videoRef = useRef(null);
+    
 
 // GitHub Click
 
@@ -15,15 +15,24 @@ export const GMailMoreContainer = () => {
 
 // Videos 
 
+const videoRef = useRef(null);
+const videoRef1 = useRef(null);
+const videoRef2 = useRef(null);
+const videoRef3 = useRef(null);
+const videoRef4 = useRef(null);
+const videoRef5 = useRef(null);
+const videoRef6 = useRef(null);
+
 useEffect(() => {
     const observer = new IntersectionObserver(
         entries => {
             entries.forEach(entry => {
+                const video = entry.target;
                 if (entry.isIntersecting) {
-                    videoRef.current.play();
-                } else {
-                    videoRef.current.pause();
-                }
+                    video.play();
+                }// } else {
+                //     video.pause();
+                // }
             });
         },
         {
@@ -31,12 +40,22 @@ useEffect(() => {
         }
     );
 
-    // Start observing the video
     observer.observe(videoRef.current);
+    observer.observe(videoRef1.current);
+    observer.observe(videoRef2.current);
+    observer.observe(videoRef3.current);
+    observer.observe(videoRef4.current);
+    observer.observe(videoRef5.current);
+    observer.observe(videoRef6.current);
 
-    // Clean up on unmount
     return () => {
         observer.unobserve(videoRef.current);
+        observer.unobserve(videoRef1.current);
+        observer.unobserve(videoRef2.current);
+        observer.unobserve(videoRef3.current);
+        observer.unobserve(videoRef4.current);
+        observer.unobserve(videoRef5.current);
+        observer.observe(videoRef6.current);
     };
 }, []);
 
@@ -46,6 +65,12 @@ useEffect(() => {
             <GMailMoreComponent 
                 handleGHSVGClick={handleGHSVGClick}
                 videoRef={videoRef}
+                videoRef1={videoRef1}
+                videoRef2={videoRef2}
+                videoRef3={videoRef3}
+                videoRef4={videoRef4}
+                videoRef5={videoRef5}
+                videoRef6={videoRef6}
             />
         </>
     );
