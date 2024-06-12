@@ -11,6 +11,7 @@ export const GMailMoreComponent = ({
     videoRef4,
     videoRef5,
     videoRef6,
+    videoRef7,
 }) => {
 
     return (
@@ -56,12 +57,12 @@ export const GMailMoreComponent = ({
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-container white-background'>
                     <div class='highlight-half-1'>
-                        <h3 class='bottom-h3'>Google Translation Api</h3>
+                        <h3 class='bottom-h3'>Translation Feature</h3>
                         <p class='p-showcase'>
                             This feature allows the user to translate the whole of the text in the app to a multitude of languages - this is done by having a text object that has nested values for each language. 
                         </p>
                         <p class='p-showcase'>
-                            When a language is chose this then updates the user by altering userData.language which then dyanmically renders the translated text, this is better than running the text through a translation API as it translated instantly improving UX and saves money.
+                            When a language is chose this then updates the userin app.js by altering userData.language which then dyanmically renders the translated text. This is an imporvement on running the text through a translation API as it translated instantly improving UX and saves money.
                         </p>
                     </div>
                     <div class='highlight-half-2'>
@@ -94,12 +95,9 @@ export const GMailMoreComponent = ({
                         </video>
                     </div>
                     <div class='highlight-half-1'>
-                        <h3>Twilio SMS Authorisation</h3>
+                        <h3>Twilio API SMS Authorisation</h3>
                         <p class='p-showcase'>
-                            This authorisation method uses Twilio and a custom API end point in my Express.js server - which recieves a formatted phone number. It then creates a random 6 digit verification code which is sent to the user via SMS and if they enter it correctly they can continue the form.
-                        </p>
-                        <p class='p-showcase'>
-                            Twilio Integration is done for confirming a user is not a robot. Also it is used for if a user has forgotten their password, we can verify them through Twilio alongside other correct matching information.
+                            This authorisation method uses Twilio and a custom API end point in my Express.js server - which recieves a formatted phone number. It then creates a random 6 digit verification code which is sent to the user via SMS to either confirm they are not a robot and continue the form or log in if they have forgotten their password.
                         </p>
                         <p class='p-showcase'>
                             The formatted number is created by a function that uses google-libphonenumber formatting. It is created based on user input and the region which is attained either through the users IP (Grabbed from my server), or their country selection choice. 
@@ -111,7 +109,10 @@ export const GMailMoreComponent = ({
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-container white-background'>
                     <div class='highlight-half-1'>
-                        <h3>Send Grid Email Authorisation</h3>
+                        <h3 id='SGH3'>Send Grid API Email Authorisation</h3>
+                        <p class='p-showcase'>
+                            This authorisation method uses Send Grid and a custom API end point in my Express.js server - which takes in an inputted email. It then creates a random 6 digit verification code which is sent to the user via email and if they enter it correctly they can continue the form, or log in if they have forgotten their password.
+                        </p>
                     </div>
                     <div class='highlight-half-2'>
                         <video 
@@ -143,7 +144,45 @@ export const GMailMoreComponent = ({
                         </video>
                     </div>
                     <div class='highlight-half-1'>
-                        <h3>Geo Locatio Ip Grabber</h3>
+                        <h3 id='geo-h3'>Custom IP Grabber API Paired with IP Geolocation API</h3>
+                        <p class='p-showcase'>
+                            In my server there is a custom end point that uses either the forwardedFor request header or the remoteAddress request socket to return the users IP. We then have a grabUserIPHook, which makes a request to that end point to return the users Ip.
+                        </p>
+                        <p class='p-showcase'>
+                            Then in App.js we can use object destructuring to call the hook and save the users IP into a variable to be passed to Confirm You're not a Robot.
+                        </p>
+                        <p class='p-showcase'>
+                            Which allows us to set the users country flag as the initial placeholder flag for the dropdown menu, and to have the first country option in the list to always be their country, which helps improve UX.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class='content-container-padding black-background-highlights'>
+                <div class='highlight-container white-background'>
+                    <div class='highlight-half-1' id='geo-highlight-half-1'>
+                        <h3>Google Translation API</h3>
+                        <p class='geo-p-showcase'>
+                            Initially for the translation for the entirety of my app, I was going to use Google translation API. However, when i implemented i found that the load time for translating the whole of the app was incredibly slow and ruined ux (also increased costs). So I instead opted for the approach described above.
+                        </p>
+                        <p class='geo-p-showcase'>
+                            When I was implementing the React select component for the drop down I did so initially with a country object which had a lot of logic applied to it to filter and sort countries, also when i mapped through the object to render it into the select component there was also a lot of assoicated code. So instead of transfering the object with translated countries, to the text object. I instead used the google translation API to translate the country object and then saved it translatedCountries. 
+                        </p>
+                        <p class='geo-p-showcase'>
+                            This was a good learning experience and I going forward I would translate the countries manually and store to the text object to translate instantly with no API. 
+                        </p>
+                    </div>
+                    <div class='highlight-half-2'>
+                        <video 
+                            ref={videoRef7}
+                            class='show-case-video' 
+                            controls 
+                            loop
+                            muted
+                        >
+                            <source src='./videos/Google Translation API.mp4' type="video/mp4">
+                            </source>
+                        </video>
                     </div>
                 </div>
             </div>
@@ -151,7 +190,16 @@ export const GMailMoreComponent = ({
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-container white-background'>
                     <div class='highlight-half-1'>
-                        <h3>Responsivity</h3>
+                        <h3 id='responsivity-h3'>Responsivity</h3>
+                        <p class='p-showcase'>
+                            The app is fully responsive, using media queries to apply optimal layouts or sophisticatedly hide aspects of the page fluidly depending on screen size.
+                        </p>
+                        <p class='p-showcase'>
+                            Responsivty is also used for the MUI language changer menu where the extent of the menu height is calculated depending on the height of the screen.
+                        </p>
+                        <p class='p-showcase'>
+                            It also uses responsive css formats to dyanmically render elements of the page. This improves UI and UX for all different hardware users.
+                        </p>
                     </div>
                     <div class='highlight-half-2'>
                         <video 

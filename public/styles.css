@@ -919,4 +919,30 @@ header ul li:hover {
     position: relative;
 }
 
+#SGH3 {
+    bottom: 2.25rem;
+    position: relative;
+}
+
+#geo-h3 {
+    padding-bottom: 0.5rem;
+}
+
+.geo-p-showcase {
+    margin: 0.75em 4rem;
+    text-align: center;
+}
+
+#geo-highlight-half-1 {
+    bottom: 0.25rem;
+    position: relative; 
+}
+
+#responsivity-h3 {
+    bottom: 1rem;
+    position: relative;
+}
+
+
+
 

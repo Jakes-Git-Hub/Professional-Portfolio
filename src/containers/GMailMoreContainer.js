@@ -22,6 +22,7 @@ const videoRef3 = useRef(null);
 const videoRef4 = useRef(null);
 const videoRef5 = useRef(null);
 const videoRef6 = useRef(null);
+const videoRef7 = useRef(null);
 
 useEffect(() => {
     const observer = new IntersectionObserver(
@@ -30,9 +31,9 @@ useEffect(() => {
                 const video = entry.target;
                 if (entry.isIntersecting) {
                     video.play();
-                }// } else {
-                //     video.pause();
-                // }
+                } else {
+                    video.pause();
+                }
             });
         },
         {
@@ -47,6 +48,7 @@ useEffect(() => {
     observer.observe(videoRef4.current);
     observer.observe(videoRef5.current);
     observer.observe(videoRef6.current);
+    observer.observe(videoRef7.current);
 
     return () => {
         observer.unobserve(videoRef.current);
@@ -55,7 +57,8 @@ useEffect(() => {
         observer.unobserve(videoRef3.current);
         observer.unobserve(videoRef4.current);
         observer.unobserve(videoRef5.current);
-        observer.observe(videoRef6.current);
+        observer.unobserve(videoRef6.current);
+        observer.unobserve(videoRef7.current);
     };
 }, []);
 
@@ -71,6 +74,7 @@ useEffect(() => {
                 videoRef4={videoRef4}
                 videoRef5={videoRef5}
                 videoRef6={videoRef6}
+                videoRef7={videoRef7}
             />
         </>
     );
