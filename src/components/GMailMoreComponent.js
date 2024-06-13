@@ -57,7 +57,7 @@ export const GMailMoreComponent = ({
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-container white-background'>
                     <div class='highlight-half-1'>
-                        <h3 class='bottom-h3'>Translation Feature</h3>
+                        <h3 class='bottom-h3 orange'>Translation Feature</h3>
                         <p class='p-showcase'>
                             This feature allows the user to translate the whole of the text in the app to a multitude of languages - this is done by having a text object that has nested values for each language. 
                         </p>
@@ -95,7 +95,7 @@ export const GMailMoreComponent = ({
                         </video>
                     </div>
                     <div class='highlight-half-1'>
-                        <h3>Twilio API SMS Authorisation</h3>
+                        <h3 className='orange'>Twilio API SMS Authorisation</h3>
                         <p class='p-showcase'>
                             This authorisation method uses Twilio and a custom API end point in my Express.js server - which recieves a formatted phone number. It then creates a random 6 digit verification code which is sent to the user via SMS to either confirm they are not a robot and continue the form or log in if they have forgotten their password.
                         </p>
@@ -109,7 +109,7 @@ export const GMailMoreComponent = ({
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-container white-background'>
                     <div class='highlight-half-1'>
-                        <h3 id='SGH3'>Send Grid API Email Authorisation</h3>
+                        <h3 className='orange' id='SGH3'>Send Grid API Email Authorisation</h3>
                         <p class='p-showcase'>
                             This authorisation method uses Send Grid and a custom API end point in my Express.js server - which takes in an inputted email. It then creates a random 6 digit verification code which is sent to the user via email and if they enter it correctly they can continue the form, or log in if they have forgotten their password.
                         </p>
@@ -144,7 +144,7 @@ export const GMailMoreComponent = ({
                         </video>
                     </div>
                     <div class='highlight-half-1'>
-                        <h3 id='geo-h3'>Custom IP Grabber API Paired with IP Geolocation API</h3>
+                        <h3 className='orange' id='geo-h3'>Custom IP Grabber API Paired with IP Geolocation API</h3>
                         <p class='p-showcase'>
                             In my server there is a custom end point that uses either the forwardedFor request header or the remoteAddress request socket to return the users IP. We then have a grabUserIPHook, which makes a request to that end point to return the users Ip.
                         </p>
@@ -161,7 +161,7 @@ export const GMailMoreComponent = ({
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-container white-background'>
                     <div class='highlight-half-1' id='geo-highlight-half-1'>
-                        <h3>Google Translation API</h3>
+                        <h3 className='orange'>Google Translation API</h3>
                         <p class='geo-p-showcase'>
                             Initially for the translation for the entirety of my app, I was going to use Google translation API. However, when i implemented i found that the load time for translating the whole of the app was incredibly slow and ruined ux (also increased costs). So I instead opted for the approach described above.
                         </p>
@@ -189,18 +189,6 @@ export const GMailMoreComponent = ({
 
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-container white-background'>
-                    <div class='highlight-half-1'>
-                        <h3 id='responsivity-h3'>Responsivity</h3>
-                        <p class='p-showcase'>
-                            The app is fully responsive, using media queries to apply optimal layouts or sophisticatedly hide aspects of the page fluidly depending on screen size.
-                        </p>
-                        <p class='p-showcase'>
-                            Responsivty is also used for the MUI language changer menu where the extent of the menu height is calculated depending on the height of the screen.
-                        </p>
-                        <p class='p-showcase'>
-                            It also uses responsive css formats to dyanmically render elements of the page. This improves UI and UX for all different hardware users.
-                        </p>
-                    </div>
                     <div class='highlight-half-2'>
                         <video 
                             ref={videoRef4}
@@ -213,11 +201,30 @@ export const GMailMoreComponent = ({
                             </source>
                         </video>
                     </div>
+                    <div class='highlight-half-1'>
+                        <h3 className='orange' id='responsivity-h3'>Responsivity</h3>
+                        <p class='p-showcase'>
+                            The app is fully responsive, using media queries to apply optimal layouts or sophisticatedly hide aspects of the page fluidly depending on screen size.
+                        </p>
+                        <p class='p-showcase'>
+                            Responsivty is also used for the MUI language changer menu where the extent of the menu height is calculated depending on the height of the screen.
+                        </p>
+                        <p class='p-showcase'>
+                            It also uses responsive css formats to dyanmically render elements positions and sizes in the browser. This improves UI and UX for all different hardware users.
+                        </p>
+                    </div>
+                    
                 </div>
             </div>
 
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-container white-background'>
+                    <div class='highlight-half-1'>
+                        <h3 className='orange'>Express Server</h3>
+                        <p class='p-showcase'>
+                            The server is built using Express.js. I have custom API end points for each of the authorisation methods, and a custom end point to acquire the users IP.
+                        </p>
+                    </div>
                     <div class='highlight-half-2'>
                         <video 
                             ref={videoRef5}
@@ -230,28 +237,37 @@ export const GMailMoreComponent = ({
                             </source>
                         </video>
                     </div>
-                    <div class='highlight-half-1'>
-                        <h3>Express Server</h3>
-                    </div>
                 </div>
             </div>
 
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-container white-background'>
-                    <div class='highlight-half-1'>
-                        <h3>Security</h3>
-                    </div>
                     <div class='highlight-half-2'>
-                        <video 
+                    <video 
                             ref={videoRef6}
                             class='show-case-video' 
                             controls 
                             loop
                             muted
                         >
-                            <source src='./videos/translation-showcase.mp4' type="video/mp4">
+                            <source src='./videos/Security.mp4' type="video/mp4">
                             </source>
                         </video>
+                    </div>
+                    <div class='highlight-half-1'>
+                        <h3 className='orange'>Security</h3>
+                        <p class='p-showcase'>
+                            For security in the app I have used client side and server side API limiters. Also I have utilised .env variables to store sensitive information.
+                        </p>
+                        <p class='p-showcase'>
+                            This ensures that the server cannot be overloaded with requests in a short time frame. Mitigating threats from DDoS or brute force login attemps.
+                        </p>
+                        <p class='p-showcase'>
+                            API limiters also make sure costs are controlled by preventing excessive use.
+                        </p>
+                        <p class='p-showcase'>
+                            By using .env variables it keeps sensitive information like API keys kept out of the code and hidden from the outside sources. This is crucial for security, as hard-coding such information can lead to exposure to unwanted entities. Which could result in leaked data, financial loss, disruption of service or reputational damage.
+                        </p>
                     </div>
                     
                 </div>
