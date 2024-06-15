@@ -13,7 +13,28 @@ export const GMailMoreContainer = () => {
         window.open('https://github.com/Jakes-Git-Hub/Gmail-Log-In-And-Create-Account-React', '_blank');
     }
 
-// Videos 
+// h3 Intersection Observer
+
+useEffect(() => {
+    const h3Showcase = document.querySelectorAll('.orange');
+
+    // Create an intersection observer
+    const observer = new IntersectionObserver(entries => {
+        // Loop over the entries
+        entries.forEach(entry => {  
+            // If the element is visible
+            if (entry.isIntersecting) {
+                // Add the animation class
+                entry.target.classList.add('fade-in');
+            } 
+        });
+    }, { threshold: 1 });
+
+    // Observe each div
+    h3Showcase.forEach(div => observer.observe(div));
+}, []);
+
+// Video Intersection Observer
 
 const videoRef = useRef(null);
 const videoRef1 = useRef(null);

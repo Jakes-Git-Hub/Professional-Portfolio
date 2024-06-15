@@ -108,7 +108,7 @@ export const FrontPageComponent = ({
                     </div>
                     
                     <div id="ph-p-container">
-                        <p id='p-page-hero'>I am passionate about creating beautiful, immersive and interactive websites - whilst implementing the latest, most powerful libraries.
+                        <p id='p-page-hero'>I am passionate about creating beautiful, immersive and interactive websites - whilst implementing the latest, powerful libraries.
                             <br />
                             <br />
                             I have a thirst for pushing my capabilities.
@@ -174,7 +174,7 @@ export const FrontPageComponent = ({
                             <div class="row" id="small-about">
                                 <h4>I love learning about and implementing powerful, sophisticated Web Development solutions.</h4>
                                 <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, determination and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Overwatch, or playing the drums (play at grade 7/8) - all of which displays grit, resiliance, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing (characterisitic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
-                                <p>It seems like all intricate, yet simple well oiled parts of Web Dev and the challenge of the learning curve garnered my attention and I became devouted. Seeing my progress and skills increase quickly and then realising what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
+                                <p>It seems like all intricate, yet simple well oiled parts of Web Dev and the challenge of the learning curve garnered my attention and I became devouted. Seeing my progression and skills increase quickly made me realise what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
                             </div>
                         </div>
                     </div>
@@ -191,7 +191,7 @@ export const FrontPageComponent = ({
                     <animated.div style={zoomOutProjects}>
                         <div id="projects-container">
                             <div id="projects-column-writting">
-                                <h3 id='projects-h3'>Gmail Clone</h3>
+                                <h3 className='orange'id='projects-h3'>Gmail Clone</h3>
                                 <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with. </p>
                                 <p class='projects-p'>I also added back-end implementation in the form of an Express.js server for custom API end points.</p>
                                 <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>

@@ -135,6 +135,27 @@ export const FrontPageContainer = () => {
         navigate('/gmail-more');
     }
 
+// H3 Animation 
+
+    useEffect(() => {
+        const h3Showcase = document.querySelectorAll('.orange');
+
+        // Create an intersection observer
+        const observer = new IntersectionObserver(entries => {
+            // Loop over the entries
+            entries.forEach(entry => {  
+                // If the element is visible
+                if (entry.isIntersecting) {
+                    // Add the animation class
+                    entry.target.classList.add('fade-in');
+                } 
+            });
+        }, { threshold: 1 });
+
+        // Observe each div
+        h3Showcase.forEach(div => observer.observe(div));
+    }, []);
+
     return (
         <>
             <FrontPageComponent 
