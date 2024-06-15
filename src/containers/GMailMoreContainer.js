@@ -80,7 +80,7 @@ useEffect(() => {
             });
         },
         {
-            threshold: 1
+            threshold: 0.5,
         }
     );
 
@@ -92,6 +92,7 @@ useEffect(() => {
     observer.observe(videoRef5.current);
     observer.observe(videoRef6.current);
     observer.observe(videoRef7.current);
+    observer.observe(videoRef8.current);
     observer.observe(muiRef.current);
 
     return () => {
@@ -103,6 +104,7 @@ useEffect(() => {
         observer.unobserve(videoRef5.current);
         observer.unobserve(videoRef6.current);
         observer.unobserve(videoRef7.current);
+        observer.unobserve(videoRef8.current);
         observer.unobserve(muiRef.current);
     };
 }, []);
@@ -144,6 +146,7 @@ useEffect(() => {
                 videoRef5={videoRef5}
                 videoRef6={videoRef6}
                 videoRef7={videoRef7}
+                videoRef8={videoRef8}
                 muiRef={muiRef}
                 playNextMuiVideo={playNextMuiVideo}
                 muiSources={muiSources}
