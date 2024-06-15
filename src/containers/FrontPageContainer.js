@@ -152,8 +152,8 @@ export const FrontPageContainer = () => {
             });
         }, { threshold: 1 });
 
-        // Observe each div
-        h3Showcase.forEach(div => observer.observe(div));
+        // Observe each h3
+        h3Showcase.forEach(h3 => observer.observe(h3));
     }, []);
 
     return (

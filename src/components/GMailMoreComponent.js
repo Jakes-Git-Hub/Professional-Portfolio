@@ -12,6 +12,10 @@ export const GMailMoreComponent = ({
     videoRef5,
     videoRef6,
     videoRef7,
+    muiRef,
+    playNextMuiVideo,
+    muiSources,
+    currentMuiIndex,
 }) => {
 
     return (
@@ -31,8 +35,8 @@ export const GMailMoreComponent = ({
             </div>
 
             <div class="content-container-padding" id='squiggle-divide-breakdown'>
-                <h2 class="section-title">
-                    Gmail Clone <span class="h2-highlight">Showcase</span>
+                <h2 class="section-title h2-slide">
+                    Gmail Clone <span class="h2-highlight h2-slide">Showcase</span>
                 </h2>
                 <div id ='gmail-code-container'>
                     <img src={gmailCode} alt="gmail-code" id="gmail-code"/>
@@ -174,7 +178,7 @@ export const GMailMoreComponent = ({
                     </div>
                     <div class='highlight-half-2'>
                         <video 
-                            ref={videoRef7}
+                            ref={videoRef4}
                             class='show-case-video' 
                             controls 
                             loop
@@ -191,7 +195,7 @@ export const GMailMoreComponent = ({
                 <div class='highlight-container white-background'>
                     <div class='highlight-half-2'>
                         <video 
-                            ref={videoRef4}
+                            ref={videoRef5}
                             class='show-case-video' 
                             controls 
                             loop
@@ -227,7 +231,7 @@ export const GMailMoreComponent = ({
                     </div>
                     <div class='highlight-half-2'>
                         <video 
-                            ref={videoRef5}
+                            ref={videoRef6}
                             class='show-case-video' 
                             controls 
                             loop
@@ -244,7 +248,7 @@ export const GMailMoreComponent = ({
                 <div class='highlight-container white-background'>
                     <div class='highlight-half-2'>
                     <video 
-                            ref={videoRef6}
+                            ref={videoRef7}
                             class='show-case-video' 
                             controls 
                             loop
@@ -273,7 +277,32 @@ export const GMailMoreComponent = ({
                 </div>
             </div>
 
-
+            <div class='content-container-padding black-background-highlights'>
+                <div class='highlight-container white-background'>
+                    <div class='highlight-half-1'>
+                        <h3 className='orange'>MUI</h3>
+                        <p class='p-showcase'>
+                            For this project I leveraged Material UI. This allowed me to create professional polished elements with good efficiency.
+                        </p>
+                        <p class='p-showcase'>
+                            I created and added custom styles to get the appearance I wanted, instead of the default versions. I also had to pair the  MUI Modals with React Spring to get the animation onClose and onOpen that looked good.
+                        </p>
+                    </div>
+                    <div class='highlight-half-2'>
+                        <video 
+                            ref={muiRef}
+                            class='show-case-video' 
+                            controls 
+                            muted
+                            onEnded={playNextMuiVideo}
+                        >
+                            <source src={muiSources[currentMuiIndex]} type="video/mp4">
+                            </source>
+                        </video>
+                    </div>
+                    
+                </div>
+            </div>
 
         </>
     );

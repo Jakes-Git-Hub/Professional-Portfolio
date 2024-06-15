@@ -1,11 +1,31 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { GMailMoreComponent } from "../components/GMailMoreComponent";
 
 export const GMailMoreContainer = () => {
 
     const navigate = useNavigate();
-    
+
+// h2 Animation 
+
+useEffect(() => {
+    const h2Highlight = document.querySelectorAll('.h2-slide');
+
+    // Create an intersection observer
+    const observer = new IntersectionObserver(entries => {
+        // Loop over the entries
+        entries.forEach(entry => {  
+            // If the element is visible
+            if (entry.isIntersecting) {
+                // Add the animation class
+                entry.target.classList.add('slide-in-left');
+            } 
+        });
+    }, { threshold: 1 });
+
+    // Observe each h3
+    h2Highlight.forEach(h2 => observer.observe(h2));
+}, []);
 
 // GitHub Click
 
@@ -30,8 +50,8 @@ useEffect(() => {
         });
     }, { threshold: 1 });
 
-    // Observe each div
-    h3Showcase.forEach(div => observer.observe(div));
+    // Observe each h3
+    h3Showcase.forEach(h3 => observer.observe(h3));
 }, []);
 
 // Video Intersection Observer
@@ -44,6 +64,8 @@ const videoRef4 = useRef(null);
 const videoRef5 = useRef(null);
 const videoRef6 = useRef(null);
 const videoRef7 = useRef(null);
+const videoRef8 = useRef(null);
+const muiRef = useRef(null);
 
 useEffect(() => {
     const observer = new IntersectionObserver(
@@ -70,6 +92,7 @@ useEffect(() => {
     observer.observe(videoRef5.current);
     observer.observe(videoRef6.current);
     observer.observe(videoRef7.current);
+    observer.observe(muiRef.current);
 
     return () => {
         observer.unobserve(videoRef.current);
@@ -80,9 +103,34 @@ useEffect(() => {
         observer.unobserve(videoRef5.current);
         observer.unobserve(videoRef6.current);
         observer.unobserve(videoRef7.current);
+        observer.unobserve(muiRef.current);
     };
 }, []);
 
+// MUI Videos
+
+    const muiSources = [
+        './videos/mui/MUI Modal.mp4',
+        './videos/mui/MUI Menu Select Window.mp4',
+        './videos/mui/MUI Custom Buttons 1.mp4',
+        './videos/mui/MUI Custom Buttons 2.mp4',
+    ];
+
+    const [currentMuiIndex, setCurrentMuiIndex] = useState(0);
+
+    // Function to play the next video
+    const playNextMuiVideo = () => {
+        const nextVideoIndex = (currentMuiIndex + 1) % muiSources.length;
+        setCurrentMuiIndex(nextVideoIndex);
+    };
+
+    // Effect to update the video source and play the video
+    useEffect(() => {
+        if (muiRef.current) {
+            muiRef.current.load(); // Load the new video source
+            muiRef.current.play(); // Play the video
+        }
+    }, [currentMuiIndex]); // This effect runs when currentVideoIndex changes
 
     return (
         <>
@@ -96,6 +144,10 @@ useEffect(() => {
                 videoRef5={videoRef5}
                 videoRef6={videoRef6}
                 videoRef7={videoRef7}
+                muiRef={muiRef}
+                playNextMuiVideo={playNextMuiVideo}
+                muiSources={muiSources}
+                currentMuiIndex={currentMuiIndex}
             />
         </>
     );

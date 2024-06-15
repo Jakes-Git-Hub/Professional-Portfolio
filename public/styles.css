@@ -365,24 +365,14 @@ header ul li:hover {
 
 .slide-in-left {
     animation: slide-in-left 2s ease-out;
-    /* visibility: visible !important;     */
 }
-
-/* .skills-placeholder {
-    visibility: hidden;
-} */
 
 @keyframes slide-in-left {
     0% {
         transform: translateX(-100%);
-        opacity: 0;
-    }
-    80% {
-        opacity: 0.5;
     }
     100% {
         transform: translateX(0);
-        opacity: 1;
     }
 }
 
@@ -477,26 +467,16 @@ header ul li:hover {
     height: 100%; /* Adjust height as needed */
 }
 
-/* .projects-placeholder {
-    visibility: hidden;
-} */
-
 .slide-in-right {
     animation: slide-in-right 1s ease-out;
-    /* visibility: visible !important;     */
 }
 
 @keyframes slide-in-right {
     0% {
         transform: translateX(100%);
-        opacity: 0;
-    }
-    80% {
-        opacity: 0.5;
     }
     100% {
         transform: translateX(0);
-        opacity: 1;
     }
 }
 
