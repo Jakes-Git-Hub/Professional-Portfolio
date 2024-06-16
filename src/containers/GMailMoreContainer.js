@@ -4,6 +4,8 @@ import { GMailMoreComponent } from "../components/GMailMoreComponent";
 
 export const GMailMoreContainer = () => {
 
+    const [currentMuiIndex, setCurrentMuiIndex] = useState(0);
+
     const navigate = useNavigate();
 
 // h2 Animation 
@@ -80,7 +82,7 @@ useEffect(() => {
             });
         },
         {
-            threshold: 0.5,
+            threshold: 1,
         }
     );
 
@@ -118,19 +120,19 @@ useEffect(() => {
         './videos/mui/MUI Custom Buttons 2.mp4',
     ];
 
-    const [currentMuiIndex, setCurrentMuiIndex] = useState(0);
-
     // Function to play the next video
-    const playNextMuiVideo = () => {
+    const cycleMuiVideo = () => {
         const nextVideoIndex = (currentMuiIndex + 1) % muiSources.length;
         setCurrentMuiIndex(nextVideoIndex);
+        if (currentMuiIndex === 3) {
+            setCurrentMuiIndex(0);
+        }
     };
 
     // Effect to update the video source and play the video
     useEffect(() => {
         if (muiRef.current) {
             muiRef.current.load(); // Load the new video source
-            muiRef.current.play(); // Play the video
         }
     }, [currentMuiIndex]); // This effect runs when currentVideoIndex changes
 
@@ -148,7 +150,7 @@ useEffect(() => {
                 videoRef7={videoRef7}
                 videoRef8={videoRef8}
                 muiRef={muiRef}
-                playNextMuiVideo={playNextMuiVideo}
+                cycleMuiVideo={cycleMuiVideo}
                 muiSources={muiSources}
                 currentMuiIndex={currentMuiIndex}
             />

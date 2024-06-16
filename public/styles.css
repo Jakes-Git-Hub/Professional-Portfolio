@@ -226,7 +226,7 @@ header ul li:hover {
 
 @-webkit-keyframes animateCloud {
     0% {
-        margin-left: -1000px;
+        margin-left: -52.08vw;
     }
     100% {
         margin-left: 100%;
@@ -235,7 +235,7 @@ header ul li:hover {
 
 @-moz-keyframes animateCloud {
     0% {
-        margin-left: -1000px;
+        margin-left: -52.08vw;
     }
     100% {
         margin-left: 100%;
@@ -244,7 +244,7 @@ header ul li:hover {
 
 @keyframes animateCloud {
     0% {
-        margin-left: -1000px;
+        margin-left: -52.08vw;
     }
     100% {
         margin-left: 100%;
@@ -317,7 +317,36 @@ header ul li:hover {
     box-shadow: 0 8px 5px rgb(255, 98, 0);
     height: 120px;
     position: relative;
-    width: 350px;  
+    width: 350px;
+}
+
+@media (max-width: 1027px) {
+    .cloud {
+        -webkit-border-radius: 75px !important;
+        -moz-border-radius: 75px !important;
+        border-radius: 75px !important;
+        -webkit-box-shadow: 0 6px 3.5px rgb(255, 98, 0) !important;
+        -moz-box-shadow: 0 6px 3.5px rgb(255, 98, 0) !important;
+        box-shadow: 0 6px 3.5px rgb(255, 98, 0) !important;
+        height: 90px !important;
+        width: 262.5px !important;
+    }  
+    .cloud:before {
+        -webkit-border-radius: 150px !important;
+        -moz-border-radius: 150px !important;
+        border-radius: 150px !important;
+        width: 135px !important;
+        height: 135px !important;
+        right: 37.5px !important;
+        top: -67.5px !important;
+    }
+    .cloud:after {
+        border-radius: 75px !important;
+        height: 75px !important;
+        left: 37.5px !important;
+        top: -37.5px !important;
+        width: 75px !important;
+    }        
 }
 
 .cloud:after, .cloud:before {

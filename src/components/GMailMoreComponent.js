@@ -14,7 +14,7 @@ export const GMailMoreComponent = ({
     videoRef7,
     videoRef8,
     muiRef,
-    playNextMuiVideo,
+    cycleMuiVideo,
     muiSources,
     currentMuiIndex,
 }) => {
@@ -281,11 +281,32 @@ export const GMailMoreComponent = ({
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-container white-background'>
                     <div class='highlight-half-1'>
-                        <h3 className='orange'>Jest & React Testing Library</h3>
+                        <h3 className='orange'>MUI</h3>
                         <p class='p-showcase'>
-                            To ensure my code is robust and reliable I have used Jest and React Testing Library to test anything that handles logic i.e all my container files utility files and hooks etc. This ensures everything is working as expected and ensures a smooth UX with no bugs.
+                            For this project I leveraged Material UI. This allowed me to create professional polished elements with good efficiency.
+                        </p>
+                        <p class='p-showcase'>
+                            I created and added custom styles to get the appearance I wanted, instead of the default versions. I also had to pair the  MUI Modals with React Spring to get the animation onClose and onOpen that looked good.
                         </p>
                     </div>
+                    <div class='highlight-half-2'>
+                        <video 
+                            ref={muiRef}
+                            class='show-case-video' 
+                            controls 
+                            muted
+                            onEnded={cycleMuiVideo}
+                            onLoadedData={() => muiRef.current.play()}
+                        >
+                            <source src={muiSources[currentMuiIndex]} type="video/mp4">
+                            </source>
+                        </video>
+                    </div>
+                </div>
+            </div>
+            
+            <div class='content-container-padding black-background-highlights'>
+                <div class='highlight-container white-background'>
                     <div class='highlight-half-2'>
                         <video 
                             ref={videoRef8}
@@ -298,30 +319,10 @@ export const GMailMoreComponent = ({
                             </source>
                         </video>
                     </div>
-                </div>
-            </div>
-
-            <div class='content-container-padding black-background-highlights'>
-                <div class='highlight-container white-background'>
-                    <div class='highlight-half-2'>
-                        <video 
-                            ref={muiRef}
-                            class='show-case-video' 
-                            controls 
-                            muted
-                            onEnded={playNextMuiVideo}
-                        >
-                            <source src={muiSources[currentMuiIndex]} type="video/mp4">
-                            </source>
-                        </video>
-                    </div>
                     <div class='highlight-half-1'>
-                        <h3 className='orange'>MUI</h3>
+                        <h3 className='orange'>Jest & React Testing Library</h3>
                         <p class='p-showcase'>
-                            For this project I leveraged Material UI. This allowed me to create professional polished elements with good efficiency.
-                        </p>
-                        <p class='p-showcase'>
-                            I created and added custom styles to get the appearance I wanted, instead of the default versions. I also had to pair the  MUI Modals with React Spring to get the animation onClose and onOpen that looked good.
+                            To ensure my code is robust and reliable I have used Jest and React Testing Library to test anything that handles logic i.e all my container files utility files and hooks etc. This ensures everything is working as expected and ensures a smooth UX with no bugs.
                         </p>
                     </div>
                 </div>
