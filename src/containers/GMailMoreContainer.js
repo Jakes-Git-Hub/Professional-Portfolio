@@ -11,7 +11,7 @@ export const GMailMoreContainer = () => {
 // h2 Animation 
 
 useEffect(() => {
-    const h2Highlight = document.querySelectorAll('.h2-slide');
+    const h2Highlight = document.querySelectorAll('.slide-in-left-placeholder');
 
     // Create an intersection observer
     const observer = new IntersectionObserver(entries => {

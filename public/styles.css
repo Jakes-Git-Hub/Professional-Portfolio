@@ -81,14 +81,14 @@ header {
     background-color: black;
     color: white;
     padding: 24px;
-    @media (min-width: 851px) {
+    @media screen and (min-width: 851px) {
         font-size: 1.25rem;
     }
     height: auto;
 }
 
 #name {
-    @media (max-width: 851px) {
+    @media screen and (max-width: 851px) {
         font-size: 13px;
     }
     font-size: 16px;
@@ -152,7 +152,7 @@ header ul li:hover {
     z-index: 2;
     position: relative;
     overflow: hidden;
-    @media (max-width: 1130px) {
+    @media screen and (max-width: 1130px) {
         justify-content: center
     }
 }
@@ -170,14 +170,14 @@ header ul li:hover {
     flex-wrap: wrap;
     align-content: center;
     border-radius: 2.86vw;
-    @media (max-width: 1130px) {
+    @media screen and (max-width: 1130px) {
         margin-left: 0;
         width: 70%;
     }
 }
 
 #ph-p-container {
-    @media (max-width: 1100px) {
+    @media screen and (max-width: 1100px) {
         width: 90%;
     } 
     width: 60%;
@@ -190,7 +190,7 @@ header ul li:hover {
 }
 
 #ph-h1-container {
-    @media (max-width: 1130px) {
+    @media screen and (max-width: 1130px) {
         width: 90%;
     }
     width: 80%;
@@ -200,7 +200,7 @@ header ul li:hover {
 }
 
 #ph-h1-container h1 {
-    @media (max-width: 1298px) {
+    @media screen and (max-width: 1298px) {
         font-size: 47.38px;
     }
     font-size: 3.65vw;
@@ -214,7 +214,7 @@ header ul li:hover {
 }
 
 #page-hero-svgs { 
-    @media (max-width: 1548px) {
+    @media screen and (max-width: 1548px) {
         height: 43.73px;
     }
     height: 5.38vh;
@@ -226,7 +226,7 @@ header ul li:hover {
 }
 
 .svg-icon {
-    @media (max-width: 1548px) {
+    @media screen and (max-width: 1548px) {
         width: 40.23px;
         height: 43.73px;
         margin-right: 16.1px;
@@ -349,7 +349,7 @@ header ul li:hover {
     width: 350px;
 }
 
-@media (max-width: 1027px) {
+@media screen and (max-width: 1027px) {
     .cloud {
         -webkit-border-radius: 75px !important;
         -moz-border-radius: 75px !important;
@@ -423,6 +423,11 @@ header ul li:hover {
 
 .slide-in-left {
     animation: slide-in-left 2s ease-out;
+    visibility: visible !important;
+}
+
+.slide-in-left-placeholder {
+    visibility: hidden;
 }
 
 @keyframes slide-in-left {
@@ -442,18 +447,33 @@ header ul li:hover {
     visibility: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    grid-gap: 0rem 7rem; 
+    grid-gap: 0rem 7rem;
+    @media screen and (max-width: 1572px), screen and (max-height: 812px) {
+        grid-gap: 0rem 5.5rem;
+    } 
+    @media screen and (max-width: 1230px) {
+        grid-gap: 0;        
+    }
 }
 
 #skills-container-visible {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-gap: 0rem 7rem; 
+    @media screen and (max-width: 1572px), screen and (max-height: 812px) {
+        grid-gap: 0rem 5.5rem;
+    } 
+    @media screen and (max-width: 1230px) {
+        grid-gap: none;        
+    }
 }
   
 #coding-picture-column {
     grid-column: 1 / 2; 
     grid-row: 1 / span 3; 
+    display: flex;
+    justify-content: center;
+    align-items: 0;
 }
   
 #skills-column {
@@ -466,6 +486,16 @@ header ul li:hover {
 #coding-img {
     height: 100%;
     width: 100%;
+    @media screen and (max-width: 1572px), screen and (max-height: 812px) {
+        height: 75%;
+        width: 75%;
+    }
+    @media screen and (max-width: 1412px) {
+        height: 60%;
+    }
+    /* @media screen and (max-width: 1230px) {
+        margin: 100px 100px 0 0;
+    } */
 }
 
 #skills-box {
@@ -502,6 +532,32 @@ header ul li:hover {
     margin-top: 0;
 }
 
+.small-skills-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center; */
+    visibility: visible !important;
+}
+
+#small-skills-top-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-skills-half-1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-skills-half-2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
 /* Projects */
 
 #squiggle-divide-project {
@@ -525,8 +581,13 @@ header ul li:hover {
     height: 100%; /* Adjust height as needed */
 }
 
+.slide-in-right-placeholder {
+    visibility: hidden;
+}
+
 .slide-in-right {
     animation: slide-in-right 1s ease-out;
+    visibility: visible !important;
 }
 
 @keyframes slide-in-right {

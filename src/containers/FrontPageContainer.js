@@ -9,7 +9,8 @@ export const FrontPageContainer = () => {
     const [showSkills, setShowSkills] = useState(false);
     const [showProjects, setShowProjects] = useState(false);
     const [unBlurGmail, setUnBlurGmail] = useState(false);
-    const [isMouseOverProjectCase, setIsMouseOverProjectCase] = useState(false);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [smallSkillsLayout, setSMallSkillsLayout] = useState(false);
 
     const navigate = useNavigate();
 
@@ -24,7 +25,7 @@ export const FrontPageContainer = () => {
 // Skills Tittle Slide In Animation
 
     useEffect(() => {
-        const divs = document.querySelectorAll('.skills-placeholder');
+        const divs = document.querySelectorAll('.slide-in-left-placeholder');
 
         // Create an intersection observer
         const observer = new IntersectionObserver(entries => {
@@ -57,7 +58,7 @@ export const FrontPageContainer = () => {
                     entry.target.classList.add('show-skills');
                 } 
             });
-        }, { threshold: 1 });
+        }, { threshold: 0.5 });
 
         // Observe the container
         observer.observe(container);
@@ -78,7 +79,7 @@ export const FrontPageContainer = () => {
 // Projects Tittle Slide In Animation
 
     useEffect(() => {
-        const divs = document.querySelectorAll('.projects-placeholder');
+        const divs = document.querySelectorAll('.slide-in-right-placeholder');
 
         // Create an intersection observer
         const observer = new IntersectionObserver(entries => {
@@ -114,7 +115,7 @@ export const FrontPageContainer = () => {
                     }, 1000);
                 } 
             });
-        }, { threshold: 1 });
+        }, { threshold: 0.5 });
 
         // Observe the container
         observer.observe(container);
@@ -156,6 +157,24 @@ export const FrontPageContainer = () => {
         h3Showcase.forEach(h3 => observer.observe(h3));
     }, []);
 
+// New Layout For Smaller Screens
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    useEffect (() => {
+        if (windowWidth <= 1210) {
+            setSMallSkillsLayout(true);
+        }
+    }, [windowWidth])
+
     return (
         <>
             <FrontPageComponent 
@@ -164,6 +183,7 @@ export const FrontPageContainer = () => {
                 zoomOutProjects={zoomOutProjects}
                 unBlurGmail={unBlurGmail}
                 handleGMailFindOutMoreClick={handleGMailFindOutMoreClick}
+                smallSkillsLayout={smallSkillsLayout}
             />
         </>
     );
