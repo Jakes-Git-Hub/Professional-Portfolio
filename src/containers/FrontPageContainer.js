@@ -46,7 +46,7 @@ export const FrontPageContainer = () => {
 // Skills Container Zoom Animation
 
     useEffect(() => {
-        const container = document.querySelector('#skills-container');
+        const container = document.querySelector('#skills-container, .small-skills-container');
 
         // Create an intersection observer
         const observer = new IntersectionObserver(entries => {
@@ -169,12 +169,6 @@ export const FrontPageContainer = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    useEffect (() => {
-        if (windowWidth <= 1210) {
-            setSMallSkillsLayout(true);
-        }
-    }, [windowWidth])
-
     return (
         <>
             <FrontPageComponent 
@@ -183,7 +177,7 @@ export const FrontPageContainer = () => {
                 zoomOutProjects={zoomOutProjects}
                 unBlurGmail={unBlurGmail}
                 handleGMailFindOutMoreClick={handleGMailFindOutMoreClick}
-                smallSkillsLayout={smallSkillsLayout}
+                windowWidth={windowWidth}
             />
         </>
     );

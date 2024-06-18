@@ -31,7 +31,7 @@ export const FrontPageComponent = ({
     zoomOutProjects,
     unBlurGmail,
     handleGMailFindOutMoreClick,
-    smallSkillsLayout,
+    windowWidth,
 }) => {
 
     return (
@@ -129,7 +129,7 @@ export const FrontPageComponent = ({
                     My <span class="h2-highlight">Skills</span>
                 </h2>
                 <animated.div style={zoomOutSkills}>
-                    {smallSkillsLayout ? (
+                    {windowWidth <= 1210 ? (
                         <div class='small-skills-container'>
                             <div id='small-skills-top-row'>
                                 <div class='small-skills-half-1'>
@@ -138,40 +138,40 @@ export const FrontPageComponent = ({
                                 <div class='small-skills-half-2'>
                                 <div class="row" id="skills-box">
                                     <div class="skill-container">
-                                        <p>React</p>
+                                        <p className='text-centre'>React</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p>HTML</p>
+                                        <p className='text-centre'>HTML</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p>CSS</p>
+                                        <p className='text-centre'>CSS</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p>JavaScript</p>
+                                        <p className='text-centre'>JavaScript</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p>Node.js</p>
+                                        <p className='text-centre'>Node.js</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p>Git</p>
+                                        <p className='text-centre'>Git</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p>GitHub</p>
+                                        <p className='text-centre'>GitHub</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p>Netlify</p>
+                                        <p className='text-centre'>Netlify</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p>Express.js</p>
+                                        <p className='text-centre'>Express.js</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p>MUI</p>
+                                        <p className='text-centre'>MUI</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p>Axios</p>
+                                        <p className='text-centre'>Axios</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p>Jest/ React Testing Library</p>
+                                        <p className='text-centre'>Jest/ React Testing Library</p>
                                     </div>
                                 </div>
                                 </div>

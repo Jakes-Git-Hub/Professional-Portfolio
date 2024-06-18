@@ -490,12 +490,9 @@ header ul li:hover {
         height: 75%;
         width: 75%;
     }
-    @media screen and (max-width: 1412px) {
+    @media screen and (min-width: 617px) and (max-width: 1412px) {
         height: 60%;
     }
-    /* @media screen and (max-width: 1230px) {
-        margin: 100px 100px 0 0;
-    } */
 }
 
 #skills-box {
@@ -504,10 +501,6 @@ header ul li:hover {
     justify-content: center;
     flex-direction: row;
     align-content: center;
-}
-
-#skills-list {
-    padding: 10px;
 }
 
 .skill-container {
@@ -520,6 +513,17 @@ header ul li:hover {
     justify-content: center;
     height: 20%;
     border-radius: 3px;
+    @media screen and (max-width: 863px) {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin: 2.5px 0; */
+    }
+}
+
+.text-centre {
+    text-align: center;
 }
 
 #small-about {
