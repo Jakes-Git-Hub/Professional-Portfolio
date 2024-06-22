@@ -92,6 +92,7 @@ header {
         font-size: 13px;
     }
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
 header p {
@@ -408,7 +409,7 @@ header ul li:hover {
 /* My Skills */
 
 .content-container-margin{
-    margin: 10.24vh 10.42vw;
+    margin: 10.24vh 10.42vw 5.12vh;
 }
 
 .h2-highlight {
@@ -486,11 +487,17 @@ header ul li:hover {
 #coding-img {
     height: 100%;
     width: 100%;
-    @media screen and (max-width: 1572px), screen and (max-height: 812px) {
+}
+
+@media screen and (max-width: 1572px) {
+    #coding-img {
         height: 75%;
         width: 75%;
     }
-    @media screen and (min-width: 617px) and (max-width: 1412px) {
+}
+
+@media screen and (max-width: 1394px) {
+    #coding-img {
         height: 60%;
     }
 }
@@ -569,9 +576,26 @@ header ul li:hover {
     background-size: cover;
 }
 
+.content-container-padding-fp {
+    padding: 10.24vh 10.42vw;
+}
+
+@media screen and (max-width: 1600px) {
+    .content-container-padding-fp {
+        padding: 10.24vh 10.42vw 6vh;
+    }
+}
+
 .content-container-padding {
     padding: 10.24vh 10.42vw;
 }
+
+/* @media screen and (max-width: 1572px) {
+    .content-container-padding {
+        padding: 10.24vh 5.21vw;
+    }
+    
+} */
 
 .portfolio-section {
     position: relative; /* Required for SVG positioning */
@@ -603,17 +627,22 @@ header ul li:hover {
     }
 }
 
+#projects-h2-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
 .opposite-section-title {
     font-size: 50px;
-    margin-left: 80%;
-    margin-bottom: 5%;
+    margin-bottom: 7.5%;
 }
 
 #projects-picture-column {
     grid-column: 2 / 2;
     grid-row: 1 / span 3;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 }
 
@@ -622,11 +651,35 @@ header ul li:hover {
     width: 80%;
     filter: blur(5px);
     position: relative;
-    border-radius: 16px;
+    border-radius: 8px;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.1); 
     box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.37); 
     backdrop-filter: blur(15px); 
+}
+
+@media screen and (max-width: 1668px){
+    #gmail-img {
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 1574px){
+    #gmail-img {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 1476px){
+    #gmail-img {
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 1312px){
+    #gmail-img {
+        height: 35%;
+    }
 }
 
 #gmail-img-unblur {
@@ -634,12 +687,36 @@ header ul li:hover {
     width: 80%;    
     animation: unBlur 1s;
     position: relative;
-    border-radius: 16px;
+    border-radius: 8px;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(15px); 
     box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.37);
     transition: bottom 1s ease;
+}
+
+@media screen and (max-width: 1668px){
+    #gmail-img-unblur {
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 1574px){
+    #gmail-img-unblur {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 1476px){
+    #gmail-img-unblur {
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 1312px){
+    #gmail-img-unblur {
+        height: 30%;
+    }
 }
 
 #gmail-img-unblur:hover {
@@ -655,17 +732,6 @@ header ul li:hover {
     100% {
         filter: blur(0px);
     }
-}
-
-#gmail-glass{
-    height: 100%;
-    width: 75%;
-    position: relative;
-    border-radius: 20px; 
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.1); 
-    box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.37); 
-    backdrop-filter: blur(15px); 
 }
 
 #projects-container {
@@ -697,6 +763,18 @@ header ul li:hover {
     width: 100%;
     background: white;
     border-radius: 8px;
+}
+
+#projects-column-writting-small {
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 60px;
 }
 
 .underline-regular {
@@ -734,11 +812,31 @@ header ul li:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#gmail-tech-svgs-small {
+    height: 60px;
+    width: 90%;
+    margin: 20px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .tech-icon {
     height: 75%;
     width: 45px;
+}
+
+@media screen and (max-width: 1588px) {
+    .tech-bottom {
+        margin-bottom: 20px !important;
+    }
+    #gmail-tech-svgs {
+        margin-bottom: 75px;
+    }
 }
 
 .tech-icon-js {
@@ -759,6 +857,12 @@ header ul li:hover {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+}
+
+@media screen and (max-width: 743px) {
+    .find-out-and-live-buttons {
+        margin-top: 40px;
+    }
 }
 
 .standard-button {
@@ -787,6 +891,13 @@ header ul li:hover {
     background-color: rgb(255, 98, 0);
     font-size: 16px;
     text-decoration: underline;
+}
+
+.small-projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #upside-down-squiggle{
@@ -819,6 +930,12 @@ header ul li:hover {
     box-shadow: 0 13px 30px 0 rgb(255 98 0 / 85%);
 }
 
+@media screen and (max-width: 1182px) {
+    #projects-grid {
+        margin: 0 150px;
+    }
+}
+
 @keyframes gradient {
     100% {
         background-size: 4000px 100%;
@@ -828,7 +945,7 @@ header ul li:hover {
 .project-case {
     height: 500px;
     width: 400px;
-    margin-top: 70px;
+    margin: 70px 20px 0;
     border: grey 2px solid;
     border-radius: 4px;
     box-sizing: border-box;

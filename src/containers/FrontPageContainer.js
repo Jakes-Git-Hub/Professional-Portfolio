@@ -10,7 +10,6 @@ export const FrontPageContainer = () => {
     const [showProjects, setShowProjects] = useState(false);
     const [unBlurGmail, setUnBlurGmail] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [smallSkillsLayout, setSMallSkillsLayout] = useState(false);
 
     const navigate = useNavigate();
 
@@ -79,7 +78,7 @@ export const FrontPageContainer = () => {
 // Projects Tittle Slide In Animation
 
     useEffect(() => {
-        const divs = document.querySelectorAll('.slide-in-right-placeholder');
+        const divs = document.querySelectorAll('#projects-h2-container');
 
         // Create an intersection observer
         const observer = new IntersectionObserver(entries => {
@@ -100,7 +99,7 @@ export const FrontPageContainer = () => {
 // Projects Container Zoom Animation
 
     useEffect(() => {
-        const container = document.querySelector('#projects-container');
+        const container = document.querySelector('#projects-container, .small-projects-container');
 
         // Create an intersection observer
         const observer = new IntersectionObserver(entries => {

@@ -234,94 +234,167 @@ export const FrontPageComponent = ({
                             </div>
                         </div>
                     )}
-
-                    
-
-
-
-                    
                 </animated.div>
             </div>
 
 {/* Projects */}
 
 
-            <div class="content-container-padding" id='squiggle-divide-project'>
+            <div class="content-container-padding-fp" id='squiggle-divide-project'>
                 
-                <h2 class="opposite-section-title slide-in-right-placeholder"><span class="h2-highlight">Projects</span></h2>
+                <div id='projects-h2-container' class='slide-in-right-placeholder'>
+                    <h2 class='opposite-section-title'>
+                        My <span class="h2-highlight">Projects</span>
+                    </h2>
+                </div>
                 
                     <animated.div style={zoomOutProjects}>
-                        <div id="projects-container">
-                            <div id="projects-column-writting">
-                                <h3 className='orange'id='projects-h3'>Gmail Clone</h3>
-                                <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with. </p>
-                                <p class='projects-p'>I also added back-end implementation in the form of an Express.js server for custom API end points.</p>
-                                <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>
-                                <div id='gmail-list-container'> 
-                                    <div class='gmail-list-half'>
-                                        <ul id='gmail-list' class='projects-p'> 
-                                            <li>React Router DOM</li>
-                                            <li>React Hooks</li>
-                                            <li>Asynchronous RESTful API's</li>
-                                            <li>Promises</li>
-                                            <li>.env Variables</li>
-                                            <li>DOM Manipulation</li>
-                                            <li>JSX injection</li>
-                                            <li>Ternary Operators</li>
-                                            <li>JS Short Circuits</li>
-                                            <li>Dyanmic Rendering from nested object based on global state</li>
-                                            <li>Folder/ file directory best practices</li>
-                                            <li>Array methods and manipulation</li>                                            
-                                        </ul>
+                        {windowWidth <= 1212 ? (
+                            <div className='small-projects-container'>
+                                <div id="projects-column-writting-small">
+                                    <h3 className='orange'id='projects-h3'>Gmail Clone</h3>
+                                    <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with. </p>
+                                    <p class='projects-p'>I also added back-end implementation in the form of an Express.js server for custom API end points.</p>
+                                    <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>
+                                    <div id='gmail-list-container'> 
+                                        <div class='gmail-list-half'>
+                                            <ul id='gmail-list' class='projects-p'> 
+                                                <li>React Router DOM</li>
+                                                <li>React Hooks</li>
+                                                <li>Asynchronous RESTful API's</li>
+                                                <li>Promises</li>
+                                                <li>.env Variables</li>
+                                                <li>DOM Manipulation</li>
+                                                <li>JSX injection</li>
+                                                <li>Ternary Operators</li>
+                                                <li>JS Short Circuits</li>
+                                                <li>Dyanmic Rendering from nested object based on global state</li>
+                                                <li>Folder/ file directory best practices</li>
+                                                <li>Array methods and manipulation</li>                                            
+                                            </ul>
+                                        </div>
+                                        <div class='gmail-list-half'>
+                                            <ul id='gmail-list' class='projects-p'>
+                                                <li>MUI</li>
+                                                <li>Utilising and manipulting JSON</li>
+                                                <li>React Select UI Component</li>
+                                                <li>ARIA</li>
+                                                <li>Responsivity</li>
+                                                <li>Working with SVGS</li>
+                                                <li>Regex</li>
+                                                <li>Writing clean modular code (important to work with and test)</li>
+                                                <li>Loops</li>
+                                                <li>Express Server</li>
+                                                <li>Custom API Endpoints</li>
+                                                <li>Git</li>
+                                                <li>GitHub</li>
+                                                <li>Jest/ React Testing Library</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class='gmail-list-half'>
-                                        <ul id='gmail-list' class='projects-p'>
-                                            <li>MUI</li>
-                                            <li>Utilising and manipulting JSON</li>
-                                            <li>React Select UI Component</li>
-                                            <li>ARIA</li>
-                                            <li>Responsivity</li>
-                                            <li>Working with SVGS</li>
-                                            <li>Regex</li>
-                                            <li>Writing clean modular code (important to work with and test)</li>
-                                            <li>Loops</li>
-                                            <li>Express Server</li>
-                                            <li>Custom API Endpoints</li>
-                                            <li>Git</li>
-                                            <li>GitHub</li>
-                                            <li>Jest/ React Testing Library</li>
-                                        </ul>
+                                    <div id='gmail-tech-svgs-small'>
+                                        <img class='tech-icon-html tech-bottom' src={htmlIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={cssIcon}></img>
+                                        <img class='tech-icon-js tech-bottom' src={jsIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={reactIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={nodeIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={expressIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={axiosIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={gitIcon}></img>
+                                        <svg class='tech-icon tech-bottom' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                                        </svg>
+                                        <img class='tech-icon tech-bottom' src={jestIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={reactTLIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={netlifyIcon}></img>
+                                    </div>
+                                    <div class='find-out-and-live-buttons'>
+                                        <button class='standard-button' onClick={handleGMailFindOutMoreClick}>
+                                            Find out more
+                                        </button>  
+                                        <button class='standard-button'>
+                                            Live Site
+                                        </button>               
                                     </div>
                                 </div>
-                                <div id='gmail-tech-svgs'>
-                                    <img class='tech-icon-html' src={htmlIcon}></img>
-                                    <img class='tech-icon' src={cssIcon}></img>
-                                    <img class='tech-icon-js' src={jsIcon}></img>
-                                    <img class='tech-icon' src={reactIcon}></img>
-                                    <img class='tech-icon' src={nodeIcon}></img>
-                                    <img class='tech-icon' src={expressIcon}></img>
-                                    <img class='tech-icon' src={axiosIcon}></img>
-                                    <img class='tech-icon' src={gitIcon}></img>
-                                    <svg class='tech-icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-                                    </svg>
-                                    <img class='tech-icon' src={jestIcon}></img>
-                                    <img class='tech-icon' src={reactTLIcon}></img>
-                                    <img class='tech-icon' src={netlifyIcon}></img>
-                                </div>
-                                <div class='find-out-and-live-buttons'>
-                                    <button class='standard-button' onClick={handleGMailFindOutMoreClick}>
-                                        Find out more
-                                    </button>  
-                                    <button class='standard-button'>
-                                        Live Site
-                                    </button>               
+                                <div id="projects-picture-column">
+                                    <img src={Gmail} alt="" id={ unBlurGmail ? 'gmail-img-unblur' : "gmail-img"}/>
                                 </div>
                             </div>
-                            <div id="projects-picture-column">
-                                <img src={Gmail} alt="" id={ unBlurGmail ? 'gmail-img-unblur' : "gmail-img"}/>
+                        ) : (
+                            <div id="projects-container">
+                                <div id="projects-column-writting">
+                                    <h3 className='orange'id='projects-h3'>Gmail Clone</h3>
+                                    <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with. </p>
+                                    <p class='projects-p'>I also added back-end implementation in the form of an Express.js server for custom API end points.</p>
+                                    <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>
+                                    <div id='gmail-list-container'> 
+                                        <div class='gmail-list-half'>
+                                            <ul id='gmail-list' class='projects-p'> 
+                                                <li>React Router DOM</li>
+                                                <li>React Hooks</li>
+                                                <li>Asynchronous RESTful API's</li>
+                                                <li>Promises</li>
+                                                <li>.env Variables</li>
+                                                <li>DOM Manipulation</li>
+                                                <li>JSX injection</li>
+                                                <li>Ternary Operators</li>
+                                                <li>JS Short Circuits</li>
+                                                <li>Dyanmic Rendering from nested object based on global state</li>
+                                                <li>Folder/ file directory best practices</li>
+                                                <li>Array methods and manipulation</li>                                            
+                                            </ul>
+                                        </div>
+                                        <div class='gmail-list-half'>
+                                            <ul id='gmail-list' class='projects-p'>
+                                                <li>MUI</li>
+                                                <li>Utilising and manipulting JSON</li>
+                                                <li>React Select UI Component</li>
+                                                <li>ARIA</li>
+                                                <li>Responsivity</li>
+                                                <li>Working with SVGS</li>
+                                                <li>Regex</li>
+                                                <li>Writing clean modular code (important to work with and test)</li>
+                                                <li>Loops</li>
+                                                <li>Express Server</li>
+                                                <li>Custom API Endpoints</li>
+                                                <li>Git</li>
+                                                <li>GitHub</li>
+                                                <li>Jest/ React Testing Library</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id='gmail-tech-svgs'>
+                                        <img class='tech-icon-html tech-bottom' src={htmlIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={cssIcon}></img>
+                                        <img class='tech-icon-js tech-bottom' src={jsIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={reactIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={nodeIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={expressIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={axiosIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={gitIcon}></img>
+                                        <svg class='tech-icon tech-bottom' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                                        </svg>
+                                        <img class='tech-icon tech-bottom' src={jestIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={reactTLIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={netlifyIcon}></img>
+                                    </div>
+                                    <div class='find-out-and-live-buttons'>
+                                        <button class='standard-button' onClick={handleGMailFindOutMoreClick}>
+                                            Find out more
+                                        </button>  
+                                        <button class='standard-button'>
+                                            Live Site
+                                        </button>               
+                                    </div>
+                                </div>
+                                <div id="projects-picture-column">
+                                    <img src={Gmail} alt="" id={ unBlurGmail ? 'gmail-img-unblur' : "gmail-img"}/>
+                                </div>
                             </div>
-                        </div>
+                        )}
+                            
                     </animated.div>
             </div>
 
