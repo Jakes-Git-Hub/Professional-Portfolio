@@ -252,7 +252,7 @@ export const FrontPageComponent = ({
                         {windowWidth <= 1212 ? (
                             <div className='small-projects-container'>
                                 <div id="projects-column-writting-small">
-                                    <h3 className='orange'id='projects-h3'>Gmail Clone</h3>
+                                    <h3 className='orange-projects'id='projects-h3'>Gmail Clone</h3>
                                     <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with. </p>
                                     <p class='projects-p'>I also added back-end implementation in the form of an Express.js server for custom API end points.</p>
                                     <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>
@@ -324,7 +324,7 @@ export const FrontPageComponent = ({
                         ) : (
                             <div id="projects-container">
                                 <div id="projects-column-writting">
-                                    <h3 className='orange'id='projects-h3'>Gmail Clone</h3>
+                                    <h3 className='orange-projects'id='projects-h3'>Gmail Clone</h3>
                                     <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with. </p>
                                     <p class='projects-p'>I also added back-end implementation in the form of an Express.js server for custom API end points.</p>
                                     <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>
@@ -404,7 +404,7 @@ export const FrontPageComponent = ({
                 <div id='projects-grid'>
                     <div class='project-case'>
                         <div class='project-image-container'>
-                            <img src={jammming} alt='Jammming' class='preview-image' id='preview-image'/>
+                            <img src={jammming} alt='Jammming' id='jammming'/>
                         </div>
                         <div class='project-description-container'>
                             <h3 class='project-desc-h3'>Jammming</h3>
@@ -420,7 +420,7 @@ export const FrontPageComponent = ({
                     </div>
                     <div class='project-case'>
                         <div class='project-image-container'>
-                            <img src={adopt} alt='Adopt a Pet' class='preview-image' id='adopt'/>
+                            <img src={adopt} alt='Adopt a Pet' id='adopt'/>
                         </div>
                         <div class='project-description-container'>
                             <h3 class='project-desc-h3'>Adopt a Pet</h3>
@@ -436,7 +436,7 @@ export const FrontPageComponent = ({
                     </div>
                     <div class='project-case'>
                         <div class='project-image-container'>
-                            <img src={techNews} alt='Tech News' class='preview-image' id='tech-news'/>
+                            <img src={techNews} alt='Tech News' id='tech-news'/>
                         </div>
                         <div class='project-description-container'>
                             <h3 class='project-desc-h3'>Tech News</h3>
@@ -453,7 +453,7 @@ export const FrontPageComponent = ({
                     </div>
                     <div class='project-case'>
                         <div class='project-image-container-appointment'>
-                            <img src={appointment} alt='Appointment Planner' class='preview-image' id='appointment'/>
+                            <img src={appointment} alt='Appointment Planner' id='appointment'/>
                         </div>
                         <div class='project-description-container'>
                             <h3 class='project-desc-h3'>Appointment Planner</h3>
@@ -468,7 +468,7 @@ export const FrontPageComponent = ({
                     </div>
                     <div class='project-case'>
                         <div class='project-image-container'>
-                            <img src={numberGuesser} alt='Number Guesser' class='preview-image' id='number-guesser'/>
+                            <img src={numberGuesser} alt='Number Guesser' id='number-guesser'/>
                         </div>
                         <div class='project-description-container'>
                             <h3 class='project-desc-h3'>Number Guesser</h3>

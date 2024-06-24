@@ -81,10 +81,11 @@ header {
     background-color: black;
     color: white;
     padding: 24px;
+    height: auto;
     @media screen and (min-width: 851px) {
         font-size: 1.25rem;
     }
-    height: auto;
+    
 }
 
 #name {
@@ -120,8 +121,50 @@ header ul li {
 header ul li:hover {
     margin: 0 10px;
     transition: font-size 0.3s ease-in;
-    font-size: 22px;
+    font-size: 19px;
+}
 
+@media screen and (max-width: 626px) {
+    header {
+        font-size: 16px !important;
+    }
+    header ul li:hover {
+        font-size: 19px;
+    }
+    #name {
+        font-size: 13px;
+    
+    }
+}
+
+@media screen and (max-width: 556px) {
+    header {
+        font-size: 13px !important;
+    }
+    header ul li:hover {
+        font-size: 15px;
+    }
+    #name {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    header {
+        font-size: 10px !important;
+    }
+    header ul li:hover {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        font-size: 9px !important;
+    }
+    header ul li:hover {
+        font-size: 10px;
+    }
 }
 
 .underline {
@@ -608,10 +651,10 @@ header ul li:hover {
     width: 100%;
     height: 100%; /* Adjust height as needed */
 }
-
+/* 
 .slide-in-right-placeholder {
     visibility: hidden;
-}
+} */
 
 .slide-in-right {
     animation: slide-in-right 1s ease-out;
@@ -920,7 +963,7 @@ header ul li:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 0 200px;
     border: grey 2px solid;
     border-radius: 8px;
@@ -930,11 +973,24 @@ header ul li:hover {
     box-shadow: 0 13px 30px 0 rgb(255 98 0 / 85%);
 }
 
-@media screen and (max-width: 1182px) {
+@media screen and (max-width: 1007px) {
     #projects-grid {
-        margin: 0 150px;
+        margin: 0 20%;
     }
 }
+
+@media screen and (max-width: 859px) {
+    #projects-grid {
+        margin: 0 15%;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    #projects-grid {
+        margin: 0 10%;
+    }
+}
+
 
 @keyframes gradient {
     100% {
@@ -943,13 +999,73 @@ header ul li:hover {
 }
 
 .project-case {
-    height: 500px;
+    height: 600px;
     width: 400px;
-    margin: 70px 20px 0;
+    margin: 70px 20px 0 40px;
     border: grey 2px solid;
     border-radius: 4px;
     box-sizing: border-box;
     background-color: black;
+}
+
+@media screen and (max-width: 1323px) {
+    .project-case {
+        margin: 70px 20px 0;
+    }
+}
+
+@media screen and (max-width: 817px) {
+    .project-case {
+        margin: 70px 40px 0;
+    }
+}
+
+@media screen and (max-width: 712px) {
+    .project-case {
+        height: 700px;
+    }
+    #adopt {
+        object-fit: cover;
+    }
+    #jammming {
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 632px) {
+    .project-case {
+        width: 300px;
+        height: 600px;
+    }
+    .project-description-container {
+        height: 35% !important;
+    }
+    .desc-svg-icon {
+        height: 60% !important;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .project-case {
+        height: 700px;
+        width: 250px;
+    }
+    .project-desc-h3 {
+        margin: 5px 0 0 0 !important;
+    }
+    .project-desc-p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .project-case {
+        height: 600px;
+        width: 200px;
+    }
+    .project-desc-h3 {
+        font-size: 1rem;
+    }
 }
 
 .project-case:hover {
@@ -982,10 +1098,10 @@ header ul li:hover {
 }
 
 .project-description-container {
-    height: 32.5%;
+    height: 34%;
     width: calc(100% - 20px);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: white;
     border-radius: 4px;
     margin: 10px;
@@ -996,27 +1112,32 @@ header ul li:hover {
 }
 
 .project-desc-h3 {
-    margin: 7.5px 0 0 0;
+    margin: 7.5px 0;
+    text-align: center;
 }
 
 .project-desc-p {
     text-align: center;
-    margin: 0 15px 0
+    margin: 7.5px 15px;
 }
 
 .project-desc-svg-container {
     display: flex;
     height: 30px;
     width: 90%;
-    margin: 0 0 5px 20px;
-    justify-content: center;
+    margin: 7.5px 20px;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.desc-svg-icon {
-    height: 80%;
-    margin-right: 20px;
+@media screen and (min-width: 633px) {
+    .desc-svg-icon {
+        height: 80%;
+    }
 }
+
+
 
 #adopt {
     height: 100%;
@@ -1033,6 +1154,7 @@ header ul li:hover {
     height: 100%;
     width: auto;
     object-fit: contain;
+    overflow: hidden;
 }
 
 #jammming {
@@ -1043,12 +1165,6 @@ header ul li:hover {
 #tech-news {
     height: 100%;
     width: auto;
-}
-
-#preview-image {
-    height: 100%;
-    width: 100%;
-    object-fit: fill;
 }
 
 #grid-buffer {
@@ -1176,8 +1292,13 @@ header ul li:hover {
 
 .orange {
     color: rgb(255, 98, 0);
-    visibility: hidden;
-}   
+    visibility: hidden !important;
+}  
+
+.orange-projects {
+    color: rgb(255, 98, 0);
+    visibility: hidden !important;
+} 
 
 .fade-in {
     animation: fadeUp 1s ease-in forwards;

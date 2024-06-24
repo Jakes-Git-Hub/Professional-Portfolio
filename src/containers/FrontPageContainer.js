@@ -10,6 +10,7 @@ export const FrontPageContainer = () => {
     const [showProjects, setShowProjects] = useState(false);
     const [unBlurGmail, setUnBlurGmail] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [gmailContainerIsVisible, setGmailContainerIsVisible] = useState(false);
 
     const navigate = useNavigate();
 
@@ -114,7 +115,7 @@ export const FrontPageContainer = () => {
                     }, 1000);
                 } 
             });
-        }, { threshold: 0.5 });
+        }, { threshold: 0.25 });
 
         // Observe the container
         observer.observe(container);
@@ -138,7 +139,7 @@ export const FrontPageContainer = () => {
 // H3 Animation 
 
     useEffect(() => {
-        const h3Showcase = document.querySelectorAll('.orange');
+        const h3Showcase = document.querySelectorAll('.orange-projects');
 
         // Create an intersection observer
         const observer = new IntersectionObserver(entries => {
@@ -146,6 +147,27 @@ export const FrontPageContainer = () => {
             entries.forEach(entry => {  
                 // If the element is visible
                 if (entry.isIntersecting) {
+                    // Add the animation class
+                    setTimeout(() => {
+                        entry.target.classList.add('fade-in');
+                    }, 500);
+                } 
+            });
+        }, { threshold: 1 });
+
+        // Observe each h3
+        h3Showcase.forEach(h3 => observer.observe(h3));
+    }, []);
+
+    useEffect(() => {
+        const h3Showcase = document.querySelectorAll('.orange');
+
+        // Create an intersection observer
+        const observer = new IntersectionObserver(entries => {
+            // Loop over the entries
+            entries.forEach(entry => {  
+                // If the element is visible
+                if (entry.isIntersecting && gmailContainerIsVisible) {
                     // Add the animation class
                     entry.target.classList.add('fade-in');
                 } 
