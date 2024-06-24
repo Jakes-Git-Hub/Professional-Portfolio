@@ -623,9 +623,9 @@ header ul li:hover {
     padding: 10.24vh 10.42vw;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1380px) {
     .content-container-padding-fp {
-        padding: 10.24vh 10.42vw 6vh;
+        padding: 6vh 10.42vw;
     }
 }
 
@@ -633,15 +633,8 @@ header ul li:hover {
     padding: 10.24vh 10.42vw;
 }
 
-/* @media screen and (max-width: 1572px) {
-    .content-container-padding {
-        padding: 10.24vh 5.21vw;
-    }
-    
-} */
-
 .portfolio-section {
-    position: relative; /* Required for SVG positioning */
+    position: relative;
 }
   
 .section-divider {
@@ -649,12 +642,8 @@ header ul li:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Adjust height as needed */
+    height: 100%;
 }
-/* 
-.slide-in-right-placeholder {
-    visibility: hidden;
-} */
 
 .slide-in-right {
     animation: slide-in-right 1s ease-out;
@@ -679,6 +668,18 @@ header ul li:hover {
 .opposite-section-title {
     font-size: 50px;
     margin-bottom: 7.5%;
+}
+
+@media screen and (max-width: 992px) {
+    .opposite-section-title {
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    #projects-h3{
+        margin: 40px 0 15px 0 !important;
+    }
 }
 
 #projects-picture-column {
@@ -820,6 +821,12 @@ header ul li:hover {
     margin-bottom: 60px;
 }
 
+@media screen and (max-width: 1212px) {
+    #projects-column-writting-small{
+        margin-bottom: 98.78px;
+    }
+}
+
 .underline-regular {
     text-decoration: underline;
 }
@@ -842,6 +849,19 @@ header ul li:hover {
 .gmail-list-half{
     display: inline-flex;
     width: 50%;
+}
+
+@media screen and (max-width: 783px) {
+    #gmail-list {
+        margin: 0 25px;
+    }
+}
+
+@media screen and (max-width: 533px) {
+    #gmail-list {
+        margin: 0 15px;
+        font-size: 12px;
+    }
 }
 
 #gmail-list-container{
@@ -873,12 +893,12 @@ header ul li:hover {
     width: 45px;
 }
 
-@media screen and (max-width: 1588px) {
+@media screen and (max-width: 1588px) and (min-width: 593px) {
     .tech-bottom {
         margin-bottom: 20px !important;
     }
     #gmail-tech-svgs {
-        margin-bottom: 75px;
+        margin-bottom: 75px !important;
     }
 }
 
@@ -895,6 +915,33 @@ header ul li:hover {
     margin: 0 -10px 0;
 }
 
+@media screen and (max-width: 592px) {
+    .tech-icon {
+        height: 55%;
+        width: 33px;
+    }
+    .tech-icon-js {
+        height: 55%;
+        width: 33px;
+        top: 3px;
+        position: relative;
+    }
+    .tech-icon-html {
+        height: 55%;
+        width: 43px;
+        margin: 0 -10px 0;
+    }
+}
+
+@media screen and (max-width: 541px) {
+    .tech-bottom {
+        margin-bottom: 15px;
+    }
+    .find-out-and-live-buttons {
+        margin-top: 15px;
+    }
+}
+
 
 .find-out-and-live-buttons{
     display: flex;
@@ -902,7 +949,7 @@ header ul li:hover {
     width: 100%;
 }
 
-@media screen and (max-width: 743px) {
+@media screen and (max-width: 743px) and (min-width: 593px) {
     .find-out-and-live-buttons {
         margin-top: 40px;
     }
@@ -921,6 +968,15 @@ header ul li:hover {
     position: relative;
     font-size: 16px;
     transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 737px) {
+    .standard-button {
+        width: 37.5%;
+        height: 50px;
+        font-size: 14px;
+    }
+
 }
 
 .standard-button:hover {
