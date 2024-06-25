@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { GMailMoreComponent } from "../components/GMailMoreComponent";
+import { JammmingComponent } from "../components/JammmingComponent";
 
-export const GMailMoreContainer = () => {
+export const JammmingContainer = () => {
 
     const [currentMuiIndex, setCurrentMuiIndex] = useState(0);
 
@@ -138,7 +138,7 @@ useEffect(() => {
 
     return (
         <>
-            <GMailMoreComponent 
+            <JammmingComponent 
                 handleGHSVGClick={handleGHSVGClick}
                 videoRef={videoRef}
                 videoRef1={videoRef1}

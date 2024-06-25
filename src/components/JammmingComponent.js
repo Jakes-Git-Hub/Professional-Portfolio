@@ -3,8 +3,7 @@ import React from 'react';
 import gmailCode from '../images/gmail-code.png';
 import { HeaderContainer } from '../containers/HeaderContainer';
 
-
-export const GMailMoreComponent = ({
+export const JammmingComponent = ({
     handleGHSVGClick,
     videoRef,
     videoRef1,
@@ -25,14 +24,11 @@ export const GMailMoreComponent = ({
 
         <>
 
-{/* Header */}
-
-            <HeaderContainer />
-
+            <HeaderContainer/>
 
             <div class="content-container-padding" id='squiggle-divide-breakdown'>
                 <h2 class="section-title slide-in-left-placeholder">
-                    Gmail Clone <span class="h2-highlight">Showcase</span>
+                    <span class="h2-highlight">Jammming</span>
                 </h2>
                 <div id ='gmail-code-container'>
                     <img src={gmailCode} alt="gmail-code" id="gmail-code"/>
@@ -41,7 +37,7 @@ export const GMailMoreComponent = ({
 
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-desc-container white-background'>
-                    <p id='highlight-desc-p'>As well as the panels below that feature impressive functionalities of this project, there is also a lot more intelligent code under the hood that I invite you to look at.</p>
+                    <p id='highlight-desc-p'>As well as the panels below that feature impressive functionalities of this project, there is also a lot more intelligent code under the hood that is worth looking at.</p>
                         <svg 
                             id='hightlight-desc-svg' 
                             xmlns="http://www.w3.org/2000/svg" 

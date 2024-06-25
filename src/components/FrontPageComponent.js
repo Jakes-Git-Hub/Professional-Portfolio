@@ -21,6 +21,7 @@ import jestIcon from '../images/Jest-icon.png';
 import reactTLIcon from '../images/react-testing-library-logo.png';
 import restApiIcon from '../images/rest-api-icon.png';
 import expressIcon from '../images/ExpressJS-icon.webp';
+import { HeaderContainer } from '../containers/HeaderContainer';
 
 {/* <div id='upside-down-squiggle'>
             </div> */}
@@ -32,6 +33,7 @@ export const FrontPageComponent = ({
     unBlurGmail,
     handleGMailFindOutMoreClick,
     windowWidth,
+    handleJammmingPanelClick,
 }) => {
 
     return (
@@ -44,17 +46,7 @@ export const FrontPageComponent = ({
 
 {/* Header */}
 
-            <div class="header">
-                <header>
-                    <p id='name'>Jake Matthews</p>
-                    <ul>
-                        <li class="underline">Skills</li>
-                        <li class="underline">Projects</li>
-                        <li class="underline">Future Plans</li>
-                        <li class="underline">Contact</li>
-                    </ul>
-                </header>
-            </div>
+            <HeaderContainer />
 
 {/* Page Hero */}
 
@@ -125,7 +117,7 @@ export const FrontPageComponent = ({
 
             <div class="content-container-margin">
                 
-                <h2 class="section-title slide-in-left-placeholder">
+                <h2 class="section-title slide-in-left-placeholder" id='skills-nav'>
                     My <span class="h2-highlight">Skills</span>
                 </h2>
                 <animated.div style={zoomOutSkills}>
@@ -297,6 +289,7 @@ export const FrontPageComponent = ({
                                         <img class='tech-icon tech-bottom' src={cssIcon}></img>
                                         <img class='tech-icon-js tech-bottom' src={jsIcon}></img>
                                         <img class='tech-icon tech-bottom' src={reactIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={restApiIcon}></img>
                                         <img class='tech-icon tech-bottom' src={nodeIcon}></img>
                                         <img class='tech-icon tech-bottom' src={expressIcon}></img>
                                         <img class='tech-icon tech-bottom' src={axiosIcon}></img>
@@ -369,6 +362,7 @@ export const FrontPageComponent = ({
                                         <img class='tech-icon tech-bottom' src={cssIcon}></img>
                                         <img class='tech-icon-js tech-bottom' src={jsIcon}></img>
                                         <img class='tech-icon tech-bottom' src={reactIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={restApiIcon}></img>
                                         <img class='tech-icon tech-bottom' src={nodeIcon}></img>
                                         <img class='tech-icon tech-bottom' src={expressIcon}></img>
                                         <img class='tech-icon tech-bottom' src={axiosIcon}></img>
@@ -402,7 +396,7 @@ export const FrontPageComponent = ({
             
             <div id='black-background-project'>
                 <div id='projects-grid'>
-                    <div class='project-case'>
+                    <div class='project-case' onClick={handleJammmingPanelClick}>
                         <div class='project-image-container'>
                             <img src={jammming} alt='Jammming' id='jammming'/>
                         </div>

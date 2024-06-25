@@ -121,7 +121,7 @@ header ul li {
 header ul li:hover {
     margin: 0 10px;
     transition: font-size 0.3s ease-in;
-    font-size: 19px;
+    font-size: 23px;
 }
 
 @media screen and (max-width: 626px) {
@@ -563,12 +563,29 @@ header ul li:hover {
     justify-content: center;
     height: 20%;
     border-radius: 3px;
-    @media screen and (max-width: 863px) {
+}
+
+@media screen and (max-width: 863px) {
+    .skill-container {
         height: 30px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        /* margin: 2.5px 0; */
+        justify-content: center;  
+    }
+}
+
+@media screen and (max-width: 863px) {
+    .skill-container {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .skill-container {
+        font-size: 13px;
     }
 }
 
@@ -591,6 +608,21 @@ header ul li:hover {
     flex-direction: column;
     /* justify-items: center; */
     visibility: visible !important;
+}
+
+@media screen and (max-width: 714px) {
+    .small-skills-container {
+        margin-top: 10%;
+    }
+    #small-skills-top-row {
+        margin-bottom: 10% !important;
+    }
+}
+
+@media screen and (max-width: 1063px) {
+    #small-skills-top-row {
+        margin-bottom: 3% !important;
+    }
 }
 
 #small-skills-top-row {
@@ -616,7 +648,7 @@ header ul li:hover {
 
 #squiggle-divide-project {
     background-image: url('./dividers/layered-divider.svg');
-    background-size: cover;
+    background-size: cover !important;
 }
 
 .content-container-padding-fp {
@@ -663,6 +695,7 @@ header ul li:hover {
     display: flex;
     justify-content: end;
     align-items: center;
+    visibility: hidden;
 }
 
 .opposite-section-title {
@@ -804,7 +837,7 @@ header ul li:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 110%;
     background: white;
     border-radius: 8px;
 }
@@ -933,7 +966,7 @@ header ul li:hover {
     }
 }
 
-@media screen and (max-width: 541px) {
+@media screen and (max-width: 588px) {
     .tech-bottom {
         margin-bottom: 15px;
     }
@@ -949,7 +982,7 @@ header ul li:hover {
     width: 100%;
 }
 
-@media screen and (max-width: 743px) and (min-width: 593px) {
+@media screen and (max-width: 807px) and (min-width: 593px) {
     .find-out-and-live-buttons {
         margin-top: 40px;
     }
@@ -963,7 +996,7 @@ header ul li:hover {
     color: rgb(255, 98, 0);
     height: 60px;
     cursor: pointer;
-    margin: 0 5px 40px;
+    margin: 0 5px 55px;
     padding: 0;
     position: relative;
     font-size: 16px;
@@ -1232,7 +1265,7 @@ header ul li:hover {
 
 #squiggle-divide-breakdown {
     background-image: url('./dividers/layered-divider.svg');
-    background-size: cover;
+    background-size: cover !important;
 }
 
 #gmail-code-container {

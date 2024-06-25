@@ -10,7 +10,6 @@ export const FrontPageContainer = () => {
     const [showProjects, setShowProjects] = useState(false);
     const [unBlurGmail, setUnBlurGmail] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [gmailContainerIsVisible, setGmailContainerIsVisible] = useState(false);
 
     const navigate = useNavigate();
 
@@ -41,6 +40,10 @@ export const FrontPageContainer = () => {
 
         // Observe each div
         divs.forEach(div => observer.observe(div));
+
+        return () => {
+            divs.forEach(div => observer.unobserve(div));
+        };
     }, []);
 
 // Skills Container Zoom Animation
@@ -62,6 +65,8 @@ export const FrontPageContainer = () => {
 
         // Observe the container
         observer.observe(container);
+
+        return () => observer.unobserve(container);
     }, []);
 
     const zoomOutSkills = useSpring({
@@ -91,10 +96,14 @@ export const FrontPageContainer = () => {
                     entry.target.classList.add('slide-in-right');
                 } 
             });
-        });
+        }, { threshold: 1 });
 
         // Observe each div
         divs.forEach(div => observer.observe(div));
+
+        return () => {
+            divs.forEach(div => observer.unobserve(div));
+        };
     }, []);
 
 // Projects Container Zoom Animation
@@ -119,6 +128,8 @@ export const FrontPageContainer = () => {
 
         // Observe the container
         observer.observe(container);
+
+        return () => observer.unobserve(container);
     }, []);
 
     const zoomOutProjects = useSpring({
@@ -131,9 +142,16 @@ export const FrontPageContainer = () => {
         },
     });
 
+// Find out more Logic
+
     const handleGMailFindOutMoreClick = () => {
         window.scrollTo(0, 0);
         navigate('/gmail-more');
+    }
+
+    const handleJammmingPanelClick = () => {
+        window.scrollTo(0, 0);
+        navigate('/Jammming');
     }
 
 // H3 Animation 
@@ -157,6 +175,10 @@ export const FrontPageContainer = () => {
 
         // Observe each h3
         h3Showcase.forEach(h3 => observer.observe(h3));
+
+        return () => {
+            h3Showcase.forEach(h3 => observer.unobserve(h3));
+        }
     }, []);
 
     useEffect(() => {
@@ -167,7 +189,7 @@ export const FrontPageContainer = () => {
             // Loop over the entries
             entries.forEach(entry => {  
                 // If the element is visible
-                if (entry.isIntersecting && gmailContainerIsVisible) {
+                if (entry.isIntersecting) {
                     // Add the animation class
                     entry.target.classList.add('fade-in');
                 } 
@@ -176,6 +198,10 @@ export const FrontPageContainer = () => {
 
         // Observe each h3
         h3Showcase.forEach(h3 => observer.observe(h3));
+
+        return () => {
+            h3Showcase.forEach(h3 => observer.unobserve(h3));
+        }
     }, []);
 
 // New Layout For Smaller Screens
@@ -199,6 +225,7 @@ export const FrontPageContainer = () => {
                 unBlurGmail={unBlurGmail}
                 handleGMailFindOutMoreClick={handleGMailFindOutMoreClick}
                 windowWidth={windowWidth}
+                handleJammmingPanelClick={handleJammmingPanelClick}
             />
         </>
     );
