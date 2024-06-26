@@ -231,7 +231,6 @@ export const FrontPageComponent = ({
 
 {/* Projects */}
 
-
             <div class="content-container-padding-fp" id='squiggle-divide-project'>
                 
                 <div id='projects-h2-container' class='slide-in-right-placeholder'>

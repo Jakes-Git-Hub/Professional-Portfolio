@@ -465,6 +465,20 @@ header ul li:hover {
     margin-bottom: 5%;
 }
 
+.section-title-fom {
+    font-size: 50px;
+    margin: 0 0 5% 5vw;
+    position: relative;
+}
+
+@media screen and (max-width: 1034px) {
+    .section-title-fom {
+        bottom: 40px;
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+}
+
 .slide-in-left {
     animation: slide-in-left 2s ease-out;
     visibility: visible !important;
@@ -646,6 +660,11 @@ header ul li:hover {
 
 /* Projects */
 
+.white-buffer {
+    height: 40px;
+    width: 100%;
+}
+
 #squiggle-divide-project {
     background-image: url('./dividers/layered-divider.svg');
     background-size: cover !important;
@@ -663,10 +682,6 @@ header ul li:hover {
 
 .content-container-padding {
     padding: 10.24vh 10.42vw;
-}
-
-.portfolio-section {
-    position: relative;
 }
   
 .section-divider {
@@ -1276,7 +1291,7 @@ header ul li:hover {
 
 #gmail-code {
     height: 900%;
-    width: 90%;
+    width: 100%;
     border-radius: 8px;
     margin-top: 40px;
 }

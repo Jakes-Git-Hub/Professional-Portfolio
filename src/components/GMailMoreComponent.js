@@ -29,9 +29,10 @@ export const GMailMoreComponent = ({
 
             <HeaderContainer />
 
+            <div className='white-buffer'></div>
 
             <div class="content-container-padding" id='squiggle-divide-breakdown'>
-                <h2 class="section-title slide-in-left-placeholder">
+                <h2 class="section-title-fom slide-in-left-placeholder">
                     Gmail Clone <span class="h2-highlight">Showcase</span>
                 </h2>
                 <div id ='gmail-code-container'>
