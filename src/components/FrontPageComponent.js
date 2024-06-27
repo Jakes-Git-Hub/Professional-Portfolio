@@ -261,7 +261,8 @@ export const FrontPageComponent = ({
                                                 <li>JS Short Circuits</li>
                                                 <li>Dyanmic Rendering from nested object based on global state</li>
                                                 <li>Folder/ file directory best practices</li>
-                                                <li>Array methods and manipulation</li>                                            
+                                                <li>Array methods and manipulation</li> 
+                                                <li>Object Destructuring Assignment</li>                                             
                                             </ul>
                                         </div>
                                         <div class='gmail-list-half'>

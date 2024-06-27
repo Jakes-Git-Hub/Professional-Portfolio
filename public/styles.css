@@ -467,16 +467,44 @@ header ul li:hover {
 
 .section-title-fom {
     font-size: 50px;
-    margin: 0 0 5% 5vw;
+    margin: 0 0 4% 5vw;
     position: relative;
 }
 
 @media screen and (max-width: 1034px) {
     .section-title-fom {
-        bottom: 40px;
+        /* bottom: 40px; */
         font-size: 45px;
-        margin-bottom: 0;
+        margin-bottom: 0 !important;
     }
+    #gmail-code {
+        margin-top: 20px !important;
+    }
+    .h2-highlight-gmail {
+        box-shadow: inset 0px -18.5px 0 rgb(255 98 0 / 85%) !important;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .section-title-fom {
+        font-size: 35px;
+    }
+    .h2-highlight-gmail {
+        box-shadow: inset 0px -13px 0 rgb(255 98 0 / 85%) !important;
+    }
+}
+
+@media screen and (max-width: 519px) {
+    .section-title-fom {
+        font-size: 25px;
+    }
+    .h2-highlight-gmail {
+        box-shadow: inset 0px -9px 0 rgb(255 98 0 / 85%) !important;
+    }
+}
+
+.h2-highlight-gmail {
+    box-shadow: inset 0px -20px 0 rgb(255 98 0 / 85%)
 }
 
 .slide-in-left {
@@ -675,8 +703,8 @@ header ul li:hover {
 }
 
 @media screen and (max-width: 1380px) {
-    .content-container-padding-fp {
-        padding: 6vh 10.42vw;
+    .content-container-padding-fp, .content-container-padding {
+        padding: 6vh 10.42vw !important;
     }
 }
 
@@ -751,26 +779,26 @@ header ul li:hover {
 }
 
 @media screen and (max-width: 1668px){
-    #gmail-img {
-        height: 60%;
+    #gmail-img, #gmail-img-unblur {
+        height: 60% !important;
     }
 }
 
 @media screen and (max-width: 1574px){
-    #gmail-img {
-        height: 50%;
+    #gmail-img, #gmail-img-unblur {
+        height: 50% !important;
     }
 }
 
 @media screen and (max-width: 1476px){
-    #gmail-img {
-        height: 40%;
+    #gmail-img, #gmail-img-unblur {
+        height: 40% !important;
     }
 }
 
 @media screen and (max-width: 1312px){
-    #gmail-img {
-        height: 35%;
+    #gmail-img, #gmail-img-unblur {
+        height: 35% !important;
     }
 }
 
@@ -785,30 +813,6 @@ header ul li:hover {
     backdrop-filter: blur(15px); 
     box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.37);
     transition: bottom 1s ease;
-}
-
-@media screen and (max-width: 1668px){
-    #gmail-img-unblur {
-        height: 60%;
-    }
-}
-
-@media screen and (max-width: 1574px){
-    #gmail-img-unblur {
-        height: 50%;
-    }
-}
-
-@media screen and (max-width: 1476px){
-    #gmail-img-unblur {
-        height: 40%;
-    }
-}
-
-@media screen and (max-width: 1312px){
-    #gmail-img-unblur {
-        height: 30%;
-    }
 }
 
 #gmail-img-unblur:hover {
@@ -1241,8 +1245,6 @@ header ul li:hover {
     }
 }
 
-
-
 #adopt {
     height: 100%;
     width: 100%;
@@ -1290,7 +1292,21 @@ header ul li:hover {
 }
 
 #gmail-code {
-    height: 900%;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+#small-gmail-code {
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+#smaller-gmail-code {
+    height: auto;
     width: 100%;
     border-radius: 8px;
     margin-top: 40px;

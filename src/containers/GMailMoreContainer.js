@@ -5,6 +5,7 @@ import { GMailMoreComponent } from "../components/GMailMoreComponent";
 export const GMailMoreContainer = () => {
 
     const [currentMuiIndex, setCurrentMuiIndex] = useState(0);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const navigate = useNavigate();
 
@@ -47,7 +48,9 @@ useEffect(() => {
             // If the element is visible
             if (entry.isIntersecting) {
                 // Add the animation class
-                entry.target.classList.add('fade-in');
+                setTimeout(() => {
+                    entry.target.classList.add('fade-in');
+                }, 150);
             } 
         });
     }, { threshold: 1 });
@@ -120,7 +123,8 @@ useEffect(() => {
         './videos/mui/MUI Custom Buttons 2.mp4',
     ];
 
-    // Function to play the next video
+// Function to play the next video
+
     const cycleMuiVideo = () => {
         const nextVideoIndex = (currentMuiIndex + 1) % muiSources.length;
         setCurrentMuiIndex(nextVideoIndex);
@@ -129,12 +133,25 @@ useEffect(() => {
         }
     };
 
-    // Effect to update the video source and play the video
+// Effect to update the video source and play the video
+
     useEffect(() => {
         if (muiRef.current) {
-            muiRef.current.load(); // Load the new video source
+            muiRef.current.load();
         }
-    }, [currentMuiIndex]); // This effect runs when currentVideoIndex changes
+    }, [currentMuiIndex]);
+
+// New Layout For Smaller Screens
+
+useEffect(() => {
+    const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+}, []);
 
     return (
         <>
@@ -153,6 +170,7 @@ useEffect(() => {
                 cycleMuiVideo={cycleMuiVideo}
                 muiSources={muiSources}
                 currentMuiIndex={currentMuiIndex}
+                windowWidth={windowWidth}
             />
         </>
     );

@@ -1,6 +1,8 @@
 
 import React from 'react';
 import gmailCode from '../images/gmail-code.png';
+import smallGmailCode from '../images/small-gmail-code.png';
+import smallerGmailCode from '../images/smaller-gmail-code.png' 
 import { HeaderContainer } from '../containers/HeaderContainer';
 
 
@@ -19,6 +21,7 @@ export const GMailMoreComponent = ({
     cycleMuiVideo,
     muiSources,
     currentMuiIndex,
+    windowWidth,
 }) => {
 
     return (
@@ -33,11 +36,18 @@ export const GMailMoreComponent = ({
 
             <div class="content-container-padding" id='squiggle-divide-breakdown'>
                 <h2 class="section-title-fom slide-in-left-placeholder">
-                    Gmail Clone <span class="h2-highlight">Showcase</span>
+                    Gmail Clone <span class="h2-highlight-gmail">Showcase</span>
                 </h2>
-                <div id ='gmail-code-container'>
-                    <img src={gmailCode} alt="gmail-code" id="gmail-code"/>
-                </div>
+                { windowWidth > 1492 ? (
+                    <div id ='gmail-code-container'>
+                        <img src={smallGmailCode} alt="small-gmail-code" id="small-gmail-code"/>
+                    </div>
+                ) : (
+                    <div id ='gmail-code-container'>
+                        <img src={smallerGmailCode} alt="small-gmail-code" id="small-gmail-code"/>
+                    </div>
+                )}
+                
             </div>
 
             <div class='content-container-padding black-background-highlights'>
