@@ -703,7 +703,13 @@ header ul li:hover {
 }
 
 @media screen and (max-width: 1380px) {
-    .content-container-padding-fp, .content-container-padding {
+    .content-container-padding-fp {
+        padding: 6vh 10.42vw !important;
+    }
+}
+
+@media screen and (max-width: 1492px) {
+    .content-container-padding {
         padding: 6vh 10.42vw !important;
     }
 }
@@ -1325,6 +1331,35 @@ header ul li:hover {
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+    height: 400px;
+}
+
+@media screen and (max-width: 1034px) {
+    .highlight-container {
+        flex-direction: column;
+    }
+    .highlight-half-1 {
+        flex-direction: row;
+        height: 50%;
+        width: 100%;
+    }
+    .highlight-half-2 {
+        flex-direction: row;
+        height: 50%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1728px) {
+    .highlight-container {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1286px) {
+    .highlight-container {
+        height: 600px;
+    }
 }
 
 .highlight-half-1 {
@@ -1359,14 +1394,16 @@ header ul li:hover {
 }
 
 #highlight-desc-p{
-    margin: 3rem 0 1.5rem 0;
+    margin: 3rem 3rem 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
 }
 
 #hightlight-desc-svg {
     margin: 1.5rem 0 3rem 0;
     transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
-    height: 4.5%;
-    width: 4.5%;
+    height: 66px;
+    width: 66px;
     border-radius: 50%;
 }
 

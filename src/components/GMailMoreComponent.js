@@ -68,7 +68,7 @@ export const GMailMoreComponent = ({
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-container white-background'>
                     <div class='highlight-half-1'>
-                        <h3 class='bottom-h3 orange'>Translation Feature</h3>
+                        <h3 class='orange'>Translation Feature</h3>
                         <p class='p-showcase'>
                             This feature allows the user to translate the whole of the text in the app to a multitude of languages - this is done by having a text object that has nested values for each language. 
                         </p>
@@ -120,7 +120,7 @@ export const GMailMoreComponent = ({
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-container white-background'>
                     <div class='highlight-half-1'>
-                        <h3 className='orange' id='SGH3'>Send Grid API Email Authorisation</h3>
+                        <h3 className='orange'>Send Grid API Email Authorisation</h3>
                         <p class='p-showcase'>
                             This authorisation method uses Send Grid and a custom API end point in my Express.js server - which takes in an inputted email. It then creates a random 6 digit verification code which is sent to the user via email and if they enter it correctly they can continue the form, or log in if they have forgotten their password.
                         </p>
@@ -155,7 +155,7 @@ export const GMailMoreComponent = ({
                         </video>
                     </div>
                     <div class='highlight-half-1'>
-                        <h3 className='orange' id='geo-h3'>Custom IP Grabber API Paired with IP Geolocation API</h3>
+                        <h3 className='orange'>Custom IP Grabber API Paired with IP Geolocation API</h3>
                         <p class='p-showcase'>
                             In my server there is a custom end point that uses either the forwardedFor request header or the remoteAddress request socket to return the users IP. We then have a grabUserIPHook, which makes a request to that end point to return the users Ip.
                         </p>
@@ -213,7 +213,7 @@ export const GMailMoreComponent = ({
                         </video>
                     </div>
                     <div class='highlight-half-1'>
-                        <h3 className='orange' id='responsivity-h3'>Responsivity</h3>
+                        <h3 className='orange'>Responsivity</h3>
                         <p class='p-showcase'>
                             The app is fully responsive, using media queries to apply optimal layouts or sophisticatedly hide aspects of the page fluidly depending on screen size.
                         </p>
@@ -221,7 +221,7 @@ export const GMailMoreComponent = ({
                             Responsivty is also used for the MUI language changer menu where the extent of the menu height is calculated depending on the height of the screen.
                         </p>
                         <p class='p-showcase'>
-                            It also uses responsive css formats to dyanmically render elements positions and sizes in the browser. This improves UI and UX for all different hardware users.
+                            It also uses responsive css formats to dyanmically render elements positions and sizes in the browser. This improves UI and UX for all different screen sizes.
                         </p>
                     </div>
                     
