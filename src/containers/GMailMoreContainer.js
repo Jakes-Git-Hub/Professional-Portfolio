@@ -57,7 +57,7 @@ useEffect(() => {
 
     // Observe each h3
     h3Showcase.forEach(h3 => observer.observe(h3));
-}, []);
+}, [windowWidth]);
 
 // Video Intersection Observer
 

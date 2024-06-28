@@ -34,6 +34,8 @@ export const FrontPageComponent = ({
     handleGMailFindOutMoreClick,
     windowWidth,
     handleJammmingPanelClick,
+    skillsContainerHasZoomed,
+    projectsContainerHasZoomed,
 }) => {
 
     return (
@@ -175,7 +177,7 @@ export const FrontPageComponent = ({
                             </div>
                         </div>
                     ) : (
-                        <div id="skills-container">
+                        <div className={`skills-container ${skillsContainerHasZoomed ? 'show' : ''}`}>
                             <div id="coding-picture-column">
                                 <img src={Coder} alt="person-coding" id="coding-img"/>
                             </div>
@@ -315,7 +317,7 @@ export const FrontPageComponent = ({
                                 </div>
                             </div>
                         ) : (
-                            <div id="projects-container">
+                            <div className={`projects-container ${projectsContainerHasZoomed ? 'show' : ''}`}>
                                 <div id="projects-column-writting">
                                     <h3 className='orange-projects'id='projects-h3'>Gmail Clone</h3>
                                     <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with. </p>
@@ -324,8 +326,8 @@ export const FrontPageComponent = ({
                                     <div id='gmail-list-container'> 
                                         <div class='gmail-list-half'>
                                             <ul id='gmail-list' class='projects-p'> 
-                                                <li>React Router DOM</li>
-                                                <li>React Hooks</li>
+                                                <li>Git</li>
+                                                <li>GitHub</li>
                                                 <li>Asynchronous RESTful API's</li>
                                                 <li>Promises</li>
                                                 <li>.env Variables</li>
@@ -335,7 +337,8 @@ export const FrontPageComponent = ({
                                                 <li>JS Short Circuits</li>
                                                 <li>Dyanmic Rendering from nested object based on global state</li>
                                                 <li>Folder/ file directory best practices</li>
-                                                <li>Array methods and manipulation</li>                                            
+                                                <li>Array methods and manipulation</li>  
+                                                <li>Object Orientated Programming</li>                                            
                                             </ul>
                                         </div>
                                         <div class='gmail-list-half'>
@@ -351,8 +354,8 @@ export const FrontPageComponent = ({
                                                 <li>Loops</li>
                                                 <li>Express Server</li>
                                                 <li>Custom API Endpoints</li>
-                                                <li>Git</li>
-                                                <li>GitHub</li>
+                                                <li>React Router DOM</li>
+                                                <li>React Hooks</li>
                                                 <li>Jest/ React Testing Library</li>
                                             </ul>
                                         </div>

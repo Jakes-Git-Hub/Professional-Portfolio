@@ -452,7 +452,7 @@ header ul li:hover {
 /* My Skills */
 
 .content-container-margin{
-    margin: 10.24vh 10.42vw 5.12vh;
+    margin: 10.24vh 10.42vw 0;
 }
 
 .h2-highlight {
@@ -473,9 +473,7 @@ header ul li:hover {
 
 @media screen and (max-width: 1034px) {
     .section-title-fom {
-        /* bottom: 40px; */
         font-size: 45px;
-        margin-bottom: 0 !important;
     }
     #gmail-code {
         margin-top: 20px !important;
@@ -525,11 +523,11 @@ header ul li:hover {
     }
 }
 
-.show-skills {
+.show {
     visibility: visible !important;
 }
 
-#skills-container {
+.skills-container {
     visibility: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -539,18 +537,6 @@ header ul li:hover {
     } 
     @media screen and (max-width: 1230px) {
         grid-gap: 0;        
-    }
-}
-
-#skills-container-visible {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-gap: 0rem 7rem; 
-    @media screen and (max-width: 1572px), screen and (max-height: 812px) {
-        grid-gap: 0rem 5.5rem;
-    } 
-    @media screen and (max-width: 1230px) {
-        grid-gap: none;        
     }
 }
   
@@ -708,14 +694,30 @@ header ul li:hover {
     }
 }
 
-@media screen and (max-width: 1492px) {
+@media screen and (max-width: 1428px) {
     .content-container-padding {
-        padding: 6vh 10.42vw !important;
+        padding: 8vh 10.42vw !important;
+    }
+    #smaller-gmail-code {
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    #smaller-gmail-code {
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 1006px) {
+    #smaller-gmail-code {
+        width: 100% !important;
     }
 }
 
 .content-container-padding {
     padding: 10.24vh 10.42vw;
+    box-sizing: border-box !important;
 }
   
 .section-divider {
@@ -752,9 +754,9 @@ header ul li:hover {
     margin-bottom: 7.5%;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1212px) {
     .opposite-section-title {
-        margin-bottom: 10%;
+        margin-bottom: 12.5%;
     }
 }
 
@@ -836,7 +838,7 @@ header ul li:hover {
     }
 }
 
-#projects-container {
+.projects-container {
     visibility: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -849,11 +851,6 @@ header ul li:hover {
     grid-template-columns: 1fr 1fr; 
     grid-gap: 0rem 5rem; 
     margin-bottom: 40px;
-}
-
-
-.show-projects {
-    visibility: visible !important;
 }
 
 #projects-column-writting {
@@ -1312,10 +1309,9 @@ header ul li:hover {
 }
 
 #smaller-gmail-code {
-    height: auto;
     width: 100%;
     border-radius: 8px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .black-background-highlights{
@@ -1334,19 +1330,46 @@ header ul li:hover {
     height: 400px;
 }
 
+.p-showcase {
+    margin: 1em 4rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1362px) {
+    .p-showcase {
+        margin: 1em 3em; 
+    }
+}
+
 @media screen and (max-width: 1034px) {
     .highlight-container {
-        flex-direction: column;
+        flex-direction: column !important;
+        height: 825px !important;
     }
     .highlight-half-1 {
         flex-direction: row;
-        height: 50%;
-        width: 100%;
+        height: 50% !important;
+        width: 100% !important;
     }
     .highlight-half-2 {
-        flex-direction: row;
-        height: 50%;
-        width: 100%;
+        flex-direction: row !important;
+        height: 50% !important;
+        width: 100% !important;
+    }
+    .p-showcase {
+        margin: 1em 2rem; 
+        font-size: 0.8rem;
+    }
+    .show-case-video {
+        width: auto !important;
+        height: 100% !important;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 558px) {
+    .p-showcase {
+        margin: 1em 3em; 
     }
 }
 
@@ -1356,9 +1379,15 @@ header ul li:hover {
     }
 }
 
-@media screen and (max-width: 1286px) {
+@media screen and (max-width: 1158px) {
     .highlight-container {
-        height: 600px;
+        height: 575px;
+    }
+}
+
+@media screen and (max-width: 1018px) {
+    .highlight-container {
+        height: 800px !important;
     }
 }
 
@@ -1413,11 +1442,6 @@ header ul li:hover {
     box-shadow: 0 0 20px 5px rgb(255 98 0 / 85%);
 }
 
-.p-showcase {
-    margin: 1em 4rem;
-    text-align: center;
-}
-
 .bottom-h3 {
     bottom: 1.25rem;
     position: relative;
@@ -1453,13 +1477,14 @@ header ul li:hover {
 }  
 
 .orange-projects {
-    color: rgb(255, 98, 0);
+    color: rgb(255, 255, 255) !important;
     visibility: hidden !important;
 } 
 
 .fade-in {
     animation: fadeUp 1s ease-in forwards;
     visibility: visible !important; 
+    color: rgb(255, 98, 0) !important;
 }
 
 @keyframes fadeUp {

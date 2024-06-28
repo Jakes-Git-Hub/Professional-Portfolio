@@ -10,6 +10,8 @@ export const FrontPageContainer = () => {
     const [showProjects, setShowProjects] = useState(false);
     const [unBlurGmail, setUnBlurGmail] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [skillsContainerHasZoomed, setSkillsContainerHasZoomed] = useState(false);
+    const [projectsContainerHasZoomed, setProjectsContainerHasZoomed] = useState(false);
 
     const navigate = useNavigate();
 
@@ -49,7 +51,7 @@ export const FrontPageContainer = () => {
 // Skills Container Zoom Animation
 
     useEffect(() => {
-        const container = document.querySelector('#skills-container, .small-skills-container');
+        const container = document.querySelector('.skills-container, .small-skills-container');
 
         // Create an intersection observer
         const observer = new IntersectionObserver(entries => {
@@ -58,10 +60,11 @@ export const FrontPageContainer = () => {
                 // If the element is visible
                 if (entry.isIntersecting) {
                     setShowSkills(true);
-                    entry.target.classList.add('show-skills');
+                    setSkillsContainerHasZoomed(true);
+                    entry.target.classList.add('show');
                 } 
             });
-        }, { threshold: 0.5 });
+        }, { threshold: 0.75 });
 
         // Observe the container
         observer.observe(container);
@@ -109,24 +112,21 @@ export const FrontPageContainer = () => {
 // Projects Container Zoom Animation
 
     useEffect(() => {
-        const container = document.querySelector('#projects-container, .small-projects-container');
+        const container = document.querySelector('.projects-container, .small-projects-container');
 
-        // Create an intersection observer
         const observer = new IntersectionObserver(entries => {
-            // Loop over the entries
             entries.forEach(entry => {  
-                // If the element is visible
                 if (entry.isIntersecting) {
                     setShowProjects(true);
-                    entry.target.classList.add('show-projects');
+                    setProjectsContainerHasZoomed(true);
+                    entry.target.classList.add('show');
                     setTimeout(() => {
                         setUnBlurGmail(true);
                     }, 1000);
                 } 
             });
-        }, { threshold: 0.25 });
+        }, { threshold: 0.35 });
 
-        // Observe the container
         observer.observe(container);
 
         return () => observer.unobserve(container);
@@ -168,7 +168,7 @@ export const FrontPageContainer = () => {
                     // Add the animation class
                     setTimeout(() => {
                         entry.target.classList.add('fade-in');
-                    }, 500);
+                    }, 750);
                 } 
             });
         }, { threshold: 1 });
@@ -226,6 +226,8 @@ export const FrontPageContainer = () => {
                 handleGMailFindOutMoreClick={handleGMailFindOutMoreClick}
                 windowWidth={windowWidth}
                 handleJammmingPanelClick={handleJammmingPanelClick}
+                skillsContainerHasZoomed={skillsContainerHasZoomed}
+                projectsContainerHasZoomed={projectsContainerHasZoomed}
             />
         </>
     );
