@@ -124,7 +124,7 @@ export const FrontPageComponent = ({
                 </h2>
                 <animated.div style={zoomOutSkills}>
                     {windowWidth <= 1210 ? (
-                        <div class='small-skills-container'>
+                        <div className={`small-skills-container ${skillsContainerHasZoomed ? 'show' : ''}`}>
                             <div id='small-skills-top-row'>
                                 <div class='small-skills-half-1'>
                                     <img src={Coder} alt="person-coding" id="coding-img"/>
@@ -242,8 +242,8 @@ export const FrontPageComponent = ({
                 </div>
                 
                     <animated.div style={zoomOutProjects}>
-                        {windowWidth <= 1212 ? (
-                            <div className='small-projects-container'>
+                        {windowWidth <= 1298 ? (
+                            <div className={`small-projects-container ${projectsContainerHasZoomed ? 'show' : ''}`}>
                                 <div id="projects-column-writting-small">
                                     <h3 className='orange-projects'id='projects-h3'>Gmail Clone</h3>
                                     <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with. </p>
@@ -251,7 +251,7 @@ export const FrontPageComponent = ({
                                     <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>
                                     <div id='gmail-list-container'> 
                                         <div class='gmail-list-half'>
-                                            <ul id='gmail-list' class='projects-p'> 
+                                            <ul id='gmail-list-left' class='projects-p'> 
                                                 <li>React Router DOM</li>
                                                 <li>React Hooks</li>
                                                 <li>Asynchronous RESTful API's</li>
@@ -268,7 +268,7 @@ export const FrontPageComponent = ({
                                             </ul>
                                         </div>
                                         <div class='gmail-list-half'>
-                                            <ul id='gmail-list' class='projects-p'>
+                                            <ul id='gmail-list-right' class='projects-p'>
                                                 <li>MUI</li>
                                                 <li>Utilising and manipulting JSON</li>
                                                 <li>React Select UI Component</li>
@@ -325,7 +325,7 @@ export const FrontPageComponent = ({
                                     <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>
                                     <div id='gmail-list-container'> 
                                         <div class='gmail-list-half'>
-                                            <ul id='gmail-list' class='projects-p'> 
+                                            <ul id='gmail-list-left'> 
                                                 <li>Git</li>
                                                 <li>GitHub</li>
                                                 <li>Asynchronous RESTful API's</li>
@@ -342,7 +342,7 @@ export const FrontPageComponent = ({
                                             </ul>
                                         </div>
                                         <div class='gmail-list-half'>
-                                            <ul id='gmail-list' class='projects-p'>
+                                            <ul id='gmail-list-right'>
                                                 <li>MUI</li>
                                                 <li>Utilising and manipulting JSON</li>
                                                 <li>React Select UI Component</li>

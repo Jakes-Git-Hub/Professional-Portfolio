@@ -82,10 +82,6 @@ header {
     color: white;
     padding: 24px;
     height: auto;
-    @media screen and (min-width: 851px) {
-        font-size: 1.25rem;
-    }
-    
 }
 
 #name {
@@ -124,10 +120,13 @@ header ul li:hover {
     font-size: 23px;
 }
 
-@media screen and (max-width: 626px) {
+@media screen and (min-width: 851px) {
     header {
-        font-size: 16px !important;
+        font-size: 1.25rem;
     }
+}
+
+@media screen and (max-width: 626px) {
     header ul li:hover {
         font-size: 19px;
     }
@@ -139,7 +138,7 @@ header ul li:hover {
 
 @media screen and (max-width: 556px) {
     header {
-        font-size: 13px !important;
+        font-size: 13px;
     }
     header ul li:hover {
         font-size: 15px;
@@ -151,7 +150,7 @@ header ul li:hover {
 
 @media screen and (max-width: 468px) {
     header {
-        font-size: 10px !important;
+        font-size: 10px;
     }
     header ul li:hover {
         font-size: 12px;
@@ -160,7 +159,7 @@ header ul li:hover {
 
 @media screen and (max-width: 400px) {
     header {
-        font-size: 9px !important;
+        font-size: 9px;
     }
     header ul li:hover {
         font-size: 10px;
@@ -393,35 +392,6 @@ header ul li:hover {
     width: 350px;
 }
 
-@media screen and (max-width: 1027px) {
-    .cloud {
-        -webkit-border-radius: 75px !important;
-        -moz-border-radius: 75px !important;
-        border-radius: 75px !important;
-        -webkit-box-shadow: 0 6px 3.5px rgb(255, 98, 0) !important;
-        -moz-box-shadow: 0 6px 3.5px rgb(255, 98, 0) !important;
-        box-shadow: 0 6px 3.5px rgb(255, 98, 0) !important;
-        height: 90px !important;
-        width: 262.5px !important;
-    }  
-    .cloud:before {
-        -webkit-border-radius: 150px !important;
-        -moz-border-radius: 150px !important;
-        border-radius: 150px !important;
-        width: 135px !important;
-        height: 135px !important;
-        right: 37.5px !important;
-        top: -67.5px !important;
-    }
-    .cloud:after {
-        border-radius: 75px !important;
-        height: 75px !important;
-        left: 37.5px !important;
-        top: -37.5px !important;
-        width: 75px !important;
-    }        
-}
-
 .cloud:after, .cloud:before {
     background: rgb(222, 217, 217);
     content: '';
@@ -449,6 +419,35 @@ header ul li:hover {
     top: -90px;
 }
 
+@media screen and (max-width: 1027px) {
+    .cloud {
+        -webkit-border-radius: 75px;
+        -moz-border-radius: 75px;
+        border-radius: 75px;
+        -webkit-box-shadow: 0 6px 3.5px rgb(255, 98, 0);
+        -moz-box-shadow: 0 6px 3.5px rgb(255, 98, 0);
+        box-shadow: 0 6px 3.5px rgb(255, 98, 0);
+        height: 90px;
+        width: 262.5px;
+    }  
+    .cloud:before {
+        -webkit-border-radius: 150px;
+        -moz-border-radius: 150px;
+        border-radius: 150px;
+        width: 135px;
+        height: 135px;
+        right: 37.5px;
+        top: -67.5px;
+    }
+    .cloud:after {
+        border-radius: 75px;
+        height: 75px;
+        left: 37.5px;
+        top: -37.5px;
+        width: 75px;
+    }        
+}
+
 /* My Skills */
 
 .content-container-margin{
@@ -471,24 +470,17 @@ header ul li:hover {
     position: relative;
 }
 
-@media screen and (max-width: 1034px) {
-    .section-title-fom {
-        font-size: 45px;
-    }
-    #gmail-code {
-        margin-top: 20px !important;
-    }
-    .h2-highlight-gmail {
-        box-shadow: inset 0px -18.5px 0 rgb(255 98 0 / 85%) !important;
-    }
+.h2-highlight-gmail {
+    box-shadow: inset 0px -20px 0 rgb(255 98 0 / 85%)
 }
+
 
 @media screen and (max-width: 667px) {
     .section-title-fom {
         font-size: 35px;
     }
     .h2-highlight-gmail {
-        box-shadow: inset 0px -13px 0 rgb(255 98 0 / 85%) !important;
+        box-shadow: inset 0px -13px 0 rgb(255 98 0 / 85%);
     }
 }
 
@@ -497,21 +489,17 @@ header ul li:hover {
         font-size: 25px;
     }
     .h2-highlight-gmail {
-        box-shadow: inset 0px -9px 0 rgb(255 98 0 / 85%) !important;
+        box-shadow: inset 0px -9px 0 rgb(255 98 0 / 85%);
     }
-}
-
-.h2-highlight-gmail {
-    box-shadow: inset 0px -20px 0 rgb(255 98 0 / 85%)
-}
-
-.slide-in-left {
-    animation: slide-in-left 2s ease-out;
-    visibility: visible !important;
 }
 
 .slide-in-left-placeholder {
     visibility: hidden;
+}
+
+.slide-in-left {
+    animation: slide-in-left 2s ease-out;
+    visibility: visible;
 }
 
 @keyframes slide-in-left {
@@ -521,10 +509,6 @@ header ul li:hover {
     100% {
         transform: translateX(0);
     }
-}
-
-.show {
-    visibility: visible !important;
 }
 
 .skills-container {
@@ -634,8 +618,19 @@ header ul li:hover {
 .small-skills-container {
     display: flex;
     flex-direction: column;
-    /* justify-items: center; */
-    visibility: visible !important;
+    visibility: hidden;
+}
+
+#small-skills-top-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1063px) {
+    #small-skills-top-row {
+        margin-bottom: 3%;
+    }
 }
 
 @media screen and (max-width: 714px) {
@@ -643,20 +638,8 @@ header ul li:hover {
         margin-top: 10%;
     }
     #small-skills-top-row {
-        margin-bottom: 10% !important;
+        margin-bottom: 10%;
     }
-}
-
-@media screen and (max-width: 1063px) {
-    #small-skills-top-row {
-        margin-bottom: 3% !important;
-    }
-}
-
-#small-skills-top-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .small-skills-half-1 {
@@ -775,7 +758,7 @@ header ul li:hover {
 }
 
 #gmail-img {
-    height: 70%;
+    height: auto;
     width: 80%;
     filter: blur(5px);
     position: relative;
@@ -786,32 +769,8 @@ header ul li:hover {
     backdrop-filter: blur(15px); 
 }
 
-@media screen and (max-width: 1668px){
-    #gmail-img, #gmail-img-unblur {
-        height: 60% !important;
-    }
-}
-
-@media screen and (max-width: 1574px){
-    #gmail-img, #gmail-img-unblur {
-        height: 50% !important;
-    }
-}
-
-@media screen and (max-width: 1476px){
-    #gmail-img, #gmail-img-unblur {
-        height: 40% !important;
-    }
-}
-
-@media screen and (max-width: 1312px){
-    #gmail-img, #gmail-img-unblur {
-        height: 35% !important;
-    }
-}
-
 #gmail-img-unblur {
-    height: 70%;
+    height: auto;
     width: 80%;    
     animation: unBlur 1s;
     position: relative;
@@ -822,6 +781,31 @@ header ul li:hover {
     box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.37);
     transition: bottom 1s ease;
 }
+
+
+/* @media screen and (max-width: 1668px){
+    #gmail-img, #gmail-img-unblur {
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 1574px){
+    #gmail-img, #gmail-img-unblur {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 1476px){
+    #gmail-img, #gmail-img-unblur {
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 1312px){
+    #gmail-img, #gmail-img-unblur {
+        height: 35%;
+    }
+} */
 
 #gmail-img-unblur:hover {
     cursor: pointer;
@@ -897,8 +881,28 @@ header ul li:hover {
     font-size: 27.5px;
 }
 
-#gmail-list {
-    align-self:flex-start;
+#gmail-list-left {
+    margin: 15px 15px 15px 30px;
+    line-height: 1.3rem;
+}
+
+#gmail-list-right {
+    margin: 15px 50px 15px 15px;
+    line-height: 1.3rem;
+}
+
+@media screen and (max-width: 552px) {
+    #gmail-list-left {
+        font-size: 12px;
+    }
+    
+    #gmail-list-right {
+        font-size: 12px;
+    }
+}
+
+#gmail-list-small {
+    line-height: 1.3rem;
 }
 
 .gmail-list-half{
@@ -1052,6 +1056,7 @@ header ul li:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
 }
 
 #upside-down-squiggle{
@@ -1301,6 +1306,18 @@ header ul li:hover {
     margin-top: 40px;
 }
 
+@media screen and (max-width: 1034px) {
+    .section-title-fom {
+        font-size: 45px;
+    }
+    #gmail-code {
+        margin-top: 20px;
+    }
+    .h2-highlight-gmail {
+        box-shadow: inset 0px -18.5px 0 rgb(255 98 0 / 85%);
+    }
+}
+
 #small-gmail-code {
     height: auto;
     width: 100%;
@@ -1358,12 +1375,17 @@ header ul li:hover {
     }
     .p-showcase {
         margin: 1em 2rem; 
-        font-size: 0.8rem;
     }
     .show-case-video {
         width: auto !important;
         height: 100% !important;
         overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    .p-showcase {
+        font-size: 0.9rem;
     }
 }
 
@@ -1498,5 +1520,8 @@ header ul li:hover {
     }
 }
 
+.show {
+    visibility: visible;
+}
 
 
