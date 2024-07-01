@@ -1340,6 +1340,12 @@ header ul li:hover {
     text-align: center;
 }
 
+@media screen and (max-width: 1440px) {
+    .p-showcase {
+        font-size: 0.9rem;
+    }
+}
+
 @media screen and (max-width: 1362px) {
     .p-showcase, .orange {
         margin: 1em 3em; 
@@ -1388,9 +1394,30 @@ header ul li:hover {
     }
 }
 
-@media screen and (max-width: 558px) {
-    .p-showcase, .orange {
-        margin: 1em 3em; 
+@media screen and (max-width: 754px) {
+    .p-showcase {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 754px) {
+    .p-showcase {
+        margin: 6.4px 2rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .p-showcase {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 444px) {
+    .orange {
+        font-size: 1rem;
+    }
+    .p-showcase {
+        font-size: 0.7rem;
     }
 }
 
