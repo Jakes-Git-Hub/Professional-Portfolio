@@ -235,7 +235,7 @@ export const FrontPageComponent = ({
 
             <div class="content-container-padding-fp" id='squiggle-divide-project'>
                 
-                <div id='projects-h2-container' class='slide-in-right-placeholder'>
+                <div class='slide-in-right-placeholder projects-h2-container'>
                     <h2 class='opposite-section-title'>
                         My <span class="h2-highlight">Projects</span>
                     </h2>
@@ -286,7 +286,7 @@ export const FrontPageComponent = ({
                                             </ul>
                                         </div>
                                     </div>
-                                    <div id='gmail-tech-svgs-small'>
+                                    <div id='gmail-tech-svgs'>
                                         <img class='tech-icon-html tech-bottom' src={htmlIcon}></img>
                                         <img class='tech-icon tech-bottom' src={cssIcon}></img>
                                         <img class='tech-icon-js tech-bottom' src={jsIcon}></img>

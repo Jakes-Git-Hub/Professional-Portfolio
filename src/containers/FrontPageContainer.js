@@ -87,7 +87,7 @@ export const FrontPageContainer = () => {
 // Projects Tittle Slide In Animation
 
     useEffect(() => {
-        const divs = document.querySelectorAll('#projects-h2-container');
+        const divs = document.querySelectorAll('.projects-h2-container');
 
         // Create an intersection observer
         const observer = new IntersectionObserver(entries => {

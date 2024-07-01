@@ -160,7 +160,7 @@ export const GMailMoreComponent = ({
                                     In my server there is a custom end point that uses either the forwardedFor request header or the remoteAddress request socket to return the users IP. We then have a grabUserIPHook, which makes a request to that end point to return the users Ip.
                                 </p>
                                 <p class='p-showcase'>
-                                    Then in App.js we can use object destructuring to call the hook and save the users IP into a variable to be passed to Confirm You're not a Robot.
+                                    Then in App.js I used object destructuring assignment to call the hook and save the users IP as a variable to be passed to Confirm You're not a Robot.
                                 </p>
                                 <p class='p-showcase'>
                                     Which allows us to set the users country flag as the initial placeholder flag for the dropdown menu, and to have the first country option in the list to always be their country, which helps improve UX.
@@ -173,13 +173,13 @@ export const GMailMoreComponent = ({
                         <div class='highlight-container white-background'>
                             <div class='highlight-half-1' id='geo-highlight-half-1'>
                                 <h3 className='orange'>Google Translation API</h3>
-                                <p class='geo-p-showcase'>
+                                <p class='p-showcase'>
                                     Initially for the translation for the entirety of my app, I was going to use Google translation API. However, when i implemented i found that the load time for translating the whole of the app was incredibly slow and ruined ux (also increased costs). So I instead opted for the approach described above.
                                 </p>
-                                <p class='geo-p-showcase'>
+                                <p class='p-showcase'>
                                     When I was implementing the React select component for the drop down I did so initially with a country object which had a lot of logic applied to it to filter and sort countries, also when i mapped through the object to render it into the select component there was also a lot of assoicated code. So instead of transfering the object with translated countries, to the text object. I instead used the google translation API to translate the country object and then saved it translatedCountries. 
                                 </p>
-                                <p class='geo-p-showcase'>
+                                <p class='p-showcase'>
                                     This was a good learning experience and I going forward I would translate the countries manually and store to the text object to translate instantly with no API. 
                                 </p>
                             </div>
@@ -444,13 +444,13 @@ export const GMailMoreComponent = ({
                         <div class='highlight-container white-background'>
                             <div class='highlight-half-1' id='geo-highlight-half-1'>
                                 <h3 className='orange'>Google Translation API</h3>
-                                <p class='geo-p-showcase'>
+                                <p class='p-showcase'>
                                     Initially for the translation for the entirety of my app, I was going to use Google translation API. However, when i implemented i found that the load time for translating the whole of the app was incredibly slow and ruined ux (also increased costs). So I instead opted for the approach described above.
                                 </p>
-                                <p class='geo-p-showcase'>
+                                <p class='p-showcase'>
                                     When I was implementing the React select component for the drop down I did so initially with a country object which had a lot of logic applied to it to filter and sort countries, also when i mapped through the object to render it into the select component there was also a lot of assoicated code. So instead of transfering the object with translated countries, to the text object. I instead used the google translation API to translate the country object and then saved it translatedCountries. 
                                 </p>
-                                <p class='geo-p-showcase'>
+                                <p class='p-showcase'>
                                     This was a good learning experience and I going forward I would translate the countries manually and store to the text object to translate instantly with no API. 
                                 </p>
                             </div>
