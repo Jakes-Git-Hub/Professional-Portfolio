@@ -1,23 +1,16 @@
 
 import React from 'react';
-import gmailCode from '../images/gmail-code.png';
 import { HeaderContainer } from '../containers/HeaderContainer';
+import largeJammmingCode from '../images/jammming-showcase/Jammming Code Large.png';
+import smallJammmingCode from '../images/jammming-showcase/Jammming Code Small.png'; 
+import surgeProof from '../images/jammming-showcase/surge-site-jammming.png';
+
 
 export const JammmingComponent = ({
     handleGHSVGClick,
     videoRef,
     videoRef1,
-    videoRef2,
-    videoRef3,
-    videoRef4,
-    videoRef5,
-    videoRef6,
-    videoRef7,
-    videoRef8,
-    muiRef,
-    cycleMuiVideo,
-    muiSources,
-    currentMuiIndex,
+    windowWidth,
 }) => {
 
     return (
@@ -27,17 +20,24 @@ export const JammmingComponent = ({
             <HeaderContainer/>
 
             <div class="content-container-padding" id='squiggle-divide-breakdown'>
-                <h2 class="section-title slide-in-left-placeholder">
-                    <span class="h2-highlight">Jammming</span>
+                <h2 class="section-title-fom slide-in-left-placeholder">
+                    <span class="h2-highlight-gmail">Jammming</span> 
                 </h2>
-                <div id ='gmail-code-container'>
-                    <img src={gmailCode} alt="gmail-code" id="gmail-code"/>
-                </div>
+                { windowWidth > 1492 ? (
+                    <div id ='gmail-code-container'>
+                        <img src={largeJammmingCode} alt="small-jammming-code" id="small-gmail-code"/>
+                    </div>
+                ) : (
+                    <div id ='gmail-code-container'>
+                        <img src={smallJammmingCode} alt="small-jammming-code" id="smaller-jammming-code"/>
+                    </div>
+                )}
+                
             </div>
 
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-desc-container white-background'>
-                    <p id='highlight-desc-p'>As well as the panels below that feature impressive functionalities of this project, there is also a lot more intelligent code under the hood that is worth looking at.</p>
+                    <p id='highlight-desc-p'>I enjoyed using the Spotify API and React Player to build this project - It is an app that allows users to search, preview, add/ remove tracks to/ from a playlist and then finally save their playlist with a custom playlist name to Spotify. Mostly done through the spotify API.</p>
                         <svg 
                             id='hightlight-desc-svg' 
                             xmlns="http://www.w3.org/2000/svg" 
@@ -50,274 +50,203 @@ export const JammmingComponent = ({
                 </div>
             </div>
 
-            <div class='content-container-padding black-background-highlights'>
-                <div class='highlight-container white-background'>
-                    <div class='highlight-half-1'>
-                        <h3 class='bottom-h3 orange'>Translation Feature</h3>
-                        <p class='p-showcase'>
-                            This feature allows the user to translate the whole of the text in the app to a multitude of languages - this is done by having a text object that has nested values for each language. 
-                        </p>
-                        <p class='p-showcase'>
-                            When a language is chose this then updates the userin app.js by altering userData.language which then dyanmically renders the translated text. This is an imporvement on running the text through a translation API as it translated instantly improving UX and saves money.
-                        </p>
+            {windowWidth > 1034 ? (
+                <>
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-1'>
+                                <h3 class='orange'>Spotify API</h3>
+                                <p class='p-showcase'>
+                                    The users search input triggers the search method, which populates the results tracklist with tracks and associated info derived from the returned JSON results.  
+                                </p>
+                                <p class='p-showcase'>
+                                    The user can then add or remove tracks to their playlist from the tracklist results with the +/ - buttons. Once the user has curated their playlist and given it the name they desire, then they can save their playlist to spotify with the savePlaylist method and have it to listen anytime.     
+                                </p>
+                            </div>
+                            <div class='highlight-half-2'>
+                                <video 
+                                    ref={videoRef}
+                                    class='show-case-video' 
+                                    controls 
+                                    loop
+                                    muted
+                                >
+                                    <source src='./videos/jammming/spotify-api-obj-jammming-code.mp4' type="video/mp4">
+                                    </source>
+                                </video>
+                            </div>
+                        </div>
                     </div>
-                    <div class='highlight-half-2'>
-                        <video 
-                            ref={videoRef}
-                            class='show-case-video' 
-                            controls 
-                            loop
-                            muted
-                        >
-                            <source src='./videos/translation-showcase.mp4' type="video/mp4">
-                            </source>
-                        </video>
-                    </div>
-                </div>
-            </div>
 
-            <div class='content-container-padding black-background-highlights'>
-                <div class='highlight-container white-background'>
-                    <div class='highlight-half-2'>
-                        <video 
-                            ref={videoRef1}
-                            class='show-case-video' 
-                            controls 
-                            loop
-                            muted
-                        >
-                            <source src='./videos/Twilio-Api-Showcase.mp4' type="video/mp4">
-                            </source>
-                        </video>
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-2'>
+                                <video 
+                                    ref={videoRef1}
+                                    class='show-case-video' 
+                                    controls 
+                                    loop
+                                    muted
+                                >
+                                    <source src='./videos/jammming/react-player-preiview-track-code-jammming.mp4' type="video/mp4">
+                                    </source>
+                                </video>
+                            </div>
+                            <div class='highlight-half-1'>
+                                <h3 className='orange'>React Player</h3>
+                                <p class='p-showcase'>
+                                    The project utilises React Player. I built out state and a conditional ternary to see if the state of the track is playing and if the tracks preview_url exists then the React Player component will be rendered, playing the tracks preview.   
+                                </p>
+                                <p class='p-showcase'>
+                                    If the track preview isn't available then the nested ternary where the condition of the track is playing, but there is no preview_url will become true and the 'Preview-unavailable' text will show on the preview button where the 'Preview' text was. This improves UX and signage.   
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class='highlight-half-1'>
-                        <h3 className='orange'>Twilio API SMS Authorisation</h3>
-                        <p class='p-showcase'>
-                            This authorisation method uses Twilio and a custom API end point in my Express.js server - which recieves a formatted phone number. It then creates a random 6 digit verification code which is sent to the user via SMS to either confirm they are not a robot and continue the form or log in if they have forgotten their password.
-                        </p>
-                        <p class='p-showcase'>
-                            The formatted number is created by a function that uses google-libphonenumber formatting. It is created based on user input and the region which is attained either through the users IP (Grabbed from my server), or their country selection choice. 
-                        </p>
-                    </div>
-                </div>
-            </div>
 
-            <div class='content-container-padding black-background-highlights'>
-                <div class='highlight-container white-background'>
-                    <div class='highlight-half-1'>
-                        <h3 className='orange' id='SGH3'>Send Grid API Email Authorisation</h3>
-                        <p class='p-showcase'>
-                            This authorisation method uses Send Grid and a custom API end point in my Express.js server - which takes in an inputted email. It then creates a random 6 digit verification code which is sent to the user via email and if they enter it correctly they can continue the form, or log in if they have forgotten their password.
-                        </p>
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-1'>
+                                <h3 className='orange'>Deployed to Surge</h3>
+                                <p class='p-showcase'>
+                                    I have deployed Jammming to Surge. This involved running npm run build in the terminal so all code was compiled into optimised files and ready for deployment.
+                                </p>
+                                <p class='p-showcase'>
+                                    Then I executed surge commands in the terminal to choose a domain name and get the app accessible to everyone via the web. 
+                                </p>
+                            </div>
+                            <div class='highlight-half-2-surge'>
+                                <img 
+                                    class='show-case-img-surge' 
+                                    src={surgeProof}
+                                />
+                            </div>
+                        </div>
                     </div>
-                    <div class='highlight-half-2'>
-                        <video 
-                            ref={videoRef2}
-                            class='show-case-video' 
-                            controls 
-                            loop
-                            muted
-                        >
-                            <source src='./videos/Send Grid Example.mp4' type="video/mp4">
-                            </source>
-                        </video>
-                    </div>
-                </div>
-            </div>
 
-            <div class='content-container-padding black-background-highlights'>
-                <div class='highlight-container white-background'>
-                    <div class='highlight-half-2'>
-                        <video 
-                            ref={videoRef3}
-                            class='show-case-video' 
-                            controls 
-                            loop
-                            muted
-                        >
-                            <source src='./videos/IP Geo Location IP Showcase.mp4' type="video/mp4">
-                            </source>
-                        </video>
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-2'>
+                                <img 
+                                    class='show-case-img-legacy' 
+                                    src={smallJammmingCode}
+                                />
+                            </div>
+                            <div class='highlight-half-1'>
+                                <h3 className='orange'>Legacy React Code</h3>
+                                <p class='p-showcase'>
+                                    Whilst learning React from Codecademy, one of the modules was teaching legacy React.
+                                </p>
+                                <p class='p-showcase'>
+                                    I built this project after completing that module and put what I had learnt into practice.
+                                </p>
+                                <p class='p-showcase'>
+                                    Knowing the latest React architecture alongside legacy React gives me several benefits: being able to work on older existing projects, being able to transition existing older code bases to modern hooks-based architecture, having a broader knowledge of the library, understanding the evolution of React's design philosophy and how hooks and functional components created better solutions and being more flexible in problem solving - by being versatile in both makes me more adaptable and able to contribute more effectively in a variety of development environments. 
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class='highlight-half-1'>
-                        <h3 className='orange' id='geo-h3'>Custom IP Grabber API Paired with IP Geolocation API</h3>
-                        <p class='p-showcase'>
-                            In my server there is a custom end point that uses either the forwardedFor request header or the remoteAddress request socket to return the users IP. We then have a grabUserIPHook, which makes a request to that end point to return the users Ip.
-                        </p>
-                        <p class='p-showcase'>
-                            Then in App.js we can use object destructuring to call the hook and save the users IP into a variable to be passed to Confirm You're not a Robot.
-                        </p>
-                        <p class='p-showcase'>
-                            Which allows us to set the users country flag as the initial placeholder flag for the dropdown menu, and to have the first country option in the list to always be their country, which helps improve UX.
-                        </p>
+                </>
+            ) : (
+                <>
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-1'>
+                                <h3 class='orange'>Spotify API</h3>
+                                <p class='p-showcase'>
+                                    The users search term input triggers the search method from the Spotify object, which populates the results tracklist with tracks and associated info derived from the returned JSON results.  
+                                </p>
+                                <p class='p-showcase'>
+                                The user can then add or remove tracks to their playlist from the tracklist results with the +/ - buttons. Once the user has curated their playlist and given it the name they desire, then they can save their playlist to spotify have it to listen anytime.     
+                                </p>
+                            </div>
+                            <div class='highlight-half-2'>
+                                <video 
+                                    ref={videoRef}
+                                    class='show-case-video' 
+                                    controls 
+                                    loop
+                                    muted
+                                >
+                                    <source src='./videos/jammming/spotify-api-obj-jammming-code.mp4' type="video/mp4">
+                                    </source>
+                                </video>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class='content-container-padding black-background-highlights'>
-                <div class='highlight-container white-background'>
-                    <div class='highlight-half-1' id='geo-highlight-half-1'>
-                        <h3 className='orange'>Google Translation API</h3>
-                        <p class='geo-p-showcase'>
-                            Initially for the translation for the entirety of my app, I was going to use Google translation API. However, when i implemented i found that the load time for translating the whole of the app was incredibly slow and ruined ux (also increased costs). So I instead opted for the approach described above.
-                        </p>
-                        <p class='geo-p-showcase'>
-                            When I was implementing the React select component for the drop down I did so initially with a country object which had a lot of logic applied to it to filter and sort countries, also when i mapped through the object to render it into the select component there was also a lot of assoicated code. So instead of transfering the object with translated countries, to the text object. I instead used the google translation API to translate the country object and then saved it translatedCountries. 
-                        </p>
-                        <p class='geo-p-showcase'>
-                            This was a good learning experience and I going forward I would translate the countries manually and store to the text object to translate instantly with no API. 
-                        </p>
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-1'>
+                                <h3 className='orange'>React Player</h3>
+                                <p class='p-showcase'>
+                                    The project utilises React Player. I built out state and a conditional ternary to see if the state of the track is playing and if the tracks preview_url exists then the React Player component will be rendered, playing the tracks preview.   
+                                </p>
+                                <p class='p-showcase'>
+                                     
+                                </p>
+                            </div>
+                            <div class='highlight-half-2'>
+                                <video 
+                                    ref={videoRef1}
+                                    class='show-case-video' 
+                                    controls 
+                                    loop
+                                    muted
+                                >
+                                    <source src='./videos/jammming/react-player-preiview-track-code-jammming.mp4' type="video/mp4">
+                                    </source>
+                                </video>
+                            </div>
+                        </div>
                     </div>
-                    <div class='highlight-half-2'>
-                        <video 
-                            ref={videoRef4}
-                            class='show-case-video' 
-                            controls 
-                            loop
-                            muted
-                        >
-                            <source src='./videos/Google Translation API.mp4' type="video/mp4">
-                            </source>
-                        </video>
-                    </div>
-                </div>
-            </div>
 
-            <div class='content-container-padding black-background-highlights'>
-                <div class='highlight-container white-background'>
-                    <div class='highlight-half-2'>
-                        <video 
-                            ref={videoRef5}
-                            class='show-case-video' 
-                            controls 
-                            loop
-                            muted
-                        >
-                            <source src='./videos/Responsivity Showcase.mp4' type="video/mp4">
-                            </source>
-                        </video>
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-1'>
+                                <h3 className='orange'>Deployed to Surge</h3>
+                                <p class='p-showcase'>
+                                    I have deployed Jammming to Surge. This involved running npm run build in the terminal so all code was compiled into optimised files and ready for deployment.
+                                </p>
+                                <p class='p-showcase'>
+                                    Then I executed surge commands in the terminal to choose a domain name and get the app accessible to everyone via the web. 
+                                </p>
+                            </div>
+                            <div class='highlight-half-2-surge'>
+                                <img 
+                                    class='show-case-img-surge' 
+                                    src={surgeProof}
+                                />
+                            </div>
+                        </div>
                     </div>
-                    <div class='highlight-half-1'>
-                        <h3 className='orange' id='responsivity-h3'>Responsivity</h3>
-                        <p class='p-showcase'>
-                            The app is fully responsive, using media queries to apply optimal layouts or sophisticatedly hide aspects of the page fluidly depending on screen size.
-                        </p>
-                        <p class='p-showcase'>
-                            Responsivty is also used for the MUI language changer menu where the extent of the menu height is calculated depending on the height of the screen.
-                        </p>
-                        <p class='p-showcase'>
-                            It also uses responsive css formats to dyanmically render elements positions and sizes in the browser. This improves UI and UX for all different hardware users.
-                        </p>
-                    </div>
-                    
-                </div>
-            </div>
 
-            <div class='content-container-padding black-background-highlights'>
-                <div class='highlight-container white-background'>
-                    <div class='highlight-half-1'>
-                        <h3 className='orange'>Express Server</h3>
-                        <p class='p-showcase'>
-                            The server is built using Express.js. I have custom API end points for each of the authorisation methods, and a custom end point to acquire the users IP.
-                        </p>
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-1'>
+                                <h3 className='orange'>Legacy React Code</h3>
+                                <p class='p-showcase'>
+                                    Whilst learning React from Codecademy, one of the modules was teaching legacy React.
+                                </p>
+                                <p class='p-showcase'>
+                                    I built this project after completing that module and put what I had learnt into practice.
+                                </p>
+                                <p class='p-showcase'>
+                                    Knowing the latest React architecture alongside legacy React gives me several benefits: being able to work on older existing projects, being able to transition existing older code bases to modern hooks-based architecture, having a broader knowledge of the library, understanding the evolution of React's design philosophy and how hooks and functional components created better solutions and being more flexible in problem solving - by being versatile in both makes me more adaptable and able to contribute more effectively in a variety of development environments. 
+                                </p>
+                            </div>
+                            <div class='highlight-half-2'>
+                                <img 
+                                    class='show-case-img-legacy' 
+                                    src={smallJammmingCode}
+                                />
+                            </div>
+                        </div>
                     </div>
-                    <div class='highlight-half-2'>
-                        <video 
-                            ref={videoRef6}
-                            class='show-case-video' 
-                            controls 
-                            loop
-                            muted
-                        >
-                            <source src='./videos/Server Code Showcase.mp4' type="video/mp4">
-                            </source>
-                        </video>
-                    </div>
-                </div>
-            </div>
 
-            <div class='content-container-padding black-background-highlights'>
-                <div class='highlight-container white-background'>
-                    <div class='highlight-half-2'>
-                    <video 
-                            ref={videoRef7}
-                            class='show-case-video' 
-                            controls 
-                            loop
-                            muted
-                        >
-                            <source src='./videos/Security.mp4' type="video/mp4">
-                            </source>
-                        </video>
-                    </div>
-                    <div class='highlight-half-1'>
-                        <h3 className='orange'>Security</h3>
-                        <p class='p-showcase'>
-                            For security in the app I have used client side and server side API limiters. Also I have utilised .env variables to store sensitive information.
-                        </p>
-                        <p class='p-showcase'>
-                            This ensures that the server cannot be overloaded with requests in a short time frame. Mitigating threats from DDoS or brute force login attemps.
-                        </p>
-                        <p class='p-showcase'>
-                            API limiters also make sure costs are controlled by preventing excessive use.
-                        </p>
-                        <p class='p-showcase'>
-                            By using .env variables it keeps sensitive information like API keys kept out of the code and hidden from the outside sources. This is crucial for security, as hard-coding such information can lead to exposure to unwanted entities. Which could result in leaked data, financial loss, disruption of service or reputational damage.
-                        </p>
-                    </div>
-                    
-                </div>
-            </div>
+                </>
+            )}
 
-            <div class='content-container-padding black-background-highlights'>
-                <div class='highlight-container white-background'>
-                    <div class='highlight-half-1'>
-                        <h3 className='orange'>MUI</h3>
-                        <p class='p-showcase'>
-                            For this project I leveraged Material UI. This allowed me to create professional polished elements with good efficiency.
-                        </p>
-                        <p class='p-showcase'>
-                            I created and added custom styles to get the appearance I wanted, instead of the default versions. I also had to pair the  MUI Modals with React Spring to get the animation onClose and onOpen that looked good.
-                        </p>
-                    </div>
-                    <div class='highlight-half-2'>
-                        <video 
-                            ref={muiRef}
-                            class='show-case-video' 
-                            controls 
-                            muted
-                            onEnded={cycleMuiVideo}
-                            onLoadedData={() => muiRef.current.play()}
-                        >
-                            <source src={muiSources[currentMuiIndex]} type="video/mp4">
-                            </source>
-                        </video>
-                    </div>
-                </div>
-            </div>
-            
-            <div class='content-container-padding black-background-highlights'>
-                <div class='highlight-container white-background'>
-                    <div class='highlight-half-2'>
-                        <video 
-                            ref={videoRef8}
-                            class='show-case-video' 
-                            controls 
-                            loop
-                            muted
-                        >
-                            <source src='./videos/Jest and RTL Showcase.mp4' type="video/mp4">
-                            </source>
-                        </video>
-                    </div>
-                    <div class='highlight-half-1'>
-                        <h3 className='orange'>Jest & React Testing Library</h3>
-                        <p class='p-showcase'>
-                            To ensure my code is robust and reliable I have used Jest and React Testing Library to test anything that handles logic i.e all my container files utility files and hooks etc. This ensures everything is working as expected and ensures a smooth UX with no bugs.
-                        </p>
-                    </div>
-                </div>
-            </div>
         </>
     );
 }

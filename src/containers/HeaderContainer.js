@@ -22,14 +22,11 @@ export const HeaderContainer = () => {
 // Hanlde Header Option Click
 
     const handleSkillsClick = () => {
-        navigate('/'); // Navigate to the home page.
+        navigate('/');
     
-        // Wait for the navigation to complete and the page to render.
         setTimeout(() => {
-            // Check if the element exists.
             const skillsSection = document.getElementById('skills-nav');
             if (skillsSection) {
-                // Scroll to the skills section.
                 skillsSection.scrollIntoView();
                     window.scrollBy(0, -83);
             }
@@ -37,23 +34,20 @@ export const HeaderContainer = () => {
     }
 
     const handleProjectsClick = () => {
-        navigate('/'); // Navigate to the home page.
+        navigate('/');
         console.log('projects Clicked');
     
-        // Wait for the navigation to complete and the page to render.
         setTimeout(() => {
-            // Check if the element exists.
-            const skillsSection = document.getElementById('projects-h2-container');
-            if (skillsSection) {
-                // Scroll to the skills section.
-                skillsSection.scrollIntoView();
-                if (windowWidth <= 1212) {
+            const projectsSection = document.getElementById('projects-nav');
+            if (projectsSection) {
+                projectsSection.scrollIntoView();
+                if (windowWidth <= 1298) {
                     window.scrollBy(0, -10);
                 } else {
                     window.scrollBy(0, -45);
                 }
             }
-        }, 0); // A timeout of 0 ensures this runs after navigation has completed.
+        }, 0);
     }
 
     // const handleFuturePlansClick = () => {

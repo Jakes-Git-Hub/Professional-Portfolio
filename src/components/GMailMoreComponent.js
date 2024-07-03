@@ -1,6 +1,5 @@
 
 import React from 'react';
-import gmailCode from '../images/gmail-code.png';
 import smallGmailCode from '../images/small-gmail-code.png';
 import smallerGmailCode from '../images/smaller-gmail-code.png' 
 import { HeaderContainer } from '../containers/HeaderContainer';

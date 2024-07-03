@@ -474,25 +474,6 @@ header ul li:hover {
     box-shadow: inset 0px -20px 0 rgb(255 98 0 / 85%)
 }
 
-
-@media screen and (max-width: 667px) {
-    .section-title-fom {
-        font-size: 35px;
-    }
-    .h2-highlight-gmail {
-        box-shadow: inset 0px -13px 0 rgb(255 98 0 / 85%);
-    }
-}
-
-@media screen and (max-width: 519px) {
-    .section-title-fom {
-        font-size: 25px;
-    }
-    .h2-highlight-gmail {
-        box-shadow: inset 0px -9px 0 rgb(255 98 0 / 85%);
-    }
-}
-
 .slide-in-left-placeholder {
     visibility: hidden;
 }
@@ -721,6 +702,12 @@ header ul li:hover {
     }
 }
 
+@media screen and (max-width: 692px) {
+    .opposite-section-title {
+        margin-bottom: 68.47px;
+    }
+}
+
 #projects-picture-column {
     grid-column: 2 / 2;
     grid-row: 1 / span 3;
@@ -872,10 +859,12 @@ header ul li:hover {
 @media screen and (max-width: 552px) {
     #gmail-list-left {
         font-size: 12px;
+        margin: 15px 0 15px 20px;
     }
     
     #gmail-list-right {
         font-size: 12px;
+        margin: 15px 20px 15px 0;
     }
 }
 
@@ -913,7 +902,7 @@ header ul li:hover {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-}
+}  
 
 .tech-icon {
     height: 75%;
@@ -924,7 +913,7 @@ header ul li:hover {
     margin-bottom: 15px;
 }
 
-@media screen and (max-width: 1588px) and (min-width: 593px) {
+@media screen and (max-width: 1588px) and (min-width: 1298px) {
     .tech-bottom {
         margin-bottom: 20px;
     }
@@ -1285,6 +1274,24 @@ header ul li:hover {
     }
 }
 
+@media screen and (max-width: 667px) {
+    .section-title-fom {
+        font-size: 35px;
+    }
+    .h2-highlight-gmail {
+        box-shadow: inset 0px -13px 0 rgb(255 98 0 / 85%);
+    }
+}
+
+@media screen and (max-width: 519px) {
+    .section-title-fom {
+        font-size: 25px;
+    }
+    .h2-highlight-gmail {
+        box-shadow: inset 0px -9px 0 rgb(255 98 0 / 85%);
+    }
+}
+
 #small-gmail-code {
     height: auto;
     width: 100%;
@@ -1361,6 +1368,56 @@ header ul li:hover {
 @media screen and (max-width: 1158px) {
     .highlight-container {
         height: 575px;
+    }
+}
+
+.show-case-video {
+    width: 100%;
+    height: auto;
+}
+
+.highlight-half-2-surge {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 0 8px 8px 0;
+}
+
+.show-case-img-surge {
+    width: 150%;
+    height: auto;
+}
+
+@media screen and (min-width: 1729px) {
+    .show-case-img-surge {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1384px) {
+
+}
+
+@media screen and (max-width: 1034px) {
+    .show-case-img-surge {
+        border-radius: 0 0 8px 8px;
+    }
+}
+
+.show-case-img-legacy {
+    width: 100%;
+    height: auto;
+    border-radius: 0 8px 8px 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1034px) {
+    .show-case-img-legacy {
+        border-radius: 0 0 8px 8px;
     }
 }
 
@@ -1443,11 +1500,7 @@ header ul li:hover {
     justify-content: center;
     align-items: center;
     background-color: black;
-}
-
-.show-case-video {
-    width: 100%;
-    height: auto;
+    overflow: hidden;
 }
 
 .highlight-desc-container {
@@ -1509,9 +1562,22 @@ header ul li:hover {
 }  
 
 .orange-projects {
-    /* color: rgb(255, 255, 255); */
     visibility: hidden;
 } 
+
+/* Jammming */
+
+#smaller-jammming-code {
+    width: 80%;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.lh-15rem {
+    line-height: 1.5rem;
+}
+
+/* Important to keep at end for css flow */
 
 .fade-in {
     animation: fadeUp 1s ease-in forwards;

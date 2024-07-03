@@ -14,13 +14,9 @@ export const GMailMoreContainer = () => {
 useEffect(() => {
     const h2Highlight = document.querySelectorAll('.slide-in-left-placeholder');
 
-    // Create an intersection observer
     const observer = new IntersectionObserver(entries => {
-        // Loop over the entries
         entries.forEach(entry => {  
-            // If the element is visible
             if (entry.isIntersecting) {
-                // Add the animation class
                 entry.target.classList.add('slide-in-left');
             } 
         });
@@ -28,7 +24,7 @@ useEffect(() => {
 
     // Observe each h3
     h2Highlight.forEach(h2 => observer.observe(h2));
-}, []);
+}, [windowWidth]);
 
 // GitHub Click
 
@@ -41,13 +37,9 @@ useEffect(() => {
 useEffect(() => {
     const h3Showcase = document.querySelectorAll('.orange');
 
-    // Create an intersection observer
     const observer = new IntersectionObserver(entries => {
-        // Loop over the entries
         entries.forEach(entry => {  
-            // If the element is visible
             if (entry.isIntersecting) {
-                // Add the animation class
                 setTimeout(() => {
                     entry.target.classList.add('fade-in');
                 }, 150);
@@ -55,7 +47,6 @@ useEffect(() => {
         });
     }, { threshold: 1 });
 
-    // Observe each h3
     h3Showcase.forEach(h3 => observer.observe(h3));
 }, [windowWidth]);
 
@@ -100,18 +91,6 @@ useEffect(() => {
     observer.observe(videoRef8.current);
     observer.observe(muiRef.current);
 
-    // return () => {
-    //     observer.unobserve(videoRef.current);
-    //     observer.unobserve(videoRef1.current);
-    //     observer.unobserve(videoRef2.current);
-    //     observer.unobserve(videoRef3.current);
-    //     observer.unobserve(videoRef4.current);
-    //     observer.unobserve(videoRef5.current);
-    //     observer.unobserve(videoRef6.current);
-    //     observer.unobserve(videoRef7.current);
-    //     observer.unobserve(videoRef8.current);
-    //     observer.unobserve(muiRef.current);
-    // };
 }, []);
 
 // MUI Videos

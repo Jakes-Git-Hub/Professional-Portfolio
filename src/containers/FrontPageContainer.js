@@ -64,7 +64,7 @@ export const FrontPageContainer = () => {
                     entry.target.classList.add('show');
                 } 
             });
-        }, { threshold: 0.75 });
+        }, { threshold: 1 });
 
         // Observe the container
         observer.observe(container);
@@ -99,7 +99,7 @@ export const FrontPageContainer = () => {
                     entry.target.classList.add('slide-in-right');
                 } 
             });
-        }, { threshold: 1 });
+        });
 
         // Observe each div
         divs.forEach(div => observer.observe(div));
@@ -125,7 +125,7 @@ export const FrontPageContainer = () => {
                     }, 1000);
                 } 
             });
-        }, { threshold: 0.35 });
+        }, { threshold: 0.1 });
 
         observer.observe(container);
 
