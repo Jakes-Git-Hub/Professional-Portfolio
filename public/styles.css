@@ -1340,6 +1340,7 @@ header ul li:hover {
     justify-content: center;
     border-radius: 8px;
     height: 400px;
+    overflow: hidden;
 }
 
 .p-showcase, .orange {
@@ -1380,26 +1381,27 @@ header ul li:hover {
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     background-color: black;
-    overflow: hidden;
-    border-radius: 0 8px 8px 0;
 }
 
 .show-case-img-surge {
     width: 150%;
     height: auto;
+    border-radius: 0 8px 8px 0;
+    overflow: hidden;
 }
 
-@media screen and (min-width: 1729px) {
+@media screen and (max-width: 1728px) {
     .show-case-img-surge {
-        width: 100%;
+        width: 150% !important;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0 8px 8px 0;
+        overflow: hidden;
+        object-position: left;
     }
-}
-
-@media screen and (max-width: 1384px) {
-
 }
 
 @media screen and (max-width: 1034px) {
@@ -1415,9 +1417,20 @@ header ul li:hover {
     overflow: hidden;
 }
 
+@media screen and (max-width: 1158px) {
+    .show-case-img-legacy {
+        width: auto;
+        height: 100%;
+        border-radius: 0 8px 8px 0;
+        overflow: hidden;
+    }
+}
+
 @media screen and (max-width: 1034px) {
     .show-case-img-legacy {
         border-radius: 0 0 8px 8px;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -1431,7 +1444,7 @@ header ul li:hover {
         height: 50% !important;
         width: 100% !important;
     }
-    .highlight-half-2 {
+    .highlight-half-2, .highlight-half-2-surge {
         height: 50% !important;
         width: 100% !important;
     }
@@ -1441,6 +1454,21 @@ header ul li:hover {
     .show-case-video {
         width: auto !important;
         height: 100% !important;
+        overflow: hidden;
+    }
+    .show-case-img-surge {
+        width: 150%;
+        height: auto;
+        border-radius: 0 0 8px 8px;
+        overflow: hidden;
+    }
+} 
+
+@media screen and (max-width: 832px) {
+    .show-case-img-surge {
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0 8px 8px;
         overflow: hidden;
     }
 }
@@ -1491,6 +1519,7 @@ header ul li:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .highlight-half-2 {
@@ -1517,15 +1546,22 @@ header ul li:hover {
     line-height: 1.5rem;
 }
 
-#hightlight-desc-svg {
-    margin: 1.5rem 0 3rem 0;
+.highlight-svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hightlight-desc-svg {
+    margin: 1.5rem 1.5rem 3rem 1.5rem;
     transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
     height: 66px;
     width: 66px;
     border-radius: 50%;
 }
 
-#hightlight-desc-svg:hover {
+.hightlight-desc-svg:hover {
     transform: scale(1.05);
     cursor: pointer;
     box-shadow: 0 0 20px 5px rgb(255 98 0 / 85%);

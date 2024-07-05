@@ -51,7 +51,7 @@ export const GMailMoreComponent = ({
                 <div class='highlight-desc-container white-background'>
                     <p id='highlight-desc-p'>As well as the panels below that feature impressive functionalities of this project, there is also a lot more intelligent code under the hood that I invite you to look at.</p>
                         <svg 
-                            id='hightlight-desc-svg' 
+                            className='hightlight-desc-svg' 
                             xmlns="http://www.w3.org/2000/svg" 
                             viewBox="0 0 24 24"
                             onClick={handleGHSVGClick}
