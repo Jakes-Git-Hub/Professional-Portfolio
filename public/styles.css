@@ -1562,7 +1562,7 @@ header ul li:hover {
 }
 
 .hightlight-desc-svg:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     cursor: pointer;
     box-shadow: 0 0 20px 5px rgb(255 98 0 / 85%);
 }

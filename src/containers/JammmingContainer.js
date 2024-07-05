@@ -40,7 +40,7 @@ useEffect(() => {
 // GitHub Click
 
     const handleGHSVGClick = () => {
-        window.open('https://github.com/Jakes-Git-Hub/Gmail-Log-In-And-Create-Account-React', '_blank');
+        window.open('https://github.com/Jakes-Git-Hub/Spotify-API-Project-React', '_blank');
     }
 
 // h3 Intersection Observer
