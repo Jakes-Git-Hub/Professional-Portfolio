@@ -77,7 +77,7 @@ useEffect(() => {
             });
         },
         {
-            threshold: 1,
+            threshold: windowWidth > 1034 ? 0.5 : 0.25,
         }
     );
 

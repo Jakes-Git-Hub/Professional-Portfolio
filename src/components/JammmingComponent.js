@@ -172,105 +172,102 @@ export const JammmingComponent = ({
                     </div>
                 </>
             ) : (
-                // <>
-                //     <div class='content-container-padding black-background-highlights'>
-                //         <div class='highlight-container white-background'>
-                //             <div class='highlight-half-1'>
-                //                 <h3 class='orange'>Spotify API</h3>
-                //                 <p class='p-showcase'>
-                //                     The users search term input triggers the search method from the Spotify object, which populates the results tracklist with tracks and associated info derived from the returned JSON results.  
-                //                 </p>
-                //                 <p class='p-showcase'>
-                //                 The user can then add or remove tracks to their playlist from the tracklist results with the +/ - buttons. Once the user has curated their playlist and given it the name they desire, then they can save their playlist to spotify have it to listen anytime.     
-                //                 </p>
-                //             </div>
-                //             <div class='highlight-half-2'>
-                //                 <video 
-                //                     ref={videoRef}
-                //                     class='show-case-video' 
-                //                     controls 
-                //                     loop
-                //                     muted
-                //                 >
-                //                     <source src='./videos/jammming/spotify-api-obj-jammming-code.mp4' type="video/mp4">
-                //                     </source>
-                //                 </video>
-                //             </div>
-                //         </div>
-                //     </div>
-
-                //     <div class='content-container-padding black-background-highlights'>
-                //         <div class='highlight-container white-background'>
-                //             <div class='highlight-half-1'>
-                //                 <h3 className='orange'>React Player</h3>
-                //                 <p class='p-showcase'>
-                //                     The project utilises React Player. I built out state and a conditional ternary to see if the state of the track is playing and if the tracks preview_url exists then the React Player component will be rendered, playing the tracks preview.   
-                //                 </p>
-                //                 <p class='p-showcase'>
-                                     
-                //                 </p>
-                //             </div>
-                //             <div class='highlight-half-2'>
-                //                 <video 
-                //                     ref={videoRef1}
-                //                     class='show-case-video' 
-                //                     controls 
-                //                     loop
-                //                     muted
-                //                 >
-                //                     <source src='./videos/jammming/react-player-preiview-track-code-jammming.mp4' type="video/mp4">
-                //                     </source>
-                //                 </video>
-                //             </div>
-                //         </div>
-                //     </div>
-
-                //     <div class='content-container-padding black-background-highlights'>
-                //         <div class='highlight-container white-background'>
-                //             <div class='highlight-half-1'>
-                //                 <h3 className='orange'>Deployed to Surge</h3>
-                //                 <p class='p-showcase'>
-                //                     I have deployed Jammming to Surge. This involved running npm run build in the terminal so all code was compiled into optimised files and ready for deployment.
-                //                 </p>
-                //                 <p class='p-showcase'>
-                //                     Then I executed surge commands in the terminal to choose a domain name and get the app accessible to everyone via the web. 
-                //                 </p>
-                //             </div>
-                //             <div class='highlight-half-2-surge'>
-                //                 <img 
-                //                     class='show-case-img-surge' 
-                //                     src={surgeProof}
-                //                 />
-                //             </div>
-                //         </div>
-                //     </div>
-
-                //     <div class='content-container-padding black-background-highlights'>
-                //         <div class='highlight-container white-background'>
-                //             <div class='highlight-half-1'>
-                //                 <h3 className='orange'>Legacy React Code</h3>
-                //                 <p class='p-showcase'>
-                //                     Whilst learning React from Codecademy, one of the modules was teaching legacy React.
-                //                 </p>
-                //                 <p class='p-showcase'>
-                //                     I built this project after completing that module and put what I had learnt into practice.
-                //                 </p>
-                //                 <p class='p-showcase'>
-                //                     Knowing the latest React architecture alongside legacy React gives me several benefits: being able to work on older existing projects, being able to transition existing older code bases to modern hooks-based architecture, having a broader knowledge of the library, understanding the evolution of React's design philosophy and how hooks and functional components create better solutions and being more flexible in problem solving - by being versatile in both makes me more adaptable and able to contribute more effectively in a variety of development environments. 
-                //                 </p>
-                //             </div>
-                //             <div class='highlight-half-2'>
-                //                 <img 
-                //                     class='show-case-img-legacy' 
-                //                     src={smallJammmingCode}
-                //                 />
-                //             </div>
-                //         </div>
-                //     </div>
-
-                // </>
-
                 <>
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-1'>
+                                <h3 class='orange'>Spotify API</h3>
+                                <p class='p-showcase'>
+                                    The users search term input triggers the search method from the Spotify object, which populates the results tracklist with tracks and associated info derived from the returned JSON results.  
+                                </p>
+                                <p class='p-showcase'>
+                                The user can then add or remove tracks to their playlist from the tracklist results with the +/ - buttons. Once the user has curated their playlist and given it the name they desire, then they can save their playlist to spotify have it to listen anytime.     
+                                </p>
+                            </div>
+                            <div class='highlight-half-2'>
+                                <video 
+                                    ref={videoRef}
+                                    class='show-case-video' 
+                                    controls 
+                                    loop
+                                    muted
+                                >
+                                    <source src='./videos/jammming/spotify-api-obj-jammming-code.mp4' type="video/mp4">
+                                    </source>
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-1'>
+                                <h3 className='orange'>React Player</h3>
+                                <p class='p-showcase'>
+                                    The project utilises React Player. I built out state and a conditional ternary to see if the state of the track is playing and if the tracks preview_url exists then the React Player component will be rendered, playing the tracks preview.   
+                                </p>
+                                <p class='p-showcase'>
+                                     
+                                </p>
+                            </div>
+                            <div class='highlight-half-2'>
+                                <video 
+                                    ref={videoRef1}
+                                    class='show-case-video' 
+                                    controls 
+                                    loop
+                                    muted
+                                >
+                                    <source src='./videos/jammming/react-player-preiview-track-code-jammming.mp4' type="video/mp4">
+                                    </source>
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-1'>
+                                <h3 className='orange'>Deployed to Surge</h3>
+                                <p class='p-showcase'>
+                                    I have deployed Jammming to Surge. This involved running npm run build in the terminal so all code was compiled into optimised files and ready for deployment.
+                                </p>
+                                <p class='p-showcase'>
+                                    Then I executed surge commands in the terminal to choose a domain name and get the app accessible to everyone via the web. 
+                                </p>
+                            </div>
+                            <div class='highlight-half-2-surge'>
+                                <img 
+                                    class='show-case-img-surge' 
+                                    src={surgeProof}
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-1'>
+                                <h3 className='orange'>Legacy React Code</h3>
+                                <p class='p-showcase'>
+                                    Whilst learning React from Codecademy, one of the modules was teaching legacy React.
+                                </p>
+                                <p class='p-showcase'>
+                                    I built this project after completing that module and put what I had learnt into practice.
+                                </p>
+                                <p class='p-showcase'>
+                                    Knowing the latest React architecture alongside legacy React gives me several benefits: being able to work on older existing projects, being able to transition existing older code bases to modern hooks-based architecture, having a broader knowledge of the library, understanding the evolution of React's design philosophy and how hooks and functional components create better solutions and being more flexible in problem solving - by being versatile in both makes me more adaptable and able to contribute more effectively in a variety of development environments. 
+                                </p>
+                            </div>
+                            <div class='highlight-half-2'>
+                                <img 
+                                    class='show-case-img-legacy' 
+                                    src={smallJammmingCode}
+                                />
+                            </div>
+                        </div>
+                    </div>
+
                 </>
             )}
 
