@@ -64,7 +64,7 @@ export const FrontPageContainer = () => {
                     entry.target.classList.add('show');
                 } 
             });
-        }, { threshold: 1 });
+        }, { threshold: windowWidth <= 1298 ? 0.25 : 1});
 
         // Observe the container
         observer.observe(container);
@@ -125,7 +125,7 @@ export const FrontPageContainer = () => {
                     }, 1000);
                 } 
             });
-        }, { threshold: 0.1 });
+        }, { threshold: windowWidth <= 1298 ? 0.25 : 0.5 });
 
         observer.observe(container);
 

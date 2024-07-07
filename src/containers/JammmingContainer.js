@@ -43,6 +43,12 @@ useEffect(() => {
         window.open('https://github.com/Jakes-Git-Hub/Spotify-API-Project-React', '_blank');
     }
 
+// Live site Click
+
+    const handleLiveSiteClick = () => {
+        window.open('https://1122jammming-12323.surge.sh', '_blank');
+    }
+
 // h3 Intersection Observer
 
 useEffect(() => {
@@ -90,6 +96,7 @@ useEffect(() => {
         <>
             <JammmingComponent 
                 handleGHSVGClick={handleGHSVGClick}
+                handleLiveSiteClick={handleLiveSiteClick}
                 videoRef={videoRef}
                 videoRef1={videoRef1}
                 windowWidth={windowWidth}
