@@ -142,16 +142,15 @@ export const FrontPageContainer = () => {
         },
     });
 
-// Find out more Logic
+// Gmail Buttons Logic
 
     const handleGMailFindOutMoreClick = () => {
         window.scrollTo(0, 0);
         navigate('/gmail-more');
     }
 
-    const handleJammmingPanelClick = () => {
-        window.scrollTo(0, 0);
-        navigate('/Jammming');
+    const handleGMailLiveSiteClick = () => {
+        window.open('http://gmail-clone-trimmed.s3-website.eu-west-2.amazonaws.com/', '_blank');
     }
 
 // H3 Animation 
@@ -204,6 +203,13 @@ export const FrontPageContainer = () => {
         }
     }, []);
 
+// Projects Pannels Clicks
+
+    const handleJammmingPanelClick = () => {
+        window.scrollTo(0, 0);
+        navigate('/Jammming');
+    }
+
 // New Layout For Smaller Screens
 
     useEffect(() => {
@@ -224,6 +230,7 @@ export const FrontPageContainer = () => {
                 zoomOutProjects={zoomOutProjects}
                 unBlurGmail={unBlurGmail}
                 handleGMailFindOutMoreClick={handleGMailFindOutMoreClick}
+                handleGMailLiveSiteClick={handleGMailLiveSiteClick}
                 windowWidth={windowWidth}
                 handleJammmingPanelClick={handleJammmingPanelClick}
                 skillsContainerHasZoomed={skillsContainerHasZoomed}

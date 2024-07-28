@@ -23,9 +23,6 @@ import restApiIcon from '../images/rest-api-icon.png';
 import expressIcon from '../images/ExpressJS-icon.webp';
 import { HeaderContainer } from '../containers/HeaderContainer';
 
-{/* <div id='upside-down-squiggle'>
-            </div> */}
-
 export const FrontPageComponent = ({
     handleGitHubClick,
     zoomOutSkills,
@@ -36,6 +33,7 @@ export const FrontPageComponent = ({
     handleJammmingPanelClick,
     skillsContainerHasZoomed,
     projectsContainerHasZoomed,
+    handleGMailLiveSiteClick,
 }) => {
 
     return (
@@ -381,13 +379,13 @@ export const FrontPageComponent = ({
                                         <button class='standard-button' onClick={handleGMailFindOutMoreClick}>
                                             Find out more
                                         </button>  
-                                        <button class='standard-button'>
+                                        <button class='standard-button' onClick={handleGMailLiveSiteClick}>
                                             Live Site
                                         </button>               
                                     </div>
                                 </div>
                                 <div id="projects-picture-column">
-                                    <img src={Gmail} alt="" id={ unBlurGmail ? 'gmail-img-unblur' : "gmail-img"}/>
+                                    <img src={Gmail} alt="" id={unBlurGmail ? 'gmail-img-unblur' : "gmail-img"}/>
                                 </div>
                             </div>
                         )}
