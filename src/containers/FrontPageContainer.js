@@ -210,6 +210,11 @@ export const FrontPageContainer = () => {
         navigate('/Jammming');
     }
 
+    const handleAdoptAPetPanelClick = () => {
+        window.scrollTo(0, 0);
+        navigate('/adopt-a-pet');
+    }
+
 // New Layout For Smaller Screens
 
     useEffect(() => {
@@ -233,6 +238,7 @@ export const FrontPageContainer = () => {
                 handleGMailLiveSiteClick={handleGMailLiveSiteClick}
                 windowWidth={windowWidth}
                 handleJammmingPanelClick={handleJammmingPanelClick}
+                handleAdoptAPetPanelClick={handleAdoptAPetPanelClick}
                 skillsContainerHasZoomed={skillsContainerHasZoomed}
                 projectsContainerHasZoomed={projectsContainerHasZoomed}
             />

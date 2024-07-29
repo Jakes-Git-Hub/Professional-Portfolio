@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FrontPageContainer } from './containers/FrontPageContainer';
 import { GMailMoreContainer } from './containers/GMailMoreContainer';
 import { JammmingContainer } from './containers/JammmingContainer';
+import { AdoptAPetContainer } from './containers/AdoptAPetContainer';
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
         />
         <Route path="/Jammming" element={
             <JammmingContainer />
+          } 
+        />
+        <Route path="/adopt-a-pet" element={
+            <AdoptAPetContainer />
           } 
         />
       </Routes>
