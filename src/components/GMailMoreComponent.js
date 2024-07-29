@@ -370,8 +370,9 @@ export const GMailMoreComponent = ({
                                     For the front end I used AWS Simple Storage Server (s3) to host the static files and then I redirected my API requests base url to the server domain name to allow access to send a recieve data via the custmom end points created there.   
                                 </p>
                             </div>
-                            <div class='highlight-half-2'>
-                                
+                            <div class='highlight-half-2-ss'>
+                                <img className='ss-half-40' src={ebSS}/>
+                                <img className='ss-half-60' src={s3SS}/>
                             </div>
                         </div>
                     </div>
@@ -641,6 +642,45 @@ export const GMailMoreComponent = ({
                                     <source src='./videos/Jest and RTL Showcase.mp4' type="video/mp4">
                                     </source>
                                 </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-1'>
+                                <h3 className='orange'>Express Server</h3>
+                                <p class='p-showcase'>
+                                    The server is built using Express.js. I have custom API end points for each of the authorisation methods, and a custom end point to acquire the users IP.
+                                </p>
+                            </div>
+                            <div class='highlight-half-2'>
+                                <video 
+                                    ref={videoRef6}
+                                    class='show-case-video' 
+                                    controls 
+                                    loop
+                                    muted
+                                >
+                                    <source src='./videos/Server Code Showcase.mp4' type="video/mp4">
+                                    </source>
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-1'>
+                                <h3 className='orange'>AWS</h3>
+                                <p class='p-showcase'>
+                                    For this project I hosted the Express server using AWS Elastic Beanstalk. This allowed me to have a scalable server that could handle the traffic of the app.                                </p>
+                                <p class='p-showcase'>
+                                    For the front end I used AWS Simple Storage Server (s3) to host the static files and then I redirected my API requests base url to the server domain name to allow access to send a recieve data via the custmom end points created there.                                </p>
+                            </div>
+                            <div class='highlight-half-2-ss'>
+                                <img className='ss-half-40' src={ebSS}/>
+                                <img className='ss-half-60' src={s3SS}/>
                             </div>
                         </div>
                     </div>
