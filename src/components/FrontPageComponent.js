@@ -15,7 +15,7 @@ import cssIcon from '../images/Css-icon.webp';
 import jsIcon from '../images/Js-icon.png';
 import nodeIcon from '../images/Node.js-icon.png';
 import gitIcon from '../images/git-icon.png';
-import netlifyIcon from '../images/netlify-icon.png';
+import awsIcon from '../images/aws-icon.png';
 import axiosIcon from '../images/axios-logo.png';
 import jestIcon from '../images/Jest-icon.png';
 import reactTLIcon from '../images/react-testing-library-logo.png';
@@ -299,7 +299,7 @@ export const FrontPageComponent = ({
                                         </svg>
                                         <img class='tech-icon tech-bottom' src={jestIcon}></img>
                                         <img class='tech-icon tech-bottom' src={reactTLIcon}></img>
-                                        <img class='tech-icon tech-bottom' src={netlifyIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={awsIcon}></img>
                                     </div>
                                     <div class='find-out-and-live-buttons'>
                                         <button class='standard-button' onClick={handleGMailFindOutMoreClick}>
@@ -373,7 +373,7 @@ export const FrontPageComponent = ({
                                         </svg>
                                         <img class='tech-icon tech-bottom' src={jestIcon}></img>
                                         <img class='tech-icon tech-bottom' src={reactTLIcon}></img>
-                                        <img class='tech-icon tech-bottom' src={netlifyIcon}></img>
+                                        <img class='tech-icon tech-bottom' src={awsIcon}></img>
                                     </div>
                                     <div class='find-out-and-live-buttons'>
                                         <button class='standard-button' onClick={handleGMailFindOutMoreClick}>

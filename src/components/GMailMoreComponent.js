@@ -2,6 +2,8 @@
 import React from 'react';
 import smallGmailCode from '../images/small-gmail-code.png';
 import smallerGmailCode from '../images/smaller-gmail-code.png' 
+import ebSS from '../images/gmail-clone-eb-ss.png';
+import s3SS from '../images/gmail-clone-s3-ss.png';
 import { HeaderContainer } from '../containers/HeaderContainer';
 
 
@@ -353,6 +355,23 @@ export const GMailMoreComponent = ({
                                 <p class='p-showcase'>
                                     To ensure my code is robust and reliable I have used Jest and React Testing Library to test anything that handles logic i.e all my container files utility files and hooks etc. This ensures everything is working as expected and ensures a smooth UX with no bugs.
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-1'>
+                                <h3 className='orange'>AWS</h3>
+                                <p class='p-showcase'>
+                                    For this project I hosted the Express server using AWS Elastic Beanstalk. This allowed me to have a scalable server that could handle the traffic of the app.    
+                                </p>
+                                <p class='p-showcase'>
+                                    For the front end I used AWS Simple Storage Server (s3) to host the static files and then I redirected my API requests base url to the server domain name to allow access to send a recieve data via the custmom end points created there.   
+                                </p>
+                            </div>
+                            <div class='highlight-half-2'>
+                                
                             </div>
                         </div>
                     </div>
