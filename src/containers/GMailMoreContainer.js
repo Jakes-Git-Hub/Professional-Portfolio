@@ -7,8 +7,6 @@ export const GMailMoreContainer = () => {
     const [currentMuiIndex, setCurrentMuiIndex] = useState(0);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    const navigate = useNavigate();
-
 // h2 Animation 
 
 useEffect(() => {

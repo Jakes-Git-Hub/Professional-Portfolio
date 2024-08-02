@@ -1,13 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect} from "react";
 import { AdoptAPetComponent } from "../components/AdoptAPetComponent";
 
 export const AdoptAPetContainer = () => {
 
-    const [currentMuiIndex, setCurrentMuiIndex] = useState(0);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-    const navigate = useNavigate();
 
 // New Layout For Smaller Screens
 

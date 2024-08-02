@@ -1274,6 +1274,12 @@ header ul li:hover {
     }
 }
 
+@media screen and (max-width: 719px) and (max-height: 932px) {
+    .section-title-fom {
+        margin-bottom: 5%;
+    }  
+}
+
 @media screen and (max-width: 667px) {
     .section-title-fom {
         font-size: 35px;
@@ -1302,7 +1308,7 @@ header ul li:hover {
 #smaller-gmail-code {
     width: 100%;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 @media screen and (max-width: 1428px) {
