@@ -40,13 +40,7 @@ useEffect(() => {
 // GitHub Click
 
     const handleGHSVGClick = () => {
-        window.open('https://github.com/Jakes-Git-Hub/Spotify-API-Project-React', '_blank');
-    }
-
-// Live site Click
-
-    const handleLiveSiteClick = () => {
-        window.open('https://1122jammming-12323.surge.sh', '_blank');
+        window.open('https://github.com/Jakes-Git-Hub/Adopt-A-Pet-React', '_blank');
     }
 
 // h3 Intersection Observer
@@ -65,40 +59,10 @@ useEffect(() => {
     h3Showcase.forEach(h3 => observer.observe(h3));
 }, [windowWidth]);
 
-// Video Intersection Observer
-
-const videoRef = useRef(null);
-const videoRef1 = useRef(null);
-
-useEffect(() => {
-    const observer = new IntersectionObserver(
-        entries => {
-            entries.forEach(entry => {
-                const video = entry.target;
-                if (entry.isIntersecting) {
-                    video.play();
-                } else {
-                    video.pause();
-                }
-            });
-        },
-        {
-            threshold: windowWidth > 1034 ? 0.5 : 0.25,
-        }
-    );
-
-    observer.observe(videoRef.current);
-    observer.observe(videoRef1.current);
-
-}, []);
-
     return (
         <>
             <AdoptAPetComponent 
                 handleGHSVGClick={handleGHSVGClick}
-                handleLiveSiteClick={handleLiveSiteClick}
-                videoRef={videoRef}
-                videoRef1={videoRef1}
                 windowWidth={windowWidth}
             />
         </>
