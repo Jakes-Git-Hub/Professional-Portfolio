@@ -26,7 +26,7 @@ export const AdoptAPetComponent = ({
                     </div>
                 ) : (
                     <div id ='gmail-code-container'>
-                        <img src={smallAdoptAPet} alt="small-jammming-code" id="smaller-jammming-code"/>
+                        <img src={smallAdoptAPet} alt="small-jammming-code" id="smaller-adopt-code"/>
                     </div>
                 )}
                 
