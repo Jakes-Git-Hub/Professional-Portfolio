@@ -39,6 +39,12 @@ useEffect(() => {
         window.open('https://github.com/Jakes-Git-Hub/Adopt-A-Pet-React', '_blank');
     }
 
+// Live Site Click
+
+    const handleGmailLiveSiteClick = () => {
+        window.open('http://tech-news-redux.s3-website.eu-west-2.amazonaws.com/', '_blank');
+    }
+
 // h3 Intersection Observer
 
 useEffect(() => {
@@ -59,6 +65,7 @@ useEffect(() => {
         <>
             <TechNewsComponent 
                 handleGHSVGClick={handleGHSVGClick}
+                handleGmailLiveSiteClick={handleGmailLiveSiteClick}
                 windowWidth={windowWidth}
             />
         </>
