@@ -1,11 +1,11 @@
 
 import React from 'react';
 import { HeaderContainer } from '../containers/HeaderContainer';
-import largeAdoptAPet from '../images/adopt-a-pet-showcase/Adopt a Pet Large ss.png';
-import smallAdoptAPet from '../images/adopt-a-pet-showcase/Adopt a Pet Small ss.png'; 
-import MSWProof from '../images/adopt-a-pet-showcase/MSW Proof.png';
+import largeTechNews from '../images/tech-news/Tech news Large ss.png';
+import smallTechNews from '../images/tech-news/Tech news small ss.png'; 
+// import MSWProof from '../images/tech-news/MSW Proof.png';
 
-export const AdoptAPetComponent = ({
+export const TechNewsComponent = ({
     handleGHSVGClick,
     windowWidth,
 }) => {
@@ -18,15 +18,15 @@ export const AdoptAPetComponent = ({
 
             <div class="content-container-padding" id='squiggle-divide-breakdown'>
                 <h2 class="section-title-fom slide-in-left-placeholder">
-                    <span class="h2-highlight-gmail">Adopt a Pet</span> 
+                    <span class="h2-highlight-gmail">Tech News</span> 
                 </h2>
                 { windowWidth > 1492 ? (
                     <div id ='gmail-code-container'>
-                        <img src={largeAdoptAPet} alt="small-jammming-code" id="small-gmail-code"/>
+                        <img src={largeTechNews} alt="small-jammming-code" id="small-gmail-code"/>
                     </div>
                 ) : (
                     <div id ='gmail-code-container'>
-                        <img src={smallAdoptAPet} alt="small-jammming-code" id="smaller-adopt-code"/>
+                        <img src={smallTechNews} alt="small-jammming-code" id="smaller-adopt-code"/>
                     </div>
                 )}
                 
@@ -62,7 +62,7 @@ export const AdoptAPetComponent = ({
                             <div class='highlight-half-2-pet'>
                                 <img 
                                     class='msw-proof' 
-                                    src={MSWProof}
+                                    // src={MSWProof}
                                 />
                             </div>
                         </div>
@@ -81,7 +81,7 @@ export const AdoptAPetComponent = ({
                             <div class='highlight-half-2-pet'>
                                 <img 
                                     class='msw-proof' 
-                                    src={MSWProof}
+                                    // src={MSWProof}
                                 />
                             </div>
                         </div>
