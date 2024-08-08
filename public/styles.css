@@ -1340,6 +1340,15 @@ header ul li:hover {
     overflow: hidden;
 }
 
+.highlight-container-tn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    height: 400px;
+    overflow: hidden;
+}
+
 .p-showcase, .orange {
     margin: 1em 4rem;
     text-align: center;
@@ -1436,6 +1445,11 @@ header ul li:hover {
         flex-direction: column;
         height: 825px;
     }
+    .highlight-container-tn {
+        flex-direction: column;
+        height: 825px;
+        align-items: start;
+    }
     .highlight-half-1 {
         flex-direction: row;
         height: 50% !important;
@@ -1529,7 +1543,7 @@ header ul li:hover {
     overflow: hidden;
 }
 
-.highlight-half-2-pet {
+.highlight-half-2-pet, .highlight-half-2-tn {
     width: 50%;
     height: 100%;
     display: flex;
@@ -1537,6 +1551,7 @@ header ul li:hover {
     align-items: flex-start;
     background-color: black;
     overflow: hidden;
+    position: relative;
 }
 
 .highlight-half-2-ss {
@@ -1745,10 +1760,8 @@ header ul li:hover {
 
 @media screen and (max-width: 586px) {
     .redux-tn {
-        align-content: start;
-        width: 100% !important;
+        width: auto;
         height: 100%;
-        object-fit: cover;
     }
 }
 
@@ -1780,6 +1793,19 @@ header ul li:hover {
     .highlight-half-2-pet {
         height: 50% !important;
         width: 100% !important;
+        position: relative;
+    }
+    .highlight-half-2-tn {
+        height: 50% !important;
+        width: 150%;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 474px) {
+    .highlight-half-2-tn {
+        width: 175% !important;
     }
 }
 

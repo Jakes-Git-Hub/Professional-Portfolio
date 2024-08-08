@@ -88,7 +88,7 @@ export const TechNewsComponent = ({
                                     This makes the code more modular, provides separation of concerns, makes it easier to test and easier to enable scalability. It also improves readability and maintainability of the code base.
                                 </p>
                             </div>
-                            <div class='highlight-half-2-pet'>
+                            <div class='highlight-half-2-tn'>
                                 <img 
                                     class='redux-tn' 
                                     src={reduxStore}
@@ -100,7 +100,7 @@ export const TechNewsComponent = ({
             ) : (
                 <>
                     <div class='content-container-padding black-background-highlights'>
-                        <div class='highlight-container white-background'>
+                        <div class='highlight-container-tn white-background'>
                             <div class='highlight-half-1'>
                                 <h3 class='orange'>Redux State management</h3>
                                 <p class='p-showcase'>
@@ -110,7 +110,7 @@ export const TechNewsComponent = ({
                                     This makes the code more modular, provides separation of concerns, makes it easier to test and easier to enable scalability. It also improves readability and maintainability of the code base.
                                 </p>
                             </div>
-                            <div class='highlight-half-2-pet'>
+                            <div class='highlight-half-2-tn'>
                                 <img 
                                     class='redux-tn' 
                                     src={reduxStore}
