@@ -7,7 +7,7 @@ import reduxStore from '../images/tech-news/redux-store.png';
 
 export const AppointmentPlannerComponent = ({
     handleGHSVGClick,
-    handleGmailLiveSiteClick,
+    handleLiveSiteClick,
     windowWidth,
 }) => {
 
@@ -36,7 +36,7 @@ export const AppointmentPlannerComponent = ({
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-desc-container white-background'>
                     <p id='highlight-desc-p'>
-                        In this project I used Redux state management to create a store of state management. I then display the associated data that corresponds to the query parameters using the redux/ react hook.
+                        An appointment app where users can add contacts to appointments.
                     </p>
                         <div className='highlight-svg-container'>
                             <svg 
@@ -50,7 +50,7 @@ export const AppointmentPlannerComponent = ({
                             </svg>
                             <svg 
                                 className='hightlight-desc-svg'
-                                onClick={handleGmailLiveSiteClick}
+                                onClick={handleLiveSiteClick}
                                 title='Gmail Clone live site'
                                 viewBox="0 0 64 64" 
                                 xmlns="http://www.w3.org/2000/svg" 
@@ -80,12 +80,15 @@ export const AppointmentPlannerComponent = ({
                     <div class='content-container-padding black-background-highlights'>
                         <div class='highlight-container white-background'>
                             <div class='highlight-half-1'>
-                                <h3 class='orange'>Redux State Management</h3>
+                                <h3 class='orange'>React</h3>
                                 <p class='p-showcase'>
-                                    Instead of hardcoding the data into my Single Page Application, I used Redux. 
+                                    This app was built in React where you can add and save new contacts with their associated information.  
                                 </p>
                                 <p class='p-showcase'>
-                                    This makes the code more modular, provides separation of concerns, makes it easier to test and easier to enable scalability. It also improves readability and maintainability of the code base.
+                                    After adding contacts, you can go to the appointnents section and create new appointments along with associated information of the appointment and then add any contact that has been created in the contacts section to this new appointment.
+                                </p>
+                                <p class='p-showcase'>
+                                    After an appointment has been added, appointnents are then visible in the Appointments section. 
                                 </p>
                             </div>
                             <div class='highlight-half-2-tn'>
@@ -102,12 +105,15 @@ export const AppointmentPlannerComponent = ({
                     <div class='content-container-padding black-background-highlights'>
                         <div class='highlight-container-tn white-background'>
                             <div class='highlight-half-1'>
-                                <h3 class='orange'>Redux State management</h3>
+                                <h3 class='orange'>React</h3>
                                 <p class='p-showcase'>
-                                    Instead of hardcoding the data into my Single Page Application, I used Redux.
+                                    This app was built in React where you can add and save new contacts with their associated information. 
                                 </p>
                                 <p class='p-showcase'>
-                                    This makes the code more modular, provides separation of concerns, makes it easier to test and easier to enable scalability. It also improves readability and maintainability of the code base.
+                                    After adding contacts, you can go to the appointnents section and create new appointments along with associated information of the appointment and then add any contact that has been created in the contacts section to this new appointment.
+                                </p>
+                                <p class='p-showcase'>
+                                    After an appointment has been added, appointnents are then visible in the Appointments section. 
                                 </p>
                             </div>
                             <div class='highlight-half-2-tn'>

@@ -36,13 +36,13 @@ useEffect(() => {
 // GitHub Click
 
     const handleGHSVGClick = () => {
-        window.open('https://github.com/Jakes-Git-Hub/Tech-News-Redux', '_blank');
+        window.open('https://github.com/Jakes-Git-Hub/Appointment-Planner-React', '_blank');
     }
 
 // Live Site Click
 
-    const handleGmailLiveSiteClick = () => {
-        window.open('http://tech-news-redux.s3-website.eu-west-2.amazonaws.com/', '_blank');
+    const handleLiveSiteClick = () => {
+        window.open('http://appointment-planner.s3-website.eu-west-2.amazonaws.com/', '_blank');
     }
 
 // h3 Intersection Observer
@@ -65,7 +65,7 @@ useEffect(() => {
         <>
             <AppointmentPlannerComponent 
                 handleGHSVGClick={handleGHSVGClick}
-                handleGmailLiveSiteClick={handleGmailLiveSiteClick}
+                handleLiveSiteClick={handleLiveSiteClick}
                 windowWidth={windowWidth}
             />
         </>
