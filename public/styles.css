@@ -558,16 +558,7 @@ header ul li:hover {
     border-radius: 3px;
 }
 
-@media screen and (max-width: 863px) {
-    .skill-container {
-        height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;  
-    }
-}
-
-@media screen and (max-width: 863px) {
+@media screen and (max-width: 1062px) {
     .skill-container {
         height: 30px;
         display: flex;
@@ -1754,8 +1745,10 @@ header ul li:hover {
 
 @media screen and (max-width: 586px) {
     .redux-tn {
-        width: 125% !important;
-        height: 125% !important;
+        align-content: start;
+        width: 100% !important;
+        height: 100%;
+        object-fit: cover;
     }
 }
 

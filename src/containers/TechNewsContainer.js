@@ -36,7 +36,7 @@ useEffect(() => {
 // GitHub Click
 
     const handleGHSVGClick = () => {
-        window.open('https://github.com/Jakes-Git-Hub/Adopt-A-Pet-React', '_blank');
+        window.open('https://github.com/Jakes-Git-Hub/Tech-News-Redux', '_blank');
     }
 
 // Live Site Click

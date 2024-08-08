@@ -215,6 +215,11 @@ export const FrontPageContainer = () => {
         navigate('/adopt-a-pet');
     }
 
+    const handleTechNewsPanelClick = () => {
+        window.scrollTo(0, 0);
+        navigate('/tech-news');
+    }
+
 // New Layout For Smaller Screens
 
     useEffect(() => {
@@ -239,6 +244,7 @@ export const FrontPageContainer = () => {
                 windowWidth={windowWidth}
                 handleJammmingPanelClick={handleJammmingPanelClick}
                 handleAdoptAPetPanelClick={handleAdoptAPetPanelClick}
+                handleTechNewsPanelClick={handleTechNewsPanelClick}
                 skillsContainerHasZoomed={skillsContainerHasZoomed}
                 projectsContainerHasZoomed={projectsContainerHasZoomed}
             />

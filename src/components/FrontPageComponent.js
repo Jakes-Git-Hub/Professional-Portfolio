@@ -35,6 +35,7 @@ export const FrontPageComponent = ({
     projectsContainerHasZoomed,
     handleGMailLiveSiteClick,
     handleAdoptAPetPanelClick,
+    handleTechNewsPanelClick,
 }) => {
 
     return (
@@ -438,7 +439,7 @@ export const FrontPageComponent = ({
                             </div>
                         </div>
                     </div>
-                    <div class='project-case'>
+                    <div class='project-case' onClick={handleTechNewsPanelClick}>
                         <div class='project-image-container'>
                             <img src={techNews} alt='Tech News' id='tech-news'/>
                         </div>
@@ -456,6 +457,7 @@ export const FrontPageComponent = ({
                                 </svg>
                                 <img class='desc-svg-icon' src={reduxIcon}></img> 
                                 <img class='desc-svg-icon' src={reactTLIcon}></img> 
+                                <img class='desc-svg-icon' src={awsIcon}></img> 
                             </div>
                         </div>
                     </div>

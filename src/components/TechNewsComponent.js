@@ -35,7 +35,9 @@ export const TechNewsComponent = ({
 
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-desc-container white-background'>
-                    <p id='highlight-desc-p'>In this project I used Redux state management to create a store of state management. I then display the associated data that corresponds to the query parameters using the redux/ react hook.</p>
+                    <p id='highlight-desc-p'>
+                        In this project I used Redux state management to create a store of state management. I then display the associated data that corresponds to the query parameters using the redux/ react hook.
+                    </p>
                         <div className='highlight-svg-container'>
                             <svg 
                                 className='hightlight-desc-svg' 
