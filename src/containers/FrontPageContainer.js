@@ -220,6 +220,11 @@ export const FrontPageContainer = () => {
         navigate('/tech-news');
     }
 
+    const appointmentPlannerPanelClick = () => {
+        window.scrollTo(0, 0);
+        navigate('/appointment-planner');
+    }
+
 // New Layout For Smaller Screens
 
     useEffect(() => {
@@ -245,6 +250,7 @@ export const FrontPageContainer = () => {
                 handleJammmingPanelClick={handleJammmingPanelClick}
                 handleAdoptAPetPanelClick={handleAdoptAPetPanelClick}
                 handleTechNewsPanelClick={handleTechNewsPanelClick}
+                appointmentPlannerPanelClick={appointmentPlannerPanelClick}
                 skillsContainerHasZoomed={skillsContainerHasZoomed}
                 projectsContainerHasZoomed={projectsContainerHasZoomed}
             />

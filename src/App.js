@@ -5,6 +5,7 @@ import { GMailMoreContainer } from './containers/GMailMoreContainer';
 import { JammmingContainer } from './containers/JammmingContainer';
 import { AdoptAPetContainer } from './containers/AdoptAPetContainer';
 import { TechNewsContainer } from './containers/TechNewsContainer';
+import { AppointmentPlannerContainer } from './containers/AppointmentPlannerContainer';
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
         />
         <Route path="/tech-news" element={
             <TechNewsContainer />
+          } 
+        />
+        <Route path="/appointment-planner" element={
+            <AppointmentPlannerContainer />
           } 
         />
       </Routes>
