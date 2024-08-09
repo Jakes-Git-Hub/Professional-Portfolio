@@ -1,9 +1,9 @@
 
 import React from 'react';
 import { HeaderContainer } from '../containers/HeaderContainer';
-import largeAppointmentPlanner from '../images/tech-news/Tech news Large ss.png';
-import smallAppointmentPlanner from '../images/tech-news/Tech news small ss.png'; 
-import reduxStore from '../images/tech-news/redux-store.png';
+import largeAppointmentPlanner from '../images/appointment-planner/appointment-planner-large.png';
+import smallAppointmentPlanner from '../images/appointment-planner/appointment-planner-small.png'; 
+// import reduxStore from '../images/appointment-planner/redux-store.png';
 
 export const AppointmentPlannerComponent = ({
     handleGHSVGClick,
@@ -22,12 +22,12 @@ export const AppointmentPlannerComponent = ({
                     <span class="h2-highlight-gmail">Appointment Planner</span> 
                 </h2>
                 { windowWidth > 1492 ? (
-                    <div id ='gmail-code-container'>
+                    <div id ='code-container-appointment-planner'>
                         <img src={largeAppointmentPlanner} id="small-gmail-code"/>
                     </div>
                 ) : (
-                    <div id ='gmail-code-container'>
-                        <img src={smallAppointmentPlanner} id="smaller-adopt-code"/>
+                    <div id ='code-container-appointment-planner'>
+                        <img src={smallAppointmentPlanner} id="smaller-appointment-code"/>
                     </div>
                 )}
                 
@@ -94,7 +94,7 @@ export const AppointmentPlannerComponent = ({
                             <div class='highlight-half-2-tn'>
                                 <img 
                                     class='redux-tn' 
-                                    src={reduxStore}
+                                    // src={reduxStore}
                                 />
                             </div>
                         </div>
@@ -119,7 +119,7 @@ export const AppointmentPlannerComponent = ({
                             <div class='highlight-half-2-tn'>
                                 <img 
                                     class='redux-tn' 
-                                    src={reduxStore}
+                                    // src={reduxStore}
                                 />
                             </div>
                         </div>

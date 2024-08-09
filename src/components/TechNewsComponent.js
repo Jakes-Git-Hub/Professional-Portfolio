@@ -22,11 +22,11 @@ export const TechNewsComponent = ({
                     <span class="h2-highlight-gmail">Tech News</span> 
                 </h2>
                 { windowWidth > 1492 ? (
-                    <div id ='gmail-code-container'>
+                    <div id ='code-container'>
                         <img src={largeTechNews} id="small-gmail-code"/>
                     </div>
                 ) : (
-                    <div id ='gmail-code-container'>
+                    <div id ='code-container-adopt-a-pet'>
                         <img src={smallTechNews} id="smaller-adopt-code"/>
                     </div>
                 )}

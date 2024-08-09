@@ -38,11 +38,11 @@ export const GMailMoreComponent = ({
                     Gmail Clone <span class="h2-highlight-gmail">Showcase</span>
                 </h2>
                 { windowWidth > 1492 ? (
-                    <div id ='gmail-code-container'>
+                    <div id ='code-container'>
                         <img src={smallGmailCode} alt="small-gmail-code" id="small-gmail-code"/>
                     </div>
                 ) : (
-                    <div id ='gmail-code-container'>
+                    <div id ='code-container'>
                         <img src={smallerGmailCode} alt="small-gmail-code" id="smaller-gmail-code"/>
                     </div>
                 )}

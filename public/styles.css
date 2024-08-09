@@ -1240,10 +1240,25 @@ header ul li:hover {
     background-size: cover;
 }
 
-#gmail-code-container {
+#code-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+#code-container-adopt-a-pet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#code-container-appointment-planner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 #gmail-code {
@@ -1336,7 +1351,7 @@ header ul li:hover {
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    height: 400px;
+    height: 450px;
     overflow: hidden;
 }
 
@@ -1345,7 +1360,7 @@ header ul li:hover {
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    height: 400px;
+    height: 450px;
     overflow: hidden;
 }
 
@@ -1707,7 +1722,7 @@ header ul li:hover {
 /* Jammming */
 
 #smaller-jammming-code {
-    width: 80%;
+    width: 100%;
     border-radius: 8px;
     margin-top: 30px;
 }
@@ -1839,7 +1854,73 @@ header ul li:hover {
     }
 }
 
+/* Appointment Planner */
+
+#smaller-appointment-code {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 30px;
+    height: 150%;
+}
+
 /* Important to keep at end for css flow */
+
+@media screen and (max-width: 1148px) {
+    #code-container-adopt-a-pet, #code-container-appointment-planner{
+        justify-content: flex-start;
+    }
+    #smaller-adopt-code, #smaller-appointment-code {
+        width: 170%;
+    }  
+}
+
+@media screen and (max-width: 912px) {
+    #smaller-adopt-code, #smaller-appointment-code {
+        width: 200%;
+    }  
+}
+
+@media screen and (max-width: 568px) {
+    #smaller-appointment-code {
+        width: 250%;
+    }  
+}
+
+@media screen and (max-width: 568px) {
+    #smaller-appointment-code {
+        width: 300%;
+    }  
+}
+
+@media screen and (max-width: 362px) {
+    #smaller-appointment-code {
+        width: 350%;
+    }  
+}
+
+@media screen and (max-width: 614px) {
+    #code-container {
+        justify-content: flex-start;
+    }
+    #smaller-jammming-code {
+        width: 150%;
+    }	
+}
+
+@media screen and (max-width: 346px) {
+    #smaller-jammming-code {
+        width: 200%;
+    }	
+}
+
+@media screen and (max-width: 590px) {
+    .highlight-svg-container {
+        justify-content: space-evenly;
+    }
+    .hightlight-desc-svg {
+        margin: 1.5rem 0 3rem;
+    }
+}
 
 .fade-in {
     animation: fadeUp 1s ease-in forwards;

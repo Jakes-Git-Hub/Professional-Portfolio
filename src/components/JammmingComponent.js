@@ -25,11 +25,11 @@ export const JammmingComponent = ({
                     <span class="h2-highlight-gmail">Jammming</span> 
                 </h2>
                 { windowWidth > 1492 ? (
-                    <div id ='gmail-code-container'>
+                    <div id ='code-container'>
                         <img src={largeJammmingCode} alt="small-jammming-code" id="small-gmail-code"/>
                     </div>
                 ) : (
-                    <div id ='gmail-code-container'>
+                    <div id ='code-container'>
                         <img src={smallJammmingCode} alt="small-jammming-code" id="smaller-jammming-code"/>
                     </div>
                 )}

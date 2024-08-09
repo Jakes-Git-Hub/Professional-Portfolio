@@ -21,12 +21,12 @@ export const AdoptAPetComponent = ({
                     <span class="h2-highlight-gmail">Adopt a Pet</span> 
                 </h2>
                 { windowWidth > 1492 ? (
-                    <div id ='gmail-code-container'>
-                        <img src={largeAdoptAPet} alt="small-jammming-code" id="small-gmail-code"/>
+                    <div id ='code-container-adopt-a-pet'>
+                        <img src={largeAdoptAPet} alt="small-adopt-a-pet-code" id="small-gmail-code"/>
                     </div>
                 ) : (
-                    <div id ='gmail-code-container'>
-                        <img src={smallAdoptAPet} alt="small-jammming-code" id="smaller-adopt-code"/>
+                    <div id ='code-container-adopt-a-pet'>
+                        <img src={smallAdoptAPet} alt="small-adopt-a-pet-code" id="smaller-adopt-code"/>
                     </div>
                 )}
                 
