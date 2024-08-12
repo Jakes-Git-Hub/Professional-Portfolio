@@ -1298,6 +1298,15 @@ header ul li:hover {
     margin-top: 90px;
 }
 
+#code-container-number-guessser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 90px;
+}
+
 #gmail-code {
     height: auto;
     width: 100%;
@@ -1883,6 +1892,38 @@ header ul li:hover {
     width: 100%;
     border-radius: 8px;
     height: 150%;
+}
+
+#smaller-appointment-code-ng {
+    width: 100%;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 706px) {
+    #code-container-number-guessser {
+        justify-content: flex-start;
+    }
+    #smaller-appointment-code-ng {
+        width: 150%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #smaller-appointment-code-ng {
+        width: 175%;
+    }
+}
+
+@media screen and (max-width: 416px) {
+    #smaller-appointment-code-ng {
+        width: 200%;
+    }
+}
+
+@media screen and (max-width: 332px) {
+    #smaller-appointment-code-ng {
+        width: 250%;
+    }
 }
 
 /* Important to keep at end for css flow */

@@ -37,6 +37,7 @@ export const FrontPageComponent = ({
     handleAdoptAPetPanelClick,
     handleTechNewsPanelClick,
     appointmentPlannerPanelClick,
+    numberGuesserPanelClick,
 }) => {
 
     return (
@@ -481,7 +482,7 @@ export const FrontPageComponent = ({
                             </div>
                         </div>
                     </div>
-                    <div class='project-case'>
+                    <div class='project-case' onClick={numberGuesserPanelClick}>
                         <div class='project-image-container'>
                             <img src={numberGuesser} alt='Number Guesser' id='number-guesser'/>
                         </div>

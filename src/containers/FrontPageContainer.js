@@ -225,6 +225,11 @@ export const FrontPageContainer = () => {
         navigate('/appointment-planner');
     }
 
+    const numberGuesserPanelClick = () => {
+        window.scrollTo(0, 0);
+        navigate('/number-guesser');
+    }
+
 // New Layout For Smaller Screens
 
     useEffect(() => {
@@ -251,6 +256,7 @@ export const FrontPageContainer = () => {
                 handleAdoptAPetPanelClick={handleAdoptAPetPanelClick}
                 handleTechNewsPanelClick={handleTechNewsPanelClick}
                 appointmentPlannerPanelClick={appointmentPlannerPanelClick}
+                numberGuesserPanelClick={numberGuesserPanelClick}
                 skillsContainerHasZoomed={skillsContainerHasZoomed}
                 projectsContainerHasZoomed={projectsContainerHasZoomed}
             />

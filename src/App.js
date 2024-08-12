@@ -6,6 +6,7 @@ import { JammmingContainer } from './containers/JammmingContainer';
 import { AdoptAPetContainer } from './containers/AdoptAPetContainer';
 import { TechNewsContainer } from './containers/TechNewsContainer';
 import { AppointmentPlannerContainer } from './containers/AppointmentPlannerContainer';
+import { NumberGuesserContainer } from './containers/NumberGuesserContainer';
 
 function App() {
   return (
@@ -33,6 +34,10 @@ function App() {
         />
         <Route path="/appointment-planner" element={
             <AppointmentPlannerContainer />
+          } 
+        />
+        <Route path="/number-guesser" element={
+            <NumberGuesserContainer />
           } 
         />
       </Routes>
