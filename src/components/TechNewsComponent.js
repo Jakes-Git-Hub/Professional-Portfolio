@@ -27,7 +27,7 @@ export const TechNewsComponent = ({
                     </div>
                 ) : (
                     <div id ='code-container-adopt-a-pet'>
-                        <img src={smallTechNews} id="smaller-adopt-code"/>
+                        <img src={smallTechNews} id="smaller-code"/>
                     </div>
                 )}
                 

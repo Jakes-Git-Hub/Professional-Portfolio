@@ -26,7 +26,7 @@ export const AdoptAPetComponent = ({
                     </div>
                 ) : (
                     <div id ='code-container-adopt-a-pet'>
-                        <img src={smallAdoptAPet} alt="small-adopt-a-pet-code" id="smaller-adopt-code"/>
+                        <img src={smallAdoptAPet} alt="small-adopt-a-pet-code" id="smaller-code"/>
                     </div>
                 )}
                 

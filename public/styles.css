@@ -1240,11 +1240,44 @@ header ul li:hover {
     background-size: cover;
 }
 
+#code-container-gmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 70px;
+}
+
 #code-container {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border-radius: 8px;
+    margin-top: 90px;
+}
+
+#smaller-gmail-code {
+    width: 100%;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 1082px) {
+    #code-container-gmail {
+        justify-content: flex-start;
+    }
+    #smaller-gmail-code {
+        width: 150%;
+    }
+}
+
+@media screen and (max-width: 484px) {
+    #smaller-gmail-code {
+        width: 200%;
+        position: relative;
+        right: 200px !important;
+    }
 }
 
 #code-container-adopt-a-pet {
@@ -1252,6 +1285,8 @@ header ul li:hover {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-top: 90px;
+    border-radius: 8px;
 }
 
 #code-container-appointment-planner {
@@ -1259,6 +1294,8 @@ header ul li:hover {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border-radius: 8px;
+    margin-top: 90px;
 }
 
 #gmail-code {
@@ -1308,35 +1345,13 @@ header ul li:hover {
     height: auto;
     width: 100%;
     border-radius: 8px;
-    margin-top: 40px;
 }
 
-#smaller-gmail-code {
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 40px;
-}
-
-@media screen and (max-width: 1428px) {
+/* @media screen and (max-width: 1428px) {
     .content-container-padding {
         padding: 8vh 10.42vw;
     }
-    #smaller-gmail-code {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 1140px) {
-    #smaller-gmail-code {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 1006px) {
-    #smaller-gmail-code {
-        width: 100%;
-    }
-}
+} */
 
 .black-background-highlights{
     background-color: black;
@@ -1558,7 +1573,7 @@ header ul li:hover {
     overflow: hidden;
 }
 
-.highlight-half-2-pet, .highlight-half-2-tn {
+.highlight-half-2-pet, .highlight-half-2-tn, .highlight-half-2-appointment-planner {
     width: 50%;
     height: 100%;
     display: flex;
@@ -1723,8 +1738,6 @@ header ul li:hover {
 
 #smaller-jammming-code {
     width: 100%;
-    border-radius: 8px;
-    margin-top: 30px;
 }
 
 .lh-15rem {
@@ -1733,10 +1746,9 @@ header ul li:hover {
 
 /* Adopt a Pet */
 
-#smaller-adopt-code {
+#smaller-code {
     width: 100%;
     border-radius: 8px;
-    margin-top: 30px;
     height: 150%;
 }
 
@@ -1752,6 +1764,17 @@ header ul li:hover {
     height: 100%;
     border-radius: 0 8px 8px 0;
     overflow: hidden;
+}
+
+.appointment-planner-panel {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1285px) {
+
 }
 
 @media screen and (max-width: 1512px) {
@@ -1859,23 +1882,28 @@ header ul li:hover {
 #smaller-appointment-code {
     width: 100%;
     border-radius: 8px;
-    margin-top: 30px;
     height: 150%;
 }
 
 /* Important to keep at end for css flow */
 
+@media screen and (max-width: 1492px) {
+    .code-container-appointment-planner {
+        margin-top: 55px !important;
+    }
+}
+
 @media screen and (max-width: 1148px) {
     #code-container-adopt-a-pet, #code-container-appointment-planner{
         justify-content: flex-start;
     }
-    #smaller-adopt-code, #smaller-appointment-code {
+    #smaller-code, #smaller-appointment-code {
         width: 170%;
     }  
 }
 
 @media screen and (max-width: 912px) {
-    #smaller-adopt-code, #smaller-appointment-code {
+    #smaller-code, #smaller-appointment-code {
         width: 200%;
     }  
 }
