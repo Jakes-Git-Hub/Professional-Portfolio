@@ -36,7 +36,7 @@ export const NumberGuesserComponent = ({
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-desc-container white-background'>
                     <p id='highlight-desc-p'>
-                        An appointment app where users can add contacts to appointments.
+                        An game against the computer, where whoever guesses closest to the target number wins.
                     </p>
                         <div className='highlight-svg-container'>
                             <svg 
@@ -80,18 +80,12 @@ export const NumberGuesserComponent = ({
                     <div class='content-container-padding black-background-highlights'>
                         <div class='highlight-container white-background'>
                             <div class='highlight-half-1'>
-                                <h3 class='orange'>React</h3>
-                                <p class='p-showcase'>
-                                    This app was built in React where you can add and save new contacts with their associated information, after they have been saved they are visible in the contacts address.  
-                                </p>
-                                <p class='p-showcase'>
-                                    After adding contacts, you can go to the appointnents section and create new appointments along with associated information of the appointment and then add any contact that has been created in the contacts section to this new appointment.
-                                </p>
-                                <p class='p-showcase'>
-                                    After an appointment has been added, appointnents are then visible in the Appointments section. 
+                                <h3 class='orange-reg'>Javascript</h3>
+                                <p class='p-showcase-reg'>
+                                    A "simple" html, css and javascript project using scripts to orchastrate the workings of the game using multiple web development programming techniques.  
                                 </p>
                             </div>
-                            <div class='highlight-half-2-appointment-planner'>
+                            <div class='highlight-half-2-number-guesser'>
                                 <img 
                                     class='appointment-planner-panel' 
                                     src={numberGuesserPanel}
@@ -105,18 +99,12 @@ export const NumberGuesserComponent = ({
                     <div class='content-container-padding black-background-highlights'>
                         <div class='highlight-container-tn white-background'>
                             <div class='highlight-half-1'>
-                                <h3 class='orange'>React</h3>
-                                <p class='p-showcase'>
-                                    This app was built in React where you can add and save new contacts with their associated information. 
-                                </p>
-                                <p class='p-showcase'>
-                                    After adding contacts, you can go to the appointnents section and create new appointments along with associated information of the appointment and then add any contact that has been created in the contacts section to this new appointment.
-                                </p>
-                                <p class='p-showcase'>
-                                    After an appointment has been added, appointnents are then visible in the Appointments section. 
+                                <h3 class='orange-reg'>Javascript</h3>
+                                <p class='p-showcase-reg'>
+                                    A "simple" html, css and javascript project using scripts to orchastrate the workings of the game using multiple web development programming techniques.  
                                 </p>
                             </div>
-                            <div class='highlight-half-2-tn'>
+                            <div class='highlight-half-2-number-guesser'>
                                 <img 
                                     class='appointment-planner-panel' 
                                     src={numberGuesserPanel}

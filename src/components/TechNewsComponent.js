@@ -80,11 +80,11 @@ export const TechNewsComponent = ({
                     <div class='content-container-padding black-background-highlights'>
                         <div class='highlight-container white-background'>
                             <div class='highlight-half-1'>
-                                <h3 class='orange'>Redux State Management</h3>
-                                <p class='p-showcase'>
+                                <h3 class='orange-reg'>Redux State Management</h3>
+                                <p class='p-showcase-reg'>
                                     Instead of hardcoding the data into my Single Page Application, I used Redux. 
                                 </p>
-                                <p class='p-showcase'>
+                                <p class='p-showcase-reg'>
                                     This makes the code more modular, provides separation of concerns, makes it easier to test and easier to enable scalability. It also improves readability and maintainability of the code base.
                                 </p>
                             </div>
@@ -102,11 +102,11 @@ export const TechNewsComponent = ({
                     <div class='content-container-padding black-background-highlights'>
                         <div class='highlight-container-tn white-background'>
                             <div class='highlight-half-1'>
-                                <h3 class='orange'>Redux State management</h3>
-                                <p class='p-showcase'>
+                                <h3 class='orange-reg'>Redux State management</h3>
+                                <p class='p-showcase-reg'>
                                     Instead of hardcoding the data into my Single Page Application, I used Redux.
                                 </p>
-                                <p class='p-showcase'>
+                                <p class='p-showcase-reg'>
                                     This makes the code more modular, provides separation of concerns, makes it easier to test and easier to enable scalability. It also improves readability and maintainability of the code base.
                                 </p>
                             </div>

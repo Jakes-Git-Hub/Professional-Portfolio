@@ -36,19 +36,19 @@ useEffect(() => {
 // GitHub Click
 
     const handleGHSVGClick = () => {
-        window.open('https://github.com/Jakes-Git-Hub/Appointment-Planner-React', '_blank');
+        window.open('https://github.com/Jakes-Git-Hub/Number-Guesser', '_blank');
     }
 
 // Live Site Click
 
     const handleLiveSiteClick = () => {
-        window.open('http://appointment-planner.s3-website.eu-west-2.amazonaws.com/', '_blank');
+        window.open('http://number-guesser.s3-website.eu-west-2.amazonaws.com/', '_blank');
     }
 
 // h3 Intersection Observer
 
 useEffect(() => {
-    const h3Showcase = document.querySelectorAll('.orange');
+    const h3Showcase = document.querySelectorAll('.orange-reg');
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {  

@@ -48,7 +48,7 @@ useEffect(() => {
 // h3 Intersection Observer
 
 useEffect(() => {
-    const h3Showcase = document.querySelectorAll('.orange');
+    const h3Showcase = document.querySelectorAll('.orange-reg');
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {  

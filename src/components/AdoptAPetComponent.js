@@ -56,7 +56,10 @@ export const AdoptAPetComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 class='orange'>Mapping UI From Animals Object</h3>
                                 <p class='p-showcase'>
-                                    Animal panels are displayed through mapping from a JSON object. The user can then narrow down the results based off of their search input, as this will trigger an api request that the mock service worker will intercept and mock a get request from the animals object, type object and details object.
+                                    Animal panels and associated data are displayed from utilisation of an API request and using a mock service worker. This worker will intercept get requests and mock a get api call to get associated data based on the users input querry parameter and display results through mapping the relevant objects grabbed from the arrays.
+                                </p>
+                                <p class='p-showcase'>
+                                    This worker will intercept get requests and mock an get api call to get associated data based on the users input querry parameters and display results through mapping the relevant objects grabbed from the arrays.
                                 </p>
                             </div>
                             <div class='highlight-half-2-pet'>
@@ -75,7 +78,10 @@ export const AdoptAPetComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 class='orange'>Mapping UI From Animals Object</h3>
                                 <p class='p-showcase'>
-                                    Animal panels are displayed through mapping from a JSON object. The user can then narrow down the results based off of their search input, as this will trigger an api request that the mock service worker will intercept and mock a get request from the animals object, type object and details object.
+                                    Animal panels and associated data are displayed from utilisation of an API request and using a mock service worker. This worker will intercept get requests and mock a get api call to get associated data based on the users input querry parameter and display results through mapping the relevant objects grabbed from the arrays.
+                                </p>
+                                <p class='p-showcase'>
+                                    This worker will intercept get requests and mock an get api call to get associated data based on the users input querry parameters and display results through mapping the relevant objects grabbed from the arrays.
                                 </p>
                             </div>
                             <div class='highlight-half-2-pet'>
