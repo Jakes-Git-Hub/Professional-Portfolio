@@ -35,7 +35,6 @@ export const HeaderContainer = () => {
 
     const handleProjectsClick = () => {
         navigate('/');
-        console.log('projects Clicked');
     
         setTimeout(() => {
             const projectsSection = document.getElementById('projects-nav');

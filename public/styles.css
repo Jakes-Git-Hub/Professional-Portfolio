@@ -1025,7 +1025,7 @@ header ul li:hover {
 
 #black-background-project{
     background-color: black;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 #projects-grid {
@@ -1932,6 +1932,103 @@ header ul li:hover {
         width: 250%;
     }
 }
+
+/* Future plans */
+
+#opposite-squiggle-divide-project {
+    background-image: url('./dividers/opposite-divider.svg');
+    background-size: cover;
+}
+
+.h2-margin-top {
+    top: 80px;
+    position: relative;
+}
+
+#marquee {
+    height: 200px;
+    top: 150px;
+    position: relative;
+}
+
+.next-marquee-row{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.marquee-word {
+    display: inline-block;
+    padding-right: 10rem;
+    animation: marquee 15s linear infinite;
+    color: grey;
+    margin: 36px 0;
+}
+
+.next-svg {
+    margin-left: 5px;
+    top: 2px;
+    position: relative;
+}
+
+.marquee-word-opposite {
+    display: inline-block;
+    padding-right: 10rem;
+    animation: marqueeOpposite 40s linear infinite;
+    color: grey;
+    font-size: 30px;
+    margin: 36px 0;
+}
+
+.ts-top {
+    top: 10px;
+    position: relative;
+}
+
+.marquee-word-big-slow {
+    display: inline-block;
+    padding-right: 10rem;
+    animation: marquee 50s linear infinite;
+    color: grey;
+    font-size: 45px;
+    margin: 36px 0;
+}
+  
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marqueeOpposite {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Important to keep at end for css flow */
 
