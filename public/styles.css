@@ -1070,7 +1070,7 @@ header ul li:hover {
 .project-case {
     height: 600px;
     width: 400px;
-    margin: 70px 20px 0 40px;
+    margin: 110px 20px 0 40px;
     border: grey 2px solid;
     border-radius: 4px;
     box-sizing: border-box;
@@ -1235,7 +1235,7 @@ header ul li:hover {
 }
 
 #grid-buffer {
-    height: 70px;
+    height: 110px;
     width: 100%;
 }
 
@@ -1941,14 +1941,11 @@ header ul li:hover {
 }
 
 .h2-margin-top {
-    top: 80px;
-    position: relative;
+    margin-top: 150px;
 }
 
 #marquee {
-    height: 200px;
-    top: 150px;
-    position: relative;
+    margin: 50px 0;
 }
 
 .next-marquee-row{
@@ -1961,9 +1958,9 @@ header ul li:hover {
 .marquee-word {
     display: inline-block;
     padding-right: 10rem;
-    animation: marquee 15s linear infinite;
+    animation: marquee 10s linear infinite;
     color: grey;
-    margin: 36px 0;
+    margin: 20px 0;
 }
 
 .next-svg {
@@ -1975,15 +1972,19 @@ header ul li:hover {
 .marquee-word-opposite {
     display: inline-block;
     padding-right: 10rem;
-    animation: marqueeOpposite 40s linear infinite;
+    animation: marqueeOpposite 30s linear infinite;
     color: grey;
     font-size: 30px;
-    margin: 36px 0;
+    margin: 20px 0;
 }
 
-.ts-top {
-    top: 10px;
-    position: relative;
+.marquee-word-opposite-smaller {
+    display: inline-block;
+    padding-right: 10rem;
+    animation: marqueeOpposite 40s linear infinite;
+    color: grey;
+    font-size: 35px;
+    margin: 20px 0;
 }
 
 .marquee-word-big-slow {
@@ -1992,7 +1993,7 @@ header ul li:hover {
     animation: marquee 50s linear infinite;
     color: grey;
     font-size: 45px;
-    margin: 36px 0;
+    margin: 20px 0;
 }
   
 @keyframes marquee {
@@ -2013,9 +2014,32 @@ header ul li:hover {
     }
 }
 
+.future-plans-p {
+    position: relative;
+    margin: 100px 100px 20px;
+    text-align: center;
+}
 
+.future-plans-p-2 {
+    position: relative;
+    margin: 40px 100px 20px;
+    text-align: center;
+}
 
+.ts-top {
+    top: 10px;
+    position: relative;
+}
 
+@media screen and (max-width: 1402px) {
+    .future-plans-p {
+        margin: 100px 0 20px;
+    }
+    
+    .future-plans-p-2 {
+        margin: 40px 0 20px;
+    }
+}
 
 
 
