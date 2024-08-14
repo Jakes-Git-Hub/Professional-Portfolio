@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { FrontPageComponent } from "../components/FrontPageComponent";
 import 'intersection-observer';
 import { useSpring } from 'react-spring';
@@ -263,3 +263,5 @@ export const FrontPageContainer = () => {
         </>
     );
 }
+
+

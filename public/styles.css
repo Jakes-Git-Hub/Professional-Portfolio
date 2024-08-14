@@ -1948,7 +1948,7 @@ header ul li:hover {
     margin: 50px 0;
 }
 
-.next-marquee-row{
+.marquee-row{
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
@@ -1995,13 +1995,29 @@ header ul li:hover {
     font-size: 45px;
     margin: 20px 0;
 }
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+  
+.marquee {
+    display: inline-block;
+    animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+    100% {
+        transform: translateX(-100%);
+    }
+}
   
 @keyframes marquee {
     0% {
-        transform: translateX(100%);
+        transform: translatex(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translatex(-100%);
     }
 }
 
@@ -2010,7 +2026,7 @@ header ul li:hover {
         transform: translateX(-100%);
     }
     100% {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
 }
 
@@ -2041,15 +2057,48 @@ header ul li:hover {
     }
 }
 
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 998px) {
+    .marquee-word {
+        display: inline-block;
+        padding-right: 5rem;
+        animation: marquee 10s linear infinite;
+        color: grey;
+        margin: 20px 0;
+    }
+    
+    .next-svg {
+        margin-left: 5px;
+        top: 2px;
+        position: relative;
+    }
+    
+    .marquee-word-opposite {
+        display: inline-block;
+        padding-right: 5rem;
+        animation: marqueeOpposite 30s linear infinite;
+        color: grey;
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    
+    .marquee-word-opposite-smaller {
+        display: inline-block;
+        padding-right: 5rem;
+        animation: marqueeOpposite 40s linear infinite;
+        color: grey;
+        font-size: 35px;
+        margin: 20px 0;
+    }
+    
+    .marquee-word-big-slow {
+        display: inline-block;
+        padding-right: 5rem;
+        animation: marquee 50s linear infinite;
+        color: grey;
+        font-size: 45px;
+        margin: 20px 0;
+    }
+}
 
 
 
