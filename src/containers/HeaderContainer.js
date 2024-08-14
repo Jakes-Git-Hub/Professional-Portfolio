@@ -49,9 +49,17 @@ export const HeaderContainer = () => {
         }, 0);
     }
 
-    // const handleFuturePlansClick = () => {
-    //     navigate('/');
-    // }
+    const handleFuturePlansClick = () => {
+        navigate('/');
+
+        setTimeout(() => {
+            const futurePlansSection = document.getElementById('future-plans-nav');
+            if (futurePlansSection) {
+                futurePlansSection.scrollIntoView();
+                window.scrollBy(0, -20);
+            }
+        }, 0);
+    }
 
     // const handleContactClick = () => {
     //     navigate('/');
@@ -61,7 +69,7 @@ export const HeaderContainer = () => {
         <HeaderComponent 
             handleSkillsClick={handleSkillsClick}
             handleProjectsClick={handleProjectsClick}
-            // handleFuturePlansClick={handleFuturePlansClick}
+            handleFuturePlansClick={handleFuturePlansClick}
             // handleContactClick={handleContactClick}
         />
     )

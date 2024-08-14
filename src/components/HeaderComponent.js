@@ -3,7 +3,7 @@ import React from "react";
 export const HeaderComponent = ({
     handleSkillsClick,
     handleProjectsClick,
-    // handleFuturePlansClick,
+    handleFuturePlansClick,
     // handleContactClick
 }) => {
     return (
@@ -13,7 +13,7 @@ export const HeaderComponent = ({
                     <ul>
                         <li class="underline" onClick={handleSkillsClick}>Skills</li>
                         <li class="underline" onClick={handleProjectsClick}>Projects</li>
-                        <li class="underline">Future Plans</li>
+                        <li class="underline" onClick={handleFuturePlansClick}>Future Plans</li>
                         <li class="underline">Contact</li>
                     </ul>
                 </header>
