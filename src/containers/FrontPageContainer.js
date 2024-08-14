@@ -8,10 +8,12 @@ export const FrontPageContainer = () => {
 
     const [showSkills, setShowSkills] = useState(false);
     const [showProjects, setShowProjects] = useState(false);
+    const [showFuturePlans, setShowFuturePlans] = useState(false);
     const [unBlurGmail, setUnBlurGmail] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [skillsContainerHasZoomed, setSkillsContainerHasZoomed] = useState(false);
     const [projectsContainerHasZoomed, setProjectsContainerHasZoomed] = useState(false);
+    const [futurePlansContainerHasZoomed, setFuturePlansContainerHasZoomed] = useState(false);
 
     const navigate = useNavigate();
 
@@ -230,6 +232,39 @@ export const FrontPageContainer = () => {
         navigate('/number-guesser');
     }
 
+// Future Plans
+
+    useEffect(() => {
+        const container = document.querySelector('.future-plans-container');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {  
+                if (entry.isIntersecting) {
+                    setShowFuturePlans(true);
+                    setFuturePlansContainerHasZoomed(true);
+                    entry.target.classList.add('show');
+                    setTimeout(() => {
+                        setUnBlurGmail(true);
+                    }, 1000);
+                } 
+            });
+        }, { threshold: 0.3 });
+
+        observer.observe(container);
+
+        return () => observer.unobserve(container);
+    }, []);
+
+    const zoomOutFuturePlans = useSpring({
+        from: { scale: 0.4 },
+        to: { scale: showFuturePlans ? 1 : 0.4 },
+        config: {
+            duration: 1000,
+            tension: 170,
+            friction: 20,
+        },
+    });
+
 // New Layout For Smaller Screens
 
     useEffect(() => {
@@ -248,6 +283,7 @@ export const FrontPageContainer = () => {
                 handleGitHubClick={handleGitHubClick}
                 zoomOutSkills={zoomOutSkills}
                 zoomOutProjects={zoomOutProjects}
+                zoomOutFuturePlans={zoomOutFuturePlans}
                 unBlurGmail={unBlurGmail}
                 handleGMailFindOutMoreClick={handleGMailFindOutMoreClick}
                 handleGMailLiveSiteClick={handleGMailLiveSiteClick}
@@ -259,6 +295,7 @@ export const FrontPageContainer = () => {
                 numberGuesserPanelClick={numberGuesserPanelClick}
                 skillsContainerHasZoomed={skillsContainerHasZoomed}
                 projectsContainerHasZoomed={projectsContainerHasZoomed}
+                futurePlansContainerHasZoomed={futurePlansContainerHasZoomed}
             />
         </>
     );

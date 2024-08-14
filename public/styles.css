@@ -1935,6 +1935,10 @@ header ul li:hover {
 
 /* Future plans */
 
+.future-plans-container{
+    visibility: hidden;
+}
+
 #opposite-squiggle-divide-project {
     background-image: url('./dividers/opposite-divider.svg');
     background-size: cover;
@@ -2099,9 +2103,6 @@ header ul li:hover {
         margin: 20px 0;
     }
 }
-
-
-
 
 /* Important to keep at end for css flow */
 
