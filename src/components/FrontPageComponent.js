@@ -1623,6 +1623,24 @@ export const FrontPageComponent = ({
                 </animated.div> 
             </div>
 
+{/* Contact me */} 
+
+
+
+            <div class="content-container-padding-fp" id='squiggle-divide-project'>
+                <div class='slide-in-right-placeholder projects-h2-container' id='projects-nav'>
+                    <h2 class='opposite-section-title'>
+                        <span class="h2-highlight">Contact Me</span>
+                    </h2>
+                </div>
+                
+                <div className="p-4 bg-blue-500 text-white rounded">
+                    Hello, Tailwind CSS!
+                </div>
+
+
+            </div>
+
         </>
     );
 }

@@ -248,7 +248,7 @@ export const FrontPageContainer = () => {
                     }, 1000);
                 } 
             });
-        }, { threshold: 0.3 });
+        }, { threshold: 0.8 });
 
         observer.observe(container);
 
