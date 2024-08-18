@@ -22,10 +22,6 @@ import jestIcon from '../images/Jest-icon.png';
 import reactTLIcon from '../images/react-testing-library-logo.png';
 import restApiIcon from '../images/rest-api-icon.png';
 import expressIcon from '../images/ExpressJS-icon.webp';
-import nextJSIcon from '../images/marquee/next-js-icon.svg';
-import sqlIcon from '../images/marquee/sql-icon.svg';
-import typeScriptIcon from '../images/marquee/typescript-icon.svg';
-
 
 export const FrontPageComponent = ({
     handleGitHubClick,
@@ -512,7 +508,7 @@ export const FrontPageComponent = ({
 
 {/* Future Plans */}
 
-            <div class="content-container-padding-fp" id='opposite-squiggle-divide-project'>
+            <div class="content-container-padding-future" id='opposite-squiggle-divide-project'>
 
                 <h2 class="section-title slide-in-left-placeholder h2-margin-top" id='future-plans-nav'>
                     My <span class="h2-highlight">Future Plans</span>
@@ -1634,12 +1630,30 @@ export const FrontPageComponent = ({
                     </h2>
                 </div>
                 
-                <div className="p-4 bg-blue-500 text-white rounded">
-                    Hello, Tailwind CSS!
-                </div>
-
+                    <div class="contact-outer-margin-top relative py-3 sm:max-w-xl sm:mx-auto">
+                        <div class="outside-bg background-image absolute inset-0 from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+                        </div>
+                        <div class="inside-bg text-white relative px-4 py-10 bg-indigo-400 shadow-lg sm:rounded-3xl sm:p-20">
+                            <div class="text-center pb-6">
+                                <h1 class="text-3xl">Get in Touch</h1>
+                                <p class="text-gray-300">I look forward to building with you.</p>
+                            </div>
+                            <form>
+                                <input class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Name" name="name" />
+                                <input class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="Email" name="email" />
+                                <input class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Subject" name="_subject" />
+                                <textarea class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Type your message here..." name="message" style={{ height: '121px' }}></textarea>
+                                <div class="flex justify-between">
+                                    <input class="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="Send   ➤" />
+                                    <input class="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="reset" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
             </div>
+
+            
 
         </>
     );
