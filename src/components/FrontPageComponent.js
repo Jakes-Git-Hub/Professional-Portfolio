@@ -40,6 +40,10 @@ export const FrontPageComponent = ({
     numberGuesserPanelClick,
     zoomOutFuturePlans,
     futurePlansContainerHasZoomed,
+    handleReset,
+    handleChange,
+    handleSubmit,
+    formData,
 }) => {
 
     return (
@@ -1637,14 +1641,42 @@ export const FrontPageComponent = ({
                             <p class="">I look forward to speaking with you.</p>
                             <p id="contact-email-p">Or contact me via your preferred method: <u>jacmatthews7@gmail.com</u></p>
                         </div>
-                        <form>
-                            <input class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Name" name="name" />
-                            <input class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="Email" name="email" />
-                            <input class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Subject" name="_subject" />
-                            <textarea class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Type your message here..." name="message" style={{ height: '171px' }}></textarea>
+                        <form id='contact-form' onSubmit={handleSubmit}>
+                            <input
+                                className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                type="text"
+                                placeholder="Name"
+                                name="name"
+                                value={formData.name}
+                                onChange={handleChange}
+                            />
+                            <input
+                                className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                type="email"
+                                placeholder="Email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                            />
+                            <input
+                                className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                type="text"
+                                placeholder="Subject"
+                                name="_subject"
+                                value={formData._subject}
+                                onChange={handleChange}
+                            />
+                            <textarea
+                                className="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                placeholder="Type your message here..."
+                                name="message"
+                                value={formData.message}
+                                onChange={handleChange}
+                                style={{ height: '171px' }}
+                            ></textarea>
                             <div class="contact-buttons-container">
                                 <div class='button-fix'>
-                                    <button className="btn-5" type='button'>
+                                    <button className="btn-5" type='submit'>
                                         <div className="outline"></div>
                                         <div className="state state--default">
                                         <div className="icon">
@@ -1716,15 +1748,13 @@ export const FrontPageComponent = ({
                                         </div>
                                     </button>
                                 </div>    
-                                <div class='button-fix'>
-                                    <a type='reset' class="btn-1"><span>Continue</span></a>  
+                                <div class='button-fix' onClick={handleReset}>
+                                    <a class="btn-1"><span>Reset</span></a>  
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
-
-                <p></p>
 
             </div>
 

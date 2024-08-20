@@ -1067,6 +1067,7 @@ header ul li:hover {
     border-radius: 4px;
     box-sizing: border-box;
     background-color: black;
+    transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 1323px) {
@@ -1964,7 +1965,7 @@ header ul li:hover {
 .marquee-word {
     display: inline-block;
     padding-right: 10rem;
-    animation: marquee 10s linear infinite;
+    animation: marquee 7.5s linear infinite;
     color: grey;
     margin: 20px 0;
 }
@@ -1978,7 +1979,7 @@ header ul li:hover {
 .marquee-word-opposite {
     display: inline-block;
     padding-right: 10rem;
-    animation: marqueeOpposite 30s linear infinite;
+    animation: marqueeOpposite 20s linear infinite;
     color: grey;
     font-size: 30px;
     margin: 20px 0;
@@ -2368,7 +2369,7 @@ input, input::placeholder, textarea, textarea::placeholder {
     --neutral-1: #f7f8f7;
     --neutral-2: #e7e7e7;
     --radius: 32px;
-    scale: 0.61;
+    scale: 0.59;
     cursor: pointer;
     border-radius: var(--radius);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -2388,7 +2389,7 @@ input, input::placeholder, textarea, textarea::placeholder {
     font-weight: 600;
   }
   .btn-5:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
   }
   .btn-5:active {
     transform: scale(1);
@@ -2404,7 +2405,7 @@ input, input::placeholder, textarea, textarea::placeholder {
     transition: all 0.4s ease;
   }
   .btn-5:hover::after {
-    transform: scale(1.05, 1.1);
+    transform: scale(1.01, 1.1);
   }
   .btn-5::before {
     content: "";
@@ -2449,12 +2450,6 @@ input, input::placeholder, textarea, textarea::placeholder {
     content: "";
     position: absolute;
     inset: -100%;
-    background: conic-gradient(
-      from 180deg,
-      transparent 60%,
-      rgb(0, 0, 0) 80%,
-      transparent 100%
-    );
     animation: spin 2s linear infinite;
     animation-play-state: paused;
   }

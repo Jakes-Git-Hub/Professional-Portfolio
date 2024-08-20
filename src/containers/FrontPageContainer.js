@@ -3,6 +3,7 @@ import { FrontPageComponent } from "../components/FrontPageComponent";
 import 'intersection-observer';
 import { useSpring } from 'react-spring';
 import { useNavigate } from "react-router-dom";
+import emailjs from 'emailjs-com';
 
 export const FrontPageContainer = () => {
 
@@ -14,6 +15,12 @@ export const FrontPageContainer = () => {
     const [skillsContainerHasZoomed, setSkillsContainerHasZoomed] = useState(false);
     const [projectsContainerHasZoomed, setProjectsContainerHasZoomed] = useState(false);
     const [futurePlansContainerHasZoomed, setFuturePlansContainerHasZoomed] = useState(false);
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        _subject: '',
+        message: ''
+    });
 
     const navigate = useNavigate();
 
@@ -265,6 +272,38 @@ export const FrontPageContainer = () => {
         },
     });
 
+// Contact Section
+
+    const handleReset = (event) => {
+        event.preventDefault();
+        document.getElementById('contact-form').reset();
+        console.log('reset')
+    };
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(process.env.REACT_APP_EMAILJS_USER_ID);
+
+        emailjs.send(
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            formData,
+            process.env.REACT_APP_EMAILJS_USER_ID
+        ).then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+        }).catch((err) => {
+            console.error('FAILED...', err);
+        });
+    };
+
 // New Layout For Smaller Screens
 
     useEffect(() => {
@@ -296,6 +335,10 @@ export const FrontPageContainer = () => {
                 skillsContainerHasZoomed={skillsContainerHasZoomed}
                 projectsContainerHasZoomed={projectsContainerHasZoomed}
                 futurePlansContainerHasZoomed={futurePlansContainerHasZoomed}
+                handleReset={handleReset}
+                handleChange={handleChange}
+                handleSubmit={handleSubmit}
+                formData={formData}
             />
         </>
     );
