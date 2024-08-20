@@ -2114,6 +2114,7 @@ header ul li:hover {
 
 .contact-outer-margin-top {
     margin-top: 80px;
+    position: relative;
 }
 
 .min-h-screen {
@@ -2183,6 +2184,7 @@ header ul li:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 .shadow-lg {
@@ -2236,7 +2238,7 @@ header ul li:hover {
 }
 
 .sm\:p-20 {
-    padding: 5rem;
+    padding: 3.5rem 5rem 6rem;
 }
 
 .text-center {
@@ -2322,7 +2324,8 @@ form {
 .contact-buttons-container {
     display: flex;
     width: 90%;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 40px;
 }
 
@@ -2356,133 +2359,16 @@ input, input::placeholder, textarea, textarea::placeholder {
     outline-offset: 2px;
 }
 
-/* Buttons */
-
-.grid > div {
-    height: 78px;
-  }
-  
-  .frame {
-    translate: 0 10px;
-  }
-  
-  .frame header {
-    top: -60px;
-  }
-  
-  .frame h3 {
-    bottom: -24px;
-  }
-  
-  button {
-    font-family: inherit;
-    cursor: pointer;
-  }
-  
-  /* btn-1 */
-  
-  .btn-1 {
-    scale: 0.5;
-    display: block;
-    cursor: pointer;
-    color: white;
-    margin: 0 auto;
-    width: 140px;
-    white-space: nowrap;
-    position: absolute;
-    text-decoration: none;
-    font-weight: 500;
-    border-radius: 30px;
-    overflow: hidden;
-    padding: 3px;
-    isolation: isolate;
-  }
-  
-  .btn-1::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 400%;
-    height: 100%;
-    opacity: 0;
-    background: linear-gradient(
-      115deg,
-      #4fcf70,
-      #fad648,
-      #a767e5,
-      #12bcfe,
-      #44ce7b
-    );
-    background-size: 25% 100%;
-    animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop
-      0.75s linear infinite;
-    animation-play-state: paused;
-    translate: -5% 0%;
-    transition: translate 0.25s ease-out, opacity 0.175s ease-out;
-  }
-  
-  .btn-1:hover::before {
-    opacity: 1;
-    animation-play-state: running;
-    transition-duration: 0.75s;
-    translate: 0% 0%;
-  }
-  
-  @keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
-    to {
-      transform: translateX(-25%);
-    }
-  }
-  
-  .btn-1 span {
-    position: relative;
-    display: block;
-    padding: 1rem 1.5rem;
-    font-size: 18px;
-    background: #000;
-    border-radius: 30px;
-    height: 100%;
-    text-align: center;
-  }
-  
-  /* SVG animations */
-  @keyframes color_anim {
-    0% {
-      fill: white;
-    }
-  
-    50% {
-      fill: var(--color-background);
-    }
-  
-    100% {
-      fill: white;
-    }
-  }
-  
-  /* Button animations */
-  @-webkit-keyframes btn-content {
-    0% {
-      outline: 0.2em solid var(--color-background);
-      outline-offset: 0;
-    }
-  }
-  
-  @keyframes btn-content {
-    0% {
-      outline: 0.2em solid var(--color-background);
-      outline-offset: 0;
-    }
-  }
-
-/* btn-5 */
+#contact-email-p {
+    line-height: 1.5em;
+}
 
 .btn-5 {
-    --primary: #8f44fd;
+    --primary: rgb(255, 98, 0);
     --neutral-1: #f7f8f7;
     --neutral-2: #e7e7e7;
     --radius: 32px;
+    scale: 0.61;
     cursor: pointer;
     border-radius: var(--radius);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -2495,7 +2381,8 @@ input, input::placeholder, textarea, textarea::placeholder {
     min-width: 160px;
     padding: 0 20px;
     height: 64px;
-    font-family: "Galano Grotesque", Poppins, Montserrat, sans-serif;
+    color: white;
+    font-family: 'Dosis', sans-serif;
     font-style: normal;
     font-size: 18px;
     font-weight: 600;
@@ -2511,7 +2398,7 @@ input, input::placeholder, textarea, textarea::placeholder {
     position: absolute;
     inset: 0;
     border-radius: var(--radius);
-    background: #fff;
+    background: #000000;
     border: 2.5px solid transparent;
     z-index: 0;
     transition: all 0.4s ease;
@@ -2565,7 +2452,7 @@ input, input::placeholder, textarea, textarea::placeholder {
     background: conic-gradient(
       from 180deg,
       transparent 60%,
-      white 80%,
+      rgb(0, 0, 0) 80%,
       transparent 100%
     );
     animation: spin 2s linear infinite;
@@ -2587,7 +2474,6 @@ input, input::placeholder, textarea, textarea::placeholder {
   }
   
   /* Letters */
-
   .btn-5 .state p span {
     display: block;
     opacity: 0;
@@ -2696,7 +2582,7 @@ input, input::placeholder, textarea, textarea::placeholder {
     height: 2px;
     width: 0;
     left: -5px;
-    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5));
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5));
   }
   .btn-5:focus .state--default .icon:before {
     animation: contrail 0.8s linear forwards;
@@ -2771,6 +2657,96 @@ input, input::placeholder, textarea, textarea::placeholder {
       opacity: 1;
       transform: scale(1);
     }
+  }
+
+.button-fix {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .btn-1 {
+    scale: 0.68;
+    display: block;
+    cursor: pointer;
+    color: white;
+    margin: 0 auto;
+    width: 140px;
+    white-space: nowrap;
+    position: absolute;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 3px;
+    isolation: isolate;
+    transition: all 0.3s ease;
+  }
+
+  .btn-1:hover {
+    transform: scale(1.05);
+  }
+  .btn-5:after {
+    transition: all 0.4s ease;
+  }
+
+.btn-1:hover::after {
+    transform: scale(1.05, 1.1);
+  }
+
+.btn-1:hover .outline {
+    opacity: 1;
+  }
+  .btn-1:hover .outline::before {
+    animation-play-state: running;
+  }
+  
+  .btn-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(
+      115deg,
+      #ff6200,
+      #fff,
+      #ff7f3a,
+      #ffe6d6,
+      #ffb388
+    );
+    background-size: 25% 100%;
+    animation: smoothing
+      0.75s linear infinite;
+    animation-play-state: paused;
+    translate: -5% 0%;
+    transition: translate 0.25s ease-out, opacity 0.175s ease-out;
+  }
+  
+  .btn-1:hover::before {
+    opacity: 1;
+    animation-play-state: running;
+    transition-duration: 0.75s;
+    translate: 0% 0%;
+  }
+  
+  @keyframes smoothing {
+    to {
+      transform: translateX(-25%);
+    }
+  }
+  
+  .btn-1 span {
+    position: relative;
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: 18px;
+    background: #000;
+    border-radius: 30px;
+    height: 100%;
+    text-align: center;
   }
 
 /* Important to keep at end for css flow */
