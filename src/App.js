@@ -10,8 +10,6 @@ import { NumberGuesserContainer } from './containers/NumberGuesserContainer';
 
 function App() {
 
-  console.log(process.env);
-
   return (
     <Router>
       <Routes>

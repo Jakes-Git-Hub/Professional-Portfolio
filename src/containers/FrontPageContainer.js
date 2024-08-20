@@ -276,8 +276,13 @@ export const FrontPageContainer = () => {
 
     const handleReset = (event) => {
         event.preventDefault();
-        document.getElementById('contact-form').reset();
-        console.log('reset')
+        setFormData({
+            name: '',
+            email: '',
+            _subject: '',
+            message: ''
+        });
+        console.log('reset');
     };
 
     const handleChange = (e) => {
