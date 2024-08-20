@@ -177,6 +177,9 @@ export const FrontPageComponent = ({
                                     <div class="skill-container">
                                         <p className='text-centre'>Jest/ React Testing Library</p>
                                     </div>
+                                    <div class="skill-container">
+                                        <p className='text-centre'>AWS</p>
+                                    </div>
                                 </div>
                                 </div>
                             </div>
@@ -228,6 +231,9 @@ export const FrontPageComponent = ({
                                     </div>
                                     <div class="skill-container">
                                         <p>Jest/ React Testing Library</p>
+                                    </div>
+                                    <div class="skill-container">
+                                        <p className='text-centre'>AWS</p>
                                     </div>
                                 </div>
                                 <div class="row" id="small-about">

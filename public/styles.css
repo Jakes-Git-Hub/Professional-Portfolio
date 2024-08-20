@@ -726,37 +726,12 @@ header ul li:hover {
     background: rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(15px); 
     box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.37);
-    transition: bottom 1s ease;
+    transition: all 0.3s ease-in-out;
 }
-
-
-/* @media screen and (max-width: 1668px){
-    #gmail-img, #gmail-img-unblur {
-        height: 60%;
-    }
-}
-
-@media screen and (max-width: 1574px){
-    #gmail-img, #gmail-img-unblur {
-        height: 50%;
-    }
-}
-
-@media screen and (max-width: 1476px){
-    #gmail-img, #gmail-img-unblur {
-        height: 40%;
-    }
-}
-
-@media screen and (max-width: 1312px){
-    #gmail-img, #gmail-img-unblur {
-        height: 35%;
-    }
-} */
 
 #gmail-img-unblur:hover {
     cursor: pointer;
-    bottom: 5px;
+    transform: translateY(-5px);
     box-shadow: 0 13px 30px 0 rgb(255 98 0 / 85%);
 }
 
