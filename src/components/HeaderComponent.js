@@ -4,7 +4,7 @@ export const HeaderComponent = ({
     handleSkillsClick,
     handleProjectsClick,
     handleFuturePlansClick,
-    // handleContactClick
+    handleContactClick
 }) => {
     return (
         <div class="header">
@@ -14,7 +14,7 @@ export const HeaderComponent = ({
                         <li class="underline" onClick={handleSkillsClick}>Skills</li>
                         <li class="underline" onClick={handleProjectsClick}>Projects</li>
                         <li class="underline" onClick={handleFuturePlansClick}>Future Plans</li>
-                        <li class="underline">Contact</li>
+                        <li class="underline" onClick={handleContactClick}>Contact</li>
                     </ul>
                 </header>
             </div>

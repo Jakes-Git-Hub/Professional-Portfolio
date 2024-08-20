@@ -2109,6 +2109,24 @@ header ul li:hover {
 
 /* Contact Me */
 
+.contact-container{
+    visibility: hidden;
+}
+
+.show-contact {
+    visibility: visible !important;
+    animation: contact-fade-in 2s;
+}
+
+@keyframes contact-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .contact-title-margin {
     margin-top: 25px;
 }
@@ -2146,6 +2164,10 @@ header ul li:hover {
 .sm\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+
+.no-resize {
+    resize: none;
 }
 
 .relative {

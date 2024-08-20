@@ -56,21 +56,29 @@ export const HeaderContainer = () => {
             const futurePlansSection = document.getElementById('future-plans-nav');
             if (futurePlansSection) {
                 futurePlansSection.scrollIntoView();
-                window.scrollBy(0, -20);
+                window.scrollBy(0, -80);
             }
         }, 0);
     }
 
-    // const handleContactClick = () => {
-    //     navigate('/');
-    // }
+    const handleContactClick = () => {
+        navigate('/');
+
+        setTimeout(() => {
+            const futurePlansSection = document.getElementById('contact-me-nav');
+            if (futurePlansSection) {
+                futurePlansSection.scrollIntoView();
+                window.scrollBy(0, -80);
+            }
+        }, 0);
+    }
 
     return (
         <HeaderComponent 
             handleSkillsClick={handleSkillsClick}
             handleProjectsClick={handleProjectsClick}
             handleFuturePlansClick={handleFuturePlansClick}
-            // handleContactClick={handleContactClick}
+            handleContactClick={handleContactClick}
         />
     )
 }

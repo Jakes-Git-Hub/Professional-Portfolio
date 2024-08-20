@@ -10,11 +10,13 @@ export const FrontPageContainer = () => {
     const [showSkills, setShowSkills] = useState(false);
     const [showProjects, setShowProjects] = useState(false);
     const [showFuturePlans, setShowFuturePlans] = useState(false);
+    const [showContact, setShowContact] = useState(false);
     const [unBlurGmail, setUnBlurGmail] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [skillsContainerHasZoomed, setSkillsContainerHasZoomed] = useState(false);
     const [projectsContainerHasZoomed, setProjectsContainerHasZoomed] = useState(false);
     const [futurePlansContainerHasZoomed, setFuturePlansContainerHasZoomed] = useState(false);
+    const [contactContainerHasZoomed, setContactContainerHasZoomed] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -309,6 +311,37 @@ export const FrontPageContainer = () => {
         });
     };
 
+    useEffect(() => {
+        const container = document.querySelector('.contact-container');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {  
+                if (entry.isIntersecting) {
+                    setShowContact(true);
+                    setContactContainerHasZoomed(true);
+                    entry.target.classList.add('show-contact');
+                    setTimeout(() => {
+                        setUnBlurGmail(true);
+                    }, 1000);
+                } 
+            });
+        }, { threshold: 0.3 }); 
+
+        observer.observe(container);
+
+        return () => observer.unobserve(container);
+    }, []);
+
+    const zoomOutContact = useSpring({
+        from: { scale: 0.4 },
+        to: { scale: showContact ? 1 : 0.4 },
+        config: {
+            duration: 1000,
+            tension: 170,
+            friction: 20,
+        },
+    });
+
 // New Layout For Smaller Screens
 
     useEffect(() => {
@@ -328,6 +361,7 @@ export const FrontPageContainer = () => {
                 zoomOutSkills={zoomOutSkills}
                 zoomOutProjects={zoomOutProjects}
                 zoomOutFuturePlans={zoomOutFuturePlans}
+                zoomOutContact={zoomOutContact}
                 unBlurGmail={unBlurGmail}
                 handleGMailFindOutMoreClick={handleGMailFindOutMoreClick}
                 handleGMailLiveSiteClick={handleGMailLiveSiteClick}
@@ -340,6 +374,7 @@ export const FrontPageContainer = () => {
                 skillsContainerHasZoomed={skillsContainerHasZoomed}
                 projectsContainerHasZoomed={projectsContainerHasZoomed}
                 futurePlansContainerHasZoomed={futurePlansContainerHasZoomed}
+                contactContainerHasZoomed={contactContainerHasZoomed}
                 handleReset={handleReset}
                 handleChange={handleChange}
                 handleSubmit={handleSubmit}
