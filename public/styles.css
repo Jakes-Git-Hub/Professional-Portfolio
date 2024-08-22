@@ -527,7 +527,7 @@ header ul li:hover {
 @media screen and (max-width: 1572px) {
     #coding-img {
         height: 75%;
-        width: 75%;
+        width: 100%;
     }
 }
 
@@ -629,6 +629,15 @@ header ul li:hover {
     width: 50%;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 1210px) {
+    .small-skills-half-1 {
+        margin-right: 10px;   
+    }
+    .small-skills-half-2 {
+        margin-left: 10px;   
+    }
 }
 
 /* Projects */
@@ -859,7 +868,7 @@ header ul li:hover {
 #gmail-tech-svgs {
     height: 60px;
     width: 90%;
-    margin: 20px 0 30px;
+    margin: 30px 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -869,16 +878,24 @@ header ul li:hover {
 .tech-icon {
     height: 75%;
     width: 45px;
+    margin: 0 5px;
+}
+
+.br-50 {
+    border-radius: 50%;
 }
 
 .tech-bottom {
     margin-bottom: 15px;
 }
 
-@media screen and (max-width: 1588px) and (min-width: 1298px) {
+@media screen and (min-width: 1298px) {
     .tech-bottom {
         margin-bottom: 20px;
     }
+}
+
+@media screen and (min-width: 1298px) and (max-width: 1874px) {
     #gmail-tech-svgs {
         margin-bottom: 75px;
     }
@@ -889,6 +906,7 @@ header ul li:hover {
     width: 40px;
     top: 3px;
     position: relative;
+    margin: 0 5px 15px 0;
 }
 
 .tech-icon-html {
@@ -926,7 +944,13 @@ header ul li:hover {
     }
 }
 
-@media screen and (max-width: 807px) and (min-width: 593px) {
+@media screen and (max-width: 405px) {
+    .find-out-and-live-buttons {
+        margin-top: 55px;
+    }
+}
+
+@media screen and (max-width: 975px) and (min-width: 593px) {
     .find-out-and-live-buttons {
         margin-top: 40px;
     }
