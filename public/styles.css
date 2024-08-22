@@ -2770,6 +2770,36 @@ input, input::placeholder, textarea, textarea::placeholder {
     text-align: center;
   }
 
+  @media screen and (max-width: 634px) {
+    .sm\:p-20 {
+        padding: 1.725rem 2.5rem 4.5rem;
+    }
+  }
+
+  @media screen and (max-width: 468px) {
+    .contact-buttons-container {
+        width: 50%;
+        justify-content: space-between;
+    } 
+  }
+
+  @media screen and (max-width: 434px) {
+    .btn-5 {
+        scale: 0.50;
+    }
+    .btn-1 {
+        scale: 0.59;
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    .contact-buttons-container {
+        width: 60%;
+    }
+  }
+
+  
+
 /* Important to keep at end for css flow */
 
 @media screen and (max-width: 1492px) {
