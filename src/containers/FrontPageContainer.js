@@ -32,6 +32,14 @@ export const FrontPageContainer = () => {
         window.open('https://github.com/Jakes-Git-Hub?tab=repositories', '_blank');
     }
 
+    const handleEmailSVGClick = () => {
+        const futurePlansSection = document.getElementById('contact-me-nav');
+            if (futurePlansSection) {
+                futurePlansSection.scrollIntoView();
+                window.scrollBy(0, -80);
+            }
+    }
+
 // Animations
 
 // Skills Tittle Slide In Animation
@@ -358,6 +366,7 @@ export const FrontPageContainer = () => {
         <>
             <FrontPageComponent 
                 handleGitHubClick={handleGitHubClick}
+                handleEmailSVGClick={handleEmailSVGClick}
                 zoomOutSkills={zoomOutSkills}
                 zoomOutProjects={zoomOutProjects}
                 zoomOutFuturePlans={zoomOutFuturePlans}

@@ -279,12 +279,11 @@ header ul li:hover {
     margin-right: 1.04vw;
     fill: rgb(255, 98, 0);
     cursor: pointer;
-    transition: ease-in 0.2s;
+    transition: all ease-in-out 0.3s;
 }
 
 .svg-icon:hover {
     fill: white;
-    transition: ease-in 0.2s;
 }
 
 /* Clouds */
@@ -1037,7 +1036,7 @@ header ul li:hover {
 .project-case {
     height: 600px;
     width: 400px;
-    margin: 110px 20px 0 40px;
+    margin: 110px 40px 0 40px;
     border: grey 2px solid;
     border-radius: 4px;
     box-sizing: border-box;
@@ -1066,16 +1065,6 @@ header ul li:hover {
     }
     #jammming {
         object-fit: cover;
-    }
-}
-
-@media screen and (max-width: 428px) {
-    .project-case {
-        height: 600px;
-        width: 200px;
-    }
-    .project-desc-h3 {
-        font-size: 1rem;
     }
 }
 
@@ -1132,19 +1121,6 @@ header ul li:hover {
     margin: 7.5px 15px;
 }
 
-@media screen and (max-width: 572px) {
-    .project-case {
-        height: 700px;
-        width: 250px;
-    }
-    .project-desc-h3 {
-        margin: 5px 0 0 0;
-    }
-    .project-desc-p {
-        font-size: 0.8rem;
-    }
-}
-
 .project-desc-svg-container {
     display: flex;
     height: 30px;
@@ -1161,16 +1137,45 @@ header ul li:hover {
     }
 }
 
-@media screen and (max-width: 632px) {
+@media screen and (max-width: 704px) {
+    .project-case {
+        height: 700px;
+        width: 250px;
+    }
+    .project-desc-h3 {
+        margin: 5px 0 0 0;
+    }
+    .project-desc-p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-wdith: 488px) and (max-width: 706px) {
     .project-case {
         width: 300px;
         height: 600px;
     }
-    .project-description-container {
-        height: 35%;
+}
+
+@media screen and (max-width: 428px) {
+    .project-case {
+        height: 600px;
+        width: 177px;
     }
+    .project-desc-h3 {
+        font-size: 1rem;
+    }
+    .project-desc-p {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 706px) {
     .desc-svg-icon {
         height: 60%;
+    }
+    .project-description-container {
+        height: 35%;
     }
 }
 
