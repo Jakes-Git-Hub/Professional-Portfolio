@@ -169,7 +169,7 @@ export const FrontPageContainer = () => {
     }
 
     const handleGMailLiveSiteClick = () => {
-        window.open('http://gmail-clone-trimmed.s3-website.eu-west-2.amazonaws.com/', '_blank');
+        window.open('http://gmail-clone-final.s3-website.eu-west-2.amazonaws.com/', '_blank');
     }
 
 // H3 Animation 

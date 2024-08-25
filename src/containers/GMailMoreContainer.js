@@ -28,6 +28,10 @@ useEffect(() => {
 
     const handleGHSVGClick = () => {
         window.open('https://github.com/Jakes-Git-Hub/Gmail-Log-In-And-Create-Account-React', '_blank');
+    }  
+
+    const handleGMailLiveSiteClick = () => {
+        window.open('http://gmail-clone-final.s3-website.eu-west-2.amazonaws.com/', '_blank');
     }
 
 // h3 Intersection Observer
@@ -134,6 +138,7 @@ useEffect(() => {
         <>
             <GMailMoreComponent 
                 handleGHSVGClick={handleGHSVGClick}
+                handleGMailLiveSiteClick={handleGMailLiveSiteClick}
                 videoRef={videoRef}
                 videoRef1={videoRef1}
                 videoRef2={videoRef2}

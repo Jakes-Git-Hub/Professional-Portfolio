@@ -318,12 +318,12 @@ export const FrontPageComponent = ({
                                     <button class='standard-button' onClick={handleGMailFindOutMoreClick}>
                                         Find out more
                                     </button>  
-                                    <button class='standard-button'>
+                                    <button class='standard-button' onClick={handleGMailLiveSiteClick}>
                                         Live Site
                                     </button>               
                                 </div>
                             </div>
-                            <div id="projects-picture-column">
+                            <div id="projects-picture-column" onClick={handleGMailLiveSiteClick}>
                                 <img src={Gmail} alt="" id={ unBlurGmail ? 'gmail-img-unblur' : "gmail-img"}/>
                             </div>
                         </div>
@@ -397,7 +397,7 @@ export const FrontPageComponent = ({
                                     </button>               
                                 </div>
                             </div>
-                            <div id="projects-picture-column">
+                            <div id="projects-picture-column" onClick={handleGMailLiveSiteClick}>
                                 <img src={Gmail} alt="" id={unBlurGmail ? 'gmail-img-unblur' : "gmail-img"}/>
                             </div>
                         </div>

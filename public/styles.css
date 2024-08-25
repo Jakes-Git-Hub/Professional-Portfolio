@@ -2045,12 +2045,14 @@ header ul li:hover {
     position: relative;
     margin: 100px 100px 20px;
     text-align: center;
+    line-height: 1.25em;
 }
 
 .future-plans-p-2 {
     position: relative;
     margin: 40px 100px 20px;
     text-align: center;
+    line-height: 1.25em;
 }
 
 .ts-top {
@@ -2119,16 +2121,6 @@ header ul li:hover {
 
 .show-contact {
     visibility: visible !important;
-    animation: contact-fade-in 2s;
-}
-
-@keyframes contact-fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 .contact-title-margin {
