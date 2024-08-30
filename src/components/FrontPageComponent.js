@@ -1630,7 +1630,7 @@ export const FrontPageComponent = ({
 
 {/* Contact me */} 
 
-            <div class="content-container-padding-fp" id='squiggle-divide-project'>
+            <div class="content-container-padding-cm" id='squiggle-divide-project'>
                 <div class='contact-title-margin slide-in-right-placeholder projects-h2-container' id='contact-me-nav'>
                     <h2 class='opposite-section-title'>
                         <span class="h2-highlight">Contact Me</span>
