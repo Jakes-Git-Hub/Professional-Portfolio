@@ -195,15 +195,15 @@ header ul li:hover {
     z-index: 2;
     position: relative;
     overflow: hidden;
-    @media screen and (max-width: 1130px) {
+    @media screen and (max-width: 1271px) {
         justify-content: center
     }
 }
 
 #writing-container {
-    margin-left: 7.29vw;
-    margin-bottom: 17.22vh;
-    background-color: black;
+    margin-left: 9.29vw;
+    margin-bottom: 12.22vh;
+    background: black;
     position: relative;
     z-index: 99;
     width: 49%;
@@ -213,14 +213,45 @@ header ul li:hover {
     flex-wrap: wrap;
     align-content: center;
     border-radius: 2.86vw;
-    @media screen and (max-width: 1130px) {
+    overflow: hidden;
+    padding: 35px 0;
+    /* border: 2px solid white; */
+}
+
+
+#writing-container {
+    @media screen and (max-width: 1271px) {
         margin-left: 0;
         width: 70%;
+        padding: 35px;
+        margin-bottom: 11.22vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1082px) {
+    #writing-container {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #writing-container {
+        padding: 35px 20px;
+    }
+}
+
+@media screen and (max-width: 434px) {
+    #writing-container {
+        margin-bottom: 8.22vh;
     }
 }
 
 #ph-p-container {
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 1271px) {
         width: 90%;
     } 
     width: 60%;
@@ -233,7 +264,7 @@ header ul li:hover {
 }
 
 #ph-h1-container {
-    @media screen and (max-width: 1130px) {
+    @media screen and (max-width: 1271px) {
         width: 90%;
     }
     width: 80%;
@@ -250,6 +281,12 @@ header ul li:hover {
     margin-bottom: 3.55vh;
     position: relative;
     display: inline-block;
+}
+
+@media screen and (max-width: 446px) {
+    #ph-h1-container h1 {
+        font-size: 40px;
+    }
 }
 
 .highlight {
@@ -496,6 +533,7 @@ header ul li:hover {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-gap: 0rem 7rem;
+    margin-top: 65px;
     @media screen and (max-width: 1572px), screen and (max-height: 812px) {
         grid-gap: 0rem 5.5rem;
     } 
@@ -572,6 +610,16 @@ header ul li:hover {
     }
 }
 
+@media screen and (max-width: 580px) {
+    .jest-react-skill {
+        padding: 11px;
+    }    
+}
+
+.text-justify {
+    text-align: justify;
+}
+
 .text-centre {
     text-align: center;
 }
@@ -595,6 +643,7 @@ header ul li:hover {
     display: flex;
     flex-direction: column;
     visibility: hidden;
+    margin-top: 65px
 }
 
 #small-skills-top-row {
@@ -610,9 +659,6 @@ header ul li:hover {
 }
 
 @media screen and (max-width: 714px) {
-    .small-skills-container {
-        margin-top: 10%;
-    }
     #small-skills-top-row {
         margin-bottom: 10%;
     }
