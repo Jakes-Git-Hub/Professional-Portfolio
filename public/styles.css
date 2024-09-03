@@ -537,9 +537,6 @@ header ul li:hover {
     @media screen and (max-width: 1572px), screen and (max-height: 812px) {
         grid-gap: 0rem 5.5rem;
     } 
-    @media screen and (max-width: 1230px) {
-        grid-gap: 0;        
-    }
 }
   
 #coding-picture-column {
@@ -739,18 +736,12 @@ header ul li:hover {
 
 .opposite-section-title {
     font-size: 50px;
-    margin-bottom: 7.5%;
-}
-
-@media screen and (max-width: 1212px) {
-    .opposite-section-title {
-        margin-bottom: 12.5%;
-    }
+    margin-bottom: 110px;
 }
 
 @media screen and (max-width: 692px) {
     .opposite-section-title {
-        margin-bottom: 68.47px;
+        margin-bottom: 100px;
     }
 }
 
@@ -759,7 +750,7 @@ header ul li:hover {
     grid-row: 1 / span 3;
     display: flex;
     align-items: start;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 #gmail-img {

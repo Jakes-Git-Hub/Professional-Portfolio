@@ -83,13 +83,13 @@ export const FrontPageContainer = () => {
                     entry.target.classList.add('show');
                 } 
             });
-        }, { threshold: windowWidth <= 1298 ? 0.25 : 1});
+        }, { threshold: windowWidth > 501 ? 0.8 : 0.3});
 
         // Observe the container
         observer.observe(container);
 
         return () => observer.unobserve(container);
-    }, []);
+    }, [windowWidth]);
 
     const zoomOutSkills = useSpring({
         from: { scale: 0.4 },
@@ -133,6 +133,20 @@ export const FrontPageContainer = () => {
     useEffect(() => {
         const container = document.querySelector('.projects-container, .small-projects-container');
 
+        const getThreshold = (windowWidth) => {
+            if (windowWidth > 1388) {
+                return 0.5;
+            } else if (windowWidth > 1176) {
+                return 0.4;
+            } else if (windowWidth > 698) {
+                return 0.2;
+            } else if (windowWidth < 502) {
+                return 0.01;
+            } else {
+                return 0.01;
+            }
+        };
+
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {  
                 if (entry.isIntersecting) {
@@ -144,12 +158,12 @@ export const FrontPageContainer = () => {
                     }, 1000);
                 } 
             });
-        }, { threshold: windowWidth <= 1298 ? 0.25 : 0.5 });
+        }, { threshold: getThreshold(windowWidth)  });
 
         observer.observe(container);
 
         return () => observer.unobserve(container);
-    }, []);
+    }, [windowWidth]);
 
     const zoomOutProjects = useSpring({
         from: { scale: 0.4 },
