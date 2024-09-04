@@ -739,9 +739,15 @@ header ul li:hover {
     margin-bottom: 110px;
 }
 
-@media screen and (max-width: 692px) {
+@media screen and (max-width: 1441px) {
     .opposite-section-title {
         margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 984px) {
+    .opposite-section-title {
+        margin-bottom: 90px;
     }
 }
 
@@ -2037,7 +2043,37 @@ header ul li:hover {
 }
 
 .h2-margin-top {
-    margin-top: 150px;
+    margin-top: 145px;
+}
+
+@media screen and (max-width: 1863px) {
+    .h2-margin-top {
+        margin-top: 125px;
+    }
+}
+
+@media screen and (max-width: 1772px) {
+    .h2-margin-top {
+        margin-top: 105px;
+    }
+}
+
+@media screen and (max-width: 1145px) {
+    .h2-margin-top {
+        margin-top: 125px;
+    }
+}
+
+@media screen and (max-width: 943px) {
+    .h2-margin-top {
+        margin-top: 145px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .h2-margin-top {
+        margin-top: 165px;
+    }
 }
 
 #marquee {
@@ -2152,6 +2188,12 @@ header ul li:hover {
     
     .future-plans-p-2 {
         margin: 40px 0 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .future-plans-p {
+        margin-top: 150px;
     }
 }
 
