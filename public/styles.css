@@ -753,6 +753,12 @@ header ul li:hover {
     justify-content: flex-end;
 }
 
+@media screen and (max-width: 1298px) {
+    #projects-picture-column {
+        justify-content: center;
+    }
+}
+
 #gmail-img {
     height: auto;
     width: 80%;
@@ -828,13 +834,7 @@ header ul li:hover {
     width: 100%;
     background: white;
     border-radius: 8px;
-    margin-bottom: 60px;
-}
-
-@media screen and (max-width: 1212px) {
-    #projects-column-writting-small{
-        margin-bottom: 98.78px;
-    }
+    margin-bottom: 100px;
 }
 
 .underline-regular {
@@ -909,7 +909,7 @@ header ul li:hover {
 #gmail-tech-svgs {
     height: 60px;
     width: 90%;
-    margin: 30px 0 30px;
+    margin: 50px 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -1109,9 +1109,24 @@ header ul li:hover {
     transition: all 0.3s ease-in-out;
 }
 
+#grid-buffer {
+    height: 110px;
+    width: 100%;
+}
+
+.panel-top-margin {
+    margin-top: 110px;
+}
+
 @media screen and (max-width: 1323px) {
     .project-case {
         margin: 70px 20px 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #grid-buffer {
+        height: 70px;
     }
 }
 
@@ -1225,7 +1240,7 @@ header ul li:hover {
 @media screen and (max-width: 428px) {
     .project-case {
         height: 600px;
-        width: 177px;
+        width: 216px;
     }
     .project-desc-h3 {
         font-size: 1rem;
@@ -1271,11 +1286,6 @@ header ul li:hover {
 #tech-news {
     height: 100%;
     width: auto;
-}
-
-#grid-buffer {
-    height: 110px;
-    width: 100%;
 }
 
 /* GMail Find Out More */

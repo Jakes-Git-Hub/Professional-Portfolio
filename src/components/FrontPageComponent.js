@@ -410,7 +410,7 @@ export const FrontPageComponent = ({
             
             <div id='black-background-project'>
                 <div id='projects-grid'>
-                    <div class='project-case' onClick={handleJammmingPanelClick}>
+                    <div class='project-case panel-top-margin' onClick={handleJammmingPanelClick}>
                         <div class='project-image-container'>
                             <img src={jammming} alt='Jammming' id='jammming'/>
                         </div>
