@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
-const WelcomeAnimation = () => {
+const WelcomeAnimation = ({ setAnimationHasPlayed }) => {
   const welcomeTextRef = useRef(null);
   const containerRef = useRef(null);
   const welcomeScreenRef = useRef(null);
@@ -36,11 +36,12 @@ const WelcomeAnimation = () => {
                       welcomeScreen.style.zIndex = "-2"; // Hide the welcome screen
                       welcomeScreen.style.backgroundColor = "white"; // Hide the welcome screen
                       portfolio.style.display = "block"; // Show the hidden content
+                      setAnimationHasPlayed(true);
                   }, 600); // Delay for 0.3 seconds to complete the fading effect
               }, 500); // Delay the fading animation for 1 second
           }, characters.length * 0.125 * 1000); // Delay the slide animation until color transition is complete
       }, 0);
-  }, []);
+  }, [setAnimationHasPlayed]);
 
   return (
     <div id="welcome-screen" ref={welcomeScreenRef}>

@@ -47,6 +47,8 @@ export const FrontPageComponent = ({
     formData,
     zoomOutContact,
     contactContainerHasZoomed,
+    animationHasPlayed, 
+    setAnimationHasPlayed,
 }) => {
 
     return (
@@ -55,7 +57,13 @@ export const FrontPageComponent = ({
 
 {/* Welcome Screen */}
 
-            {/* <WelcomeAnimation /> */}
+            {animationHasPlayed ? null : (
+                    <WelcomeAnimation 
+                        animationHasPlayed={animationHasPlayed} 
+                        setAnimationHasPlayed={setAnimationHasPlayed} 
+                    />
+                )
+            }
 
 {/* Header */}
 

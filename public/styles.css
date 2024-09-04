@@ -730,7 +730,7 @@ header ul li:hover {
 }
 
 .slide-in-right {
-    animation: slide-in-right 1s ease-out;
+    animation: slide-in-right 2s ease-out;
     visibility: visible;
 }
 
@@ -2200,7 +2200,7 @@ header ul li:hover {
 
 /* Contact Me */
 
-.contact-container{
+.contact-container {
     visibility: hidden;
 }
 
@@ -2209,7 +2209,7 @@ header ul li:hover {
 }
 
 .contact-title-margin {
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 .contact-outer-margin-top {

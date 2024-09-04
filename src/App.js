@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FrontPageContainer } from './containers/FrontPageContainer';
 import { GMailMoreContainer } from './containers/GMailMoreContainer';
@@ -10,11 +10,16 @@ import { NumberGuesserContainer } from './containers/NumberGuesserContainer';
 
 function App() {
 
+  const [animationHasPlayed, setAnimationHasPlayed] = useState(false);
+
   return (
     <Router>
       <Routes>
         <Route path="/" element={
-            <FrontPageContainer />
+            <FrontPageContainer 
+              animationHasPlayed={animationHasPlayed} 
+              setAnimationHasPlayed={setAnimationHasPlayed} 
+            />
           } 
         />
         <Route path="/gmail-more" element={

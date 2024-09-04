@@ -5,7 +5,10 @@ import { useSpring } from 'react-spring';
 import { useNavigate } from "react-router-dom";
 import emailjs from 'emailjs-com';
 
-export const FrontPageContainer = () => {
+export const FrontPageContainer = ({ 
+    animationHasPlayed, 
+    setAnimationHasPlayed 
+}) => {
 
     const [showSkills, setShowSkills] = useState(false);
     const [showProjects, setShowProjects] = useState(false);
@@ -23,7 +26,7 @@ export const FrontPageContainer = () => {
         _subject: '',
         message: ''
     });
-
+    
     const navigate = useNavigate();
 
 // Page Hero SVG's
@@ -47,19 +50,14 @@ export const FrontPageContainer = () => {
     useEffect(() => {
         const divs = document.querySelectorAll('.slide-in-left-placeholder');
 
-        // Create an intersection observer
         const observer = new IntersectionObserver(entries => {
-            // Loop over the entries
             entries.forEach(entry => {  
-                // If the element is visible
                 if (entry.isIntersecting) {
-                    // Add the animation class
                     entry.target.classList.add('slide-in-left');
                 } 
             });
         });
 
-        // Observe each div
         divs.forEach(div => observer.observe(div));
 
         return () => {
@@ -72,11 +70,8 @@ export const FrontPageContainer = () => {
     useEffect(() => {
         const container = document.querySelector('.skills-container, .small-skills-container');
 
-        // Create an intersection observer
         const observer = new IntersectionObserver(entries => {
-            // Loop over the entries
             entries.forEach(entry => {  
-                // If the element is visible
                 if (entry.isIntersecting) {
                     setShowSkills(true);
                     setSkillsContainerHasZoomed(true);
@@ -85,7 +80,6 @@ export const FrontPageContainer = () => {
             });
         }, { threshold: windowWidth > 501 ? 0.8 : 0.3});
 
-        // Observe the container
         observer.observe(container);
 
         return () => observer.unobserve(container);
@@ -108,19 +102,14 @@ export const FrontPageContainer = () => {
     useEffect(() => {
         const divs = document.querySelectorAll('.projects-h2-container');
 
-        // Create an intersection observer
         const observer = new IntersectionObserver(entries => {
-            // Loop over the entries
             entries.forEach(entry => {  
-                // If the element is visible
                 if (entry.isIntersecting) {
-                    // Add the animation class
                     entry.target.classList.add('slide-in-right');
                 } 
             });
         });
 
-        // Observe each div
         divs.forEach(div => observer.observe(div));
 
         return () => {
@@ -191,13 +180,9 @@ export const FrontPageContainer = () => {
     useEffect(() => {
         const h3Showcase = document.querySelectorAll('.orange-projects');
 
-        // Create an intersection observer
         const observer = new IntersectionObserver(entries => {
-            // Loop over the entries
             entries.forEach(entry => {  
-                // If the element is visible
                 if (entry.isIntersecting) {
-                    // Add the animation class
                     setTimeout(() => {
                         entry.target.classList.add('fade-in');
                     }, 750);
@@ -205,7 +190,6 @@ export const FrontPageContainer = () => {
             });
         }, { threshold: 1 });
 
-        // Observe each h3
         h3Showcase.forEach(h3 => observer.observe(h3));
 
         return () => {
@@ -216,19 +200,14 @@ export const FrontPageContainer = () => {
     useEffect(() => {
         const h3Showcase = document.querySelectorAll('.orange');
 
-        // Create an intersection observer
         const observer = new IntersectionObserver(entries => {
-            // Loop over the entries
             entries.forEach(entry => {  
-                // If the element is visible
                 if (entry.isIntersecting) {
-                    // Add the animation class
                     entry.target.classList.add('fade-in');
                 } 
             });
         }, { threshold: 1 });
 
-        // Observe each h3
         h3Showcase.forEach(h3 => observer.observe(h3));
 
         return () => {
@@ -279,7 +258,7 @@ export const FrontPageContainer = () => {
                     }, 1000);
                 } 
             });
-        }, { threshold: windowWidth > 734 ? 0.9 : 0.6 });
+        }, { threshold: windowWidth > 734 ? 0.9 : windowWidth > 418 ? 0.6 : 0.3 });
 
         observer.observe(container);
 
@@ -402,6 +381,8 @@ export const FrontPageContainer = () => {
                 handleChange={handleChange}
                 handleSubmit={handleSubmit}
                 formData={formData}
+                animationHasPlayed={animationHasPlayed}
+                setAnimationHasPlayed={setAnimationHasPlayed} 
             />
         </>
     );
