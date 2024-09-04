@@ -1250,6 +1250,36 @@ header ul li:hover {
     }
 }
 
+@media screen and (max-width: 376px) {
+    .project-case {
+        width: 203px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .project-case {
+        width: 203px;
+    }
+}
+
+@media screen and (max-width: 362px) {
+    .project-case {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 336px) {
+    .project-case {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 312px) {
+    .project-case {
+        width: 140px;
+    }
+}
+
 @media screen and (max-width: 706px) {
     .desc-svg-icon {
         height: 60%;
@@ -2098,7 +2128,7 @@ header ul li:hover {
 
 .future-plans-p {
     position: relative;
-    margin: 100px 100px 20px;
+    margin: 110px 100px 20px;
     text-align: center;
     line-height: 1.25em;
 }

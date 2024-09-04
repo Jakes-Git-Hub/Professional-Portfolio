@@ -279,7 +279,7 @@ export const FrontPageContainer = () => {
                     }, 1000);
                 } 
             });
-        }, { threshold: 0.8 });
+        }, { threshold: windowWidth > 734 ? 0.9 : 0.6 });
 
         observer.observe(container);
 
