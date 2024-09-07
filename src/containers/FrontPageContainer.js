@@ -298,7 +298,6 @@ export const FrontPageContainer = ({
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(process.env.REACT_APP_EMAILJS_USER_ID);
 
         emailjs.send(
             process.env.REACT_APP_EMAILJS_SERVICE_ID,
