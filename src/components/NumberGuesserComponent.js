@@ -36,7 +36,7 @@ export const NumberGuesserComponent = ({
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-desc-container white-background'>
                     <p id='highlight-desc-p'>
-                        An game against the computer, where whoever guesses closest to the target number wins.
+                        A game against the computer, where whoever guesses closest to the target number wins.
                     </p>
                         <div className='highlight-svg-container'>
                             <svg 
@@ -80,9 +80,9 @@ export const NumberGuesserComponent = ({
                     <div class='content-container-padding black-background-highlights'>
                         <div class='highlight-container white-background'>
                             <div class='highlight-half-1'>
-                                <h3 class='orange-reg'>Javascript</h3>
+                                <h3 class='orange-reg'>JavaScript</h3>
                                 <p class='p-showcase-reg'>
-                                    A "simple" html, css and javascript project using scripts to orchastrate the workings of the game using multiple web development programming techniques.  
+                                    A "simple" html, CSS and JavaScript project using scripts to orchestrate the workings of the game using multiple web development programming techniques.  
                                 </p>
                             </div>
                             <div class='highlight-half-2-number-guesser'>
@@ -99,9 +99,9 @@ export const NumberGuesserComponent = ({
                     <div class='content-container-padding black-background-highlights'>
                         <div class='highlight-container-tn white-background'>
                             <div class='highlight-half-1'>
-                                <h3 class='orange-reg'>Javascript</h3>
+                                <h3 class='orange-reg'>JavaScript</h3>
                                 <p class='p-showcase-reg'>
-                                    A "simple" html, css and javascript project using scripts to orchastrate the workings of the game using multiple web development programming techniques.  
+                                    A "simple" html, CSS and JavaScript project using scripts to orchestrate the workings of the game using multiple web development programming techniques.  
                                 </p>
                             </div>
                             <div class='highlight-half-2-number-guesser'>

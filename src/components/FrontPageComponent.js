@@ -191,8 +191,8 @@ export const FrontPageComponent = ({
                             </div>
                             <div class='text-centre' id='small-skills-bottom-row'>
                                     <h4>I love learning about and implementing powerful, sophisticated Web Development solutions.</h4>
-                                    <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, determination and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Europe for Overwatch, or playing the drums (play at grade 7/8) - all of which displays grit, resiliance, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing (characterisitic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
-                                    <p>It seems like all intricate, yet simple well oiled parts of Web Dev and the challenge of the learning curve garnered my attention and I became devouted. Seeing my progression and skills increase quickly made me realise what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
+                                    <p>I get a great satisfaction in becoming competent in something that requires a lot of skill, determination and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Europe for Overwatch, or playing the drums (play at grade 7/8) - all of which displays grit, resilience, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing (characteristic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
+                                    <p>It seems like all the intricate, yet simple well oiled parts of Web Development and the challenge of the learning curve garnered my attention and I became devoted. Seeing my progression and skills increase quickly made me realise what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
                             </div>
                         </div>
                     ) : (
@@ -241,7 +241,7 @@ export const FrontPageComponent = ({
                                 </div>
                                 <div class="row text-justify" id="small-about">
                                     <h4>I love learning about and implementing powerful, sophisticated Web Development solutions.</h4>
-                                    <p>I get a great satisfcation in becoming competant in something that requires a lot of skill, determination and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Europe for Overwatch, or playing the drums (play at grade 7/8) - all of which displays grit, resiliance, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing (characterisitic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
+                                    <p>I get a great satisfaction in becoming competent in something that requires a lot of skill, determination and passion. Whether it be Forex trading: where I've had over $200,000 AUM funded proprietary trading accounts that I've been paid from, competitive gaming where I achieved rank 256 online in Europe for Overwatch, or playing the drums (play at grade 7/8) - all of which displays grit, resilience, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing (characteristic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
                                     <p>It seems like all the intricate, yet simple well oiled parts of Web Development and the challenge of the learning curve garnered my attention and I became devouted. Seeing my progression and skills increase quickly made me realise what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
                                 </div>
                             </div>
@@ -265,7 +265,7 @@ export const FrontPageComponent = ({
                         <div className={`small-projects-container ${projectsContainerHasZoomed ? 'show' : ''}`}>
                             <div id="projects-column-writting-small">
                                 <h3 className='orange-projects'id='projects-h3'>Gmail Clone</h3>
-                                <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with. </p>
+                                <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competent Junior Front-End React Developer should know and be able to work with. </p>
                                 <p class='projects-p'>I also added back-end implementation in the form of an Express.js server for custom API end points.</p>
                                 <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>
                                 <div id='gmail-list-container'> 
@@ -280,7 +280,7 @@ export const FrontPageComponent = ({
                                             <li>JSX injection</li>
                                             <li>Ternary Operators</li>
                                             <li>JS Short Circuits</li>
-                                            <li>Dyanmic Rendering from nested object based on global state</li>
+                                            <li>Dynamic Rendering from nested object based on global state</li>
                                             <li>Folder/ file directory best practices</li>
                                             <li>Array methods and manipulation</li> 
                                             <li>Object Destructuring Assignment</li>                                             
@@ -289,7 +289,7 @@ export const FrontPageComponent = ({
                                     <div class='gmail-list-half'>
                                         <ul id='gmail-list-right' class='projects-p'>
                                             <li>MUI</li>
-                                            <li>Utilising and manipulting JSON</li>
+                                            <li>Utilising and manipulating JSON</li>
                                             <li>React Select UI Component</li>
                                             <li>ARIA</li>
                                             <li>Responsivity</li>
@@ -339,7 +339,7 @@ export const FrontPageComponent = ({
                         <div className={`projects-container ${projectsContainerHasZoomed ? 'show' : ''}`}>
                             <div id="projects-column-writting">
                                 <h3 className='orange-projects'id='projects-h3'>Gmail Clone</h3>
-                                <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competant Junior Front-End React Developer should know and be able to work with. </p>
+                                <p class='projects-p'>The idea for this project was to create a fully functional, comprehensive real world React App. It would encompass the vast majority of the required technical aspects of what a competent Junior Front-End React Developer should know and be able to work with. </p>
                                 <p class='projects-p'>I also added back-end implementation in the form of an Express.js server for custom API end points.</p>
                                 <p class='projects-p'>In this endeavour I pushed myself and in turn was rewarded with the knowledge and ability to create with all of the skills listed in my skills section above and the following:</p>
                                 <div id='gmail-list-container'> 
@@ -354,7 +354,7 @@ export const FrontPageComponent = ({
                                             <li>JSX injection</li>
                                             <li>Ternary Operators</li>
                                             <li>JS Short Circuits</li>
-                                            <li>Dyanmic Rendering from nested object based on global state</li>
+                                            <li>Dynamic Rendering from nested object based on global state</li>
                                             <li>Folder/ file directory best practices</li>
                                             <li>Array methods and manipulation</li>  
                                             <li>Object Orientated Programming</li>                                            
@@ -363,7 +363,7 @@ export const FrontPageComponent = ({
                                     <div class='gmail-list-half'>
                                         <ul id='gmail-list-right'>
                                             <li>MUI</li>
-                                            <li>Utilising and manipulting JSON</li>
+                                            <li>Utilising and manipulating JSON</li>
                                             <li>React Select UI Component</li>
                                             <li>ARIA</li>
                                             <li>Responsivity</li>
@@ -506,7 +506,7 @@ export const FrontPageComponent = ({
                         </div>
                         <div class='project-description-container'>
                             <h3 class='project-desc-h3'>Number Guesser</h3>
-                            <p class='project-desc-p'>A number guesser game vs the Computer where whoever gets closest to randomly generated target wins!</p>
+                            <p class='project-desc-p'>A number guesser game vs the computer where whoever gets closest to randomly generated target wins!</p>
                             <div class='project-desc-svg-container'>
                                 <img class='desc-svg-icon' src={htmlIcon}></img> 
                                 <img class='desc-svg-icon' src={cssIcon}></img> 
@@ -1630,7 +1630,7 @@ export const FrontPageComponent = ({
                             </div>
                         </div>
                         <p class='future-plans-p-2'>
-                            I have already started to learn about TypeScript about how it provides typing of JS to ensure the robustness and reliability of the code. In my next project(s) I build will be encorporating Next.js, TS and SQL. Redux is a more longer time frame skill I want to pick up.
+                            I have already started to learn about TypeScript about how it provides typing of JS to ensure the robustness and reliability of the code. In my next project(s) I build will be incorporating Next.js, TS and SQL. Redux is a more longer time frame skill I want to pick up.
                         </p>
                     </div>    
                 </animated.div> 

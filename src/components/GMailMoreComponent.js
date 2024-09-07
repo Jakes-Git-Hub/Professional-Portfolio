@@ -100,7 +100,7 @@ export const GMailMoreComponent = ({
                                     This feature allows the user to translate the whole of the text in the app to a multitude of languages - this is done by having a text object that has nested values for each language. 
                                 </p>
                                 <p class='p-showcase'>
-                                    When a language is chose this then updates the userin app.js by altering userData.language which then dyanmically renders the translated text. This is an imporvement on running the text through a translation API as it translated instantly improving UX and saves money.
+                                    When a language is chose this then updates the user in app.js by altering userData.language which then dynamically renders the translated text. This is an improvement on running the text through a translation API as it translated instantly improving UX and saves money.
                                 </p>
                             </div>
                             <div class='highlight-half-2'>
@@ -135,7 +135,7 @@ export const GMailMoreComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 className='orange'>Twilio API SMS Authorisation</h3>
                                 <p class='p-showcase'>
-                                    This authorisation method uses Twilio and a custom API end point in my Express.js server - which recieves a formatted phone number. It then creates a random 6 digit verification code which is sent to the user via SMS to either confirm they are not a robot and continue the form or log in if they have forgotten their password.
+                                    This authorisation method uses Twilio and a custom API end point in my Express.js server - which receives a formatted phone number. It then creates a random 6-digit verification code which is sent to the user via SMS to either confirm they are not a robot and continue the form or log in if they have forgotten their password.
                                 </p>
                                 <p class='p-showcase'>
                                     The formatted number is created by a function that uses google-libphonenumber formatting. It is created based on user input and the region which is attained either through the users IP (Grabbed from my server), or their country selection choice. 
@@ -149,7 +149,7 @@ export const GMailMoreComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 className='orange'>Send Grid API Email Authorisation</h3>
                                 <p class='p-showcase'>
-                                    This authorisation method uses Send Grid and a custom API end point in my Express.js server - which takes in an inputted email. It then creates a random 6 digit verification code which is sent to the user via email and if they enter it correctly they can continue the form, or log in if they have forgotten their password.
+                                    This authorisation method uses Send Grid and a custom API end point in my Express.js server - which takes in an inputted email. It then creates a random 6-digit verification code which is sent to the user via email and if they enter it correctly they can continue the form, or log in if they have forgotten their password.
                                 </p>
                             </div>
                             <div class='highlight-half-2'>
@@ -201,7 +201,7 @@ export const GMailMoreComponent = ({
                             <div class='highlight-half-1' id='geo-highlight-half-1'>
                                 <h3 className='orange'>Google Translation API</h3>
                                 <p class='p-showcase'>
-                                    Initially for the translation for the entirety of my app, I was going to use Google translation API. However, when i implemented i found that the load time for translating the whole of the app was incredibly slow and ruined ux (also increased costs). So I instead opted for the approach described above.
+                                    Initially for the translation for the entirety of my app, I was going to use Google translation API. However, when i implemented  found that the load time for translating the whole of the app was incredibly slow and ruined ux (also increased costs). So I instead opted for the approach described above.
                                 </p>
                                 <p class='p-showcase'>
                                     When I was implementing the React select component for the drop down I did so initially with a country object which had a lot of logic applied to it to filter and sort countries, also when i mapped through the object to render it into the select component there was also a lot of assoicated code. So instead of transfering the object with translated countries, to the text object. I instead used the google translation API to translate the country object and then saved it translatedCountries. 
@@ -245,10 +245,10 @@ export const GMailMoreComponent = ({
                                     The app is fully responsive, using media queries to apply optimal layouts or sophisticatedly hide aspects of the page fluidly depending on screen size.
                                 </p>
                                 <p class='p-showcase'>
-                                    Responsivty is also used for the MUI language changer menu where the extent of the menu height is calculated depending on the height of the screen.
+                                    Responsivity is also used for the MUI language changer menu where the extent of the menu height is calculated depending on the height of the screen.
                                 </p>
                                 <p class='p-showcase'>
-                                    It also uses responsive css formats to dyanmically render elements positions and sizes in the browser. This improves UI and UX for all different screen sizes.
+                                    It also uses responsive CSS formats to dynamically render elements positions and sizes in the browser. This improves UI and UX for all different screen sizes.
                                 </p>
                             </div>
                             
@@ -295,10 +295,10 @@ export const GMailMoreComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 className='orange'>Security</h3>
                                 <p class='p-showcase'>
-                                    For security in the app I have used client side and server side API limiters. Also I have utilised .env variables to store sensitive information.
+                                    For security in the app, I have used client side and server side API limiters. Also I have utilised .env variables to store sensitive information.
                                 </p>
                                 <p class='p-showcase'>
-                                    This ensures that the server cannot be overloaded with requests in a short time frame. Mitigating threats from DDoS or brute force login attemps.
+                                    This ensures that the server cannot be overloaded with requests in a short time frame. Mitigating threats from DDoS or brute force login attempts.
                                 </p>
                                 <p class='p-showcase'>
                                     API limiters also make sure costs are controlled by preventing excessive use.
@@ -355,7 +355,7 @@ export const GMailMoreComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 className='orange'>Jest & React Testing Library</h3>
                                 <p class='p-showcase'>
-                                    To ensure my code is robust and reliable I have used Jest and React Testing Library to test anything that handles logic i.e all my container files utility files and hooks etc. This ensures everything is working as expected and ensures a smooth UX with no bugs.
+                                    To ensure my code is robust and reliable I have used Jest and React Testing Library to test anything that handles logic i.e. all my container files utility files and hooks etc. This ensures everything is working as expected and ensures a smooth UX with no bugs.
                                 </p>
                             </div>
                         </div>
@@ -369,7 +369,7 @@ export const GMailMoreComponent = ({
                                     For this project I hosted the Express server using AWS Elastic Beanstalk. This allowed me to have a scalable server that could handle the traffic of the app.    
                                 </p>
                                 <p class='p-showcase'>
-                                    For the front end I used AWS Simple Storage Server (s3) to host the static files and then I redirected my API requests base url to the server domain name to allow access to send a recieve data via the custmom end points created there.   
+                                    For the front end I used AWS Simple Storage Server (s3) to host the static files and then I redirected my API requests base URL to the server domain name to allow access to send a receive data via the custom end points created there.   
                                 </p>
                             </div>
                             <div class='highlight-half-2-ss'>
@@ -389,7 +389,7 @@ export const GMailMoreComponent = ({
                                     This feature allows the user to translate the whole of the text in the app to a multitude of languages - this is done by having a text object that has nested values for each language. 
                                 </p>
                                 <p class='p-showcase'>
-                                    When a language is chose this then updates the userin app.js by altering userData.language which then dyanmically renders the translated text. This is an imporvement on running the text through a translation API as it translated instantly improving UX and saves money.
+                                    When a language is chose this then updates the user in app.js by altering userData.language which then dynamically renders the translated text. This is an improvement on running the text through a translation API as it translated instantly improving UX and saves money.
                                 </p>
                             </div>
                             <div class='highlight-half-2'>
@@ -412,7 +412,7 @@ export const GMailMoreComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 className='orange'>Twilio API SMS Authorisation</h3>
                                 <p class='p-showcase'>
-                                    This authorisation method uses Twilio and a custom API end point in my Express.js server - which recieves a formatted phone number. It then creates a random 6 digit verification code which is sent to the user via SMS to either confirm they are not a robot and continue the form or log in if they have forgotten their password.
+                                    This authorisation method uses Twilio and a custom API end point in my Express.js server - which receives a formatted phone number. It then creates a random 6-digit verification code which is sent to the user via SMS to either confirm they are not a robot and continue the form or log in if they have forgotten their password.
                                 </p>
                                 <p class='p-showcase'>
                                     The formatted number is created by a function that uses google-libphonenumber formatting. It is created based on user input and the region which is attained either through the users IP (Grabbed from my server), or their country selection choice. 
@@ -438,7 +438,7 @@ export const GMailMoreComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 className='orange'>Send Grid API Email Authorisation</h3>
                                 <p class='p-showcase'>
-                                    This authorisation method uses Send Grid and a custom API end point in my Express.js server - which takes in an inputted email. It then creates a random 6 digit verification code which is sent to the user via email and if they enter it correctly they can continue the form, or log in if they have forgotten their password.
+                                    This authorisation method uses Send Grid and a custom API end point in my Express.js server - which takes in an inputted email. It then creates a random 6-digit verification code which is sent to the user via email and if they enter it correctly they can continue the form, or log in if they have forgotten their password.
                                 </p>
                             </div>
                             <div class='highlight-half-2'>
@@ -490,7 +490,7 @@ export const GMailMoreComponent = ({
                             <div class='highlight-half-1' id='geo-highlight-half-1'>
                                 <h3 className='orange'>Google Translation API</h3>
                                 <p class='p-showcase'>
-                                    Initially for the translation for the entirety of my app, I was going to use Google translation API. However, when i implemented i found that the load time for translating the whole of the app was incredibly slow and ruined ux (also increased costs). So I instead opted for the approach described above.
+                                    Initially for the translation for the entirety of my app, I was going to use Google translation API. However, when i implemented  found that the load time for translating the whole of the app was incredibly slow and ruined ux (also increased costs). So I instead opted for the approach described above.
                                 </p>
                                 <p class='p-showcase'>
                                     When I was implementing the React select component for the drop down I did so initially with a country object which had a lot of logic applied to it to filter and sort countries, also when i mapped through the object to render it into the select component there was also a lot of assoicated code. So instead of transfering the object with translated countries, to the text object. I instead used the google translation API to translate the country object and then saved it translatedCountries. 
@@ -522,10 +522,10 @@ export const GMailMoreComponent = ({
                                     The app is fully responsive, using media queries to apply optimal layouts or sophisticatedly hide aspects of the page fluidly depending on screen size.
                                 </p>
                                 <p class='p-showcase'>
-                                    Responsivty is also used for the MUI language changer menu where the extent of the menu height is calculated depending on the height of the screen.
+                                    Responsivity is also used for the MUI language changer menu where the extent of the menu height is calculated depending on the height of the screen.
                                 </p>
                                 <p class='p-showcase'>
-                                    It also uses responsive css formats to dyanmically render elements positions and sizes in the browser. This improves UI and UX for all different screen sizes.
+                                    It also uses responsive CSS formats to dynamically render elements positions and sizes in the browser. This improves UI and UX for all different screen sizes.
                                 </p>
                             </div>
                             <div class='highlight-half-2'>
@@ -571,10 +571,10 @@ export const GMailMoreComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 className='orange'>Security</h3>
                                 <p class='p-showcase'>
-                                    For security in the app I have used client side and server side API limiters. Also I have utilised .env variables to store sensitive information.
+                                    For security in the app, I have used client side and server side API limiters. Also I have utilised .env variables to store sensitive information.
                                 </p>
                                 <p class='p-showcase'>
-                                    This ensures that the server cannot be overloaded with requests in a short time frame. Mitigating threats from DDoS or brute force login attemps.
+                                    This ensures that the server cannot be overloaded with requests in a short time frame. Mitigating threats from DDoS or brute force login attempts.
                                 </p>
                                 <p class='p-showcase'>
                                     API limiters also make sure costs are controlled by preventing excessive use.
@@ -630,7 +630,7 @@ export const GMailMoreComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 className='orange'>Jest & React Testing Library</h3>
                                 <p class='p-showcase'>
-                                    To ensure my code is robust and reliable I have used Jest and React Testing Library to test anything that handles logic i.e all my container files utility files and hooks etc. This ensures everything is working as expected and ensures a smooth UX with no bugs.
+                                    To ensure my code is robust and reliable I have used Jest and React Testing Library to test anything that handles logic i.e. all my container files utility files and hooks etc. This ensures everything is working as expected and ensures a smooth UX with no bugs.
                                 </p>
                             </div>
                             <div class='highlight-half-2'>
@@ -676,9 +676,11 @@ export const GMailMoreComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 className='orange'>AWS</h3>
                                 <p class='p-showcase'>
-                                    For this project I hosted the Express server using AWS Elastic Beanstalk. This allowed me to have a scalable server that could handle the traffic of the app.                                </p>
+                                    For this project I hosted the Express server using AWS Elastic Beanstalk. This allowed me to have a scalable server that could handle the traffic of the app.
+                                </p>
                                 <p class='p-showcase'>
-                                    For the front end I used AWS Simple Storage Server (s3) to host the static files and then I redirected my API requests base url to the server domain name to allow access to send a recieve data via the custmom end points created there.                                </p>
+                                    For the front end I used AWS Simple Storage Server (s3) to host the static files and then I redirected my API requests base URL to the server domain name to allow access to send a receive data via the custom end points created there.                                
+                                </p>
                             </div>
                             <div class='highlight-half-2-ss'>
                                 <img className='ss-half-40' src={ebSS}/>

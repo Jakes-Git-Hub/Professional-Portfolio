@@ -82,13 +82,13 @@ export const AppointmentPlannerComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 class='orange'>React</h3>
                                 <p class='p-showcase'>
-                                    This app was built in React where you can add and save new contacts with their associated information, after they have been saved they are visible in the contacts address.  
+                                    This app was built in React where you can add and save new contacts with their associated information, after they have been saved, they are visible in the contacts address.  
                                 </p>
                                 <p class='p-showcase'>
-                                    After adding contacts, you can go to the appointnents section and create new appointments along with associated information of the appointment and then add any contact that has been created in the contacts section to this new appointment.
+                                    After adding contacts, you can go to the appointments section and create new appointments along with associated information of the appointment and then add any contact that has been created in the contacts section to this new appointment.
                                 </p>
                                 <p class='p-showcase'>
-                                    After an appointment has been added, appointnents are then visible in the Appointments section. 
+                                    After an appointment has been added, appointments are then visible in the Appointments section. 
                                 </p>
                             </div>
                             <div class='highlight-half-2-appointment-planner'>
@@ -107,13 +107,13 @@ export const AppointmentPlannerComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 class='orange'>React</h3>
                                 <p class='p-showcase'>
-                                    This app was built in React where you can add and save new contacts with their associated information. 
+                                    This app was built in React where you can add and save new contacts with their associated information, after they have been saved, they are visible in the contacts address.  
                                 </p>
                                 <p class='p-showcase'>
-                                    After adding contacts, you can go to the appointnents section and create new appointments along with associated information of the appointment and then add any contact that has been created in the contacts section to this new appointment.
+                                    After adding contacts, you can go to the appointments section and create new appointments along with associated information of the appointment and then add any contact that has been created in the contacts section to this new appointment.
                                 </p>
                                 <p class='p-showcase'>
-                                    After an appointment has been added, appointnents are then visible in the Appointments section. 
+                                    After an appointment has been added, appointments are then visible in the Appointments section. 
                                 </p>
                             </div>
                             <div class='highlight-half-2-tn'>

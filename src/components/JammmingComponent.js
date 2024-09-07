@@ -38,7 +38,7 @@ export const JammmingComponent = ({
 
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-desc-container white-background'>
-                    <p id='highlight-desc-p'>I enjoyed using the Spotify API and React Player to build this project - It is an app that allows users to search, preview, add/ remove tracks to/ from a playlist and then finally save their playlist with a custom playlist name to Spotify. Mostly done through the spotify API.</p>
+                    <p id='highlight-desc-p'>I enjoyed using the Spotify API and React Player to build this project - It is an app that allows users to search, preview, add/ remove tracks to/ from a playlist and then finally save their playlist with a custom playlist name to Spotify. Mostly done through the Spotify API.</p>
                         <div className='highlight-svg-container'>
                             <svg 
                                 className='hightlight-desc-svg' 
@@ -83,10 +83,10 @@ export const JammmingComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 class='orange'>Spotify API</h3>
                                 <p class='p-showcase'>
-                                    The users search input triggers the search method, which populates the results tracklist with tracks and associated info derived from the returned JSON results.  
+                                    The users search input triggers the search method, which populates the results track list with tracks and associated info derived from the returned JSON results.  
                                 </p>
                                 <p class='p-showcase'>
-                                    The user can then add or remove tracks to their playlist from the tracklist results with the +/ - buttons. Once the user has curated their playlist and given it the name they desire, then they can save their playlist to spotify with the savePlaylist method and have it to listen anytime.     
+                                    The user can then add or remove tracks to their playlist from the track list results with the +/ - buttons. Once the user has curated their playlist and given it the name they desire, then they can save their playlist to Spotify with the savePlaylist method and have it to listen anytime.     
                                 </p>
                             </div>
                             <div class='highlight-half-2'>
@@ -180,10 +180,10 @@ export const JammmingComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 class='orange'>Spotify API</h3>
                                 <p class='p-showcase'>
-                                    The users search term input triggers the search method from the Spotify object, which populates the results tracklist with tracks and associated info derived from the returned JSON results.  
+                                    The users search term input triggers the search method from the Spotify object, which populates the results track list with tracks and associated info derived from the returned JSON results.  
                                 </p>
                                 <p class='p-showcase'>
-                                The user can then add or remove tracks to their playlist from the tracklist results with the +/ - buttons. Once the user has curated their playlist and given it the name they desire, then they can save their playlist to spotify have it to listen anytime.     
+                                The user can then add or remove tracks to their playlist from the track list results with the +/ - buttons. Once the user has curated their playlist and given it the name they desire, then they can save their playlist to Spotify have it to listen anytime.     
                                 </p>
                             </div>
                             <div class='highlight-half-2'>

@@ -34,7 +34,7 @@ export const AdoptAPetComponent = ({
 
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-desc-container white-background'>
-                    <p id='highlight-desc-p'>In this project I utiised a mock service worker with handlers to mock api requests to a server/ database. This allows the user to search through the animals object and then the results are mapped to the ui based on their input.</p>
+                    <p id='highlight-desc-p'>In this project I utilised a mock service worker with handlers to mock API requests to a server/ database. This allows the user to search through the animals object and then the results are mapped to the ui based on their input.</p>
                         <div className='highlight-svg-container'>
                             <svg 
                                 className='hightlight-desc-svg' 
@@ -56,10 +56,10 @@ export const AdoptAPetComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 class='orange'>Mapping UI From Animals Object</h3>
                                 <p class='p-showcase'>
-                                    Animal panels and associated data are displayed from utilisation of an API request and using a mock service worker. This worker will intercept get requests and mock a get api call to get associated data based on the users input querry parameter and display results through mapping the relevant objects grabbed from the arrays.
+                                    Animal panels and associated data are displayed from utilisation of an API request and using a mock service worker. This worker will intercept get requests and mock a get API call to get associated data based on the users input query parameter and display results through mapping the relevant objects grabbed from the arrays.
                                 </p>
                                 <p class='p-showcase'>
-                                    This worker will intercept get requests and mock an get api call to get associated data based on the users input querry parameters and display results through mapping the relevant objects grabbed from the arrays.
+                                    This worker will intercept get requests and mock a get API call to get associated data based on the users input query parameters and display results through mapping the relevant objects grabbed from the arrays.
                                 </p>
                             </div>
                             <div class='highlight-half-2-pet'>
@@ -78,10 +78,10 @@ export const AdoptAPetComponent = ({
                             <div class='highlight-half-1'>
                                 <h3 class='orange'>Mapping UI From Animals Object</h3>
                                 <p class='p-showcase'>
-                                    Animal panels and associated data are displayed from utilisation of an API request and using a mock service worker. This worker will intercept get requests and mock a get api call to get associated data based on the users input querry parameter and display results through mapping the relevant objects grabbed from the arrays.
+                                    Animal panels and associated data are displayed from utilisation of an API request and using a mock service worker. This worker will intercept get requests and mock a get API call to get associated data based on the users input query parameter and display results through mapping the relevant objects grabbed from the arrays.
                                 </p>
                                 <p class='p-showcase'>
-                                    This worker will intercept get requests and mock an get api call to get associated data based on the users input querry parameters and display results through mapping the relevant objects grabbed from the arrays.
+                                    This worker will intercept get requests and mock a get API call to get associated data based on the users input query parameters and display results through mapping the relevant objects grabbed from the arrays.
                                 </p>
                             </div>
                             <div class='highlight-half-2-pet'>
