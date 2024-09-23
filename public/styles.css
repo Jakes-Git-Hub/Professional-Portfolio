@@ -89,6 +89,10 @@ body {
     height: 100%;
 }
 
+#m-bottom-24 {
+    margin-bottom: 24px;
+}
+
 /* Header */
   
 header {

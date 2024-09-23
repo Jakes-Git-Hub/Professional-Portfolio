@@ -39,6 +39,7 @@ export const JammmingComponent = ({
             <div class='content-container-padding black-background-highlights'>
                 <div class='highlight-desc-container white-background'>
                     <p id='highlight-desc-p'>I enjoyed using the Spotify API and React Player to build this project - It is an app that allows users to search, preview, add/ remove tracks to/ from a playlist and then finally save their playlist with a custom playlist name to Spotify. Mostly done through the Spotify API.</p>
+                    <p id='m-bottom-24'>Unfortunately Spotify adjusted the relevant permissions for this app to run after I completed this project. So I am awaiting my extension request currently...</p>
                         <div className='highlight-svg-container'>
                             <svg 
                                 className='hightlight-desc-svg' 
