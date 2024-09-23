@@ -933,6 +933,13 @@ header ul li:hover {
 
 #gmail-list-container{
     margin: 10px 0 0 0;
+    position: relative;
+}
+
+@media screen and (max-width: 552px) {
+    #gmail-list-container{
+        right: 10px;
+    }
 }
 
 #gmail-tech-svgs {

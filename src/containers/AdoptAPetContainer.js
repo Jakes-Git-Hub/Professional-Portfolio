@@ -39,6 +39,12 @@ useEffect(() => {
         window.open('https://github.com/Jakes-Git-Hub/Adopt-A-Pet-React', '_blank');
     }
 
+// Live site Click
+
+const handleLiveSiteClick = () => {
+    window.open('https://adopt-a-pet112.surge.sh/', '_blank');
+}
+
 // h3 Intersection Observer
 
 useEffect(() => {
@@ -59,6 +65,7 @@ useEffect(() => {
         <>
             <AdoptAPetComponent 
                 handleGHSVGClick={handleGHSVGClick}
+                handleLiveSiteClick={handleLiveSiteClick}
                 windowWidth={windowWidth}
             />
         </>
