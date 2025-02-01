@@ -4,6 +4,8 @@ import { HeaderContainer } from '../containers/HeaderContainer';
 import largeAdoptAPet from '../images/adopt-a-pet-showcase/Adopt a Pet Large ss.png';
 import smallAdoptAPet from '../images/adopt-a-pet-showcase/Adopt a Pet Small ss.png'; 
 import MSWProof from '../images/adopt-a-pet-showcase/MSW Proof.png';
+import TSSS from '../images/TypeScript-ss.png';
+
 
 export const AdoptAPetComponent = ({
     handleGHSVGClick,
@@ -94,6 +96,20 @@ export const AdoptAPetComponent = ({
                             </div>
                         </div>
                     </div>
+
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-2-ts-ss'>
+                                <img className='TS-horizontal' src={TSSS}/>
+                            </div>
+                            <div class='highlight-half-1'>
+                                <h3 className='orange'>TypeScript</h3>
+                                <p class='p-showcase'>
+                                    This project was built using TypeScript to enhance code maintainability and scalability.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </>
             ) : (
                 <>
@@ -113,6 +129,20 @@ export const AdoptAPetComponent = ({
                                     class='msw-proof' 
                                     src={MSWProof}
                                 />
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-1'>
+                                <h3 className='orange'>TypeScript</h3>
+                                <p class='p-showcase'>
+                                    This project was built using TypeScript to enhance code maintainability and scalability.
+                                </p>
+                            </div>
+                            <div class='highlight-half-2-ss-ts'>
+                                <img className='ts-vertical' src={TSSS}/>
                             </div>
                         </div>
                     </div>
