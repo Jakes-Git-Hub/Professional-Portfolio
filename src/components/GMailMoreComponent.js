@@ -4,6 +4,7 @@ import smallGmailCode from '../images/small-gmail-code.png';
 import smallerGmailCode from '../images/smaller-gmail-code.png' 
 import ebSS from '../images/gmail-clone-eb-ss.png';
 import s3SS from '../images/gmail-clone-s3-ss.png';
+import TSSS from '../images/TypeScript-ss.png';
 import { HeaderContainer } from '../containers/HeaderContainer';
 
 
@@ -18,6 +19,7 @@ export const GMailMoreComponent = ({
     videoRef6,
     videoRef7,
     videoRef8,
+    videoRef9,
     muiRef,
     cycleMuiVideo,
     muiSources,
@@ -378,6 +380,20 @@ export const GMailMoreComponent = ({
                             </div>
                         </div>
                     </div>
+
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-2-ts-ss'>
+                                <img className='TS-horizontal' src={TSSS}/>
+                            </div>
+                            <div class='highlight-half-1'>
+                                <h3 className='orange'>TypeScript</h3>
+                                <p class='p-showcase'>
+                                    This project was built using TypeScript to enhance code maintainability and scalability.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </>
             ) : (
                 <>
@@ -685,6 +701,20 @@ export const GMailMoreComponent = ({
                             <div class='highlight-half-2-ss'>
                                 <img className='ss-half-40' src={ebSS}/>
                                 <img className='ss-half-60' src={s3SS}/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='content-container-padding black-background-highlights'>
+                        <div class='highlight-container white-background'>
+                            <div class='highlight-half-1'>
+                                <h3 className='orange'>TypeScript</h3>
+                                <p class='p-showcase'>
+                                    This project was built using TypeScript to enhance code maintainability and scalability.
+                                </p>
+                            </div>
+                            <div class='highlight-half-2-ss-ts'>
+                                <img className='ts-vertical' src={TSSS}/>
                             </div>
                         </div>
                     </div>
