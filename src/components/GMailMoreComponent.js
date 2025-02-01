@@ -679,7 +679,7 @@ export const GMailMoreComponent = ({
                                     For this project I hosted the Express server using AWS Elastic Beanstalk. This allowed me to have a scalable server that could handle the traffic of the app.
                                 </p>
                                 <p class='p-showcase'>
-                                    For the front end I used AWS Simple Storage Server (s3) to host the static files and then I redirected my API requests base URL to the server domain name to allow access to send a receive data via the custom end points created there.                                
+                                    For the front end I used AWS Simple Storage Server (s3) to host the static files and then I redirected my API requests base URL to the server domain name to allow access to send a receive data via the custom end points created there.   
                                 </p>
                             </div>
                             <div class='highlight-half-2-ss'>

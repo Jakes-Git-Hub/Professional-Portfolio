@@ -972,7 +972,7 @@ header ul li:hover {
     }
 }
 
-@media screen and (min-width: 1298px) and (max-width: 1874px) {
+@media screen and (min-width: 1298px) and (max-width: 2000px) {
     #gmail-tech-svgs {
         margin-bottom: 75px;
     }
@@ -1027,7 +1027,7 @@ header ul li:hover {
     }
 }
 
-@media screen and (max-width: 975px) and (min-width: 593px) {
+@media screen and (max-width: 1071px) and (min-width: 593px) {
     .find-out-and-live-buttons {
         margin-top: 40px;
     }
