@@ -23,7 +23,7 @@ import reactTLIcon from '../images/react-testing-library-logo.png';
 import restApiIcon from '../images/rest-api-icon.png';
 import expressIcon from '../images/ExpressJS-icon.webp';
 import typeScriptIcon from '../images/marquee/typescript-icon.svg';
-import greenTickSVG from '../images/Eo_circle_green_checkmark.svg.png'
+import greenTickSVG from '../images/green-tick.svg'
 
 export const FrontPageComponent = ({
     handleGitHubClick,
@@ -547,7 +547,7 @@ export const FrontPageComponent = ({
                             After nearly 2 years of devoting most of my free time to improving as predominantly a Front-End React Developer, I feel like I could comfortably take on Front-End projects with minimal supervision and thrive. This is because of my plethora of experience - through learning the skill via Codecademy's premium course and then applying attained knowledge through projects to retain it indefinitely. It's also a benefit in my favour that I am a quick and methodical learner, I possess incredible memory recall and I innately have a lot of drive and passion for things I want to run with and excel in.               
                         </p>
                         <p class='future-plans-p-2'>
-                            The latest skill set I have acquired is TypeScript, I learned this through Codecademy's paid course and then implemented it throughout my existing projects. I believe I have a solid understanding and utility of a lot of principles and concepts of TS and will be utilising it going forward to ensure more robust, maintainable and scalable code.                       
+                            The most recent skill set I have acquired is TypeScript, I learned this through Codecademy's paid course and then implemented it throughout my existing projects. I believe I have a solid understanding and utility of a lot of principles and concepts of TS and will be utilising it going forward to ensure more robust, maintainable and scalable code.                       
                         </p>
                         <div id='marquee'>
                             <div class='marquee-row'>
