@@ -2149,6 +2149,7 @@ header ul li:hover {
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
+    height: 100%;
 }
 
 .marquee-word {
@@ -2157,6 +2158,7 @@ header ul li:hover {
     animation: marquee 7.5s linear infinite;
     color: grey;
     margin: 20px 0;
+    height: 100%;
 }
 
 .next-svg {
@@ -2166,12 +2168,22 @@ header ul li:hover {
 }
 
 .marquee-word-opposite {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     padding-right: 10rem;
     animation: marqueeOpposite 20s linear infinite;
     color: grey;
     font-size: 30px;
     margin: 20px 0;
+    height: 100%;
+}
+
+.green-tick-TS {
+    height: 40px;
+    width: auto;
+    position: relative;
+    left: 10px;
 }
 
 .marquee-word-opposite-smaller {
@@ -2229,19 +2241,19 @@ header ul li:hover {
 .future-plans-p {
     position: relative;
     margin: 110px 100px 20px;
-    text-align: center;
+    text-align: justify;
     line-height: 1.25em;
 }
 
 .future-plans-p-2 {
     position: relative;
     margin: 40px 100px 20px;
-    text-align: center;
+    text-align: justify;
     line-height: 1.25em;
 }
 
 .ts-top {
-    top: 10px;
+    right: 6px;
     position: relative;
 }
 
@@ -2276,14 +2288,16 @@ header ul li:hover {
         position: relative;
     }
     
-    .marquee-word-opposite {
-        display: inline-block;
+    /* .marquee-word-opposite {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding-right: 5rem;
         animation: marqueeOpposite 30s linear infinite;
         color: grey;
         font-size: 30px;
         margin: 20px 0;
-    }
+    } */
     
     .marquee-word-opposite-smaller {
         display: inline-block;
