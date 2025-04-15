@@ -278,7 +278,6 @@ header ul li:hover {
     } 
     width: 60%;
     position: relative;
-    margin-bottom: 0.75vh;
 }
 
 #p-page-hero {
@@ -325,16 +324,21 @@ header ul li:hover {
     margin-left: 1.04vw;
     margin-bottom: 1.61vh;
     position: relative;
+    @media screen and (max-width: 1271px) {
+        justify-content: space-evenly;
+        width: 60%;
+        margin: 20px;
+    }
 }
 
 .svg-icon {
     @media screen and (max-width: 1548px) {
-        width: 40.23px;
-        height: 43.73px;
+        /* width: 40.23px;
+        height: 43.73px; */
         margin-right: 16.1px;
     }
-    width: 2.60vw;
-    height: 5.38vh;
+    width: 49.8px;
+    height: 49.8px;
     margin-right: 1.04vw;
     fill: rgb(255, 98, 0);
     cursor: pointer;
