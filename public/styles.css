@@ -302,6 +302,9 @@ header ul li:hover {
     margin-bottom: 3.55vh;
     position: relative;
     display: inline-block;
+    @media screen and (max-width: 706px) {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 446px) {
@@ -311,7 +314,7 @@ header ul li:hover {
 }
 
 .highlight {
-    box-shadow: inset 0 -2.93vh 0 rgb(255, 98, 0);
+    box-shadow: inset 0 calc(-1.40625vw * (1920 / 1920)) 0 rgb(255, 98, 0);
 }
 
 #page-hero-svgs { 
@@ -326,7 +329,7 @@ header ul li:hover {
     position: relative;
     @media screen and (max-width: 1271px) {
         justify-content: space-evenly;
-        width: 60%;
+        width: 70%;
         margin: 20px;
     }
 }
