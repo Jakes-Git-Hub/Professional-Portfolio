@@ -329,7 +329,7 @@ header ul li:hover {
     position: relative;
     @media screen and (max-width: 1271px) {
         justify-content: space-evenly;
-        width: 70%;
+        width: 60%;
         margin: 20px;
     }
 }
