@@ -156,19 +156,31 @@ export const FrontPageComponent = ({
                                         <p className='text-centre'>React</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p className='text-centre'>JavaScript</p>
+                                        <p className='text-centre'>React Native</p>
                                     </div>
                                     <div class="skill-container">
                                         <p className='text-centre'>TypeScript</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p className='text-centre'>HTML</p>
-                                    </div>
-                                    <div class="skill-container">
-                                        <p className='text-centre'>CSS</p>
+                                        <p className='text-centre'>JavaScript</p>
                                     </div>
                                     <div class="skill-container">
                                         <p className='text-centre'>Node.js</p>
+                                    </div>
+                                    <div class="skill-container">
+                                        <p className='text-centre'>PostgreSQL</p>
+                                    </div>
+                                    <div class="skill-container">
+                                        <p className='text-centre'>Express.js</p>
+                                    </div>
+                                    <div class="skill-container">
+                                        <p className='text-centre'>AWS</p>
+                                    </div>
+                                    <div class="skill-container">
+                                        <p className='text-centre'>Supabase</p>
+                                    </div>
+                                    <div class="skill-container">
+                                        <p className='text-centre'>Expo</p>
                                     </div>
                                     <div class="skill-container">
                                         <p className='text-centre'>Git</p>
@@ -177,10 +189,13 @@ export const FrontPageComponent = ({
                                         <p className='text-centre'>GitHub</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p className='text-centre'>AWS</p>
+                                        <p className='text-centre'>HTML</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p className='text-centre'>Express.js</p>
+                                        <p className='text-centre'>CSS</p>
+                                    </div>
+                                    <div class="skill-container jest-react-skill">
+                                        <p className='text-centre'>Jest/ React Testing Library</p>
                                     </div>
                                     <div class="skill-container">
                                         <p className='text-centre'>MUI</p>
@@ -188,8 +203,8 @@ export const FrontPageComponent = ({
                                     <div class="skill-container">
                                         <p className='text-centre'>Axios</p>
                                     </div>
-                                    <div class="skill-container jest-react-skill">
-                                        <p className='text-centre'>Jest/ React Testing Library</p>
+                                    <div class="skill-container">
+                                        <p className='text-centre'>Figma</p>
                                     </div>
                                 </div>
                                 </div>
@@ -211,19 +226,31 @@ export const FrontPageComponent = ({
                                         <p>React</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p>JavaScript</p>
+                                        <p>React Native</p>
                                     </div>
                                     <div class="skill-container">
                                         <p>TypeScript</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p>HTML</p>
-                                    </div>
-                                    <div class="skill-container">
-                                        <p>CSS</p>
+                                        <p>JavaScript</p>
                                     </div>
                                     <div class="skill-container">
                                         <p>Node.js</p>
+                                    </div>
+                                    <div class="skill-container">
+                                        <p>PostgreSQL</p>
+                                    </div>
+                                    <div class="skill-container">
+                                        <p>Express.js</p>
+                                    </div>
+                                    <div class="skill-container">
+                                        <p>AWS</p>
+                                    </div>
+                                    <div class="skill-container">
+                                        <p>Supabase</p>
+                                    </div>
+                                    <div class="skill-container">
+                                        <p>Expo</p>
                                     </div>
                                     <div class="skill-container">
                                         <p>Git</p>
@@ -232,10 +259,13 @@ export const FrontPageComponent = ({
                                         <p>GitHub</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p className='text-centre'>AWS</p>
+                                        <p>HTML</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p>Express.js</p>
+                                        <p>CSS</p>
+                                    </div>
+                                    <div class="skill-container">
+                                        <p>Jest/ React Testing Library</p>
                                     </div>
                                     <div class="skill-container">
                                         <p>MUI</p>
@@ -244,7 +274,7 @@ export const FrontPageComponent = ({
                                         <p>Axios</p>
                                     </div>
                                     <div class="skill-container">
-                                        <p>Jest/ React Testing Library</p>
+                                        <p>Figma</p>
                                     </div>
                                 </div>
                                 <div class="row text-justify" id="small-about">
