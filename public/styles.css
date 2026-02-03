@@ -621,6 +621,12 @@ header ul li:hover {
     border-radius: 3px;
 }
 
+@media screen and (max-width: 1337px) {
+    .skill-container {
+       height: 16%; 
+    }
+}
+
 @media screen and (max-width: 1062px) {
     .skill-container {
         height: 30px;
@@ -650,6 +656,16 @@ header ul li:hover {
     text-align: center;
 }
 
+#i-love {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1765px) {
+    #i-love {
+        margin-top: 35px;
+    }
+}
+
 #small-about {
     display: flex;
     flex-direction: column;
@@ -657,12 +673,6 @@ header ul li:hover {
 
 #small-about h4 {
     font-weight:bold;
-}
-
-@media screen and (min-width: 1570px) {
-    #small-about h4 {
-        margin-top: 0;
-    }
 }
 
 .small-skills-container {
