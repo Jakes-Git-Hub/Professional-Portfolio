@@ -529,6 +529,18 @@ header ul li:hover {
     margin-bottom: 5%;
 }
 
+@media screen and (min-width: 612px) and (max-width: 871px) {
+    #skills-nav {
+        margin-bottom: -20px !important;
+    }
+}
+
+@media screen and (max-width: 611px) {
+    #skills-nav {
+        margin-bottom: -80px !important;
+    }
+}
+
 .section-title-fom {
     font-size: 50px;
     margin: 0 0 5% 5vw;
@@ -623,7 +635,31 @@ header ul li:hover {
 
 @media screen and (max-width: 1337px) {
     .skill-container {
-       height: 16%; 
+        height: 12%; 
+    }
+}
+
+@media screen and (max-width: 1221px) {
+    .skill-container {
+       height: 10% !important; 
+    }
+}
+
+@media screen and (max-width: 871px) {
+    .skill-container {
+       height: 8% !important; 
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .skill-container {
+       height: 6% !important; 
+    }
+}
+
+@media screen and (max-width: 611px) {
+    .skill-container {
+       height: 4% !important; 
     }
 }
 
@@ -666,6 +702,16 @@ header ul li:hover {
     }
 }
 
+#i-love-small {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 611px) {
+    #i-love-small {
+        margin-top: -20px;
+    }
+}
+
 #small-about {
     display: flex;
     flex-direction: column;
@@ -688,15 +734,15 @@ header ul li:hover {
     align-items: center;
 }
 
-@media screen and (max-width: 1063px) {
+@media screen and (min-width: 847px) and (max-width: 1063px) {
     #small-skills-top-row {
         margin-bottom: 3%;
     }
 }
 
-@media screen and (max-width: 714px) {
+@media screen and (max-width: 798px) {
     #small-skills-top-row {
-        margin-bottom: 10%;
+        margin-bottom: 0px;
     }
 }
 

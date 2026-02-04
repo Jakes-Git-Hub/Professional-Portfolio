@@ -210,7 +210,7 @@ export const FrontPageComponent = ({
                                 </div>
                             </div>
                             <div class='text-centre' id='small-skills-bottom-row'>
-                                    <h4>I love learning about and implementing powerful, sophisticated Web Development solutions.</h4>
+                                    <h4 id='i-love-small'>I love learning about and implementing powerful, sophisticated Web Development solutions.</h4>
                                     <p>I get a great satisfaction in becoming competent in something that requires a lot of skill, determination and passion. Whether it be playing the drums (currently play at grade 7/8), or competitive gaming where I achieved rank 256 online in Europe for Overwatch - both of which display grit, resilience, high IQ and on the fly problem solving abilities in a landscape where a degree of variables are dynamically changing (characteristic traits which transfer over nicely to software engineering). Now I plan to focus intently on Front End/ React Development, to improve everyday and create some amazing projects.</p>        
                                     <p>It seems like all the intricate, yet simple well oiled parts of Web Development and the challenge of the learning curve garnered my attention and I became devoted. Seeing my progression and skills increase quickly made me realise what is possible with code (front-end, back-end, or any other projects I have in mind) made me want to pursue this as a long term goal and be the best I can be at it.</p>          
                             </div>
