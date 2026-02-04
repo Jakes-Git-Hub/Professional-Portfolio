@@ -332,7 +332,7 @@ export const FrontPageComponent = ({
                                             <li>React Select UI Component</li>
                                             <li>ARIA</li>
                                             <li>Responsivity</li>
-                                            <li>Working with SVGS</li>
+                                            <li>Working with SVG's</li>
                                             <li>Regex</li>
                                             <li>Writing clean modular code (important to work with and test)</li>
                                             <li>Loops</li>
@@ -408,7 +408,7 @@ export const FrontPageComponent = ({
                                             <li>React Select UI Component</li>
                                             <li>ARIA</li>
                                             <li>Responsivity</li>
-                                            <li>Working with SVGS</li>
+                                            <li>Working with SVG's</li>
                                             <li>Regex</li>
                                             <li>Writing clean modular code (important to work with and test)</li>
                                             <li>Loops</li>
